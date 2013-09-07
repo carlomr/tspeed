@@ -61,11 +61,12 @@ namespace Tspeed
 		Point operator *(const double &)const;
 		friend double dot(const Point & a, const Point &b){return a.M_coord[0]*b.M_coord[0] + a.M_coord[1]*b.M_coord[1]; };
 		double norm()const{return std::sqrt(M_coord[0]*M_coord[0]+ M_coord[1]*M_coord[1]);};
-		Eigen::Vector2d data()const{return M_coord;}
+		//Eigen::Vector2d data()const{return M_coord;}
+		Eigen::Vector2d toEig()const{Eigen::Vector2d v; v << M_coord[0], M_coord[1]; return v;};
 		//Eigen::Vector2d eig_v()const{Eigen::Vector2d v; v(0) = M_coord[0]; v(1) = M_coord[1]; return v;};
 	    private:
-		//std::array<double,dim> M_coord;
-		Eigen::Vector2d M_coord;
+		std::array<double,dim> M_coord;
+		//Eigen::Vector2d M_coord;
 	};
 
 	class Edge : public Entity

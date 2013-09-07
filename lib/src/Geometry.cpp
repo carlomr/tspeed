@@ -12,48 +12,48 @@ namespace Tspeed
 
 	Point operator -(const Point & a, const Point & b)
 	{
-	    return Point(a.M_coord(0)-b.M_coord(0),
-		    a.M_coord(1)-b.M_coord(1));
+	    return Point(a.M_coord[0]-b.M_coord[0],
+		    a.M_coord[1]-b.M_coord[1]);
 	}
 
 	Point operator -(const Eigen::Vector2d& a, const Point & b)
 	{
-	    return Point(a(0)-b.M_coord(0),
-		    a(1)-b.M_coord(1));
+	    return Point(a(0)-b.M_coord[0],
+		    a(1)-b.M_coord[1]);
 	}
 	Point operator -(const Point & a, const Eigen::Vector2d& b)
 	{
-	    return Point(a.M_coord(0)-b(0),
-		    a.M_coord(1)-b(1));
+	    return Point(a.M_coord[0]-b(0),
+		    a.M_coord[1]-b(1));
 	}
 	Point operator +(const Eigen::Vector2d& a, const Point & b)
 	{
-	    return Point(a(0)+b.M_coord(0),
-		    a(1)+b.M_coord(1));
+	    return Point(a(0)+b.M_coord[0],
+		    a(1)+b.M_coord[1]);
 	}
 	Point operator +(const Point & a, const Eigen::Vector2d& b)
 	{
-	    return Point(a.M_coord(0)+b(0),
-		    a.M_coord(1)+b(1));
+	    return Point(a.M_coord[0]+b(0),
+		    a.M_coord[1]+b(1));
 	}
 
 	Point operator +(const Point & a, const Point & b)
 	{
-	    return Point(a.M_coord(0)+b.M_coord(0),
-		    a.M_coord(1)+b.M_coord(1));
+	    return Point(a.M_coord[0]+b.M_coord[0],
+		    a.M_coord[1]+b.M_coord[1]);
 	}
 
 	Point Point::operator *(const double & d) const
 	{
-	    return Point(d*M_coord(0),d*M_coord(1));
+	    return Point(d*M_coord[0],d*M_coord[1]);
 	}
 
 	Point & Point::operator =(const Point & p)
 	{
 	    if(this!=&p)
 	    {
-		M_coord(0)=p.M_coord(0);
-		M_coord(1)=p.M_coord(1);
+		M_coord[0]=p.M_coord[0];
+		M_coord[1]=p.M_coord[1];
 		M_id = p.M_id;
 		M_reg = p.M_reg;
 		M_bcId = p.M_bcId;
@@ -157,8 +157,8 @@ namespace Tspeed
 	}
 	void Triangle::setJac(){
 	    Eigen::Matrix2d J;
-	    J.col(0) = (M_points[1]-M_points[0]).data();
-	    J.col(1) = (M_points[2]-M_points[0]).data();
+	    J.col(0) = (M_points[1]-M_points[0]).toEig();
+	    J.col(1) = (M_points[2]-M_points[0]).toEig();
 	    M_jac = J;
 	}
 	Eigen::Matrix2d Triangle::Jac()const{
@@ -178,12 +178,12 @@ namespace Tspeed
 	}
 	Point Triangle::invmap(Point const & p)const
 	{
-	    return Point(M_invjac*(p -M_points[0]).data());
+	    return Point(M_invjac*(p -M_points[0]).toEig());
 	}
 	Point Triangle::map(Point const & p)const
 	{
 	    Point ph;
-	    return ph = M_points[0] + M_jac*p.data();
+	    return ph = M_points[0] + M_jac*p.toEig();
 	}
 	std::ostream & operator<<(std::ostream & io, const Triangle & t)
 	{
