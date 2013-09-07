@@ -18,7 +18,7 @@ int main()
     Mesh_ptr Th(new Mesh(std::string("./Meshes/wedge.msh")));
     Th->stats();
 
-    FESpace_ptr<5> Xh(new FESpace<5>(Th));
+    FESpace_ptr<5> Xh(new FESpace<2>(Th));
 
     Parameters p(Th);
 
