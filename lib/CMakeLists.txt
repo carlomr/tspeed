@@ -5,12 +5,11 @@ FILE(GLOB components "src/*.cpp")
 
 add_library(tspeed ${components})
 
-install(TARGETS tspeed DESTINATION ${PROJECT_SOURCE_DIR})
+install(TARGETS tspeed DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
+install(FILES include/TSPEED.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
 
-message("${PROJECT_SOURCE_DIR}")
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 find_package(Eigen3 REQUIRED)
-message("${CMAKE_MODULE_PATH}")
 
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" HAS_LIBCXX11)

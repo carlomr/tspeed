@@ -68,7 +68,7 @@ namespace Tspeed
 	    }
 	    std::cerr << "Wrong edge number" << std::endl;
 	    exit(1);
-	}
+	};
     template<int N>
 	Gauss<N>::Gauss():QuadratureRule<N>()
     {
@@ -82,6 +82,8 @@ namespace Tspeed
 
 	Vec x,w;
 	gauleg<N>(w,x,-1,1);
+	this->M_node_2D.resize(N*N,2);
+	this->M_w_2D.resize(N*N);
 	for(int i=0; i<N; ++i)
 	{
 	    for(int j = 0; j<N; ++j)
@@ -93,5 +95,31 @@ namespace Tspeed
 	}
 	//std::cout << this->M_node_2D << std::endl;
 	//
-    }
+    };
+
+    template <int N>
+	Dunavant<N>::Dunavant():QuadratureRule<N>()
+    {
+	int order_num = dunavant_order_num ( N );
+
+	double *xytab = new double[2*order_num];
+	double *wtab = new double[order_num];
+	this->M_node_2D.resize(order_num,2);
+	this->M_w_2D.resize(order_num);
+
+	dunavant_rule ( N , order_num, xytab, wtab );
+	for(int i=0; i<order_num; ++i)
+	{
+	    this->M_w_2D[i] = .5*wtab[i];
+	    this->M_node_2D(i,0) = xytab[i];
+	    this->M_node_2D(i,1) = xytab[i+order_num];
+	}
+    };
+    template<int N>
+	constexpr int  dunavant_num_points()
+	{
+	    return -1;
+	}
+    
+
 }

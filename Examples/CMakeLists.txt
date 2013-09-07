@@ -1,6 +1,7 @@
 #cmake_minimum_required (VERSION 2.6)
 #project (TSPEED)
 
+link_directories(${CMAKE_INSTALL_PREFIX}/lib)
 add_executable(Wedge src/wedge.cpp)
 add_executable(Lamb src/Lamb.cpp)
 
