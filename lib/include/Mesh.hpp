@@ -14,6 +14,9 @@ namespace Tspeed
     {	
 	public:
 	    typedef unsigned int size_type;
+	    typedef std::vector<Geo::Triangle,Eigen::aligned_allocator<Eigen::Vector2d>> AlignedVecT;
+	    typedef std::vector<Geo::Edge,Eigen::aligned_allocator<Eigen::Vector2d>> AlignedVecE;
+	    typedef std::vector<Geo::Point,Eigen::aligned_allocator<Eigen::Vector2d>> AlignedVecP;
 	    explicit Mesh(const std::string);
 	    Geo::Triangle const & operator[](size_t i)const{return M_tri[i];}
 	    Geo::Triangle & operator[](size_t i){return M_tri[i];}
@@ -21,8 +24,8 @@ namespace Tspeed
 	    //int connectivity(const unsigned int ie,const unsigned int iedg)const{return M_conn[ie*3+iedg];}
 	    //Mesh(const Mesh &);
 	    //Mesh & operator =(Mesh const &);
-	    std::vector<Geo::Triangle> const & elements()const{return M_tri;}
-	    std::vector<Geo::Triangle> & elements(){return M_tri;}
+	    AlignedVecT const & elements()const{return M_tri;}
+	    AlignedVecT & elements(){return M_tri;}
 	    ~Mesh(){};
 	    void stats()const;
 	    unsigned int ne()const{return M_tri.size();};
@@ -33,9 +36,9 @@ namespace Tspeed
 	private:
 	    std::map<std::string, Bc> M_BcMap;
 	    std::map<Bc,std::string> M_BcMap_inv;
-	    std::vector<Geo::Triangle> M_tri;
-	    std::vector<Geo::Point> M_points;
-	    std::vector<Geo::Edge> M_bed;
+	    AlignedVecT M_tri;
+	    AlignedVecP M_points;
+	    AlignedVecE M_bed;
 	    void M_neighbors();
 	    std::string  M_fname;
 	    //int M_verbose;

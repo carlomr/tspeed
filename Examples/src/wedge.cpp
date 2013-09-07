@@ -50,11 +50,11 @@ int main()
     TA.set_initial_v(Xh,[=](double x, double y){return std::array<double,2>{{k*(exp(-q*(ymax-y))-2*q*s/(s*s+k*k)*exp(-s*(ymax-y))) * ( 2*(beta*pow((dt+(x-x0)/csurf),2)-2)*beta*(dt+(x-x0)/csurf)*exp(-beta*pow((dt+(x-x0)/csurf),2))), q*(exp(-q*(ymax-y))-2*k*k/(s*s+k*k)*exp(-s*(ymax-y))) * ( 2*(beta*pow((dt+(x-x0)/csurf),2)-2)*beta*(dt+(x-x0)/csurf)*exp(-beta*pow((dt+(x-x0)/csurf),2)))}};});
 		
 
-    Xh->points_out("wedge_points");
+    //Xh->points_out("wedge_points");
 
     int step = 0;
     TA.first_step();
-    Xh->field_out("wedge_field", TA.u(), step);
+    //Xh->field_out("wedge_field", TA.u(), step);
     TA.eval_receivers();
 
     while(TA.is_running())
@@ -62,12 +62,12 @@ int main()
 	++step;
 	t+=dt;
 	TA.step(t);
-	if(step%2 == 0)
-	    TA.eval_receivers();
-	if(step%20==0)
-	    Xh->field_out("wedge_field", TA.u(), step);
+	//if(step%2 == 0)
+	    //TA.eval_receivers();
+	//if(step%20==0)
+	    //Xh->field_out("wedge_field", TA.u(), step);
     }
-    TA.write_receivers("wedge_f10_back");
+    //TA.write_receivers("wedge_f10_back");
 
 }
 
