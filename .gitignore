@@ -1,4 +1,5 @@
-.so
-.a
-.swp
+*.so
+*.a
+*.swp
+*.py
 build/

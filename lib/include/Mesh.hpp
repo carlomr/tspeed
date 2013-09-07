@@ -6,6 +6,7 @@
 #include<vector>
 #include<algorithm>
 #include<map>
+#include<Eigen/StdVector>
 #include"Geometry.hpp"
 
 namespace Tspeed
