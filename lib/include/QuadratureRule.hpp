@@ -13,6 +13,7 @@ namespace Tspeed
 	    typedef Eigen::Matrix<double, N*N, 1> Vec2;
 	    typedef Eigen::Matrix<double, N*N, 2> Mat;
 	public:
+	    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 	    QuadratureRule() = default;
 	    Vec edge_weights()const{return M_w_1D;};
 	    Vec2 int_weights()const{return M_w_2D;};
