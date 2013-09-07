@@ -18,6 +18,7 @@ namespace Tspeed
 	    //typedef std::shared_ptr<Mesh> Mesh_ptr;
 
 	    public:
+		EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 		explicit FESpace(Mesh_ptr );
 		virtual ~FESpace(){};
 		Mesh_ptr  mesh()const{return M_mesh;};
