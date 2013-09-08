@@ -7,6 +7,7 @@ project (TSPEED)
 
 add_subdirectory(lib)
 add_subdirectory(Examples)
+add_subdirectory(doc)
 
 #install(TARGETS tspeed DESTINATION ${PROJECT_SOURCE_DIR})
 
@@ -25,10 +26,12 @@ if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Release")
 endif()
 
+message(STATUS "Run make doc to build Doxygen documentation")
 include_directories ("${PROJECT_SOURCE_DIR}/lib/include", ${EIGEN3_INCLUDE_DIR})
 
 set(CMAKE_CXX_FLAGS "-std=c++11")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -DNDEBUG -msse4 ")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -Wall ")
+
 
 

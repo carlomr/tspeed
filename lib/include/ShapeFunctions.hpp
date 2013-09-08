@@ -38,6 +38,17 @@ namespace Tspeed
 	    virtual ~Dubiner(){};
 	    Dubiner();
     };
+    template<int N>
+	class BoundaryAdapted:public ShapeFunction<N>
+    {
+	typedef Eigen::Array<double,Eigen::Dynamic, 2> ArrG;
+	typedef Eigen::ArrayXd Arr;
+	public:
+	    enum {is_orthonormal = false};
+	    virtual ~BoundaryAdapted(){};
+	    BoundaryAdapted();
+    };
+;
 }
 
 #include"ShapeFunctions_imp.hpp"

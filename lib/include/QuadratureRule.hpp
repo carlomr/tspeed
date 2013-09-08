@@ -5,6 +5,32 @@
 #include<iostream>
 #include"Geometry.hpp"
 #include"Dunavant.hpp"
+namespace
+{
+    template<int N>
+	constexpr int dunavant_num_points();
+
+    template<> constexpr int dunavant_num_points<1>() {   return 1;}
+    template<> constexpr int dunavant_num_points<2>() {   return 3;}
+    template<> constexpr int dunavant_num_points<3>() {   return 4;}
+    template<> constexpr int dunavant_num_points<4>() {   return 6;}
+    template<> constexpr int dunavant_num_points<5>() {   return 7;}
+    template<> constexpr int dunavant_num_points<6>() {   return 12;}
+    template<> constexpr int dunavant_num_points<7>() {   return 13;}
+    template<> constexpr int dunavant_num_points<8>() {   return 16;}
+    template<> constexpr int dunavant_num_points<9>() {   return 19;}
+    template<> constexpr int dunavant_num_points<10>(){  return 25;}
+    template<> constexpr int dunavant_num_points<11>(){  return 27;}
+    template<> constexpr int dunavant_num_points<12>(){  return 33;}
+    template<> constexpr int dunavant_num_points<13>(){  return 37;}
+    template<> constexpr int dunavant_num_points<14>(){  return 42;}
+    template<> constexpr int dunavant_num_points<15>(){  return 48;}
+    template<> constexpr int dunavant_num_points<16>(){  return 52;}
+    template<> constexpr int dunavant_num_points<17>(){  return 61;}
+    template<> constexpr int dunavant_num_points<18>(){  return 70;}
+    template<> constexpr int dunavant_num_points<19>(){  return 73;}
+    template<> constexpr int dunavant_num_points<20>(){  return 79;}
+}
 namespace Tspeed
 {
     template<int N>
@@ -52,29 +78,6 @@ namespace Tspeed
     };
 
     template<int N>
-	constexpr int dunavant_num_points();
-
-    template<> constexpr int dunavant_num_points<1>() {   return 1;}
-    template<> constexpr int dunavant_num_points<2>() {   return 3;}
-    template<> constexpr int dunavant_num_points<3>() {   return 4;}
-    template<> constexpr int dunavant_num_points<4>() {   return 6;}
-    template<> constexpr int dunavant_num_points<5>() {   return 7;}
-    template<> constexpr int dunavant_num_points<6>() {   return 12;}
-    template<> constexpr int dunavant_num_points<7>() {   return 13;}
-    template<> constexpr int dunavant_num_points<8>() {   return 16;}
-    template<> constexpr int dunavant_num_points<9>() {   return 19;}
-    template<> constexpr int dunavant_num_points<10>(){  return 25;}
-    template<> constexpr int dunavant_num_points<11>(){  return 27;}
-    template<> constexpr int dunavant_num_points<12>(){  return 33;}
-    template<> constexpr int dunavant_num_points<13>(){  return 37;}
-    template<> constexpr int dunavant_num_points<14>(){  return 42;}
-    template<> constexpr int dunavant_num_points<15>(){  return 48;}
-    template<> constexpr int dunavant_num_points<16>(){  return 52;}
-    template<> constexpr int dunavant_num_points<17>(){  return 61;}
-    template<> constexpr int dunavant_num_points<18>(){  return 70;}
-    template<> constexpr int dunavant_num_points<19>(){  return 73;}
-    template<> constexpr int dunavant_num_points<20>(){  return 79;}
-    template<int N>
 	class Dunavant: public QuadratureRule<N>
     {
     public:
@@ -85,8 +88,6 @@ namespace Tspeed
 	enum{ nqn1d = N};
 	Dunavant();
     };
-;
-
 
 }
 #include"QuadratureRule_imp.hpp"
