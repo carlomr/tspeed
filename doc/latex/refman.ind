@@ -1,0 +1,1672 @@
+\begin{theindex}
+
+  \item {$\sim $\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {$\sim $\discretionary {-}{}{}Boundary\discretionary {-}{}{}Adapted}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Boundary\discretionary {-}{}{}Adapted}, 
+		\hyperpage{15}
+  \item {$\sim $\discretionary {-}{}{}Dubiner}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dubiner}, 
+		\hyperpage{16}
+  \item {$\sim $\discretionary {-}{}{}Edge}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Edge}, 
+		\hyperpage{18}
+  \item {$\sim $\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{20}
+  \item {$\sim $\discretionary {-}{}{}Force}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Force}, 
+		\hyperpage{22}
+  \item {$\sim $\discretionary {-}{}{}Mesh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {$\sim $\discretionary {-}{}{}My\discretionary {-}{}{}Mat}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{27}
+  \item {$\sim $\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{28}
+  \item {$\sim $\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{29}
+  \item {$\sim $\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{30}
+  \item {$\sim $\discretionary {-}{}{}Parameters}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Parameters}, 
+		\hyperpage{31}
+  \item {$\sim $\discretionary {-}{}{}Point}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+  \item {$\sim $\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+  \item {$\sim $\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Force}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Force}, 
+		\hyperpage{35}
+  \item {$\sim $\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}, 
+		\hyperpage{37}
+  \item {$\sim $\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {$\sim $\discretionary {-}{}{}Triangle}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{41}
+
+  \indexspace
+
+  \item {a}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+  \item {add}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Receivers}, 
+		\hyperpage{36}
+  \item {add\discretionary {-}{}{}\_\discretionary {-}{}{}force}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {Aligned\discretionary {-}{}{}Vec\discretionary {-}{}{}E}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {Aligned\discretionary {-}{}{}Vec\discretionary {-}{}{}P}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {Aligned\discretionary {-}{}{}Vec\discretionary {-}{}{}T}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {all\discretionary {-}{}{}\_\discretionary {-}{}{}edges}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{41}
+  \item {all\discretionary {-}{}{}\_\discretionary {-}{}{}pts}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{41}
+  \item {Arr}
+    \subitem {Shape\discretionary {-}{}{}Functions.\discretionary {-}{}{}cpp}, 
+		\hyperpage{57}
+  \item {avg\discretionary {-}{}{}\_\discretionary {-}{}{}p}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Parameters}, 
+		\hyperpage{31}
+
+  \indexspace
+
+  \item {B}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {b}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+  \item {b\discretionary {-}{}{}\_\discretionary {-}{}{}edge}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{20}
+  \item {Base\discretionary {-}{}{}Mat}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {Bc}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {bc\discretionary {-}{}{}Id}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {block}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {Boundary\discretionary {-}{}{}Adapted}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Boundary\discretionary {-}{}{}Adapted}, 
+		\hyperpage{15}
+
+  \indexspace
+
+  \item {C\discretionary {-}{}{}Tensor\discretionary {-}{}{}Product}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {col\discretionary {-}{}{}Ind}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {component}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{29}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{31}
+
+  \indexspace
+
+  \item {det\discretionary {-}{}{}J}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{41}
+  \item {Dirichlet}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {dot}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+  \item {Dubiner}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dubiner}, 
+		\hyperpage{16}
+  \item {Dunavant}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dunavant}, 
+		\hyperpage{17}
+  \item {Dunavant.\discretionary {-}{}{}cpp}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}degree}, 
+		\hyperpage{53}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}order\discretionary {-}{}{}\_\discretionary {-}{}{}num}, 
+		\hyperpage{53}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}rule}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}rule\discretionary {-}{}{}\_\discretionary {-}{}{}num}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}suborder}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}suborder\discretionary {-}{}{}\_\discretionary {-}{}{}num}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}01}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}02}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}03}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}04}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}05}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}06}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}07}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}08}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}09}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}10}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}11}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}12}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}13}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}14}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}15}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}16}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}17}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}18}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}19}, 
+		\hyperpage{54}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}20}, 
+		\hyperpage{54}
+    \subitem {file\discretionary {-}{}{}\_\discretionary {-}{}{}name\discretionary {-}{}{}\_\discretionary {-}{}{}inc}, 
+		\hyperpage{54}
+    \subitem {i4\discretionary {-}{}{}\_\discretionary {-}{}{}max}, 
+		\hyperpage{54}
+    \subitem {i4\discretionary {-}{}{}\_\discretionary {-}{}{}min}, 
+		\hyperpage{54}
+    \subitem {i4\discretionary {-}{}{}\_\discretionary {-}{}{}modp}, 
+		\hyperpage{55}
+    \subitem {i4\discretionary {-}{}{}\_\discretionary {-}{}{}wrap}, 
+		\hyperpage{55}
+    \subitem {r8\discretionary {-}{}{}\_\discretionary {-}{}{}huge}, 
+		\hyperpage{55}
+    \subitem {r8\discretionary {-}{}{}\_\discretionary {-}{}{}nint}, 
+		\hyperpage{55}
+    \subitem {reference\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}physical\discretionary {-}{}{}\_\discretionary {-}{}{}t3}, 
+		\hyperpage{55}
+    \subitem {s\discretionary {-}{}{}\_\discretionary {-}{}{}len\discretionary {-}{}{}\_\discretionary {-}{}{}trim}, 
+		\hyperpage{55}
+    \subitem {T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
+		\hyperpage{53}
+    \subitem {timestamp}, \hyperpage{55}
+    \subitem {timestring}, \hyperpage{55}
+    \subitem {triangle\discretionary {-}{}{}\_\discretionary {-}{}{}area}, 
+		\hyperpage{55}
+    \subitem {triangle\discretionary {-}{}{}\_\discretionary {-}{}{}points\discretionary {-}{}{}\_\discretionary {-}{}{}plot}, 
+		\hyperpage{55}
+  \item {Dunavant.\discretionary {-}{}{}hpp}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}degree}, 
+		\hyperpage{44}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}order\discretionary {-}{}{}\_\discretionary {-}{}{}num}, 
+		\hyperpage{44}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}rule}, 
+		\hyperpage{44}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}rule\discretionary {-}{}{}\_\discretionary {-}{}{}num}, 
+		\hyperpage{44}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}suborder}, 
+		\hyperpage{44}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}suborder\discretionary {-}{}{}\_\discretionary {-}{}{}num}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}01}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}02}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}03}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}04}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}05}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}06}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}07}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}08}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}09}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}10}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}11}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}12}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}13}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}14}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}15}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}16}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}17}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}18}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}19}, 
+		\hyperpage{45}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}20}, 
+		\hyperpage{45}
+    \subitem {file\discretionary {-}{}{}\_\discretionary {-}{}{}name\discretionary {-}{}{}\_\discretionary {-}{}{}inc}, 
+		\hyperpage{45}
+    \subitem {i4\discretionary {-}{}{}\_\discretionary {-}{}{}max}, 
+		\hyperpage{45}
+    \subitem {i4\discretionary {-}{}{}\_\discretionary {-}{}{}min}, 
+		\hyperpage{45}
+    \subitem {i4\discretionary {-}{}{}\_\discretionary {-}{}{}modp}, 
+		\hyperpage{45}
+    \subitem {i4\discretionary {-}{}{}\_\discretionary {-}{}{}wrap}, 
+		\hyperpage{45}
+    \subitem {r8\discretionary {-}{}{}\_\discretionary {-}{}{}huge}, 
+		\hyperpage{45}
+    \subitem {r8\discretionary {-}{}{}\_\discretionary {-}{}{}nint}, 
+		\hyperpage{46}
+    \subitem {reference\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}physical\discretionary {-}{}{}\_\discretionary {-}{}{}t3}, 
+		\hyperpage{46}
+    \subitem {s\discretionary {-}{}{}\_\discretionary {-}{}{}len\discretionary {-}{}{}\_\discretionary {-}{}{}trim}, 
+		\hyperpage{46}
+    \subitem {timestamp}, \hyperpage{46}
+    \subitem {timestring}, \hyperpage{46}
+    \subitem {triangle\discretionary {-}{}{}\_\discretionary {-}{}{}area}, 
+		\hyperpage{46}
+    \subitem {triangle\discretionary {-}{}{}\_\discretionary {-}{}{}points\discretionary {-}{}{}\_\discretionary {-}{}{}plot}, 
+		\hyperpage{46}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}degree}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{53}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{44}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}num\discretionary {-}{}{}\_\discretionary {-}{}{}points}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}order\discretionary {-}{}{}\_\discretionary {-}{}{}num}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{53}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{44}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}rule}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{44}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}rule\discretionary {-}{}{}\_\discretionary {-}{}{}num}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{44}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}suborder}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{44}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}suborder\discretionary {-}{}{}\_\discretionary {-}{}{}num}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}01}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}02}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}03}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}04}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}05}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}06}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}07}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}08}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}09}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}10}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}11}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}12}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}13}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}14}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}15}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}16}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}17}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}18}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}19}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}subrule\discretionary {-}{}{}\_\discretionary {-}{}{}20}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+
+  \indexspace
+
+  \item {edg}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {Edge}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Edge}, 
+		\hyperpage{18}
+  \item {elem}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+  \item {elements}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {Entity}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {eval}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Force}, 
+		\hyperpage{22}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Force}, 
+		\hyperpage{35}
+  \item {eval\discretionary {-}{}{}\_\discretionary {-}{}{}receivers}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {Examples/src/\discretionary {-}{}{}Lamb.\discretionary {-}{}{}cpp}, 
+		\hyperpage{43}
+  \item {Examples/src/wedge.\discretionary {-}{}{}cpp}, \hyperpage{43}
+
+  \indexspace
+
+  \item {f}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {F\discretionary {-}{}{}E\discretionary {-}{}{}Space}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{20}
+  \item {F\discretionary {-}{}{}E\discretionary {-}{}{}Space\discretionary {-}{}{}\_\discretionary {-}{}{}ptr}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {fclose}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{62}
+  \item {fid}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {field\discretionary {-}{}{}\_\discretionary {-}{}{}out}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{20}
+  \item {figure}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {file\discretionary {-}{}{}\_\discretionary {-}{}{}name\discretionary {-}{}{}\_\discretionary {-}{}{}inc}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {first\discretionary {-}{}{}\_\discretionary {-}{}{}step}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Leap\discretionary {-}{}{}Frog}, 
+		\hyperpage{24}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {fnamein}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {fold}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {foldold}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {font\discretionary {-}{}{}Size}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+  \item {Force}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Force}, 
+		\hyperpage{22}
+  \item {fprintf}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{62}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}vector\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{64}
+  \item {function}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}vector\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{64}
+
+  \indexspace
+
+  \item {g\discretionary {-}{}{}\_\discretionary {-}{}{}edge}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{20}
+  \item {Gauss}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Gauss}, 
+		\hyperpage{23}
+  \item {gdl}
+    \subitem {Tspeed\-::\-Shape\-Function}, \hyperpage{37}
+  \item {Geometry.\discretionary {-}{}{}hpp}
+    \subitem {N\discretionary {-}{}{}V\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
+		\hyperpage{48}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}uh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {get\discretionary {-}{}{}A}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{25}
+  \item {get\discretionary {-}{}{}I}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{25}
+  \item {get\discretionary {-}{}{}S}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{25}
+  \item {getinv\discretionary {-}{}{}M}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{25}
+  \item {grad}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{20}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}, 
+		\hyperpage{37}
+
+  \indexspace
+
+  \item {i}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}vector\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{64}
+  \item {i4\discretionary {-}{}{}\_\discretionary {-}{}{}max}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {i4\discretionary {-}{}{}\_\discretionary {-}{}{}min}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{54}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {i4\discretionary {-}{}{}\_\discretionary {-}{}{}modp}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {i4\discretionary {-}{}{}\_\discretionary {-}{}{}wrap}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {Id}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {id}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {initial\discretionary {-}{}{}\_\discretionary {-}{}{}v}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {Internal}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {intriangle}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {inv\discretionary {-}{}{}Jac}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {inverse\discretionary {-}{}{}\_\discretionary {-}{}{}transform}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+  \item {invmap}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {is\-\_\-orthonormal}
+    \subitem {Tspeed\-::\-Boundary\-Adapted}, \hyperpage{15}
+    \subitem {Tspeed\-::\-Dubiner}, \hyperpage{16}
+    \subitem {Tspeed\-::\-Shape\-Function}, \hyperpage{37}
+  \item {is\discretionary {-}{}{}\_\discretionary {-}{}{}running}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+
+  \indexspace
+
+  \item {j}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {Jac}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {jacobi\discretionary {-}{}{}\_\discretionary {-}{}{}polynomial}
+    \subitem {Tspeed}, \hyperpage{10}
+
+  \indexspace
+
+  \item {L2error}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+  \item {Lamb.\discretionary {-}{}{}cpp}
+    \subitem {main}, \hyperpage{43}
+  \item {lambda}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Parameters}, 
+		\hyperpage{31}
+  \item {Leap\discretionary {-}{}{}Frog}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Leap\discretionary {-}{}{}Frog}, 
+		\hyperpage{24}
+  \item {legend}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+  \item {length}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Edge}, 
+		\hyperpage{18}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {lib/include/\discretionary {-}{}{}Dunavant.\discretionary {-}{}{}hpp}, 
+		\hyperpage{43}
+  \item {lib/include/\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space.\discretionary {-}{}{}hpp}, 
+		\hyperpage{46}
+  \item {lib/include/\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space\discretionary {-}{}{}\_\discretionary {-}{}{}imp.\discretionary {-}{}{}hpp}, 
+		\hyperpage{46}
+  \item {lib/include/\discretionary {-}{}{}Force.\discretionary {-}{}{}hpp}, 
+		\hyperpage{47}
+  \item {lib/include/\discretionary {-}{}{}Force\discretionary {-}{}{}\_\discretionary {-}{}{}imp.\discretionary {-}{}{}hpp}, 
+		\hyperpage{47}
+  \item {lib/include/\discretionary {-}{}{}Geometry.\discretionary {-}{}{}hpp}, 
+		\hyperpage{47}
+  \item {lib/include/\discretionary {-}{}{}Matrices\discretionary {-}{}{}\_\discretionary {-}{}{}imp.\discretionary {-}{}{}hpp}, 
+		\hyperpage{48}
+  \item {lib/include/\discretionary {-}{}{}Mesh.\discretionary {-}{}{}hpp}, 
+		\hyperpage{48}
+  \item {lib/include/\discretionary {-}{}{}My\discretionary {-}{}{}Mat.\discretionary {-}{}{}hpp}, 
+		\hyperpage{49}
+  \item {lib/include/\discretionary {-}{}{}Quadrature\discretionary {-}{}{}Rule.\discretionary {-}{}{}hpp}, 
+		\hyperpage{49}
+  \item {lib/include/\discretionary {-}{}{}Quadrature\discretionary {-}{}{}Rule\discretionary {-}{}{}\_\discretionary {-}{}{}imp.\discretionary {-}{}{}hpp}, 
+		\hyperpage{50}
+  \item {lib/include/\discretionary {-}{}{}Receivers.\discretionary {-}{}{}hpp}, 
+		\hyperpage{50}
+  \item {lib/include/\discretionary {-}{}{}Receivers\discretionary {-}{}{}\_\discretionary {-}{}{}imp.\discretionary {-}{}{}hpp}, 
+		\hyperpage{50}
+  \item {lib/include/\discretionary {-}{}{}Shape\discretionary {-}{}{}Functions.\discretionary {-}{}{}hpp}, 
+		\hyperpage{50}
+  \item {lib/include/\discretionary {-}{}{}Shape\discretionary {-}{}{}Functions\discretionary {-}{}{}\_\discretionary {-}{}{}imp.\discretionary {-}{}{}hpp}, 
+		\hyperpage{51}
+  \item {lib/include/\discretionary {-}{}{}T\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}D.\discretionary {-}{}{}hpp}, 
+		\hyperpage{52}
+  \item {lib/include/\discretionary {-}{}{}Time\discretionary {-}{}{}Advance.\discretionary {-}{}{}hpp}, 
+		\hyperpage{51}
+  \item {lib/include/\discretionary {-}{}{}Time\discretionary {-}{}{}Advance\discretionary {-}{}{}\_\discretionary {-}{}{}imp.\discretionary {-}{}{}hpp}, 
+		\hyperpage{52}
+  \item {lib/src/\discretionary {-}{}{}Dunavant.\discretionary {-}{}{}cpp}, 
+		\hyperpage{52}
+  \item {lib/src/\discretionary {-}{}{}Force.\discretionary {-}{}{}cpp}, 
+		\hyperpage{55}
+  \item {lib/src/\discretionary {-}{}{}Geometry.\discretionary {-}{}{}cpp}, 
+		\hyperpage{55}
+  \item {lib/src/\discretionary {-}{}{}Mesh.\discretionary {-}{}{}cpp}, 
+		\hyperpage{56}
+  \item {lib/src/\discretionary {-}{}{}My\discretionary {-}{}{}Mat.\discretionary {-}{}{}cpp}, 
+		\hyperpage{56}
+  \item {lib/src/\discretionary {-}{}{}Parameters.\discretionary {-}{}{}cpp}, 
+		\hyperpage{56}
+  \item {lib/src/\discretionary {-}{}{}Quadrature\discretionary {-}{}{}Rule.\discretionary {-}{}{}cpp}, 
+		\hyperpage{57}
+  \item {lib/src/\discretionary {-}{}{}Receivers.\discretionary {-}{}{}cpp}, 
+		\hyperpage{57}
+  \item {lib/src/\discretionary {-}{}{}Shape\discretionary {-}{}{}Functions.\discretionary {-}{}{}cpp}, 
+		\hyperpage{57}
+  \item {lib/src/\discretionary {-}{}{}Time\discretionary {-}{}{}Advance.\discretionary {-}{}{}cpp}, 
+		\hyperpage{57}
+  \item {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{58}
+  \item {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}
+    \subitem {a}, \hyperpage{59}
+    \subitem {figure}, \hyperpage{59}
+    \subitem {i}, \hyperpage{59}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot}, 
+		\hyperpage{58}
+    \subitem {myofsx}, \hyperpage{59}
+    \subitem {myofsy}, \hyperpage{59}
+    \subitem {ofsx}, \hyperpage{59}
+    \subitem {ofsy}, \hyperpage{59}
+    \subitem {on}, \hyperpage{59}
+    \subitem {plot}, \hyperpage{58}
+    \subitem {set}, \hyperpage{58}
+    \subitem {subplot}, \hyperpage{58}
+    \subitem {t}, \hyperpage{59}
+    \subitem {title}, \hyperpage{58, 59}
+    \subitem {xlabel}, \hyperpage{59}
+  \item {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}
+    \subitem {a}, \hyperpage{60}
+    \subitem {b}, \hyperpage{60}
+    \subitem {font\discretionary {-}{}{}Size}, \hyperpage{60}
+    \subitem {function}, \hyperpage{60}
+    \subitem {i}, \hyperpage{60}
+    \subitem {legend}, \hyperpage{60}
+    \subitem {on}, \hyperpage{60}
+    \subitem {plot}, \hyperpage{60}
+    \subitem {set}, \hyperpage{60}
+    \subitem {text}, \hyperpage{61}
+    \subitem {title}, \hyperpage{60}
+    \subitem {type}, \hyperpage{61}
+    \subitem {xlabel}, \hyperpage{60}
+  \item {loc\discretionary {-}{}{}\_\discretionary {-}{}{}rhs}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+
+  \indexspace
+
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}add}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}bc\discretionary {-}{}{}Id}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}bed\discretionary {-}{}{}\_\discretionary {-}{}{}map}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}c}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}completed}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}dt}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}f}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Force}, 
+		\hyperpage{22}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}grad}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}, 
+		\hyperpage{37}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}id}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}ie}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}last\discretionary {-}{}{}\_\discretionary {-}{}{}step}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}m}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}mat}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}nc}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}ne}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}nel}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}nln}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}nr}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}penalty}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}phi}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}, 
+		\hyperpage{38}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}r}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}recv}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}recv\discretionary {-}{}{}\_\discretionary {-}{}{}written}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}reg}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}relp}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{35}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}shape}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{35}
+  \item {M\discretionary {-}{}{}\_\discretionary {-}{}{}tmax}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}files/load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{58}
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}files/load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}files/plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}files/vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{62}
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}files/vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}files/vtk\discretionary {-}{}{}\_\discretionary {-}{}{}vector\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{64}
+  \item {main}
+    \subitem {Lamb.\discretionary {-}{}{}cpp}, \hyperpage{43}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{58}
+    \subitem {wedge.\discretionary {-}{}{}cpp}, \hyperpage{43}
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{57}
+    \subitem {main}, \hyperpage{58}
+  \item {map}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {Mat}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dunavant}, 
+		\hyperpage{17}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Gauss}, 
+		\hyperpage{23}
+  \item {mat\discretionary {-}{}{}\_\discretionary {-}{}{}dot}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {Matrices}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{25}
+  \item {Mesh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {mesh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+  \item {Mesh\discretionary {-}{}{}\_\discretionary {-}{}{}ptr}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {mu}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Parameters}, 
+		\hyperpage{32}
+  \item {My\discretionary {-}{}{}Mat}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{27}
+  \item {My\discretionary {-}{}{}Mat\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{28}
+  \item {My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{29}
+  \item {My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{30}
+  \item {myofsx}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+  \item {myofsy}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+
+  \indexspace
+
+  \item {N\discretionary {-}{}{}V\discretionary {-}{}{}A\discretionary {-}{}{}L}
+    \subitem {Geometry.\discretionary {-}{}{}hpp}, \hyperpage{48}
+  \item {ne}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {neigh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {neighedges}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {Neumann}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {nln}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+  \item {norm}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+  \item {normal}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Edge}, 
+		\hyperpage{18}
+  \item {nqn1d}
+    \subitem {Tspeed\-::\-Dunavant}, \hyperpage{17}
+    \subitem {Tspeed\-::\-Gauss}, \hyperpage{23}
+  \item {nqn2d}
+    \subitem {Tspeed\-::\-Dunavant}, \hyperpage{17}
+    \subitem {Tspeed\-::\-Gauss}, \hyperpage{23}
+  \item {nr}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{31}
+  \item {ns}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {num\discretionary {-}{}{}Vertices}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {numtria}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+
+  \indexspace
+
+  \item {ofs}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {ofsx}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+  \item {ofsy}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+  \item {on}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {operator$<$$<$}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo}, 
+		\hyperpage{12}
+  \item {operator$\ast $}
+    \subitem {Tspeed}, \hyperpage{10, 11}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo}, 
+		\hyperpage{11}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{27}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{29, 30}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{31}
+  \item {operator+}
+    \subitem {Tspeed}, \hyperpage{11}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo}, 
+		\hyperpage{11}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{30}
+  \item {operator+=}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{27}
+  \item {operator-\/}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo}, 
+		\hyperpage{12}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+  \item {operator=}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Edge}, 
+		\hyperpage{18}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{27}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{28}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{29}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{31}
+
+  \indexspace
+
+  \item {Parameters}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Parameters}, 
+		\hyperpage{31}
+  \item {phi}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}, 
+		\hyperpage{37}
+  \item {plot}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{58}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+  \item {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}
+    \subitem {figure}, \hyperpage{61}
+    \subitem {i}, \hyperpage{61}
+    \subitem {ns}, \hyperpage{61}
+    \subitem {ofs}, \hyperpage{61}
+    \subitem {on}, \hyperpage{61}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram}, 
+		\hyperpage{61}
+    \subitem {set}, \hyperpage{61}
+    \subitem {subplot}, \hyperpage{61}
+    \subitem {t}, \hyperpage{62}
+  \item {Point}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+  \item {point}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+  \item {Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Force}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Force}, 
+		\hyperpage{35}
+  \item {points\discretionary {-}{}{}\_\discretionary {-}{}{}out}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+  \item {print\discretionary {-}{}{}Neigh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {printall\discretionary {-}{}{}Neigh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {pt}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+
+  \indexspace
+
+  \item {quad}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+
+  \indexspace
+
+  \item {r8\discretionary {-}{}{}\_\discretionary {-}{}{}huge}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{45}
+  \item {r8\discretionary {-}{}{}\_\discretionary {-}{}{}nint}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{46}
+  \item {Receivers}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Receivers}, 
+		\hyperpage{36}
+  \item {reference\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}physical\discretionary {-}{}{}\_\discretionary {-}{}{}t3}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{46}
+  \item {reg}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {rho}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Parameters}, 
+		\hyperpage{32}
+  \item {row\discretionary {-}{}{}Ind}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {s\discretionary {-}{}{}\_\discretionary {-}{}{}len\discretionary {-}{}{}\_\discretionary {-}{}{}trim}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{46}
+  \item {S\discretionary {-}{}{}P\discretionary {-}{}{}Vec}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Force}, 
+		\hyperpage{22}
+  \item {set}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{58}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}col\discretionary {-}{}{}Ind}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}dt}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}initial\discretionary {-}{}{}\_\discretionary {-}{}{}u}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}initial\discretionary {-}{}{}\_\discretionary {-}{}{}v}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}penalty}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}row\discretionary {-}{}{}Ind}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}tmax}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {set\discretionary {-}{}{}Neigh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {set\discretionary {-}{}{}Neighedges}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{42}
+  \item {setblock}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+  \item {setp}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Parameters}, 
+		\hyperpage{32}
+  \item {shape}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{21}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+  \item {Shape\discretionary {-}{}{}Function}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}, 
+		\hyperpage{37}
+  \item {Shape\discretionary {-}{}{}Functions.\discretionary {-}{}{}cpp}
+    \subitem {Arr}, \hyperpage{57}
+  \item {size}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+  \item {size\discretionary {-}{}{}\_\discretionary {-}{}{}type}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {Sp\discretionary {-}{}{}Mat}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{25}
+  \item {stats}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{26}
+  \item {step}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Leap\discretionary {-}{}{}Frog}, 
+		\hyperpage{24}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {subplot}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{58}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {sumtranspose}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{27}
+  \item {symmetrize}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{28}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{29}
+
+  \indexspace
+
+  \item {t}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+    \subitem {plot\discretionary {-}{}{}\_\discretionary {-}{}{}seismogram.\discretionary {-}{}{}m}, 
+		\hyperpage{62}
+  \item {T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{53}
+  \item {T\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}D.\discretionary {-}{}{}hpp}, 
+		\hyperpage{52}
+  \item {text}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+  \item {Time\discretionary {-}{}{}Advance}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {timestamp}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{46}
+  \item {timestring}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{46}
+  \item {title}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{58, 59}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+  \item {to\discretionary {-}{}{}Eig}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+  \item {tri}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {Triangle}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{41}
+  \item {triangle\discretionary {-}{}{}\_\discretionary {-}{}{}area}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{46}
+  \item {triangle\discretionary {-}{}{}\_\discretionary {-}{}{}points\discretionary {-}{}{}\_\discretionary {-}{}{}plot}
+    \subitem {Dunavant.\discretionary {-}{}{}cpp}, \hyperpage{55}
+    \subitem {Dunavant.\discretionary {-}{}{}hpp}, \hyperpage{46}
+  \item {Tspeed}, \hyperpage{9}
+    \subitem {Bc}, \hyperpage{10}
+    \subitem {C\discretionary {-}{}{}Tensor\discretionary {-}{}{}Product}, 
+		\hyperpage{10}
+    \subitem {Dirichlet}, \hyperpage{10}
+    \subitem {dunavant\discretionary {-}{}{}\_\discretionary {-}{}{}num\discretionary {-}{}{}\_\discretionary {-}{}{}points}, 
+		\hyperpage{10}
+    \subitem {F\discretionary {-}{}{}E\discretionary {-}{}{}Space\discretionary {-}{}{}\_\discretionary {-}{}{}ptr}, 
+		\hyperpage{10}
+    \subitem {Internal}, \hyperpage{10}
+    \subitem {jacobi\discretionary {-}{}{}\_\discretionary {-}{}{}polynomial}, 
+		\hyperpage{10}
+    \subitem {mat\discretionary {-}{}{}\_\discretionary {-}{}{}dot}, 
+		\hyperpage{10}
+    \subitem {Mesh\discretionary {-}{}{}\_\discretionary {-}{}{}ptr}, 
+		\hyperpage{10}
+    \subitem {Neumann}, \hyperpage{10}
+    \subitem {operator$\ast $}, \hyperpage{10, 11}
+    \subitem {operator+}, \hyperpage{11}
+    \subitem {Unassigned}, \hyperpage{10}
+  \item {Tspeed\-::\-Boundary\-Adapted}
+    \subitem {is\-\_\-orthonormal}, \hyperpage{15}
+  \item {Tspeed\-::\-Dubiner}
+    \subitem {is\-\_\-orthonormal}, \hyperpage{16}
+  \item {Tspeed\-::\-Dunavant}
+    \subitem {nqn1d}, \hyperpage{17}
+    \subitem {nqn2d}, \hyperpage{17}
+  \item {Tspeed\-::\-Gauss}
+    \subitem {nqn1d}, \hyperpage{23}
+    \subitem {nqn2d}, \hyperpage{23}
+  \item {Tspeed\-::\-Shape\-Function}
+    \subitem {gdl}, \hyperpage{37}
+    \subitem {is\-\_\-orthonormal}, \hyperpage{37}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{13}
+    \subitem {$\sim $\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+    \subitem {Base\discretionary {-}{}{}Mat}, \hyperpage{14}
+    \subitem {block}, \hyperpage{14}
+    \subitem {col\discretionary {-}{}{}Ind}, \hyperpage{14}
+    \subitem {elem}, \hyperpage{14}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}c}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}m}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}nc}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}nln}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}nr}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}r}, 
+		\hyperpage{14}
+    \subitem {nr}, \hyperpage{14}
+    \subitem {row\discretionary {-}{}{}Ind}, \hyperpage{14}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}col\discretionary {-}{}{}Ind}, 
+		\hyperpage{14}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}row\discretionary {-}{}{}Ind}, 
+		\hyperpage{14}
+    \subitem {setblock}, \hyperpage{14}
+    \subitem {size}, \hyperpage{14}
+    \subitem {vec\discretionary {-}{}{}Mult}, \hyperpage{14}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Boundary\discretionary {-}{}{}Adapted}
+    \subitem {$\sim $\discretionary {-}{}{}Boundary\discretionary {-}{}{}Adapted}, 
+		\hyperpage{15}
+    \subitem {Boundary\discretionary {-}{}{}Adapted}, \hyperpage{15}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Boundary\discretionary {-}{}{}Adapted$<$ N $>$}, 
+		\hyperpage{15}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dubiner}
+    \subitem {$\sim $\discretionary {-}{}{}Dubiner}, \hyperpage{16}
+    \subitem {Dubiner}, \hyperpage{16}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dubiner$<$ N $>$}, 
+		\hyperpage{16}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dunavant}
+    \subitem {Dunavant}, \hyperpage{17}
+    \subitem {Mat}, \hyperpage{17}
+    \subitem {Vec}, \hyperpage{17}
+    \subitem {Vec2}, \hyperpage{17}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dunavant$<$ N $>$}, 
+		\hyperpage{16}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{18}
+    \subitem {bc\discretionary {-}{}{}Id}, \hyperpage{19}
+    \subitem {Entity}, \hyperpage{19}
+    \subitem {Id}, \hyperpage{19}
+    \subitem {id}, \hyperpage{19}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}bc\discretionary {-}{}{}Id}, 
+		\hyperpage{19}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}id}, 
+		\hyperpage{19}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}reg}, 
+		\hyperpage{19}
+    \subitem {reg}, \hyperpage{19}
+    \subitem {unassigned\discretionary {-}{}{}Bc}, \hyperpage{19}
+    \subitem {unassigned\discretionary {-}{}{}Id}, \hyperpage{19}
+    \subitem {unassigned\discretionary {-}{}{}Reg}, \hyperpage{19}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}
+    \subitem {$\sim $\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{20}
+    \subitem {b\discretionary {-}{}{}\_\discretionary {-}{}{}edge}, 
+		\hyperpage{20}
+    \subitem {F\discretionary {-}{}{}E\discretionary {-}{}{}Space}, 
+		\hyperpage{20}
+    \subitem {field\discretionary {-}{}{}\_\discretionary {-}{}{}out}, 
+		\hyperpage{20}
+    \subitem {g\discretionary {-}{}{}\_\discretionary {-}{}{}edge}, 
+		\hyperpage{20}
+    \subitem {grad}, \hyperpage{20}
+    \subitem {inverse\discretionary {-}{}{}\_\discretionary {-}{}{}transform}, 
+		\hyperpage{21}
+    \subitem {L2error}, \hyperpage{21}
+    \subitem {loc\discretionary {-}{}{}\_\discretionary {-}{}{}rhs}, 
+		\hyperpage{21}
+    \subitem {mesh}, \hyperpage{21}
+    \subitem {ne}, \hyperpage{21}
+    \subitem {nln}, \hyperpage{21}
+    \subitem {points\discretionary {-}{}{}\_\discretionary {-}{}{}out}, 
+		\hyperpage{21}
+    \subitem {quad}, \hyperpage{21}
+    \subitem {shape}, \hyperpage{21}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}Space$<$ N, Q, S $>$}, 
+		\hyperpage{20}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Force}, 
+		\hyperpage{21}
+    \subitem {$\sim $\discretionary {-}{}{}Force}, \hyperpage{22}
+    \subitem {eval}, \hyperpage{22}
+    \subitem {Force}, \hyperpage{22}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}f}, 
+		\hyperpage{22}
+    \subitem {S\discretionary {-}{}{}P\discretionary {-}{}{}Vec}, 
+		\hyperpage{22}
+    \subitem {Vec}, \hyperpage{22}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Gauss}
+    \subitem {Gauss}, \hyperpage{23}
+    \subitem {Mat}, \hyperpage{23}
+    \subitem {Vec}, \hyperpage{23}
+    \subitem {Vec2}, \hyperpage{23}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Gauss$<$ N $>$}, 
+		\hyperpage{22}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo}, 
+		\hyperpage{11}
+    \subitem {operator$<$$<$}, \hyperpage{12}
+    \subitem {operator$\ast $}, \hyperpage{11}
+    \subitem {operator+}, \hyperpage{11}
+    \subitem {operator-\/}, \hyperpage{12}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Edge}, 
+		\hyperpage{17}
+    \subitem {$\sim $\discretionary {-}{}{}Edge}, \hyperpage{18}
+    \subitem {Edge}, \hyperpage{18}
+    \subitem {length}, \hyperpage{18}
+    \subitem {normal}, \hyperpage{18}
+    \subitem {operator=}, \hyperpage{18}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{32}
+    \subitem {$\sim $\discretionary {-}{}{}Point}, \hyperpage{33}
+    \subitem {dot}, \hyperpage{33}
+    \subitem {norm}, \hyperpage{33}
+    \subitem {operator$\ast $}, \hyperpage{33}
+    \subitem {operator+}, \hyperpage{33}
+    \subitem {operator-\/}, \hyperpage{33}
+    \subitem {operator=}, \hyperpage{33}
+    \subitem {Point}, \hyperpage{33}
+    \subitem {to\discretionary {-}{}{}Eig}, \hyperpage{33}
+    \subitem {x}, \hyperpage{33}
+    \subitem {y}, \hyperpage{33}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Triangle}, 
+		\hyperpage{40}
+    \subitem {$\sim $\discretionary {-}{}{}Triangle}, \hyperpage{41}
+    \subitem {all\discretionary {-}{}{}\_\discretionary {-}{}{}edges}, 
+		\hyperpage{41}
+    \subitem {all\discretionary {-}{}{}\_\discretionary {-}{}{}pts}, 
+		\hyperpage{41}
+    \subitem {det\discretionary {-}{}{}J}, \hyperpage{41}
+    \subitem {edg}, \hyperpage{42}
+    \subitem {intriangle}, \hyperpage{42}
+    \subitem {inv\discretionary {-}{}{}Jac}, \hyperpage{42}
+    \subitem {invmap}, \hyperpage{42}
+    \subitem {Jac}, \hyperpage{42}
+    \subitem {map}, \hyperpage{42}
+    \subitem {neigh}, \hyperpage{42}
+    \subitem {neighedges}, \hyperpage{42}
+    \subitem {num\discretionary {-}{}{}Vertices}, \hyperpage{42}
+    \subitem {operator=}, \hyperpage{42}
+    \subitem {print\discretionary {-}{}{}Neigh}, \hyperpage{42}
+    \subitem {pt}, \hyperpage{42}
+    \subitem {set\discretionary {-}{}{}Neigh}, \hyperpage{42}
+    \subitem {set\discretionary {-}{}{}Neighedges}, \hyperpage{42}
+    \subitem {Triangle}, \hyperpage{41}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Leap\discretionary {-}{}{}Frog}, 
+		\hyperpage{23}
+    \subitem {first\discretionary {-}{}{}\_\discretionary {-}{}{}step}, 
+		\hyperpage{24}
+    \subitem {Leap\discretionary {-}{}{}Frog}, \hyperpage{24}
+    \subitem {step}, \hyperpage{24}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{24}
+    \subitem {get\discretionary {-}{}{}A}, \hyperpage{25}
+    \subitem {get\discretionary {-}{}{}I}, \hyperpage{25}
+    \subitem {get\discretionary {-}{}{}S}, \hyperpage{25}
+    \subitem {getinv\discretionary {-}{}{}M}, \hyperpage{25}
+    \subitem {Matrices}, \hyperpage{25}
+    \subitem {Sp\discretionary {-}{}{}Mat}, \hyperpage{25}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Mesh}, 
+		\hyperpage{25}
+    \subitem {$\sim $\discretionary {-}{}{}Mesh}, \hyperpage{26}
+    \subitem {Aligned\discretionary {-}{}{}Vec\discretionary {-}{}{}E}, 
+		\hyperpage{26}
+    \subitem {Aligned\discretionary {-}{}{}Vec\discretionary {-}{}{}P}, 
+		\hyperpage{26}
+    \subitem {Aligned\discretionary {-}{}{}Vec\discretionary {-}{}{}T}, 
+		\hyperpage{26}
+    \subitem {elements}, \hyperpage{26}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}bed\discretionary {-}{}{}\_\discretionary {-}{}{}map}, 
+		\hyperpage{26}
+    \subitem {Mesh}, \hyperpage{26}
+    \subitem {ne}, \hyperpage{26}
+    \subitem {printall\discretionary {-}{}{}Neigh}, \hyperpage{26}
+    \subitem {size\discretionary {-}{}{}\_\discretionary {-}{}{}type}, 
+		\hyperpage{26}
+    \subitem {stats}, \hyperpage{26}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{27}
+    \subitem {$\sim $\discretionary {-}{}{}My\discretionary {-}{}{}Mat}, 
+		\hyperpage{27}
+    \subitem {My\discretionary {-}{}{}Mat}, \hyperpage{27}
+    \subitem {operator$\ast $}, \hyperpage{27}
+    \subitem {operator+=}, \hyperpage{27}
+    \subitem {operator=}, \hyperpage{27}
+    \subitem {sumtranspose}, \hyperpage{27}
+    \subitem {symmetrize}, \hyperpage{28}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{28}
+    \subitem {$\sim $\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{28}
+    \subitem {My\discretionary {-}{}{}Mat\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{28}
+    \subitem {operator=}, \hyperpage{28}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}
+    \subitem {$\sim $\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{29}
+    \subitem {component}, \hyperpage{29}
+    \subitem {My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{29}
+    \subitem {operator$\ast $}, \hyperpage{29, 30}
+    \subitem {operator+}, \hyperpage{30}
+    \subitem {operator=}, \hyperpage{29}
+    \subitem {symmetrize}, \hyperpage{29}
+    \subitem {vec\discretionary {-}{}{}Mult}, \hyperpage{30}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim$<$ T $>$}, 
+		\hyperpage{29}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}
+    \subitem {$\sim $\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{30}
+    \subitem {component}, \hyperpage{31}
+    \subitem {My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{30}
+    \subitem {nr}, \hyperpage{31}
+    \subitem {operator$\ast $}, \hyperpage{31}
+    \subitem {operator=}, \hyperpage{31}
+    \subitem {vec\discretionary {-}{}{}Mult}, \hyperpage{31}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag$<$ T $>$}, 
+		\hyperpage{30}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Parameters}, 
+		\hyperpage{31}
+    \subitem {$\sim $\discretionary {-}{}{}Parameters}, \hyperpage{31}
+    \subitem {avg\discretionary {-}{}{}\_\discretionary {-}{}{}p}, 
+		\hyperpage{31}
+    \subitem {lambda}, \hyperpage{31}
+    \subitem {mu}, \hyperpage{32}
+    \subitem {Parameters}, \hyperpage{31}
+    \subitem {rho}, \hyperpage{32}
+    \subitem {setp}, \hyperpage{32}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+    \subitem {$\sim $\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Entity}, 
+		\hyperpage{34}
+    \subitem {elem}, \hyperpage{34}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}add}, 
+		\hyperpage{34}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}ie}, 
+		\hyperpage{34}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}nel}, 
+		\hyperpage{34}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}relp}, 
+		\hyperpage{35}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}shape}, 
+		\hyperpage{35}
+    \subitem {point}, \hyperpage{34}
+    \subitem {shape}, \hyperpage{34}
+    \subitem {size}, \hyperpage{34}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Force}, 
+		\hyperpage{35}
+    \subitem {$\sim $\discretionary {-}{}{}Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Force}, 
+		\hyperpage{35}
+    \subitem {eval}, \hyperpage{35}
+    \subitem {Point\discretionary {-}{}{}Wise\discretionary {-}{}{}Force}, 
+		\hyperpage{35}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Receivers}, 
+		\hyperpage{36}
+    \subitem {add}, \hyperpage{36}
+    \subitem {Receivers}, \hyperpage{36}
+    \subitem {write}, \hyperpage{36}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}
+    \subitem {$\sim $\discretionary {-}{}{}Shape\discretionary {-}{}{}Function}, 
+		\hyperpage{37}
+    \subitem {grad}, \hyperpage{37}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}grad}, 
+		\hyperpage{37}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}phi}, 
+		\hyperpage{38}
+    \subitem {phi}, \hyperpage{37}
+    \subitem {Shape\discretionary {-}{}{}Function}, \hyperpage{37}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Shape\discretionary {-}{}{}Function$<$ N $>$}, 
+		\hyperpage{36}
+  \item {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{38}
+    \subitem {$\sim $\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+    \subitem {add\discretionary {-}{}{}\_\discretionary {-}{}{}force}, 
+		\hyperpage{39}
+    \subitem {B}, \hyperpage{40}
+    \subitem {eval\discretionary {-}{}{}\_\discretionary {-}{}{}receivers}, 
+		\hyperpage{39}
+    \subitem {f}, \hyperpage{40}
+    \subitem {first\discretionary {-}{}{}\_\discretionary {-}{}{}step}, 
+		\hyperpage{39}
+    \subitem {fold}, \hyperpage{40}
+    \subitem {foldold}, \hyperpage{40}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}uh}, 
+		\hyperpage{39}
+    \subitem {initial\discretionary {-}{}{}\_\discretionary {-}{}{}v}, 
+		\hyperpage{40}
+    \subitem {is\discretionary {-}{}{}\_\discretionary {-}{}{}running}, 
+		\hyperpage{39}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}completed}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}dt}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}f}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}last\discretionary {-}{}{}\_\discretionary {-}{}{}step}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}mat}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}ne}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}nln}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}penalty}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}recv}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}recv\discretionary {-}{}{}\_\discretionary {-}{}{}written}, 
+		\hyperpage{40}
+    \subitem {M\discretionary {-}{}{}\_\discretionary {-}{}{}tmax}, 
+		\hyperpage{40}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}dt}, 
+		\hyperpage{39}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}initial\discretionary {-}{}{}\_\discretionary {-}{}{}u}, 
+		\hyperpage{39}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}initial\discretionary {-}{}{}\_\discretionary {-}{}{}v}, 
+		\hyperpage{39}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}penalty}, 
+		\hyperpage{39}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}tmax}, 
+		\hyperpage{39}
+    \subitem {step}, \hyperpage{39}
+    \subitem {Time\discretionary {-}{}{}Advance}, \hyperpage{39}
+    \subitem {u}, \hyperpage{39}
+    \subitem {uh}, \hyperpage{40}
+    \subitem {uhold}, \hyperpage{40}
+    \subitem {uholdold}, \hyperpage{40}
+    \subitem {update\discretionary {-}{}{}\_\discretionary {-}{}{}variables}, 
+		\hyperpage{40}
+    \subitem {write\discretionary {-}{}{}\_\discretionary {-}{}{}receivers}, 
+		\hyperpage{40}
+  \item {type}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{61}
+
+  \indexspace
+
+  \item {u}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{39}
+  \item {uh}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {uh\discretionary {-}{}{}\_\discretionary {-}{}{}rec}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output.\discretionary {-}{}{}m}, 
+		\hyperpage{64}
+  \item {uhold}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {uholdold}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+  \item {Unassigned}
+    \subitem {Tspeed}, \hyperpage{10}
+  \item {unassigned\discretionary {-}{}{}Bc}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {unassigned\discretionary {-}{}{}Id}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {unassigned\discretionary {-}{}{}Reg}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Entity}, 
+		\hyperpage{19}
+  \item {update\discretionary {-}{}{}\_\discretionary {-}{}{}variables}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+
+  \indexspace
+
+  \item {Vec}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dunavant}, 
+		\hyperpage{17}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Force}, 
+		\hyperpage{22}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Gauss}, 
+		\hyperpage{23}
+  \item {Vec2}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Dunavant}, 
+		\hyperpage{17}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Gauss}, 
+		\hyperpage{23}
+  \item {vec\discretionary {-}{}{}Mult}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Base\discretionary {-}{}{}Mat}, 
+		\hyperpage{14}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim}, 
+		\hyperpage{30}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}My\discretionary {-}{}{}Mat\discretionary {-}{}{}Multi\discretionary {-}{}{}Dim\discretionary {-}{}{}Block\discretionary {-}{}{}Diag}, 
+		\hyperpage{31}
+  \item {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}
+    \subitem {fclose}, \hyperpage{62}
+    \subitem {fid}, \hyperpage{63}
+    \subitem {fprintf}, \hyperpage{62}
+    \subitem {i}, \hyperpage{63}
+    \subitem {j}, \hyperpage{63}
+    \subitem {length}, \hyperpage{63}
+    \subitem {numtria}, \hyperpage{63}
+    \subitem {tri}, \hyperpage{63}
+    \subitem {x}, \hyperpage{63}
+    \subitem {y}, \hyperpage{63}
+  \item {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output.\discretionary {-}{}{}m}
+    \subitem {fnamein}, \hyperpage{63}
+    \subitem {i}, \hyperpage{63}
+    \subitem {uh\discretionary {-}{}{}\_\discretionary {-}{}{}rec}, 
+		\hyperpage{64}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output}, 
+		\hyperpage{63}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}vector\discretionary {-}{}{}\_\discretionary {-}{}{}out}, 
+		\hyperpage{63}
+  \item {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}vector\discretionary {-}{}{}\_\discretionary {-}{}{}out}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}output.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}vector\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}
+    \subitem {fprintf}, \hyperpage{64}
+    \subitem {function}, \hyperpage{64}
+    \subitem {i}, \hyperpage{64}
+
+  \indexspace
+
+  \item {wedge.\discretionary {-}{}{}cpp}
+    \subitem {main}, \hyperpage{43}
+    \subitem {wedge\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}param}, 
+		\hyperpage{43}
+  \item {wedge\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}param}
+    \subitem {wedge.\discretionary {-}{}{}cpp}, \hyperpage{43}
+  \item {write}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Receivers}, 
+		\hyperpage{36}
+  \item {write\discretionary {-}{}{}\_\discretionary {-}{}{}receivers}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Time\discretionary {-}{}{}Advance}, 
+		\hyperpage{40}
+
+  \indexspace
+
+  \item {x}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+  \item {xlabel}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot.\discretionary {-}{}{}m}, 
+		\hyperpage{59}
+    \subitem {load\discretionary {-}{}{}\_\discretionary {-}{}{}and\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}\_\discretionary {-}{}{}lamb.\discretionary {-}{}{}m}, 
+		\hyperpage{60}
+
+  \indexspace
+
+  \item {y}
+    \subitem {Tspeed\discretionary {-}{}{}::\discretionary {-}{}{}Geo\discretionary {-}{}{}::\discretionary {-}{}{}Point}, 
+		\hyperpage{33}
+    \subitem {vtk\discretionary {-}{}{}\_\discretionary {-}{}{}mesh\discretionary {-}{}{}\_\discretionary {-}{}{}out.\discretionary {-}{}{}m}, 
+		\hyperpage{63}
+
+\end{theindex}

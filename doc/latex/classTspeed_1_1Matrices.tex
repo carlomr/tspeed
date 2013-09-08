@@ -1,0 +1,92 @@
+\hypertarget{classTspeed_1_1Matrices}{\section{Tspeed\-:\-:Matrices Class Reference}
+\label{classTspeed_1_1Matrices}\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}}
+}
+
+
+{\ttfamily \#include $<$Time\-Advance.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\-::\-Sparse\-Matrix\\*
+$<$ double $>$ \hyperlink{classTspeed_1_1Matrices_aec4249f1ac32c3249adae9c91bac1cbf}{Sp\-Mat}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int N, typename Q , typename S $>$ }\\\hyperlink{classTspeed_1_1Matrices_ad4b46e2f7a2056a6c5f3a803157236bc}{Matrices} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$, \hyperlink{classTspeed_1_1Parameters}{Parameters} const \&)
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$\\*
+ const \& \hyperlink{classTspeed_1_1Matrices_a4ee3310af2c6fa476099673ebf61c242}{get\-A} ()
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \& \hyperlink{classTspeed_1_1Matrices_a95dfd802f178cf5dc51967ad70cf36cd}{get\-S} ()
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \& \hyperlink{classTspeed_1_1Matrices_a78c435049af0aa48eacd9a9dc99627fa}{get\-I} ()
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag}\\*
+$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \& \hyperlink{classTspeed_1_1Matrices_a5358482d27d03d838c597ec2eb79a71c}{getinv\-M} ()
+\item 
+{\footnotesize template$<$int N, typename Q , typename T $>$ }\\\hyperlink{classTspeed_1_1Matrices_a1893bd97b0320d078e6cd1e97e3cbd5a}{Matrices} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, T $>$ Xh, \hyperlink{classTspeed_1_1Parameters}{Parameters} const \&P)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classTspeed_1_1Matrices_aec4249f1ac32c3249adae9c91bac1cbf}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!Sp\-Mat@{Sp\-Mat}}
+\index{Sp\-Mat@{Sp\-Mat}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
+\subsubsection[{Sp\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}typedef Eigen\-::\-Sparse\-Matrix$<$double$>$ {\bf Tspeed\-::\-Matrices\-::\-Sp\-Mat}}}\label{classTspeed_1_1Matrices_aec4249f1ac32c3249adae9c91bac1cbf}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTspeed_1_1Matrices_ad4b46e2f7a2056a6c5f3a803157236bc}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!Matrices@{Matrices}}
+\index{Matrices@{Matrices}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
+\subsubsection[{Matrices}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ Tspeed\-::\-Matrices\-::\-Matrices (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$}]{, }
+\item[{{\bf Parameters} const \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classTspeed_1_1Matrices_ad4b46e2f7a2056a6c5f3a803157236bc}
+\hypertarget{classTspeed_1_1Matrices_a1893bd97b0320d078e6cd1e97e3cbd5a}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!Matrices@{Matrices}}
+\index{Matrices@{Matrices}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
+\subsubsection[{Matrices}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename T $>$ Tspeed\-::\-Matrices\-::\-Matrices (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-E\-Space\-\_\-ptr}$<$ N, Q, T $>$}]{Xh, }
+\item[{{\bf Parameters} const \&}]{P}
+\end{DoxyParamCaption}
+)}}\label{classTspeed_1_1Matrices_a1893bd97b0320d078e6cd1e97e3cbd5a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTspeed_1_1Matrices_a4ee3310af2c6fa476099673ebf61c242}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!get\-A@{get\-A}}
+\index{get\-A@{get\-A}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
+\subsubsection[{get\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat\-Multi\-Dim}$<${\bf My\-Mat\-Block\-Diag}$>$ const\& Tspeed\-::\-Matrices\-::get\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Matrices_a4ee3310af2c6fa476099673ebf61c242}
+\hypertarget{classTspeed_1_1Matrices_a78c435049af0aa48eacd9a9dc99627fa}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!get\-I@{get\-I}}
+\index{get\-I@{get\-I}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
+\subsubsection[{get\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat\-Multi\-Dim}$<${\bf My\-Mat}$>$ const\& Tspeed\-::\-Matrices\-::get\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Matrices_a78c435049af0aa48eacd9a9dc99627fa}
+\hypertarget{classTspeed_1_1Matrices_a5358482d27d03d838c597ec2eb79a71c}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!getinv\-M@{getinv\-M}}
+\index{getinv\-M@{getinv\-M}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
+\subsubsection[{getinv\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat\-Multi\-Dim\-Block\-Diag}$<${\bf My\-Mat\-Block\-Diag}$>$ const\& Tspeed\-::\-Matrices\-::getinv\-M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Matrices_a5358482d27d03d838c597ec2eb79a71c}
+\hypertarget{classTspeed_1_1Matrices_a95dfd802f178cf5dc51967ad70cf36cd}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!get\-S@{get\-S}}
+\index{get\-S@{get\-S}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
+\subsubsection[{get\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat\-Multi\-Dim}$<${\bf My\-Mat}$>$ const\& Tspeed\-::\-Matrices\-::get\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Matrices_a95dfd802f178cf5dc51967ad70cf36cd}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+lib/include/\hyperlink{TimeAdvance_8hpp}{Time\-Advance.\-hpp}\item 
+lib/include/\hyperlink{Matrices__imp_8hpp}{Matrices\-\_\-imp.\-hpp}\end{DoxyCompactItemize}

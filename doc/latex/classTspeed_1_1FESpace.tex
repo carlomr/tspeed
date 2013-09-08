@@ -1,0 +1,176 @@
+\hypertarget{classTspeed_1_1FESpace}{\section{Tspeed\-:\-:F\-E\-Space$<$ N, Q, S $>$ Class Template Reference}
+\label{classTspeed_1_1FESpace}\index{Tspeed\-::\-F\-E\-Space$<$ N, Q, S $>$@{Tspeed\-::\-F\-E\-Space$<$ N, Q, S $>$}}
+}
+
+
+{\ttfamily \#include $<$F\-E\-Space.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTspeed_1_1FESpace_acbee47bc3d3a47b49bb01a7dc87f205c}{F\-E\-Space} (\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr})
+\item 
+virtual \hyperlink{classTspeed_1_1FESpace_ae1f9e4f07e24640e68a138c1d11ad900}{$\sim$\-F\-E\-Space} ()
+\item 
+\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr} \hyperlink{classTspeed_1_1FESpace_a52581134e398195d098ad4f1985a4cbb}{mesh} () const 
+\item 
+Q const \& \hyperlink{classTspeed_1_1FESpace_a118bd2d5becbd61c593efa546a525992}{quad} () const 
+\item 
+\hyperlink{classTspeed_1_1ShapeFunction}{Shape\-Function}$<$ N $>$ const \& \hyperlink{classTspeed_1_1FESpace_ac9829cde89c0e1a5252925c1e9322d47}{shape} () const 
+\item 
+unsigned int \hyperlink{classTspeed_1_1FESpace_ae32c88a6615cefdf1273e2525a62fcfe}{nln} () const 
+\item 
+unsigned int \hyperlink{classTspeed_1_1FESpace_a3e6a6031a7b2033f90ce1d0f3b6a378d}{ne} () const 
+\item 
+Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1FESpace_a5b658aa075508f9ead3b4cac4743bfac}{grad} (unsigned int k, unsigned int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
+\item 
+Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1FESpace_afee2268392456e7b872a8c3d77f732c7}{b\-\_\-edge} (unsigned int k, unsigned int iedg) const 
+\item 
+Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1FESpace_aee7e220399d909994b7b91f4fa82f1ca}{g\-\_\-edge} (unsigned int k, unsigned int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}, unsigned short int edg) const 
+\item 
+Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1FESpace_aafec3cff8a08e4bdc84959a7e71dbb0c}{inverse\-\_\-transform} (\hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ const \&) const 
+\item 
+double \hyperlink{classTspeed_1_1FESpace_a3116d3c8e006c2449a957a4184b3511d}{L2error} (\hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ const \&, Eigen\-::\-Vector\-Xd const \&) const 
+\item 
+Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1FESpace_a0336e65ff3cbd3e2ffa948750e3ce805}{loc\-\_\-rhs} (\hyperlink{classTspeed_1_1Geo_1_1Triangle}{Geo\-::\-Triangle} const \&ie, \hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ const \&fun) const 
+\item 
+void \hyperlink{classTspeed_1_1FESpace_ad92a40f39edfb095b42bc6389b11d78f}{points\-\_\-out} (std\-::string const \&fname) const 
+\item 
+void \hyperlink{classTspeed_1_1FESpace_a72a024911d1a650c078e0bfc66ccc837}{field\-\_\-out} (std\-::string const \&fname, Eigen\-::\-Vector\-Xd const \&uh, unsigned int step) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTspeed_1_1FESpace_ac3dd8d1e0ee8533ee01b69775e40f76a}{E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTspeed_1_1FESpace_acbee47bc3d3a47b49bb01a7dc87f205c}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!F\-E\-Space@{F\-E\-Space}}
+\index{F\-E\-Space@{F\-E\-Space}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{F\-E\-Space}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::{\bf F\-E\-Space} (
+\begin{DoxyParamCaption}
+\item[{{\bf Mesh\-\_\-ptr}}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classTspeed_1_1FESpace_acbee47bc3d3a47b49bb01a7dc87f205c}
+\hypertarget{classTspeed_1_1FESpace_ae1f9e4f07e24640e68a138c1d11ad900}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!$\sim$\-F\-E\-Space@{$\sim$\-F\-E\-Space}}
+\index{$\sim$\-F\-E\-Space@{$\sim$\-F\-E\-Space}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{$\sim$\-F\-E\-Space}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ virtual {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::$\sim${\bf F\-E\-Space} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classTspeed_1_1FESpace_ae1f9e4f07e24640e68a138c1d11ad900}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTspeed_1_1FESpace_afee2268392456e7b872a8c3d77f732c7}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!b\-\_\-edge@{b\-\_\-edge}}
+\index{b\-\_\-edge@{b\-\_\-edge}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{b\-\_\-edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ Eigen\-::\-Vector\-Xd {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::b\-\_\-edge (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k, }
+\item[{unsigned int}]{iedg}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_afee2268392456e7b872a8c3d77f732c7}
+\hypertarget{classTspeed_1_1FESpace_a72a024911d1a650c078e0bfc66ccc837}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!field\-\_\-out@{field\-\_\-out}}
+\index{field\-\_\-out@{field\-\_\-out}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{field\-\_\-out}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ void {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::field\-\_\-out (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{fname, }
+\item[{Eigen\-::\-Vector\-Xd const \&}]{uh, }
+\item[{unsigned int}]{step}
+\end{DoxyParamCaption}
+) const}}\label{classTspeed_1_1FESpace_a72a024911d1a650c078e0bfc66ccc837}
+\hypertarget{classTspeed_1_1FESpace_aee7e220399d909994b7b91f4fa82f1ca}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!g\-\_\-edge@{g\-\_\-edge}}
+\index{g\-\_\-edge@{g\-\_\-edge}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{g\-\_\-edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ Eigen\-::\-Vector2d {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::g\-\_\-edge (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k, }
+\item[{unsigned int}]{i, }
+\item[{unsigned short int}]{edg}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_aee7e220399d909994b7b91f4fa82f1ca}
+\hypertarget{classTspeed_1_1FESpace_a5b658aa075508f9ead3b4cac4743bfac}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!grad@{grad}}
+\index{grad@{grad}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{grad}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ Eigen\-::\-Vector2d {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::grad (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k, }
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_a5b658aa075508f9ead3b4cac4743bfac}
+\hypertarget{classTspeed_1_1FESpace_aafec3cff8a08e4bdc84959a7e71dbb0c}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!inverse\-\_\-transform@{inverse\-\_\-transform}}
+\index{inverse\-\_\-transform@{inverse\-\_\-transform}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{inverse\-\_\-transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ Eigen\-::\-Vector\-Xd {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::inverse\-\_\-transform (
+\begin{DoxyParamCaption}
+\item[{{\bf std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ const \&}]{fun}
+\end{DoxyParamCaption}
+) const}}\label{classTspeed_1_1FESpace_aafec3cff8a08e4bdc84959a7e71dbb0c}
+\hypertarget{classTspeed_1_1FESpace_a3116d3c8e006c2449a957a4184b3511d}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!L2error@{L2error}}
+\index{L2error@{L2error}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{L2error}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ double {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::L2error (
+\begin{DoxyParamCaption}
+\item[{{\bf std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ const \&}]{uex, }
+\item[{Eigen\-::\-Vector\-Xd const \&}]{uh}
+\end{DoxyParamCaption}
+) const}}\label{classTspeed_1_1FESpace_a3116d3c8e006c2449a957a4184b3511d}
+\hypertarget{classTspeed_1_1FESpace_a0336e65ff3cbd3e2ffa948750e3ce805}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!loc\-\_\-rhs@{loc\-\_\-rhs}}
+\index{loc\-\_\-rhs@{loc\-\_\-rhs}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{loc\-\_\-rhs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ Eigen\-::\-Vector\-Xd {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::loc\-\_\-rhs (
+\begin{DoxyParamCaption}
+\item[{{\bf Geo\-::\-Triangle} const \&}]{ie, }
+\item[{{\bf std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ const \&}]{fun}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_a0336e65ff3cbd3e2ffa948750e3ce805}
+\hypertarget{classTspeed_1_1FESpace_a52581134e398195d098ad4f1985a4cbb}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!mesh@{mesh}}
+\index{mesh@{mesh}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{mesh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ {\bf Mesh\-\_\-ptr} {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::mesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_a52581134e398195d098ad4f1985a4cbb}
+\hypertarget{classTspeed_1_1FESpace_a3e6a6031a7b2033f90ce1d0f3b6a378d}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!ne@{ne}}
+\index{ne@{ne}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{ne}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ unsigned int {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::ne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_a3e6a6031a7b2033f90ce1d0f3b6a378d}
+\hypertarget{classTspeed_1_1FESpace_ae32c88a6615cefdf1273e2525a62fcfe}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!nln@{nln}}
+\index{nln@{nln}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{nln}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ unsigned int {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::nln (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_ae32c88a6615cefdf1273e2525a62fcfe}
+\hypertarget{classTspeed_1_1FESpace_ad92a40f39edfb095b42bc6389b11d78f}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!points\-\_\-out@{points\-\_\-out}}
+\index{points\-\_\-out@{points\-\_\-out}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{points\-\_\-out}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ void {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::points\-\_\-out (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{fname}
+\end{DoxyParamCaption}
+) const}}\label{classTspeed_1_1FESpace_ad92a40f39edfb095b42bc6389b11d78f}
+\hypertarget{classTspeed_1_1FESpace_a118bd2d5becbd61c593efa546a525992}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!quad@{quad}}
+\index{quad@{quad}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{quad}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ Q const\& {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::quad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_a118bd2d5becbd61c593efa546a525992}
+\hypertarget{classTspeed_1_1FESpace_ac9829cde89c0e1a5252925c1e9322d47}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!shape@{shape}}
+\index{shape@{shape}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{shape}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ {\bf Shape\-Function}$<$N$>$ const\& {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1FESpace_ac9829cde89c0e1a5252925c1e9322d47}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classTspeed_1_1FESpace_ac3dd8d1e0ee8533ee01b69775e40f76a}{\index{Tspeed\-::\-F\-E\-Space@{Tspeed\-::\-F\-E\-Space}!E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W@{E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W}}
+\index{E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W@{E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W}!Tspeed::FESpace@{Tspeed\-::\-F\-E\-Space}}
+\subsubsection[{E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ {\bf Tspeed\-::\-F\-E\-Space}$<$ N, Q, S $>$\-::E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W}}\label{classTspeed_1_1FESpace_ac3dd8d1e0ee8533ee01b69775e40f76a}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+lib/include/\hyperlink{FESpace_8hpp}{F\-E\-Space.\-hpp}\item 
+lib/include/\hyperlink{FESpace__imp_8hpp}{F\-E\-Space\-\_\-imp.\-hpp}\end{DoxyCompactItemize}

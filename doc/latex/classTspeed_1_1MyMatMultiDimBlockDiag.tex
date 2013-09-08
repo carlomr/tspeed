@@ -1,0 +1,129 @@
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag}{\section{Tspeed\-:\-:My\-Mat\-Multi\-Dim\-Block\-Diag$<$ T $>$ Class Template Reference}
+\label{classTspeed_1_1MyMatMultiDimBlockDiag}\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag$<$ T $>$@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$My\-Mat.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_afab5a0f9292e20682a092df2e23e4085}{My\-Mat\-Multi\-Dim\-Block\-Diag} ()=default
+\item 
+virtual \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a3571b43f213adf9d0a267cb0f51ffa17}{$\sim$\-My\-Mat\-Multi\-Dim\-Block\-Diag} ()=default
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_aced3b96e49bd12dfeb95f763fbd0757f}{My\-Mat\-Multi\-Dim\-Block\-Diag} (\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr}, unsigned int nln)
+\item 
+T \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_aa430ef9d18b0a68c4bff63047daf0be9}{component} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i})
+\item 
+T const \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a5f813a4f7c0a080cb5e1808941ef7348}{component} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
+\item 
+void \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a4d495f30e8088fd75502fa035e719c14}{vec\-Mult} (Eigen\-::\-Vector\-Xd const \&, Eigen\-::\-Vector\-Xd \&) const 
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a64aee8deb9a8477c247778c033dd54c0}{My\-Mat\-Multi\-Dim\-Block\-Diag} (\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} \&\&)=default
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a2cecd6795a391ecbf1853f8af8926277}{operator=} (\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} \&\&)=default
+\item 
+unsigned int \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a5016da7b2a0ff6099353ddd91f960dd7}{nr} () const 
+\item 
+Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b76e7da9686a74bed5d0f059c7}{operator$\ast$} (Eigen\-::\-Vector\-Xd const \&v) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} const \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a2be04a4f228649a2efc0af5ac011852e}{operator$\ast$} (double const \&\hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x}, \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} const \&A)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_afab5a0f9292e20682a092df2e23e4085}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!My\-Mat\-Multi\-Dim\-Block\-Diag@{My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\index{My\-Mat\-Multi\-Dim\-Block\-Diag@{My\-Mat\-Multi\-Dim\-Block\-Diag}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{My\-Mat\-Multi\-Dim\-Block\-Diag}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::{\bf My\-Mat\-Multi\-Dim\-Block\-Diag} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_afab5a0f9292e20682a092df2e23e4085}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a3571b43f213adf9d0a267cb0f51ffa17}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!$\sim$\-My\-Mat\-Multi\-Dim\-Block\-Diag@{$\sim$\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\index{$\sim$\-My\-Mat\-Multi\-Dim\-Block\-Diag@{$\sim$\-My\-Mat\-Multi\-Dim\-Block\-Diag}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{$\sim$\-My\-Mat\-Multi\-Dim\-Block\-Diag}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::$\sim${\bf My\-Mat\-Multi\-Dim\-Block\-Diag} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a3571b43f213adf9d0a267cb0f51ffa17}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_aced3b96e49bd12dfeb95f763fbd0757f}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!My\-Mat\-Multi\-Dim\-Block\-Diag@{My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\index{My\-Mat\-Multi\-Dim\-Block\-Diag@{My\-Mat\-Multi\-Dim\-Block\-Diag}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{My\-Mat\-Multi\-Dim\-Block\-Diag}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::{\bf My\-Mat\-Multi\-Dim\-Block\-Diag} (
+\begin{DoxyParamCaption}
+\item[{{\bf Mesh\-\_\-ptr}}]{m, }
+\item[{unsigned int}]{nln}
+\end{DoxyParamCaption}
+)}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_aced3b96e49bd12dfeb95f763fbd0757f}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a64aee8deb9a8477c247778c033dd54c0}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!My\-Mat\-Multi\-Dim\-Block\-Diag@{My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\index{My\-Mat\-Multi\-Dim\-Block\-Diag@{My\-Mat\-Multi\-Dim\-Block\-Diag}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{My\-Mat\-Multi\-Dim\-Block\-Diag}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::{\bf My\-Mat\-Multi\-Dim\-Block\-Diag} (
+\begin{DoxyParamCaption}
+\item[{{\bf My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$ \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a64aee8deb9a8477c247778c033dd54c0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_aa430ef9d18b0a68c4bff63047daf0be9}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!component@{component}}
+\index{component@{component}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{component}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T\& {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::component (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_aa430ef9d18b0a68c4bff63047daf0be9}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a5f813a4f7c0a080cb5e1808941ef7348}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!component@{component}}
+\index{component@{component}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{component}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T const\& {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::component (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a5f813a4f7c0a080cb5e1808941ef7348}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a5016da7b2a0ff6099353ddd91f960dd7}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!nr@{nr}}
+\index{nr@{nr}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{nr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ unsigned int {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::nr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a5016da7b2a0ff6099353ddd91f960dd7}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b76e7da9686a74bed5d0f059c7}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Eigen\-::\-Vector\-Xd {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{Eigen\-::\-Vector\-Xd const \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b76e7da9686a74bed5d0f059c7}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a2cecd6795a391ecbf1853f8af8926277}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!operator=@{operator=}}
+\index{operator=@{operator=}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf My\-Mat\-Multi\-Dim\-Block\-Diag}\& {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$ \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a2cecd6795a391ecbf1853f8af8926277}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a4d495f30e8088fd75502fa035e719c14}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!vec\-Mult@{vec\-Mult}}
+\index{vec\-Mult@{vec\-Mult}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{vec\-Mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::vec\-Mult (
+\begin{DoxyParamCaption}
+\item[{Eigen\-::\-Vector\-Xd const \&}]{x, }
+\item[{Eigen\-::\-Vector\-Xd \&}]{out}
+\end{DoxyParamCaption}
+) const}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a4d495f30e8088fd75502fa035e719c14}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a2be04a4f228649a2efc0af5ac011852e}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf My\-Mat\-Multi\-Dim\-Block\-Diag} const\& operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double const \&}]{x, }
+\item[{{\bf My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$ const \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a2be04a4f228649a2efc0af5ac011852e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+lib/include/\hyperlink{MyMat_8hpp}{My\-Mat.\-hpp}\end{DoxyCompactItemize}

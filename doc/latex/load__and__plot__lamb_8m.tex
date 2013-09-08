@@ -1,0 +1,191 @@
+\hypertarget{load__and__plot__lamb_8m}{\section{M\-A\-T\-L\-A\-B\-\_\-files/load\-\_\-and\-\_\-plot\-\_\-lamb.m File Reference}
+\label{load__and__plot__lamb_8m}\index{M\-A\-T\-L\-A\-B\-\_\-files/load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{M\-A\-T\-L\-A\-B\-\_\-files/load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a} (1\-:start-\/1,\-:)
+\item 
+\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b} (1\-:start-\/1,\-:)
+\item 
+\hyperlink{plot__seismogram_8m_a391e34f2de441d79152a7b3d6e4c9c86}{figure} \hyperlink{load__and__plot__lamb_8m_a764d72e595f74c412b0abed2ec6844d8}{plot} (linspace(0, 1, \hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length}(\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}(1\-:end, 1))), \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}(1\-:end, 1),'k-\/-\/')
+\item 
+\hyperlink{load__and__plot__lamb_8m_a8b454c6317cbaf1c63bc34f986e91aee}{plot} (linspace(0, 1, \hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length}(\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b}(1\-:end, 1))), \hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b}(1\-:end, 1),'r-\/')
+\item 
+\hyperlink{load__and__plot__lamb_8m_a4b44dc4df55baa409bb8ccdd88aa5235}{set} (gca, 'Ytick',\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{load__and__plot__lamb_8m_a943bb93e971d94efb4439b0d7e3145f6}{title} ('u\-\_\-x')
+\item 
+\hyperlink{load__and__plot__lamb_8m_a2d37e45bd769edf17addb9ae0baefbf9}{legend} ('r\-\_\-1','r\-\_\-2', 'location', 'best') \hyperlink{plot__seismogram_8m_ad6bb1145205a1175852712ec83017595}{set}(findall(gcf
+\item 
+\hyperlink{load__and__plot__lamb_8m_abd9539e6b7b054774c696801a7aa779f}{set} (gca, 'fontsize', 14)\%\hyperlink{load__and__plot__lamb_8m_a2d37e45bd769edf17addb9ae0baefbf9}{legend} boxoff \hyperlink{plot__seismogram_8m_a391e34f2de441d79152a7b3d6e4c9c86}{figure} hold \hyperlink{plot__seismogram_8m_a58ab1fd68e97078232808206b850161b}{on}
+\item 
+\hyperlink{load__and__plot__lamb_8m_a3e6a119ac3d39ff61c821ecc3b9c65b8}{plot} (linspace(0, 1, \hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length}(\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}(1\-:end, 1))), \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}(1\-:end, 2),'k-\/-\/')
+\item 
+\hyperlink{load__and__plot__lamb_8m_ae3138c7f785d541274271a0379ed381e}{plot} (linspace(0, 1, \hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length}(\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b}(1\-:end, 1))), \hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b}(1\-:end, 2),'r')
+\item 
+\hyperlink{load__and__plot__lamb_8m_a3caf1339eaf624d66371350022c1b804}{xlabel} ('\hyperlink{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}{t}')
+\item 
+\hyperlink{load__and__plot__lamb_8m_aac61e03872b4f67a9780aac4b265457e}{title} ('u\-\_\-y')
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{load__and__plot__lamb_8m_a7b5e596df91eadea6c537c0825e894a7}{function} \mbox{[}\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, \hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b}\mbox{]}
+\item 
+end for \hyperlink{load__and__plot__lamb_8m_a81b94ba50b782836960e54bcfa99fc88}{i}
+\item 
+\hyperlink{load__and__plot__lamb_8m_a4124bc0a9335c27f086f24ba207a4912}{a} \{\hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}\}=load(fname0)
+\item 
+\hyperlink{load__and__plot__lamb_8m_a21ad0bd836b90d08f4cf640b4c298e7c}{b} =load(fname1)
+\item 
+hold \hyperlink{load__and__plot__lamb_8m_a58ab1fd68e97078232808206b850161b}{on}
+\item 
+\hyperlink{load__and__plot__lamb_8m_a7aead736a07eaf25623ad7bfa1f0ee2d}{type}
+\item 
+\hyperlink{load__and__plot__lamb_8m_af575f17e6be3f269b86b041a60560dbf}{text}
+\item 
+\hyperlink{load__and__plot__lamb_8m_a68eb0df9d5fd433bb6fe691f00a0878f}{font\-Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!a@{a}}
+\index{a@{a}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}a (
+\begin{DoxyParamCaption}
+\item[{1\-:start-\/}]{1, }
+\item[{\-:}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}
+\hypertarget{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!b@{b}}
+\index{b@{b}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}b (
+\begin{DoxyParamCaption}
+\item[{1\-:start-\/}]{1, }
+\item[{\-:}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}
+\hypertarget{load__and__plot__lamb_8m_a2d37e45bd769edf17addb9ae0baefbf9}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!legend@{legend}}
+\index{legend@{legend}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{legend}]{\setlength{\rightskip}{0pt plus 5cm}legend (
+\begin{DoxyParamCaption}
+\item[{'r\-\_\-1'}]{, }
+\item[{'r\-\_\-2'}]{, }
+\item[{'location'}]{, }
+\item[{'best'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_a2d37e45bd769edf17addb9ae0baefbf9}
+\hypertarget{load__and__plot__lamb_8m_a764d72e595f74c412b0abed2ec6844d8}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!plot@{plot}}
+\index{plot@{plot}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf figure} plot (
+\begin{DoxyParamCaption}
+\item[{linspace(0, 1, {\bf length}({\bf a}(1\-:end, 1)))}]{, }
+\item[{{\bf a}(1\-:end, 1)}]{, }
+\item[{'k-\/-\/'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_a764d72e595f74c412b0abed2ec6844d8}
+\hypertarget{load__and__plot__lamb_8m_a8b454c6317cbaf1c63bc34f986e91aee}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!plot@{plot}}
+\index{plot@{plot}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}plot (
+\begin{DoxyParamCaption}
+\item[{linspace(0, 1, {\bf length}({\bf b}(1\-:end, 1)))}]{, }
+\item[{{\bf b}(1\-:end, 1)}]{, }
+\item[{'r-\/'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_a8b454c6317cbaf1c63bc34f986e91aee}
+\hypertarget{load__and__plot__lamb_8m_a3e6a119ac3d39ff61c821ecc3b9c65b8}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!plot@{plot}}
+\index{plot@{plot}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}plot (
+\begin{DoxyParamCaption}
+\item[{linspace(0, 1, {\bf length}({\bf a}(1\-:end, 1)))}]{, }
+\item[{{\bf a}(1\-:end, 2)}]{, }
+\item[{'k-\/-\/'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_a3e6a119ac3d39ff61c821ecc3b9c65b8}
+\hypertarget{load__and__plot__lamb_8m_ae3138c7f785d541274271a0379ed381e}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!plot@{plot}}
+\index{plot@{plot}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}plot (
+\begin{DoxyParamCaption}
+\item[{linspace(0, 1, {\bf length}({\bf b}(1\-:end, 1)))}]{, }
+\item[{{\bf b}(1\-:end, 2)}]{, }
+\item[{'r'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_ae3138c7f785d541274271a0379ed381e}
+\hypertarget{load__and__plot__lamb_8m_a4b44dc4df55baa409bb8ccdd88aa5235}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!set@{set}}
+\index{set@{set}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}set (
+\begin{DoxyParamCaption}
+\item[{gca}]{, }
+\item[{'Ytick'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_a4b44dc4df55baa409bb8ccdd88aa5235}
+\hypertarget{load__and__plot__lamb_8m_abd9539e6b7b054774c696801a7aa779f}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!set@{set}}
+\index{set@{set}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}set (
+\begin{DoxyParamCaption}
+\item[{gca}]{, }
+\item[{'fontsize'}]{, }
+\item[{14}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_abd9539e6b7b054774c696801a7aa779f}
+\hypertarget{load__and__plot__lamb_8m_a943bb93e971d94efb4439b0d7e3145f6}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!title@{title}}
+\index{title@{title}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}title (
+\begin{DoxyParamCaption}
+\item[{'u\-\_\-x'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_a943bb93e971d94efb4439b0d7e3145f6}
+\hypertarget{load__and__plot__lamb_8m_aac61e03872b4f67a9780aac4b265457e}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!title@{title}}
+\index{title@{title}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}title (
+\begin{DoxyParamCaption}
+\item[{'u\-\_\-y'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_aac61e03872b4f67a9780aac4b265457e}
+\hypertarget{load__and__plot__lamb_8m_a3caf1339eaf624d66371350022c1b804}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!xlabel@{xlabel}}
+\index{xlabel@{xlabel}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{xlabel}]{\setlength{\rightskip}{0pt plus 5cm}xlabel (
+\begin{DoxyParamCaption}
+\item[{'{\bf t}'}]{}
+\end{DoxyParamCaption}
+)}}\label{load__and__plot__lamb_8m_a3caf1339eaf624d66371350022c1b804}
+
+
+\subsection{Variable Documentation}
+\hypertarget{load__and__plot__lamb_8m_a4124bc0a9335c27f086f24ba207a4912}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!a@{a}}
+\index{a@{a}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}a \{{\bf i}\}=load(fname0)}}\label{load__and__plot__lamb_8m_a4124bc0a9335c27f086f24ba207a4912}
+\hypertarget{load__and__plot__lamb_8m_a21ad0bd836b90d08f4cf640b4c298e7c}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!b@{b}}
+\index{b@{b}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}b =load(fname1)}}\label{load__and__plot__lamb_8m_a21ad0bd836b90d08f4cf640b4c298e7c}
+\hypertarget{load__and__plot__lamb_8m_a68eb0df9d5fd433bb6fe691f00a0878f}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!font\-Size@{font\-Size}}
+\index{font\-Size@{font\-Size}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{font\-Size}]{\setlength{\rightskip}{0pt plus 5cm}font\-Size}}\label{load__and__plot__lamb_8m_a68eb0df9d5fd433bb6fe691f00a0878f}
+\hypertarget{load__and__plot__lamb_8m_a7b5e596df91eadea6c537c0825e894a7}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!function@{function}}
+\index{function@{function}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}function\mbox{[}{\bf a}, {\bf b}\mbox{]}}}\label{load__and__plot__lamb_8m_a7b5e596df91eadea6c537c0825e894a7}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \hyperlink{load__and__plot_8m_a0da01584c17209006a1de9e38b17b021}{load\_and\_plot}(fname,numrecvs, start)
+
+if nargin==1
+    start = 0
+\end{DoxyCode}
+\hypertarget{load__and__plot__lamb_8m_a81b94ba50b782836960e54bcfa99fc88}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!i@{i}}
+\index{i@{i}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}end for i}}\label{load__and__plot__lamb_8m_a81b94ba50b782836960e54bcfa99fc88}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=1:numrecvs
+    fname = sprintf(\textcolor{stringliteral}{'%s\_rcv\_%i.out'},fname, \hyperlink{load__and__plot_8m_a3359ed5f123e10953f77a90207beaa1b}{i}-1)
+\end{DoxyCode}
+\hypertarget{load__and__plot__lamb_8m_a58ab1fd68e97078232808206b850161b}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!on@{on}}
+\index{on@{on}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{on}]{\setlength{\rightskip}{0pt plus 5cm}hold on}}\label{load__and__plot__lamb_8m_a58ab1fd68e97078232808206b850161b}
+\hypertarget{load__and__plot__lamb_8m_af575f17e6be3f269b86b041a60560dbf}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!text@{text}}
+\index{text@{text}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{text}]{\setlength{\rightskip}{0pt plus 5cm}text}}\label{load__and__plot__lamb_8m_af575f17e6be3f269b86b041a60560dbf}
+\hypertarget{load__and__plot__lamb_8m_a7aead736a07eaf25623ad7bfa1f0ee2d}{\index{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}!type@{type}}
+\index{type@{type}!load_and_plot_lamb.m@{load\-\_\-and\-\_\-plot\-\_\-lamb.\-m}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}type}}\label{load__and__plot__lamb_8m_a7aead736a07eaf25623ad7bfa1f0ee2d}

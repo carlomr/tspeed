@@ -1,0 +1,185 @@
+\hypertarget{vtk__mesh__out_8m}{\section{M\-A\-T\-L\-A\-B\-\_\-files/vtk\-\_\-mesh\-\_\-out.m File Reference}
+\label{vtk__mesh__out_8m}\index{M\-A\-T\-L\-A\-B\-\_\-files/vtk\-\_\-mesh\-\_\-out.\-m@{M\-A\-T\-L\-A\-B\-\_\-files/vtk\-\_\-mesh\-\_\-out.\-m}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vtk__mesh__out_8m_a5868ae7b69a01c8a351428aaecb26bf7}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid}, '\#vtk Data\-File Version 2.\-0\textbackslash{}n')
+\item 
+\hyperlink{vtk__mesh__out_8m_a1f461e61e715996104565d639637891c}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid}, 'Comment\textbackslash{}n')
+\item 
+\hyperlink{vtk__mesh__out_8m_a3719352709e4b412c1acb9caa515d635}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid}, 'A\-S\-C\-I\-I\textbackslash{}n')
+\item 
+\hyperlink{vtk__mesh__out_8m_aa8274cf2c2e928aaa588dfab2a8978c1}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid}, 'D\-A\-T\-A\-S\-E\-T U\-N\-S\-T\-R\-U\-C\-T\-U\-R\-E\-D\-\_\-\-G\-R\-I\-D\textbackslash{}n')
+\item 
+\hyperlink{vtk__mesh__out_8m_ab1513dfa37d68a2623bbe93e1375bdc6}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid},'P\-O\-I\-N\-T\-S\%\hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i} float\textbackslash{}n', \hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length}(\hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x}))
+\item 
+\hyperlink{vtk__mesh__out_8m_aa1c4d297f50413a7eeab9814ba209365}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid},'C\-E\-L\-L\-S\%\hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}\%i\textbackslash{}n', \hyperlink{vtk__mesh__out_8m_a39b36061e345435bcf3fd8ecb839ae40}{numtria}, 4 $\ast$\hyperlink{vtk__mesh__out_8m_a39b36061e345435bcf3fd8ecb839ae40}{numtria})
+\item 
+end \hyperlink{vtk__mesh__out_8m_ac197c69f0ee549ea559e6f63366da4ce}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid},'C\-E\-L\-L\-\_\-\-T\-Y\-P\-E\-S\%i\textbackslash{}n', \hyperlink{vtk__mesh__out_8m_a39b36061e345435bcf3fd8ecb839ae40}{numtria})
+\item 
+end \hyperlink{vtk__mesh__out_8m_af4ecee4d4ea2c73d570f0bb8f7eecdb1}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid},'C\-E\-L\-L\-\_\-\-D\-A\-T\-A\%i\textbackslash{}n', \hyperlink{vtk__mesh__out_8m_a39b36061e345435bcf3fd8ecb839ae40}{numtria})
+\item 
+\hyperlink{vtk__mesh__out_8m_a0f0e702d5f44f2037803e06967511811}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid},'S\-C\-A\-L\-A\-R\-S\%s float 1\textbackslash{}n', varargin\{\hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}\})
+\item 
+\hyperlink{vtk__mesh__out_8m_a002a1532cab8bc41f680bebaa0c5590e}{fprintf} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid},'L\-O\-O\-K\-U\-P\-\_\-\-T\-A\-B\-L\-E default\textbackslash{}n')
+\item 
+if \hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length} (par)$>$1 for \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j}
+\item 
+end end end \hyperlink{vtk__mesh__out_8m_a1c0548fcaf13c88f427e9b6db665e85d}{fclose} (\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{function} vtk\-\_\-mesh\-\_\-out(femregion, \\*
+dir, varargin)\%usage \hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x} = femregion.\-coord(\-:,1)
+\item 
+\hyperlink{vtk__mesh__out_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y} = femregion.\-coord(\-:,2)
+\item 
+\hyperlink{vtk__mesh__out_8m_a7ac8b2d1e6f9bc687fb4686e3db0e5c2}{tri} = femregion.\-connectivity(1\-:3,\-:)'-\/1
+\item 
+\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid} = fopen(fname, 'w')
+\item 
+for \hyperlink{vtk__mesh__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}
+\item 
+end \hyperlink{vtk__mesh__out_8m_a39b36061e345435bcf3fd8ecb839ae40}{numtria} = \hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length}(\hyperlink{vtk__mesh__out_8m_a7ac8b2d1e6f9bc687fb4686e3db0e5c2}{tri}(\-:,1))
+\item 
+end else for \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{vtk__mesh__out_8m_a1c0548fcaf13c88f427e9b6db665e85d}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fclose@{fclose}}
+\index{fclose@{fclose}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fclose}]{\setlength{\rightskip}{0pt plus 5cm}end end end fclose (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_a1c0548fcaf13c88f427e9b6db665e85d}
+\hypertarget{vtk__mesh__out_8m_a5868ae7b69a01c8a351428aaecb26bf7}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'\#vtk Data\-File Version 2.\-0\textbackslash{}n'}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_a5868ae7b69a01c8a351428aaecb26bf7}
+\hypertarget{vtk__mesh__out_8m_a1f461e61e715996104565d639637891c}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'Comment\textbackslash{}n'}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_a1f461e61e715996104565d639637891c}
+\hypertarget{vtk__mesh__out_8m_a3719352709e4b412c1acb9caa515d635}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'A\-S\-C\-I\-I\textbackslash{}n'}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_a3719352709e4b412c1acb9caa515d635}
+\hypertarget{vtk__mesh__out_8m_aa8274cf2c2e928aaa588dfab2a8978c1}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'D\-A\-T\-A\-S\-E\-T U\-N\-S\-T\-R\-U\-C\-T\-U\-R\-E\-D\-\_\-\-G\-R\-I\-D\textbackslash{}n'}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_aa8274cf2c2e928aaa588dfab2a8978c1}
+\hypertarget{vtk__mesh__out_8m_ab1513dfa37d68a2623bbe93e1375bdc6}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'P\-O\-I\-N\-T\-S\%{\bf i} float\textbackslash{}n'}]{, }
+\item[{{\bf length}({\bf x})}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_ab1513dfa37d68a2623bbe93e1375bdc6}
+\hypertarget{vtk__mesh__out_8m_aa1c4d297f50413a7eeab9814ba209365}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'C\-E\-L\-L\-S\%{\bf i}\%i\textbackslash{}n'}]{, }
+\item[{{\bf numtria}}]{, }
+\item[{4 $\ast$}]{numtria}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_aa1c4d297f50413a7eeab9814ba209365}
+\hypertarget{vtk__mesh__out_8m_ac197c69f0ee549ea559e6f63366da4ce}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}end fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'C\-E\-L\-L\-\_\-\-T\-Y\-P\-E\-S\%i\textbackslash{}n'}]{, }
+\item[{{\bf numtria}}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_ac197c69f0ee549ea559e6f63366da4ce}
+\hypertarget{vtk__mesh__out_8m_af4ecee4d4ea2c73d570f0bb8f7eecdb1}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}end fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'C\-E\-L\-L\-\_\-\-D\-A\-T\-A\%i\textbackslash{}n'}]{, }
+\item[{{\bf numtria}}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_af4ecee4d4ea2c73d570f0bb8f7eecdb1}
+\hypertarget{vtk__mesh__out_8m_a0f0e702d5f44f2037803e06967511811}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'S\-C\-A\-L\-A\-R\-S\%s float 1\textbackslash{}n'}]{, }
+\item[{varargin\{{\bf i}\}}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_a0f0e702d5f44f2037803e06967511811}
+\hypertarget{vtk__mesh__out_8m_a002a1532cab8bc41f680bebaa0c5590e}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fprintf}]{\setlength{\rightskip}{0pt plus 5cm}fprintf (
+\begin{DoxyParamCaption}
+\item[{{\bf fid}}]{, }
+\item[{'L\-O\-O\-K\-U\-P\-\_\-\-T\-A\-B\-L\-E default\textbackslash{}n'}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_a002a1532cab8bc41f680bebaa0c5590e}
+\hypertarget{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!length@{length}}
+\index{length@{length}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}if length (
+\begin{DoxyParamCaption}
+\item[{par}]{}
+\end{DoxyParamCaption}
+)}}\label{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}
+
+
+\subsection{Variable Documentation}
+\hypertarget{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!fid@{fid}}
+\index{fid@{fid}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{fid}]{\setlength{\rightskip}{0pt plus 5cm}fid = fopen(fname, 'w')}}\label{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}
+\hypertarget{vtk__mesh__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!i@{i}}
+\index{i@{i}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}for i}}\label{vtk__mesh__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=1:\hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length}(\hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x})
+    \hyperlink{vtk__mesh__out_8m_a5868ae7b69a01c8a351428aaecb26bf7}{fprintf}(\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid},'%g %g 0\(\backslash\)n', \hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x}(\hyperlink{load__and__plot_8m_a3359ed5f123e10953f77a90207beaa1b}{i}), \hyperlink{vtk__mesh__out_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}(i))
+\end{DoxyCode}
+\hypertarget{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!j@{j}}
+\index{j@{j}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{j}]{\setlength{\rightskip}{0pt plus 5cm}end else for j}}\label{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=1:\hyperlink{vtk__mesh__out_8m_a39b36061e345435bcf3fd8ecb839ae40}{numtria}
+        \hyperlink{vtk__mesh__out_8m_a5868ae7b69a01c8a351428aaecb26bf7}{fprintf}(\hyperlink{vtk__mesh__out_8m_ae9011d40c6f13e68e6f07156e0da7c5d}{fid},\textcolor{stringliteral}{'%g\(\backslash\)n'},par)
+\end{DoxyCode}
+\hypertarget{vtk__mesh__out_8m_a39b36061e345435bcf3fd8ecb839ae40}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!numtria@{numtria}}
+\index{numtria@{numtria}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{numtria}]{\setlength{\rightskip}{0pt plus 5cm}end numtria = {\bf length}({\bf tri}(\-:,1))}}\label{vtk__mesh__out_8m_a39b36061e345435bcf3fd8ecb839ae40}
+\hypertarget{vtk__mesh__out_8m_a7ac8b2d1e6f9bc687fb4686e3db0e5c2}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!tri@{tri}}
+\index{tri@{tri}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{tri}]{\setlength{\rightskip}{0pt plus 5cm}tri = femregion.\-connectivity(1\-:3,\-:)'-\/1}}\label{vtk__mesh__out_8m_a7ac8b2d1e6f9bc687fb4686e3db0e5c2}
+\hypertarget{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!x@{x}}
+\index{x@{x}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}{\bf function} vtk\-\_\-mesh\-\_\-out (femregion, dir, varargin) \%usage x = femregion.\-coord(\-:,1)}}\label{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}
+\hypertarget{vtk__mesh__out_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{\index{vtk\-\_\-mesh\-\_\-out.\-m@{vtk\-\_\-mesh\-\_\-out.\-m}!y@{y}}
+\index{y@{y}!vtk_mesh_out.m@{vtk\-\_\-mesh\-\_\-out.\-m}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}y = femregion.\-coord(\-:,2)}}\label{vtk__mesh__out_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}

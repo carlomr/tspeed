@@ -1,0 +1,104 @@
+\hypertarget{plot__seismogram_8m}{\section{M\-A\-T\-L\-A\-B\-\_\-files/plot\-\_\-seismogram.m File Reference}
+\label{plot__seismogram_8m}\index{M\-A\-T\-L\-A\-B\-\_\-files/plot\-\_\-seismogram.\-m@{M\-A\-T\-L\-A\-B\-\_\-files/plot\-\_\-seismogram.\-m}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{function} \hyperlink{plot__seismogram_8m_ab85061c4ebea47c235939cc96d5ca67f}{plot\-\_\-seismogram} (r, dt) nr
+\item 
+\hyperlink{plot__seismogram_8m_a5588d9852deb65307f8db0739df83cf6}{subplot} (2, 1, 1)
+\item 
+end hold off axis tight \hyperlink{plot__seismogram_8m_a70a5387ff40be3ab8e9d0ed5a070bae4}{set} (gca,'Y\-Tick', linspace(1 $\ast$\hyperlink{plot__seismogram_8m_a38e082736338686bc6950ee4bddc26b3}{ofs}, nr $\ast$\hyperlink{plot__seismogram_8m_a38e082736338686bc6950ee4bddc26b3}{ofs}, nr))
+\item 
+\hyperlink{plot__seismogram_8m_ad6bb1145205a1175852712ec83017595}{set} (gca,'Y\-Tick\-Label', num2cell(1\-:nr))
+\item 
+\hyperlink{plot__seismogram_8m_a1bfbadbb8b83301099841dfac1ef73eb}{subplot} (2, 1, 2)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{plot__seismogram_8m_a109c29054b7bfcaf38fad4876d2f2e77}{ns} = \hyperlink{vtk__mesh__out_8m_a7013e1bf5fe19089999514980ec1412f}{length}(r(1,\-:,1))
+\item 
+\hyperlink{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}{t} = 2$\ast$dt\-:dt\-:dt$\ast$(\hyperlink{plot__seismogram_8m_a109c29054b7bfcaf38fad4876d2f2e77}{ns}+1)
+\item 
+\hyperlink{plot__seismogram_8m_a38e082736338686bc6950ee4bddc26b3}{ofs} = max(max(max(r)))/2
+\item 
+\hyperlink{plot__seismogram_8m_a391e34f2de441d79152a7b3d6e4c9c86}{figure}
+\item 
+hold \hyperlink{plot__seismogram_8m_a58ab1fd68e97078232808206b850161b}{on}
+\item 
+for \hyperlink{plot__seismogram_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{plot__seismogram_8m_ab85061c4ebea47c235939cc96d5ca67f}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!plot\-\_\-seismogram@{plot\-\_\-seismogram}}
+\index{plot\-\_\-seismogram@{plot\-\_\-seismogram}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{plot\-\_\-seismogram}]{\setlength{\rightskip}{0pt plus 5cm}{\bf function} plot\-\_\-seismogram (
+\begin{DoxyParamCaption}
+\item[{r}]{, }
+\item[{dt}]{}
+\end{DoxyParamCaption}
+)}}\label{plot__seismogram_8m_ab85061c4ebea47c235939cc96d5ca67f}
+\hypertarget{plot__seismogram_8m_a70a5387ff40be3ab8e9d0ed5a070bae4}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!set@{set}}
+\index{set@{set}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}end axis tight set (
+\begin{DoxyParamCaption}
+\item[{gca}]{, }
+\item[{'Y\-Tick'}]{, }
+\item[{linspace(1 $\ast${\bf ofs}, nr $\ast${\bf ofs}, nr)}]{}
+\end{DoxyParamCaption}
+)}}\label{plot__seismogram_8m_a70a5387ff40be3ab8e9d0ed5a070bae4}
+\hypertarget{plot__seismogram_8m_ad6bb1145205a1175852712ec83017595}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!set@{set}}
+\index{set@{set}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}set (
+\begin{DoxyParamCaption}
+\item[{gca}]{, }
+\item[{'Y\-Tick\-Label'}]{, }
+\item[{num2cell(1\-:nr)}]{}
+\end{DoxyParamCaption}
+)}}\label{plot__seismogram_8m_ad6bb1145205a1175852712ec83017595}
+\hypertarget{plot__seismogram_8m_a5588d9852deb65307f8db0739df83cf6}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!subplot@{subplot}}
+\index{subplot@{subplot}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{subplot}]{\setlength{\rightskip}{0pt plus 5cm}subplot (
+\begin{DoxyParamCaption}
+\item[{2}]{, }
+\item[{1}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}\label{plot__seismogram_8m_a5588d9852deb65307f8db0739df83cf6}
+\hypertarget{plot__seismogram_8m_a1bfbadbb8b83301099841dfac1ef73eb}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!subplot@{subplot}}
+\index{subplot@{subplot}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{subplot}]{\setlength{\rightskip}{0pt plus 5cm}subplot (
+\begin{DoxyParamCaption}
+\item[{2}]{, }
+\item[{1}]{, }
+\item[{2}]{}
+\end{DoxyParamCaption}
+)}}\label{plot__seismogram_8m_a1bfbadbb8b83301099841dfac1ef73eb}
+
+
+\subsection{Variable Documentation}
+\hypertarget{plot__seismogram_8m_a391e34f2de441d79152a7b3d6e4c9c86}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!figure@{figure}}
+\index{figure@{figure}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{figure}]{\setlength{\rightskip}{0pt plus 5cm}figure}}\label{plot__seismogram_8m_a391e34f2de441d79152a7b3d6e4c9c86}
+\hypertarget{plot__seismogram_8m_a6f6ccfcf58b31cb6412107d9d5281426}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!i@{i}}
+\index{i@{i}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}for i}}\label{plot__seismogram_8m_a6f6ccfcf58b31cb6412107d9d5281426}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=1:nr
+    \hyperlink{load__and__plot_8m_a094b87a0c6991e182d3bb35ac337e878}{plot}(\hyperlink{load__and__plot_8m_abb55df6ac50646b7ac5e158e61b71270}{t}(:),r(1,:,\hyperlink{load__and__plot_8m_a3359ed5f123e10953f77a90207beaa1b}{i})+\hyperlink{load__and__plot_8m_a3359ed5f123e10953f77a90207beaa1b}{i}*\hyperlink{plot__seismogram_8m_a38e082736338686bc6950ee4bddc26b3}{ofs},\textcolor{charliteral}{'r'},\textcolor{stringliteral}{'LineWidth'},2)
+\end{DoxyCode}
+\hypertarget{plot__seismogram_8m_a109c29054b7bfcaf38fad4876d2f2e77}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!ns@{ns}}
+\index{ns@{ns}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{ns}]{\setlength{\rightskip}{0pt plus 5cm}ns = {\bf length}(r(1,\-:,1))}}\label{plot__seismogram_8m_a109c29054b7bfcaf38fad4876d2f2e77}
+\hypertarget{plot__seismogram_8m_a38e082736338686bc6950ee4bddc26b3}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!ofs@{ofs}}
+\index{ofs@{ofs}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{ofs}]{\setlength{\rightskip}{0pt plus 5cm}ofs = max(max(max(r)))/2}}\label{plot__seismogram_8m_a38e082736338686bc6950ee4bddc26b3}
+\hypertarget{plot__seismogram_8m_a58ab1fd68e97078232808206b850161b}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!on@{on}}
+\index{on@{on}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{on}]{\setlength{\rightskip}{0pt plus 5cm}hold on}}\label{plot__seismogram_8m_a58ab1fd68e97078232808206b850161b}
+\hypertarget{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}{\index{plot\-\_\-seismogram.\-m@{plot\-\_\-seismogram.\-m}!t@{t}}
+\index{t@{t}!plot_seismogram.m@{plot\-\_\-seismogram.\-m}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}t = 2$\ast$dt\-:dt\-:dt$\ast$({\bf ns}+1)}}\label{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}
