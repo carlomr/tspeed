@@ -14,6 +14,13 @@ install(TARGETS tspeed DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
 FILE(GLOB headers "include/*.hpp")
 install(FILES ${headers} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/tspeed/)
 
+message(STATUS "Installing to ${CMAKE_INSTALL_PREFIX}, to change rerun cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install/dir")
+
+if (NOT CMAKE_BUILD_TYPE)
+    message(STATUS "Default build type: Release. Use -DCMAKE_BUILD_TYPE=Debug build with debug symbols.")
+    set(CMAKE_BUILD_TYPE "Release")
+endif()
+
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 find_package(Eigen3 REQUIRED)
 

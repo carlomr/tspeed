@@ -17,7 +17,7 @@ This will by default install the library in `/usr/local/lib` and the header file
 
     cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/dir
 
-Two test are generated as `Examples/Lamb` and `Examples/Wedge`.
+Two test are generated as `Examples/Lamb` and `Examples/Wedge`. For the source generating them, see `Examples/src/Wedge.cpp` and `Examples/src/Lamb.cpp`.
 
 
 
