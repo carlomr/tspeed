@@ -29,6 +29,9 @@
 
 namespace Tspeed
 {
+    /**
+     * @brief The class with the mesh description (connectivity, neighbors, ...)
+     */
     class Mesh
     {	
 	public:
