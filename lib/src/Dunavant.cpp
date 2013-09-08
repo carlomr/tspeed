@@ -2921,7 +2921,7 @@ int r8_nint ( double x )
 void reference_to_physical_t3 ( double t[], int n, double ref[], double phy[] )
 
 //****************************************************************************80
-//
+/*
 //  Purpose:
 //
 //    REFERENCE_TO_PHYSICAL_T3 maps T3 reference points to physical points.
@@ -2977,6 +2977,7 @@ void reference_to_physical_t3 ( double t[], int n, double ref[], double phy[] )
 //    Output, double PHY[2*N], corresponding points in the
 //    physical triangle.
 //
+*/
 {
   int i;
   int j;
@@ -3076,8 +3077,8 @@ void timestamp ( )
 
   static char time_buffer[TIME_SIZE];
   const struct tm *tm;
-  size_t len;
   time_t now;
+  size_t len;
 
   now = time ( NULL );
   tm = localtime ( &now );
@@ -3123,7 +3124,6 @@ char *timestring ( )
 # define TIME_SIZE 40
 
   const struct tm *tm;
-  size_t len;
   time_t now;
   char *s;
 
@@ -3132,7 +3132,7 @@ char *timestring ( )
 
   s = new char[TIME_SIZE];
 
-  len = strftime ( s, TIME_SIZE, "%d %B %Y %I:%M:%S %p", tm );
+  //size_t len = strftime ( s, TIME_SIZE, "%d %B %Y %I:%M:%S %p", tm );
 
   return s;
 # undef TIME_SIZE

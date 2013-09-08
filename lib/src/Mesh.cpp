@@ -151,7 +151,7 @@ namespace Tspeed{
 	    if(h/rho>anis)
 		anis = h/rho;
 	    alpha = Eigen::Vector3d::Zero();
-	    for(int i=1;i < ie.all_pts().size(); ++i)
+	    for(unsigned int i=1;i < ie.all_pts().size(); ++i)
 	    {
 		alpha(i) = std::abs(std::acos(dot(ie.pt(i)-ie.pt(i-1), ie.pt(i)- ie.pt((i+1)%3))/(ie.edg(i-1).length()*ie.edg((i+1)%3).length())));
 	    }

@@ -65,7 +65,7 @@ namespace Tspeed
     void TimeAdvance::eval_receivers()
     {
 	double x,y;
-	for(int i = 0; i<M_recv.size(); ++i)
+	for(unsigned int i = 0; i<M_recv.size(); ++i)
 	{
 	    x = M_recv.shape(i).matrix().dot(uh.segment(M_recv.elem(i)*M_nln, M_nln));
 	    y = M_recv.shape(i).matrix().dot(uh.segment(M_recv.elem(i)*M_nln+M_nln*M_ne, M_nln));

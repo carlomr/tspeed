@@ -56,7 +56,7 @@ namespace Tspeed
 	M_r = m.M_r;
 	M_c = m.M_c;
 	M_m.resize(m.M_m.size());
-	for(int i=0; i<M_m.size(); ++i)
+	for(unsigned int i=0; i<M_m.size(); ++i)
 	    M_m[i] = m.M_m[i];
     }
 /*    MyMat::operator=(MyMat const & m )*/
@@ -155,10 +155,10 @@ namespace Tspeed
     
     void MyMat::sumtranspose(MyMat const & ot)
     {
-	for(int i = 0; i<M_r.size()-1; ++i)
+	for(unsigned int i = 0; i<M_r.size()-1; ++i)
 	{
 	    M_m[M_r[i]] += ot.M_m[M_r[i]].transpose();
-	    for(int j = M_r[i]+1; j<M_r[i+1]; ++j)
+	    for(unsigned int j = M_r[i]+1; j<M_r[i+1]; ++j)
 	    {
 		//unsigned int thisRow = i;
 		//unsigned int thisCol = M_c[j];
@@ -168,10 +168,10 @@ namespace Tspeed
 	}
     }void MyMat::symmetrize()
     {
-	for(int i = 0; i<M_r.size()-1; ++i)
+	for(unsigned int i = 0; i<M_r.size()-1; ++i)
 	{
 	    M_m[M_r[i]] += M_m[M_r[i]].transpose().eval();
-	    for(int j = M_r[i]+1; j<M_r[i+1]; ++j)
+	    for(unsigned int j = M_r[i]+1; j<M_r[i+1]; ++j)
 	    {
 		assert(i!=j);
 		if(M_c[j]>i)

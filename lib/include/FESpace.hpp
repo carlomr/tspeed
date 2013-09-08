@@ -207,7 +207,7 @@ namespace Tspeed
 	     * @param lab attribute of the mesh partition on which the parameter is set
 	     * @param lambda value of the parameter
 	     */
-	    void setp(std::string const & p, int const lab , double const lambda);
+	    void setp(std::string const & p, unsigned int const lab , double const lambda);
 	    /**
 	     * @brief Get lambda on element i
 	     *

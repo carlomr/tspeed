@@ -20,7 +20,7 @@
  */
 #include"FESpace.hpp"
 namespace Tspeed{
- void Parameters::setp(std::string const & p, const int lab, const double lambda)
+ void Parameters::setp(std::string const & p, const unsigned int lab, const double lambda)
     {
 	unsigned int count = 0;
 	for(auto ie: M_mesh->elements())
