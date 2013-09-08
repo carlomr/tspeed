@@ -3,12 +3,19 @@
 }
 
 
+\hyperlink{classTspeed_1_1Gauss}{Gauss} quadrature rule on the triangle.  
+
+
+
+
 {\ttfamily \#include $<$Quadrature\-Rule.\-hpp$>$}
 
-
-
-Inherits Tspeed\-::\-Quadrature\-Rule$<$ N $>$.
-
+Inheritance diagram for Tspeed\-:\-:Gauss$<$ N $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTspeed_1_1Gauss}
+\end{center}
+\end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -18,11 +25,11 @@ enum \{ \hyperlink{classTspeed_1_1Gauss_a91d11e695996fb9038422fdd0d3065aaa13cac1
 enum \{ \hyperlink{classTspeed_1_1Gauss_a501ad3412838918f9e2301655f64eafeadbbfd28e9b0adcf7dfae2dd2b344ff62}{nqn1d} = N
  \}
 \item 
-typedef Quadrature\-Rule$<$ N $>$\-::Vec \hyperlink{classTspeed_1_1Gauss_aa7e6ce3b329db121166dc94669eeb64c}{Vec}
+typedef \hyperlink{classTspeed_1_1QuadratureRule}{Quadrature\-Rule}$<$ N $>$\-::\hyperlink{classTspeed_1_1QuadratureRule_a195c2b71ad957c9dc5408452b11e1302}{Vec} \hyperlink{classTspeed_1_1Gauss_aa7e6ce3b329db121166dc94669eeb64c}{Vec}
 \item 
-typedef Quadrature\-Rule$<$ N $>$\-::\hyperlink{classTspeed_1_1Gauss_aa7e6ce3b329db121166dc94669eeb64c}{Vec} \hyperlink{classTspeed_1_1Gauss_a60a04af13bc0e53cfae47226d1d3e6c2}{Mat}
+typedef \hyperlink{classTspeed_1_1QuadratureRule}{Quadrature\-Rule}$<$ N $>$\-::\hyperlink{classTspeed_1_1QuadratureRule_a195c2b71ad957c9dc5408452b11e1302}{Vec} \hyperlink{classTspeed_1_1Gauss_a60a04af13bc0e53cfae47226d1d3e6c2}{Mat}
 \item 
-typedef Quadrature\-Rule$<$ N $>$\-::\hyperlink{classTspeed_1_1Gauss_aa7e6ce3b329db121166dc94669eeb64c}{Vec} \hyperlink{classTspeed_1_1Gauss_ae0f9176585d652260498c0b142b183eb}{Vec2}
+typedef \hyperlink{classTspeed_1_1QuadratureRule}{Quadrature\-Rule}$<$ N $>$\-::\hyperlink{classTspeed_1_1QuadratureRule_a195c2b71ad957c9dc5408452b11e1302}{Vec} \hyperlink{classTspeed_1_1Gauss_ae0f9176585d652260498c0b142b183eb}{Vec2}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -32,16 +39,28 @@ typedef Quadrature\-Rule$<$ N $>$\-::\hyperlink{classTspeed_1_1Gauss_aa7e6ce3b32
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$int N$>$class Tspeed\-::\-Gauss$<$ N $>$}
+
+\hyperlink{classTspeed_1_1Gauss}{Gauss} quadrature rule on the triangle. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & the order of the rule\\
+\hline
+\end{DoxyTemplParams}
+The internal nodes will be N$^\wedge$2; N+1 is the required order to integrate polynomials of order 2\-N. 
+
 \subsection{Member Typedef Documentation}
 \hypertarget{classTspeed_1_1Gauss_a60a04af13bc0e53cfae47226d1d3e6c2}{\index{Tspeed\-::\-Gauss@{Tspeed\-::\-Gauss}!Mat@{Mat}}
 \index{Mat@{Mat}!Tspeed::Gauss@{Tspeed\-::\-Gauss}}
-\subsubsection[{Mat}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ typedef Quadrature\-Rule$<$N$>$\-::{\bf Vec} {\bf Tspeed\-::\-Gauss}$<$ N $>$\-::Mat}}\label{classTspeed_1_1Gauss_a60a04af13bc0e53cfae47226d1d3e6c2}
+\subsubsection[{Mat}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ typedef {\bf Quadrature\-Rule}$<$N$>$\-::{\bf Vec} {\bf Tspeed\-::\-Gauss}$<$ N $>$\-::{\bf Mat}}}\label{classTspeed_1_1Gauss_a60a04af13bc0e53cfae47226d1d3e6c2}
 \hypertarget{classTspeed_1_1Gauss_aa7e6ce3b329db121166dc94669eeb64c}{\index{Tspeed\-::\-Gauss@{Tspeed\-::\-Gauss}!Vec@{Vec}}
 \index{Vec@{Vec}!Tspeed::Gauss@{Tspeed\-::\-Gauss}}
-\subsubsection[{Vec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ typedef Quadrature\-Rule$<$N$>$\-::Vec {\bf Tspeed\-::\-Gauss}$<$ N $>$\-::Vec}}\label{classTspeed_1_1Gauss_aa7e6ce3b329db121166dc94669eeb64c}
+\subsubsection[{Vec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ typedef {\bf Quadrature\-Rule}$<$N$>$\-::{\bf Vec} {\bf Tspeed\-::\-Gauss}$<$ N $>$\-::{\bf Vec}}}\label{classTspeed_1_1Gauss_aa7e6ce3b329db121166dc94669eeb64c}
 \hypertarget{classTspeed_1_1Gauss_ae0f9176585d652260498c0b142b183eb}{\index{Tspeed\-::\-Gauss@{Tspeed\-::\-Gauss}!Vec2@{Vec2}}
 \index{Vec2@{Vec2}!Tspeed::Gauss@{Tspeed\-::\-Gauss}}
-\subsubsection[{Vec2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ typedef Quadrature\-Rule$<$N$>$\-::{\bf Vec} {\bf Tspeed\-::\-Gauss}$<$ N $>$\-::Vec2}}\label{classTspeed_1_1Gauss_ae0f9176585d652260498c0b142b183eb}
+\subsubsection[{Vec2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ typedef {\bf Quadrature\-Rule}$<$N$>$\-::{\bf Vec} {\bf Tspeed\-::\-Gauss}$<$ N $>$\-::{\bf Vec2}}}\label{classTspeed_1_1Gauss_ae0f9176585d652260498c0b142b183eb}
 
 
 \subsection{Member Enumeration Documentation}

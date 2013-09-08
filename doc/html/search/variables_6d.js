@@ -16,6 +16,10 @@ var searchData=
   ['m_5fne',['M_ne',['../classTspeed_1_1TimeAdvance.html#aa03110e12846960054b42b4cf0d05b54',1,'Tspeed::TimeAdvance']]],
   ['m_5fnel',['M_nel',['../classTspeed_1_1PointWiseEntity.html#a054e68f482b69877a7a4c4d2b03d6db3',1,'Tspeed::PointWiseEntity']]],
   ['m_5fnln',['M_nln',['../classTspeed_1_1BaseMat.html#a6a75298d3c989a182f972916f894df47',1,'Tspeed::BaseMat::M_nln()'],['../classTspeed_1_1TimeAdvance.html#a6c74b64240341a94c1e10b1bb9d20ae3',1,'Tspeed::TimeAdvance::M_nln()']]],
+  ['m_5fnode_5f1d',['M_node_1D',['../classTspeed_1_1QuadratureRule.html#ad3557f1110c8b1f9b91b468df6329a58',1,'Tspeed::QuadratureRule']]],
+  ['m_5fnode_5f2d',['M_node_2D',['../classTspeed_1_1QuadratureRule.html#a653baada0a38f6e3a36bc66ab579ef72',1,'Tspeed::QuadratureRule']]],
+  ['m_5fnqn_5f1d',['M_nqn_1D',['../classTspeed_1_1QuadratureRule.html#a2f41fe4542680d9585d6fe6cbc1f0662',1,'Tspeed::QuadratureRule']]],
+  ['m_5fnqn_5f2d',['M_nqn_2D',['../classTspeed_1_1QuadratureRule.html#a5a650b4ab99b41d5606e7b6ca4ba9fbe',1,'Tspeed::QuadratureRule']]],
   ['m_5fnr',['M_nr',['../classTspeed_1_1BaseMat.html#a2122ee11f990f68aadf6046e7c02aa01',1,'Tspeed::BaseMat']]],
   ['m_5fpenalty',['M_penalty',['../classTspeed_1_1TimeAdvance.html#a153eb7bdf6d8034242dacdd3cdbf9950',1,'Tspeed::TimeAdvance']]],
   ['m_5fphi',['M_phi',['../classTspeed_1_1ShapeFunction.html#a6d8010d0c9d5e40f21f57c8201149ad5',1,'Tspeed::ShapeFunction']]],
@@ -26,6 +30,6 @@ var searchData=
   ['m_5frelp',['M_relp',['../classTspeed_1_1PointWiseEntity.html#a7d32f8248f10ec3a0cf06bf41eeb5894',1,'Tspeed::PointWiseEntity']]],
   ['m_5fshape',['M_shape',['../classTspeed_1_1PointWiseEntity.html#a5be71b036f597e1a61909b1577ac2049',1,'Tspeed::PointWiseEntity']]],
   ['m_5ftmax',['M_tmax',['../classTspeed_1_1TimeAdvance.html#a935eb9282bdd63bf94190f209a58756a',1,'Tspeed::TimeAdvance']]],
-  ['myofsx',['myofsx',['../load__and__plot_8m.html#ac8064b59f09469aabf88985f6732d909',1,'load_and_plot.m']]],
-  ['myofsy',['myofsy',['../load__and__plot_8m.html#ac5849a511a38aeefdf4de941b8f50ddd',1,'load_and_plot.m']]]
+  ['m_5fw_5f1d',['M_w_1D',['../classTspeed_1_1QuadratureRule.html#a11a4f44e86c2751d5efbf773e6b6c1cb',1,'Tspeed::QuadratureRule']]],
+  ['m_5fw_5f2d',['M_w_2D',['../classTspeed_1_1QuadratureRule.html#a4e405a9ebe10ea75dc56191c03d340fe',1,'Tspeed::QuadratureRule']]]
 ];

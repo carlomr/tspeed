@@ -1,26 +1,20 @@
 var searchData=
 [
   ['f',['f',['../classTspeed_1_1TimeAdvance.html#a36dea2ae6ba03546806bbacb83697c01',1,'Tspeed::TimeAdvance']]],
-  ['fclose',['fclose',['../vtk__mesh__out_8m.html#a1c0548fcaf13c88f427e9b6db665e85d',1,'vtk_mesh_out.m']]],
   ['fespace',['FESpace',['../classTspeed_1_1FESpace.html',1,'Tspeed']]],
-  ['fespace',['FESpace',['../classTspeed_1_1FESpace.html#acbee47bc3d3a47b49bb01a7dc87f205c',1,'Tspeed::FESpace']]],
+  ['fespace',['FESpace',['../classTspeed_1_1FESpace.html#aecf45c5fb39b7df60599d2d055c9506d',1,'Tspeed::FESpace']]],
   ['fespace_2ehpp',['FESpace.hpp',['../FESpace_8hpp.html',1,'']]],
   ['fespace_5fimp_2ehpp',['FESpace_imp.hpp',['../FESpace__imp_8hpp.html',1,'']]],
   ['fespace_5fptr',['FESpace_ptr',['../namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8',1,'Tspeed']]],
-  ['fid',['fid',['../vtk__mesh__out_8m.html#ae9011d40c6f13e68e6f07156e0da7c5d',1,'vtk_mesh_out.m']]],
   ['field_5fout',['field_out',['../classTspeed_1_1FESpace.html#a72a024911d1a650c078e0bfc66ccc837',1,'Tspeed::FESpace']]],
-  ['figure',['figure',['../load__and__plot_8m.html#a391e34f2de441d79152a7b3d6e4c9c86',1,'figure():&#160;load_and_plot.m'],['../plot__seismogram_8m.html#a391e34f2de441d79152a7b3d6e4c9c86',1,'figure():&#160;plot_seismogram.m']]],
   ['file_5fname_5finc',['file_name_inc',['../Dunavant_8hpp.html#a0f78f0152c268c49404ccc0c2d8d9d83',1,'file_name_inc(char *file_name):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#a0f78f0152c268c49404ccc0c2d8d9d83',1,'file_name_inc(char *file_name):&#160;Dunavant.cpp']]],
   ['first_5fstep',['first_step',['../classTspeed_1_1TimeAdvance.html#ae9d353495c283af5a29740a70424f11d',1,'Tspeed::TimeAdvance::first_step()'],['../classTspeed_1_1LeapFrog.html#aad6f9246550ac8dda3d8b00fc713604b',1,'Tspeed::LeapFrog::first_step()']]],
-  ['fnamein',['fnamein',['../vtk__output_8m.html#a9169f11aa58fbe05ec44ce03965f7135',1,'vtk_output.m']]],
   ['fold',['fold',['../classTspeed_1_1TimeAdvance.html#a3cfbea04f0116183c5ac4ec59282d3e8',1,'Tspeed::TimeAdvance']]],
   ['foldold',['foldold',['../classTspeed_1_1TimeAdvance.html#aac8169dc52fa2b5f00c87328707b9b26',1,'Tspeed::TimeAdvance']]],
-  ['fontsize',['fontSize',['../load__and__plot__lamb_8m.html#a68eb0df9d5fd433bb6fe691f00a0878f',1,'load_and_plot_lamb.m']]],
   ['force',['Force',['../classTspeed_1_1Force.html',1,'Tspeed']]],
-  ['force',['Force',['../classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d',1,'Tspeed::Force::Force()'],['../classTspeed_1_1Force.html#a802a5b025cfde563e3c874c0dc3cb858',1,'Tspeed::Force::Force(std::function&lt; std::array&lt; double, 2 &gt;(const double &amp;)&gt; const &amp;)']]],
+  ['force',['Force',['../classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d',1,'Tspeed::Force::Force()'],['../classTspeed_1_1Force.html#a2e90175e9cde9e42844ecad2e9123fbd',1,'Tspeed::Force::Force(std::function&lt; std::array&lt; double, 2 &gt;(const double &amp;)&gt; const &amp;fun)']]],
   ['force_2ecpp',['Force.cpp',['../Force_8cpp.html',1,'']]],
   ['force_2ehpp',['Force.hpp',['../Force_8hpp.html',1,'']]],
   ['force_5fimp_2ehpp',['Force_imp.hpp',['../Force__imp_8hpp.html',1,'']]],
-  ['fprintf',['fprintf',['../vtk__mesh__out_8m.html#a5868ae7b69a01c8a351428aaecb26bf7',1,'fprintf(fid, &apos;#vtk DataFile Version 2.0\n&apos;):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#a1f461e61e715996104565d639637891c',1,'fprintf(fid, &apos;Comment\n&apos;):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#a3719352709e4b412c1acb9caa515d635',1,'fprintf(fid, &apos;ASCII\n&apos;):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#aa8274cf2c2e928aaa588dfab2a8978c1',1,'fprintf(fid, &apos;DATASET UNSTRUCTURED_GRID\n&apos;):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#ab1513dfa37d68a2623bbe93e1375bdc6',1,'fprintf(fid,&apos;POINTS%i float\n&apos;, length(x)):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#aa1c4d297f50413a7eeab9814ba209365',1,'fprintf(fid,&apos;CELLS%i%i\n&apos;, numtria, 4 *numtria):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#ac197c69f0ee549ea559e6f63366da4ce',1,'fprintf(fid,&apos;CELL_TYPES%i\n&apos;, numtria):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#af4ecee4d4ea2c73d570f0bb8f7eecdb1',1,'fprintf(fid,&apos;CELL_DATA%i\n&apos;, numtria):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#a0f0e702d5f44f2037803e06967511811',1,'fprintf(fid,&apos;SCALARS%s float 1\n&apos;, varargin{i}):&#160;vtk_mesh_out.m'],['../vtk__mesh__out_8m.html#a002a1532cab8bc41f680bebaa0c5590e',1,'fprintf(fid,&apos;LOOKUP_TABLE default\n&apos;):&#160;vtk_mesh_out.m'],['../vtk__vector__out_8m.html#a5868ae7b69a01c8a351428aaecb26bf7',1,'fprintf(fid, &apos;#vtk DataFile Version 2.0\n&apos;):&#160;vtk_vector_out.m'],['../vtk__vector__out_8m.html#a1f461e61e715996104565d639637891c',1,'fprintf(fid, &apos;Comment\n&apos;):&#160;vtk_vector_out.m'],['../vtk__vector__out_8m.html#a3719352709e4b412c1acb9caa515d635',1,'fprintf(fid, &apos;ASCII\n&apos;):&#160;vtk_vector_out.m'],['../vtk__vector__out_8m.html#aa8274cf2c2e928aaa588dfab2a8978c1',1,'fprintf(fid, &apos;DATASET UNSTRUCTURED_GRID\n&apos;):&#160;vtk_vector_out.m'],['../vtk__vector__out_8m.html#ab1513dfa37d68a2623bbe93e1375bdc6',1,'fprintf(fid,&apos;POINTS%i float\n&apos;, length(x)):&#160;vtk_vector_out.m']]],
-  ['function',['function',['../load__and__plot__lamb_8m.html#a7b5e596df91eadea6c537c0825e894a7',1,'function():&#160;load_and_plot_lamb.m'],['../vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530',1,'function():&#160;vtk_vector_out.m']]]
+  ['force_5fptr',['Force_ptr',['../namespaceTspeed.html#a3795c740b127fc84de9d80cc919dd4d1',1,'Tspeed']]]
 ];

@@ -3,6 +3,11 @@
 }
 
 
+Class describing points.  
+
+
+
+
 {\ttfamily \#include $<$Geometry.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Geo\-:\-:Point\-:\begin{figure}[H]
@@ -15,50 +20,53 @@ Inheritance diagram for Tspeed\-:\-:Geo\-:\-:Point\-:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classTspeed_1_1Geo_1_1Point_a1d341df68317135dd9f7f39a172fd2d6}{Point} (const double \&\hyperlink{classTspeed_1_1Geo_1_1Point_a658f2ac4d36ea76832a36d8a4b0bcf96}{x}=0, const double \&\hyperlink{classTspeed_1_1Geo_1_1Point_a1424ccbaba0dbed5605d99f4718774ed}{y}=0)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor taking the two coordinates of the point. By default, a point is initialized to the origin. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Point_a2d4ba9608644de1238c56dd570f2891a}{Point} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&p)
-\item 
+\begin{DoxyCompactList}\small\item\em Copy constructor. Everything is copied. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Point_a6a35bb9a5f7842697aae1195e6483be1}{Point} (const Eigen\-::\-Vector2d \&v)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor taking an Eigen fixed size vector. The components are copied, ids are not assigned. \end{DoxyCompactList}\item 
 virtual \hyperlink{classTspeed_1_1Geo_1_1Point_a473a872a53b39b9ff91d4030c5a23003}{$\sim$\-Point} ()
 \item 
 double \hyperlink{classTspeed_1_1Geo_1_1Point_a658f2ac4d36ea76832a36d8a4b0bcf96}{x} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em first coordinate \end{DoxyCompactList}\item 
 double \hyperlink{classTspeed_1_1Geo_1_1Point_a1424ccbaba0dbed5605d99f4718774ed}{y} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em second coordinate \end{DoxyCompactList}\item 
 double \& \hyperlink{classTspeed_1_1Geo_1_1Point_a69ed6e602a1419a1afa1eaabd8abe911}{x} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Reference to first coordinate. \end{DoxyCompactList}\item 
 double \& \hyperlink{classTspeed_1_1Geo_1_1Point_a77ed4b94b0f211f9f8b9a561303f0a32}{y} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Reference to second coordinate. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \& \hyperlink{classTspeed_1_1Geo_1_1Point_aa1ac2e8afe8a77f5e13872a8fd362351}{operator=} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&)
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_acd2d93ca69ef15f5567e62965c16b14b}{operator$\ast$} (const double \&) const 
-\item 
+\begin{DoxyCompactList}\small\item\em assignemnt operator \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a1f311acf13032407ae28d323883e6aa1}{operator$\ast$} (const double \&a) const 
+\begin{DoxyCompactList}\small\item\em Multuply a point by a scalar. \end{DoxyCompactList}\item 
 double \hyperlink{classTspeed_1_1Geo_1_1Point_a38c11bbd4d5e6db5f0486e8de30e6ca9}{norm} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Norm of the vector from the origin to the point. \end{DoxyCompactList}\item 
 Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1Geo_1_1Point_a4a3f7bd060f187b20cc258c47bf89da9}{to\-Eig} () const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em convert the point into an Eigen\-::vector. Useful for matrix tranformations \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a379ea470d116d5ec7858c3b1c88051fa}{operator+} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&)
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a2d0fd2bac2a91834b84eec591dc9df70}{operator+} (const Eigen\-::\-Vector2d \&, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&)
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a72670b27ed2e5bceb2da187f662a9e92}{operator+} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&, const Eigen\-::\-Vector2d \&)
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_adc0ae410968ebfcac79ebcf9d4eb3f5b}{operator-\/} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&)
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_ab0ba4548bf436133c76b37f3f870edbb}{operator-\/} (const Eigen\-::\-Vector2d \&, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&)
-\item 
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a96f6a3fd676e84673695954a9c38f9fc}{operator+} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&a, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Operator summing two points. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_af8a6ecf275f1df192e8f85a1ec6ea578}{operator+} (const Eigen\-::\-Vector2d \&a, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Sum a point and en eigen vector. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a055f4bc786ea18b7409273eb968ef615}{operator+} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&a, const Eigen\-::\-Vector2d \&b)
+\begin{DoxyCompactList}\small\item\em Sum a point and en eigen vector. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a7cdfe306ee6075d5444000f6a4e85301}{operator-\/} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&a, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Operator sutracting two points. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a1612c0e7347b698b81dd09392719afef}{operator-\/} (const Eigen\-::\-Vector2d \&a, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Operator sutracting a point and a vector. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_ae88f602384d3cd03fade37ea2d7616bb}{operator-\/} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&, const Eigen\-::\-Vector2d \&)
 \item 
 \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Point_a4796c5e216ac1d96d9b87714d1f9563c}{operator$\ast$} (const double \&, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&)
 \item 
-double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}{dot} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
-\end{DoxyCompactItemize}
+double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}{dot} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&a, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em vector-\/style dot product between points \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Class describing points. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a1d341df68317135dd9f7f39a172fd2d6}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!Point@{Point}}
@@ -69,6 +77,17 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 \item[{const double \&}]{y = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a1d341df68317135dd9f7f39a172fd2d6}
+
+
+Constructor taking the two coordinates of the point. By default, a point is initialized to the origin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a2d4ba9608644de1238c56dd570f2891a}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!Point@{Point}}
 \index{Point@{Point}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{Point}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Geo\-::\-Point\-::\-Point (
@@ -76,6 +95,15 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 \item[{const {\bf Point} \&}]{p}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a2d4ba9608644de1238c56dd570f2891a}
+
+
+Copy constructor. Everything is copied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A point \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a6a35bb9a5f7842697aae1195e6483be1}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!Point@{Point}}
 \index{Point@{Point}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{Point}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Geo\-::\-Point\-::\-Point (
@@ -83,6 +111,15 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 \item[{const Eigen\-::\-Vector2d \&}]{v}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a6a35bb9a5f7842697aae1195e6483be1}
+
+
+Constructor taking an Eigen fixed size vector. The components are copied, ids are not assigned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a473a872a53b39b9ff91d4030c5a23003}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!$\sim$\-Point@{$\sim$\-Point}}
 \index{$\sim$\-Point@{$\sim$\-Point}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{$\sim$\-Point}]{\setlength{\rightskip}{0pt plus 5cm}virtual Tspeed\-::\-Geo\-::\-Point\-::$\sim$\-Point (
@@ -100,13 +137,32 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a38c11bbd4d5e6db5f0486e8de30e6ca9}
-\hypertarget{classTspeed_1_1Geo_1_1Point_acd2d93ca69ef15f5567e62965c16b14b}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator$\ast$@{operator$\ast$}}
+
+
+Norm of the vector from the origin to the point. 
+
+\begin{DoxyReturn}{Returns}
+the euler norm 
+\end{DoxyReturn}
+\hypertarget{classTspeed_1_1Geo_1_1Point_a1f311acf13032407ae28d323883e6aa1}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Tspeed\-::\-Geo\-::\-Point\-::operator$\ast$ (
 \begin{DoxyParamCaption}
-\item[{const double \&}]{d}
+\item[{const double \&}]{a}
 \end{DoxyParamCaption}
-) const}}\label{classTspeed_1_1Geo_1_1Point_acd2d93ca69ef15f5567e62965c16b14b}
+) const}}\label{classTspeed_1_1Geo_1_1Point_a1f311acf13032407ae28d323883e6aa1}
+
+
+Multuply a point by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & scalar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a both with both coordinates multiplied 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Point_aa1ac2e8afe8a77f5e13872a8fd362351}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator=@{operator=}}
 \index{operator=@{operator=}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} \& Tspeed\-::\-Geo\-::\-Point\-::operator= (
@@ -114,6 +170,10 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 \item[{const {\bf Point} \&}]{p}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1Geo_1_1Point_aa1ac2e8afe8a77f5e13872a8fd362351}
+
+
+assignemnt operator 
+
 \hypertarget{classTspeed_1_1Geo_1_1Point_a4a3f7bd060f187b20cc258c47bf89da9}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!to\-Eig@{to\-Eig}}
 \index{to\-Eig@{to\-Eig}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{to\-Eig}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Vector2d Tspeed\-::\-Geo\-::\-Point\-::to\-Eig (
@@ -121,6 +181,13 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a4a3f7bd060f187b20cc258c47bf89da9}
+
+
+convert the point into an Eigen\-::vector. Useful for matrix tranformations 
+
+\begin{DoxyReturn}{Returns}
+the eigen vector with the coordinates as components 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a658f2ac4d36ea76832a36d8a4b0bcf96}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!x@{x}}
 \index{x@{x}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}double Tspeed\-::\-Geo\-::\-Point\-::x (
@@ -128,6 +195,13 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a658f2ac4d36ea76832a36d8a4b0bcf96}
+
+
+first coordinate 
+
+\begin{DoxyReturn}{Returns}
+x-\/coordinate 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a69ed6e602a1419a1afa1eaabd8abe911}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!x@{x}}
 \index{x@{x}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}double\& Tspeed\-::\-Geo\-::\-Point\-::x (
@@ -135,6 +209,13 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a69ed6e602a1419a1afa1eaabd8abe911}
+
+
+Reference to first coordinate. 
+
+\begin{DoxyReturn}{Returns}
+Reference to x-\/coord 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a1424ccbaba0dbed5605d99f4718774ed}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!y@{y}}
 \index{y@{y}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double Tspeed\-::\-Geo\-::\-Point\-::y (
@@ -142,6 +223,13 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a1424ccbaba0dbed5605d99f4718774ed}
+
+
+second coordinate 
+
+\begin{DoxyReturn}{Returns}
+y-\/coordinate 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a77ed4b94b0f211f9f8b9a561303f0a32}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!y@{y}}
 \index{y@{y}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double\& Tspeed\-::\-Geo\-::\-Point\-::y (
@@ -149,6 +237,13 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Point_a77ed4b94b0f211f9f8b9a561303f0a32}
+
+
+Reference to second coordinate. 
+
+\begin{DoxyReturn}{Returns}
+Reference to y-\/coord 
+\end{DoxyReturn}
 
 
 \subsection{Friends And Related Function Documentation}
@@ -160,6 +255,20 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 \item[{const {\bf Point} \&}]{b}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
+
+
+vector-\/style dot product between points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & first point \\
+\hline
+{\em b} & second point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a scalar 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Point_a4796c5e216ac1d96d9b87714d1f9563c}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator$\ast$ (
@@ -168,46 +277,116 @@ double \hyperlink{classTspeed_1_1Geo_1_1Point_a3b8c7b9d0a9210b43bee0b3204c962d2}
 \item[{const {\bf Point} \&}]{p}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a4796c5e216ac1d96d9b87714d1f9563c}
-\hypertarget{classTspeed_1_1Geo_1_1Point_a379ea470d116d5ec7858c3b1c88051fa}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator+@{operator+}}
+\hypertarget{classTspeed_1_1Geo_1_1Point_a96f6a3fd676e84673695954a9c38f9fc}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator+@{operator+}}
 \index{operator+@{operator+}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator+ (
 \begin{DoxyParamCaption}
 \item[{const {\bf Point} \&}]{a, }
 \item[{const {\bf Point} \&}]{b}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a379ea470d116d5ec7858c3b1c88051fa}
-\hypertarget{classTspeed_1_1Geo_1_1Point_a2d0fd2bac2a91834b84eec591dc9df70}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator+@{operator+}}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a96f6a3fd676e84673695954a9c38f9fc}
+
+
+Operator summing two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & first point \\
+\hline
+{\em b} & second point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sum of points 
+\end{DoxyReturn}
+\hypertarget{classTspeed_1_1Geo_1_1Point_af8a6ecf275f1df192e8f85a1ec6ea578}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator+@{operator+}}
 \index{operator+@{operator+}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator+ (
 \begin{DoxyParamCaption}
 \item[{const Eigen\-::\-Vector2d \&}]{a, }
 \item[{const {\bf Point} \&}]{b}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a2d0fd2bac2a91834b84eec591dc9df70}
-\hypertarget{classTspeed_1_1Geo_1_1Point_a72670b27ed2e5bceb2da187f662a9e92}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator+@{operator+}}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_af8a6ecf275f1df192e8f85a1ec6ea578}
+
+
+Sum a point and en eigen vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & vector \\
+\hline
+{\em b} & \hyperlink{classTspeed_1_1Geo_1_1Point}{Point}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} 
+\end{DoxyReturn}
+\hypertarget{classTspeed_1_1Geo_1_1Point_a055f4bc786ea18b7409273eb968ef615}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator+@{operator+}}
 \index{operator+@{operator+}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator+ (
 \begin{DoxyParamCaption}
 \item[{const {\bf Point} \&}]{a, }
 \item[{const Eigen\-::\-Vector2d \&}]{b}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a72670b27ed2e5bceb2da187f662a9e92}
-\hypertarget{classTspeed_1_1Geo_1_1Point_adc0ae410968ebfcac79ebcf9d4eb3f5b}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator-\/@{operator-\/}}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a055f4bc786ea18b7409273eb968ef615}
+
+
+Sum a point and en eigen vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \\
+\hline
+{\em b} & vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} 
+\end{DoxyReturn}
+\hypertarget{classTspeed_1_1Geo_1_1Point_a7cdfe306ee6075d5444000f6a4e85301}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator-\/ (
 \begin{DoxyParamCaption}
 \item[{const {\bf Point} \&}]{a, }
 \item[{const {\bf Point} \&}]{b}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_adc0ae410968ebfcac79ebcf9d4eb3f5b}
-\hypertarget{classTspeed_1_1Geo_1_1Point_ab0ba4548bf436133c76b37f3f870edbb}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator-\/@{operator-\/}}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a7cdfe306ee6075d5444000f6a4e85301}
+
+
+Operator sutracting two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & first point \\
+\hline
+{\em b} & second point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+difference of points 
+\end{DoxyReturn}
+\hypertarget{classTspeed_1_1Geo_1_1Point_a1612c0e7347b698b81dd09392719afef}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator-\/ (
 \begin{DoxyParamCaption}
 \item[{const Eigen\-::\-Vector2d \&}]{a, }
 \item[{const {\bf Point} \&}]{b}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_ab0ba4548bf436133c76b37f3f870edbb}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classTspeed_1_1Geo_1_1Point_a1612c0e7347b698b81dd09392719afef}
+
+
+Operator sutracting a point and a vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & first point \\
+\hline
+{\em b} & vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\-: difference of point a vector 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Point_ae88f602384d3cd03fade37ea2d7616bb}{\index{Tspeed\-::\-Geo\-::\-Point@{Tspeed\-::\-Geo\-::\-Point}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!Tspeed::Geo::Point@{Tspeed\-::\-Geo\-::\-Point}}
 \subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator-\/ (

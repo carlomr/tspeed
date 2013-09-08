@@ -3,6 +3,11 @@
 }
 
 
+Implementation of the second order Leap-\/\-Frog explicit time stepping scheme.  
+
+
+
+
 {\ttfamily \#include $<$Time\-Advance.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Leap\-Frog\-:\begin{figure}[H]
@@ -17,11 +22,14 @@ Inheritance diagram for Tspeed\-:\-:Leap\-Frog\-:\begin{figure}[H]
 {\footnotesize template$<$int N, typename Q , typename S $>$ }\\\hyperlink{classTspeed_1_1LeapFrog_a444fa2e71465a70a4be750395d4e6908}{Leap\-Frog} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$, \hyperlink{classTspeed_1_1Parameters}{Parameters} const \&, \hyperlink{classTspeed_1_1Receivers}{Receivers} const \&)
 \item 
 void \hyperlink{classTspeed_1_1LeapFrog_aad6f9246550ac8dda3d8b00fc713604b}{first\-\_\-step} ()
-\item 
+\begin{DoxyCompactList}\small\item\em First step for the Leap-\/\-Frog method. \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1LeapFrog_a571d3a80ef86424a14b562295aaae52e}{step} (double)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Step at time t for the Leap-\/\-Frog method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Implementation of the second order Leap-\/\-Frog explicit time stepping scheme. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classTspeed_1_1LeapFrog_a444fa2e71465a70a4be750395d4e6908}{\index{Tspeed\-::\-Leap\-Frog@{Tspeed\-::\-Leap\-Frog}!Leap\-Frog@{Leap\-Frog}}
@@ -43,6 +51,10 @@ void \hyperlink{classTspeed_1_1LeapFrog_a571d3a80ef86424a14b562295aaae52e}{step}
 {}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1LeapFrog_aad6f9246550ac8dda3d8b00fc713604b}
+
+
+First step for the Leap-\/\-Frog method. 
+
 \hypertarget{classTspeed_1_1LeapFrog_a571d3a80ef86424a14b562295aaae52e}{\index{Tspeed\-::\-Leap\-Frog@{Tspeed\-::\-Leap\-Frog}!step@{step}}
 \index{step@{step}!Tspeed::LeapFrog@{Tspeed\-::\-Leap\-Frog}}
 \subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Leap\-Frog\-::step (
@@ -50,6 +62,15 @@ void \hyperlink{classTspeed_1_1LeapFrog_a571d3a80ef86424a14b562295aaae52e}{step}
 \item[{double}]{t}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1LeapFrog_a571d3a80ef86424a14b562295aaae52e}
+
+
+Step at time t for the Leap-\/\-Frog method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & time \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

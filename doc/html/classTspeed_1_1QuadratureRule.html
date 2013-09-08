@@ -97,6 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Base class for quadrature rules.  
+ <a href="classTspeed_1_1QuadratureRule.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="QuadratureRule_8hpp_source.html">QuadratureRule.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tspeed::QuadratureRule&lt; N &gt;:</div>
@@ -104,7 +107,8 @@ Inheritance diagram for Tspeed::QuadratureRule&lt; N &gt;:</div>
  <div class="center">
   <img src="classTspeed_1_1QuadratureRule.png" usemap="#Tspeed::QuadratureRule&lt; N &gt;_map" alt=""/>
   <map id="Tspeed::QuadratureRule&lt; N &gt;_map" name="Tspeed::QuadratureRule&lt; N &gt;_map">
-<area href="classTspeed_1_1Gauss.html" alt="Tspeed::Gauss&lt; N &gt;" shape="rect" coords="0,56,182,80"/>
+<area href="classTspeed_1_1Dunavant.html" title="Dunavant [1] quadrature rule." alt="Tspeed::Dunavant&lt; N &gt;" shape="rect" coords="0,56,182,80"/>
+<area href="classTspeed_1_1Gauss.html" title="Gauss quadrature rule on the triangle." alt="Tspeed::Gauss&lt; N &gt;" shape="rect" coords="192,56,374,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -113,31 +117,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa658eff598f446b5398a818d7524d71d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#aa658eff598f446b5398a818d7524d71d">QuadratureRule</a> ()=default</td></tr>
 <tr class="separator:aa658eff598f446b5398a818d7524d71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7c099a23dde465b962f7598205af61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a8a7c099a23dde465b962f7598205af61">edge_weights</a> () const </td></tr>
+<tr class="memdesc:a8a7c099a23dde465b962f7598205af61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get weights on the edge.  <a href="#a8a7c099a23dde465b962f7598205af61">More...</a><br/></td></tr>
 <tr class="separator:a8a7c099a23dde465b962f7598205af61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79d17fa10d0d780d4681465fa99420b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#ae5410eb7a3d04b222b540c599f18fa62">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#af79d17fa10d0d780d4681465fa99420b">int_weights</a> () const </td></tr>
+<tr class="memdesc:af79d17fa10d0d780d4681465fa99420b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get internal weights.  <a href="#af79d17fa10d0d780d4681465fa99420b">More...</a><br/></td></tr>
 <tr class="separator:af79d17fa10d0d780d4681465fa99420b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c509e115de2cd1a2a2dabea629c1a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Geo_1_1Point.html">Geo::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ab9c509e115de2cd1a2a2dabea629c1a8">inode</a> (unsigned int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:ab9c509e115de2cd1a2a2dabea629c1a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Geo_1_1Point.html">Geo::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ab9c509e115de2cd1a2a2dabea629c1a8">inode</a> (unsigned int i) const </td></tr>
+<tr class="memdesc:ab9c509e115de2cd1a2a2dabea629c1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get i-th qudrature node.  <a href="#ab9c509e115de2cd1a2a2dabea629c1a8">More...</a><br/></td></tr>
 <tr class="separator:ab9c509e115de2cd1a2a2dabea629c1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6a9d9ee8aa004963c7bec2d3af22c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#aaa6a9d9ee8aa004963c7bec2d3af22c1">eweight</a> (unsigned int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:aaa6a9d9ee8aa004963c7bec2d3af22c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#aaa6a9d9ee8aa004963c7bec2d3af22c1">eweight</a> (unsigned int i) const </td></tr>
+<tr class="memdesc:aaa6a9d9ee8aa004963c7bec2d3af22c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get i-th weight on the edge.  <a href="#aaa6a9d9ee8aa004963c7bec2d3af22c1">More...</a><br/></td></tr>
 <tr class="separator:aaa6a9d9ee8aa004963c7bec2d3af22c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4569cf4c9860494e5f7e4dc31a255e93"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a4569cf4c9860494e5f7e4dc31a255e93">iweight</a> (unsigned int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:a4569cf4c9860494e5f7e4dc31a255e93"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a4569cf4c9860494e5f7e4dc31a255e93">iweight</a> (unsigned int i) const </td></tr>
+<tr class="memdesc:a4569cf4c9860494e5f7e4dc31a255e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get i-th interior weight.  <a href="#a4569cf4c9860494e5f7e4dc31a255e93">More...</a><br/></td></tr>
 <tr class="separator:a4569cf4c9860494e5f7e4dc31a255e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae326baaa5e3a4bcc9ee6e0a14e94bb11"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ae326baaa5e3a4bcc9ee6e0a14e94bb11">edge_n</a> () const </td></tr>
+<tr class="memdesc:ae326baaa5e3a4bcc9ee6e0a14e94bb11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of nodes or weights on the edge.  <a href="#ae326baaa5e3a4bcc9ee6e0a14e94bb11">More...</a><br/></td></tr>
 <tr class="separator:ae326baaa5e3a4bcc9ee6e0a14e94bb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b41a3c4fc6cbc437424e809c971ae0d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a1b41a3c4fc6cbc437424e809c971ae0d">int_n</a> () const </td></tr>
+<tr class="memdesc:a1b41a3c4fc6cbc437424e809c971ae0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of interior nodes or weights.  <a href="#a1b41a3c4fc6cbc437424e809c971ae0d">More...</a><br/></td></tr>
 <tr class="separator:a1b41a3c4fc6cbc437424e809c971ae0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069e32dedbc3314a4b9784462519efb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#a4228962a091bdb502c1d358651d7ab79">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a069e32dedbc3314a4b9784462519efb2">int_nodes</a> () const </td></tr>
+<tr class="memdesc:a069e32dedbc3314a4b9784462519efb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all interior nodes.  <a href="#a069e32dedbc3314a4b9784462519efb2">More...</a><br/></td></tr>
 <tr class="separator:a069e32dedbc3314a4b9784462519efb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a26b098e2cbc6b7ad2d90a00b34a93"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, N, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a32a26b098e2cbc6b7ad2d90a00b34a93">edge_nodes</a> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:a32a26b098e2cbc6b7ad2d90a00b34a93"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, N, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a32a26b098e2cbc6b7ad2d90a00b34a93">edge_nodes</a> (int i) const </td></tr>
+<tr class="memdesc:a32a26b098e2cbc6b7ad2d90a00b34a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all nodes on edge i of the reference triangle.  <a href="#a32a26b098e2cbc6b7ad2d90a00b34a93">More...</a><br/></td></tr>
 <tr class="separator:a32a26b098e2cbc6b7ad2d90a00b34a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e11953614fb19072d723fe012993e1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a87e11953614fb19072d723fe012993e1">~QuadratureRule</a> ()</td></tr>
 <tr class="separator:a87e11953614fb19072d723fe012993e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664d3e5b0947d83e2986830958e9887b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a664d3e5b0947d83e2986830958e9887b">nqn2d</a> () const </td></tr>
+<tr class="memdesc:a664d3e5b0947d83e2986830958e9887b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of internal nodes/weights.  <a href="#a664d3e5b0947d83e2986830958e9887b">More...</a><br/></td></tr>
 <tr class="separator:a664d3e5b0947d83e2986830958e9887b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab50520efbaa46b2aa67f62be6f0d21b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ab50520efbaa46b2aa67f62be6f0d21b9">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</a></td></tr>
+<tr class="memdesc:ab50520efbaa46b2aa67f62be6f0d21b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required by Eigen.  <a href="#ab50520efbaa46b2aa67f62be6f0d21b9">More...</a><br/></td></tr>
 <tr class="separator:ab50520efbaa46b2aa67f62be6f0d21b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
@@ -167,7 +182,18 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a5a650b4ab99b41d5606e7b6ca4ba9fbe"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a5a650b4ab99b41d5606e7b6ca4ba9fbe">M_nqn_2D</a></td></tr>
 <tr class="separator:a5a650b4ab99b41d5606e7b6ca4ba9fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;int N&gt;<br/>
+class Tspeed::QuadratureRule&lt; N &gt;</h3>
+
+<p>Base class for quadrature rules. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>order of the rule </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a4228962a091bdb502c1d358651d7ab79"></a>
 <div class="memitem">
 <div class="memproto">
@@ -309,6 +335,8 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Number of nodes or weights on the edge. </p>
+
 </div>
 </div>
 <a class="anchor" id="a32a26b098e2cbc6b7ad2d90a00b34a93"></a>
@@ -335,6 +363,16 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get all nodes on edge i of the reference triangle. </p>
+<p>Note that ede nodes always have a Gauss-Legendre distribution, whatever rule is used in the interior</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The edge of the reference triangle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A matrix of size number of nodes x 2 </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8a7c099a23dde465b962f7598205af61"></a>
@@ -359,6 +397,9 @@ template&lt;int N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get weights on the edge. </p>
+<dl class="section return"><dt>Returns</dt><dd>The vector of the weights </dd></dl>
 
 </div>
 </div>
@@ -386,6 +427,15 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get i-th weight on the edge. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the weight</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the weight </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ab9c509e115de2cd1a2a2dabea629c1a8"></a>
@@ -412,6 +462,15 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get i-th qudrature node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The index of the node</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Point </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a1b41a3c4fc6cbc437424e809c971ae0d"></a>
@@ -436,6 +495,8 @@ template&lt;int N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Number of interior nodes or weights. </p>
 
 </div>
 </div>
@@ -462,6 +523,9 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get all interior nodes. </p>
+<dl class="section return"><dt>Returns</dt><dd>A matrix of size number of nodes x 2 </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af79d17fa10d0d780d4681465fa99420b"></a>
@@ -486,6 +550,9 @@ template&lt;int N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get internal weights. </p>
+<dl class="section return"><dt>Returns</dt><dd>The vector of the weights </dd></dl>
 
 </div>
 </div>
@@ -513,6 +580,15 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get i-th interior weight. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the weight</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the weight </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a664d3e5b0947d83e2986830958e9887b"></a>
@@ -538,6 +614,8 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Number of internal nodes/weights. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -552,6 +630,8 @@ template&lt;int N&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Required by Eigen. </p>
 
 </div>
 </div>
@@ -688,13 +768,13 @@ template&lt;int N&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/carlo/Documents/Polimi/PACS/TSPEED/lib/include/<a class="el" href="QuadratureRule_8hpp_source.html">QuadratureRule.hpp</a></li>
-<li>/home/carlo/Documents/Polimi/PACS/TSPEED/lib/include/<a class="el" href="QuadratureRule__imp_8hpp_source.html">QuadratureRule_imp.hpp</a></li>
+<li>lib/include/<a class="el" href="QuadratureRule_8hpp_source.html">QuadratureRule.hpp</a></li>
+<li>lib/include/<a class="el" href="QuadratureRule__imp_8hpp_source.html">QuadratureRule_imp.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:24:58 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:58 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -3,6 +3,11 @@
 }
 
 
+Multidimensional matrix.  
+
+
+
+
 {\ttfamily \#include $<$My\-Mat.\-hpp$>$}
 
 \subsection*{Public Member Functions}
@@ -14,15 +19,15 @@ virtual \hyperlink{classTspeed_1_1MyMatMultiDim_a1186b247ce40afb915e3fac80f99deb
 \item 
 \hyperlink{classTspeed_1_1MyMatMultiDim_aae1c5f412040fbc3f344f612b4609f95}{My\-Mat\-Multi\-Dim} (\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr}, unsigned int nln)
 \item 
-T \& \hyperlink{classTspeed_1_1MyMatMultiDim_a03782558106363767dd160f5170e6a66}{component} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}, int \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j})
-\item 
-T const \& \hyperlink{classTspeed_1_1MyMatMultiDim_a4d217bb29f278fb65a8f02df72bf7142}{component} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}, int \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j}) const 
-\item 
+T \& \hyperlink{classTspeed_1_1MyMatMultiDim_a03782558106363767dd160f5170e6a66}{component} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Return monodimensimenial block (i,j) \end{DoxyCompactList}\item 
+T const \& \hyperlink{classTspeed_1_1MyMatMultiDim_a4d217bb29f278fb65a8f02df72bf7142}{component} (int i, int j) const 
+\begin{DoxyCompactList}\small\item\em Return monodimensimenial block (i,j) (const version) \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1MyMatMultiDim_a9e0b39723d52237575763129f4056349}{symmetrize} ()
-\item 
-void \hyperlink{classTspeed_1_1MyMatMultiDim_aac722312a8618d4c00033c9f6a86f7f7}{vec\-Mult} (Eigen\-::\-Vector\-Xd const \&, Eigen\-::\-Vector\-Xd \&) const 
-\item 
-\hyperlink{classTspeed_1_1MyMatMultiDim_a34932323d5f4aff040b1e85f5a89d341}{My\-Mat\-Multi\-Dim} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim} \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a})
+\begin{DoxyCompactList}\small\item\em Sum matrix to self transposed. \end{DoxyCompactList}\item 
+void \hyperlink{classTspeed_1_1MyMatMultiDim_afb9d095622f3854247206c256d12127c}{vec\-Mult} (Eigen\-::\-Vector\-Xd const \&x, Eigen\-::\-Vector\-Xd \&out) const 
+\begin{DoxyCompactList}\small\item\em Multiplication by a vector. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1MyMatMultiDim_a34932323d5f4aff040b1e85f5a89d341}{My\-Mat\-Multi\-Dim} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim} \&a)
 \item 
 \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim} \& \hyperlink{classTspeed_1_1MyMatMultiDim_aadd37f5678750bbda4b536ecc5a00851}{operator=} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim} \&\&)=default
 \item 
@@ -31,12 +36,24 @@ Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDim_acc8cd12d144a32a4b
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \hyperlink{classTspeed_1_1MyMatMultiDim_a0f13d96f443b5d3fe2e0ce2f128f5c28}{operator+} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \hyperlink{classTspeed_1_1MyMatMultiDim_a0f13d96f443b5d3fe2e0ce2f128f5c28}{operator+} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&a, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&b)
 \item 
-\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \hyperlink{classTspeed_1_1MyMatMultiDim_afe46b501e059ef54cd6701bfae967263}{operator+} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \hyperlink{classTspeed_1_1MyMatMultiDim_afe46b501e059ef54cd6701bfae967263}{operator+} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&a, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&b)
 \item 
-\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ T $>$ \hyperlink{classTspeed_1_1MyMatMultiDim_a10bafacdfbbd9746fab2e746196f4229}{operator$\ast$} (double const \&\hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x}, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ T $>$ const \&A)
+\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ T $>$ \hyperlink{classTspeed_1_1MyMatMultiDim_a10bafacdfbbd9746fab2e746196f4229}{operator$\ast$} (double const \&x, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ T $>$ const \&A)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Tspeed\-::\-My\-Mat\-Multi\-Dim$<$ T $>$}
+
+Multidimensional matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & type of the monodimensional blocks \\
+\hline
+\end{DoxyTemplParams}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -80,6 +97,20 @@ Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDim_acc8cd12d144a32a4b
 \item[{int}]{j}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatMultiDim_a03782558106363767dd160f5170e6a66}
+
+
+Return monodimensimenial block (i,j) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \char`\"{}row\char`\"{} index \\
+\hline
+{\em j} & \char`\"{}column\char`\"{} index\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A monodimensional matrix of type 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1MyMatMultiDim_a4d217bb29f278fb65a8f02df72bf7142}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim@{Tspeed\-::\-My\-Mat\-Multi\-Dim}!component@{component}}
 \index{component@{component}!Tspeed::MyMatMultiDim@{Tspeed\-::\-My\-Mat\-Multi\-Dim}}
 \subsubsection[{component}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T const\& {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim}$<$ T $>$\-::component (
@@ -88,6 +119,20 @@ Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDim_acc8cd12d144a32a4b
 \item[{int}]{j}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatMultiDim_a4d217bb29f278fb65a8f02df72bf7142}
+
+
+Return monodimensimenial block (i,j) (const version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \char`\"{}row\char`\"{} index \\
+\hline
+{\em j} & \char`\"{}column\char`\"{} index\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A monodimensional matrix of type 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1MyMatMultiDim_acc8cd12d144a32a4be0c2dcb015156df}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim@{Tspeed\-::\-My\-Mat\-Multi\-Dim}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!Tspeed::MyMatMultiDim@{Tspeed\-::\-My\-Mat\-Multi\-Dim}}
 \subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Eigen\-::\-Vector\-Xd {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim}$<$ T $>$\-::operator$\ast$ (
@@ -109,14 +154,29 @@ Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDim_acc8cd12d144a32a4b
 {}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1MyMatMultiDim_a9e0b39723d52237575763129f4056349}
-\hypertarget{classTspeed_1_1MyMatMultiDim_aac722312a8618d4c00033c9f6a86f7f7}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim@{Tspeed\-::\-My\-Mat\-Multi\-Dim}!vec\-Mult@{vec\-Mult}}
+
+
+Sum matrix to self transposed. 
+
+\hypertarget{classTspeed_1_1MyMatMultiDim_afb9d095622f3854247206c256d12127c}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim@{Tspeed\-::\-My\-Mat\-Multi\-Dim}!vec\-Mult@{vec\-Mult}}
 \index{vec\-Mult@{vec\-Mult}!Tspeed::MyMatMultiDim@{Tspeed\-::\-My\-Mat\-Multi\-Dim}}
 \subsubsection[{vec\-Mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim}$<$ T $>$\-::vec\-Mult (
 \begin{DoxyParamCaption}
 \item[{Eigen\-::\-Vector\-Xd const \&}]{x, }
 \item[{Eigen\-::\-Vector\-Xd \&}]{out}
 \end{DoxyParamCaption}
-) const}}\label{classTspeed_1_1MyMatMultiDim_aac722312a8618d4c00033c9f6a86f7f7}
+) const}}\label{classTspeed_1_1MyMatMultiDim_afb9d095622f3854247206c256d12127c}
+
+
+Multiplication by a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & term to be multiplied \\
+\hline
+\mbox{\tt out}  & {\em out} & result of the multiplication \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Friends And Related Function Documentation}

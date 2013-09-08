@@ -92,6 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">TimeAdvance.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Header file for the implementation of the time stepping and of the matrices for the method.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;Eigen/SparseCore&gt;</code><br/>
 <code>#include &lt;Eigen/Dense&gt;</code><br/>
 <code>#include &quot;<a class="el" href="FESpace_8hpp_source.html">FESpace.hpp</a>&quot;</code><br/>
@@ -109,10 +112,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Matrices.html">Tspeed::Matrices</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class containing the matrices resulting from the spatial discretization.  <a href="classTspeed_1_1Matrices.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html">Tspeed::TimeAdvance</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for time stepping methods.  <a href="classTspeed_1_1TimeAdvance.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1LeapFrog.html">Tspeed::LeapFrog</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the second order Leap-Frog explicit time stepping scheme.  <a href="classTspeed_1_1LeapFrog.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -122,15 +128,22 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6a29478b3e21b48d3017dab2e3b10291"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#a6a29478b3e21b48d3017dab2e3b10291">Tspeed::mat_dot</a> (Eigen::Matrix2d const &amp;<a class="el" href="load__and__plot__lamb_8m.html#aa875ab3a8009406dcace7fa71a0f490d">a</a>, Eigen::Matrix2d const &amp;<a class="el" href="load__and__plot__lamb_8m.html#a21c7e548e910bb7ce7dcea81de72c8f7">b</a>)</td></tr>
+<tr class="memitem:a6a29478b3e21b48d3017dab2e3b10291"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#a6a29478b3e21b48d3017dab2e3b10291">Tspeed::mat_dot</a> (Eigen::Matrix2d const &amp;a, Eigen::Matrix2d const &amp;b)</td></tr>
+<tr class="memdesc:a6a29478b3e21b48d3017dab2e3b10291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dot product between two 2x2 matrices.  <a href="#a6a29478b3e21b48d3017dab2e3b10291">More...</a><br/></td></tr>
 <tr class="separator:a6a29478b3e21b48d3017dab2e3b10291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d11c91c5dfc1a66b18914535aaf57b3"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix2d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#a9d11c91c5dfc1a66b18914535aaf57b3">Tspeed::CTensorProduct</a> (Eigen::Matrix2d const &amp;A, double lambda, double mu)</td></tr>
+<tr class="memdesc:a9d11c91c5dfc1a66b18914535aaf57b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">tensor product between Hooke's tensor and matrix A  <a href="#a9d11c91c5dfc1a66b18914535aaf57b3">More...</a><br/></td></tr>
 <tr class="separator:a9d11c91c5dfc1a66b18914535aaf57b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Header file for the implementation of the time stepping and of the matrices for the method. </p>
+<dl class="section author"><dt>Author</dt><dd>Carlo Marcati </dd></dl>
+<dl class="section version"><dt>Version</dt><dd></dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013-09-08 </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:57 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -94,6 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Class for the parameters <img class="formulaInl" alt="$\lambda, \rho, \mu$" src="form_13.png"/> of the elastodynamics equations.  
+ <a href="classTspeed_1_1Parameters.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FESpace_8hpp_source.html">FESpace.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -102,18 +105,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad15fb30d29239fb9d5f6ae2d95448e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9532e35c18436a3ffa9df32e5124b8cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#a9532e35c18436a3ffa9df32e5124b8cf">Parameters</a> (<a class="el" href="namespaceTspeed.html#a7367a01365c4cc2c1a09305b3effc4e8">Mesh_ptr</a> m)</td></tr>
 <tr class="separator:a9532e35c18436a3ffa9df32e5124b8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ff1641236adefffc1a4883713b357a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#a7ff1641236adefffc1a4883713b357a8">setp</a> (std::string const &amp;, int const , double const )</td></tr>
-<tr class="separator:a7ff1641236adefffc1a4883713b357a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8ee931eddac3812e09db45a412685d"><td class="memItemLeft" align="right" valign="top">double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#aec8ee931eddac3812e09db45a412685d">lambda</a> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:a3f92e66ca503e376f51cdceebdc1afaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#a3f92e66ca503e376f51cdceebdc1afaa">setp</a> (std::string const &amp;p, int const lab, double const <a class="el" href="classTspeed_1_1Parameters.html#aec8ee931eddac3812e09db45a412685d">lambda</a>)</td></tr>
+<tr class="memdesc:a3f92e66ca503e376f51cdceebdc1afaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a parameter.  <a href="#a3f92e66ca503e376f51cdceebdc1afaa">More...</a><br/></td></tr>
+<tr class="separator:a3f92e66ca503e376f51cdceebdc1afaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8ee931eddac3812e09db45a412685d"><td class="memItemLeft" align="right" valign="top">double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#aec8ee931eddac3812e09db45a412685d">lambda</a> (int i) const </td></tr>
+<tr class="memdesc:aec8ee931eddac3812e09db45a412685d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get lambda on element i.  <a href="#aec8ee931eddac3812e09db45a412685d">More...</a><br/></td></tr>
 <tr class="separator:aec8ee931eddac3812e09db45a412685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4edca911ff34296039e07b9665ebcfa1"><td class="memItemLeft" align="right" valign="top">double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#a4edca911ff34296039e07b9665ebcfa1">mu</a> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:a4edca911ff34296039e07b9665ebcfa1"><td class="memItemLeft" align="right" valign="top">double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#a4edca911ff34296039e07b9665ebcfa1">mu</a> (int i) const </td></tr>
+<tr class="memdesc:a4edca911ff34296039e07b9665ebcfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mu on element i.  <a href="#a4edca911ff34296039e07b9665ebcfa1">More...</a><br/></td></tr>
 <tr class="separator:a4edca911ff34296039e07b9665ebcfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad111ae3220d2ff1c68130d9dee83665e"><td class="memItemLeft" align="right" valign="top">double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#ad111ae3220d2ff1c68130d9dee83665e">rho</a> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:ad111ae3220d2ff1c68130d9dee83665e"><td class="memItemLeft" align="right" valign="top">double const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#ad111ae3220d2ff1c68130d9dee83665e">rho</a> (int i) const </td></tr>
+<tr class="memdesc:ad111ae3220d2ff1c68130d9dee83665e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rho on element i.  <a href="#ad111ae3220d2ff1c68130d9dee83665e">More...</a><br/></td></tr>
 <tr class="separator:ad111ae3220d2ff1c68130d9dee83665e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70f5fb2033220a579d5c7228a231a619"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#a70f5fb2033220a579d5c7228a231a619">avg_p</a> (std::string const &amp;, int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, int <a class="el" href="vtk__mesh__out_8m.html#af1af736f0a1475ea44566768103395cb">j</a>) const </td></tr>
-<tr class="separator:a70f5fb2033220a579d5c7228a231a619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3e70a0fd2c8aae9af142069c744cbb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html#a9e3e70a0fd2c8aae9af142069c744cbb">avg_p</a> (std::string const &amp;p, int i, int j) const </td></tr>
+<tr class="memdesc:a9e3e70a0fd2c8aae9af142069c744cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the harmonic average of a parameter between two elements.  <a href="#a9e3e70a0fd2c8aae9af142069c744cbb">More...</a><br/></td></tr>
+<tr class="separator:a9e3e70a0fd2c8aae9af142069c744cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for the parameters <img class="formulaInl" alt="$\lambda, \rho, \mu$" src="form_13.png"/> of the elastodynamics equations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad15fb30d29239fb9d5f6ae2d95448e0b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +172,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a70f5fb2033220a579d5c7228a231a619"></a>
+<a class="anchor" id="a9e3e70a0fd2c8aae9af142069c744cbb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -192,6 +202,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the value of the harmonic average of a parameter between two elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>string with the name of the parameter ("lambda", "mu", "rho") </td></tr>
+    <tr><td class="paramname">i</td><td>index of one element </td></tr>
+    <tr><td class="paramname">j</td><td>index of the seocnd element</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>harmonic average </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aec8ee931eddac3812e09db45a412685d"></a>
@@ -215,6 +236,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get lambda on element i. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the element </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -240,6 +269,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get mu on element i. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the element </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ad111ae3220d2ff1c68130d9dee83665e"></a>
@@ -264,9 +301,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get rho on element i. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the element </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a7ff1641236adefffc1a4883713b357a8"></a>
+<a class="anchor" id="a3f92e66ca503e376f51cdceebdc1afaa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -296,6 +341,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set a parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>string with the name of the parameter ("lambda", "mu", "rho") </td></tr>
+    <tr><td class="paramname">lab</td><td>attribute of the mesh partition on which the parameter is set </td></tr>
+    <tr><td class="paramname">lambda</td><td>value of the parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -305,7 +360,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:57 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

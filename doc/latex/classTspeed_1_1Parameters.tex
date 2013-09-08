@@ -3,6 +3,11 @@
 }
 
 
+Class for the parameters $\lambda, \rho, \mu$ of the elastodynamics equations.  
+
+
+
+
 {\ttfamily \#include $<$F\-E\-Space.\-hpp$>$}
 
 \subsection*{Public Member Functions}
@@ -12,17 +17,20 @@ virtual \hyperlink{classTspeed_1_1Parameters_ad15fb30d29239fb9d5f6ae2d95448e0b}{
 \item 
 \hyperlink{classTspeed_1_1Parameters_a9532e35c18436a3ffa9df32e5124b8cf}{Parameters} (\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr} m)
 \item 
-void \hyperlink{classTspeed_1_1Parameters_a7ff1641236adefffc1a4883713b357a8}{setp} (std\-::string const \&, int const , double const )
-\item 
-double const \& \hyperlink{classTspeed_1_1Parameters_aec8ee931eddac3812e09db45a412685d}{lambda} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-double const \& \hyperlink{classTspeed_1_1Parameters_a4edca911ff34296039e07b9665ebcfa1}{mu} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-double const \& \hyperlink{classTspeed_1_1Parameters_ad111ae3220d2ff1c68130d9dee83665e}{rho} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-double \hyperlink{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}{avg\-\_\-p} (std\-::string const \&, int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}, int \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j}) const 
-\end{DoxyCompactItemize}
+void \hyperlink{classTspeed_1_1Parameters_a3f92e66ca503e376f51cdceebdc1afaa}{setp} (std\-::string const \&p, int const lab, double const \hyperlink{classTspeed_1_1Parameters_aec8ee931eddac3812e09db45a412685d}{lambda})
+\begin{DoxyCompactList}\small\item\em Set a parameter. \end{DoxyCompactList}\item 
+double const \& \hyperlink{classTspeed_1_1Parameters_aec8ee931eddac3812e09db45a412685d}{lambda} (int i) const 
+\begin{DoxyCompactList}\small\item\em Get lambda on element i. \end{DoxyCompactList}\item 
+double const \& \hyperlink{classTspeed_1_1Parameters_a4edca911ff34296039e07b9665ebcfa1}{mu} (int i) const 
+\begin{DoxyCompactList}\small\item\em Get mu on element i. \end{DoxyCompactList}\item 
+double const \& \hyperlink{classTspeed_1_1Parameters_ad111ae3220d2ff1c68130d9dee83665e}{rho} (int i) const 
+\begin{DoxyCompactList}\small\item\em Get rho on element i. \end{DoxyCompactList}\item 
+double \hyperlink{classTspeed_1_1Parameters_a9e3e70a0fd2c8aae9af142069c744cbb}{avg\-\_\-p} (std\-::string const \&p, int i, int j) const 
+\begin{DoxyCompactList}\small\item\em Get the value of the harmonic average of a parameter between two elements. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Class for the parameters $\lambda, \rho, \mu$ of the elastodynamics equations. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classTspeed_1_1Parameters_ad15fb30d29239fb9d5f6ae2d95448e0b}{\index{Tspeed\-::\-Parameters@{Tspeed\-::\-Parameters}!$\sim$\-Parameters@{$\sim$\-Parameters}}
@@ -42,7 +50,7 @@ double \hyperlink{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}{a
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}{\index{Tspeed\-::\-Parameters@{Tspeed\-::\-Parameters}!avg\-\_\-p@{avg\-\_\-p}}
+\hypertarget{classTspeed_1_1Parameters_a9e3e70a0fd2c8aae9af142069c744cbb}{\index{Tspeed\-::\-Parameters@{Tspeed\-::\-Parameters}!avg\-\_\-p@{avg\-\_\-p}}
 \index{avg\-\_\-p@{avg\-\_\-p}!Tspeed::Parameters@{Tspeed\-::\-Parameters}}
 \subsubsection[{avg\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}double Tspeed\-::\-Parameters\-::avg\-\_\-p (
 \begin{DoxyParamCaption}
@@ -50,7 +58,23 @@ double \hyperlink{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}{a
 \item[{int}]{i, }
 \item[{int}]{j}
 \end{DoxyParamCaption}
-) const}}\label{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}
+) const}}\label{classTspeed_1_1Parameters_a9e3e70a0fd2c8aae9af142069c744cbb}
+
+
+Get the value of the harmonic average of a parameter between two elements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & string with the name of the parameter (\char`\"{}lambda\char`\"{}, \char`\"{}mu\char`\"{}, \char`\"{}rho\char`\"{}) \\
+\hline
+{\em i} & index of one element \\
+\hline
+{\em j} & index of the seocnd element\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+harmonic average 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Parameters_aec8ee931eddac3812e09db45a412685d}{\index{Tspeed\-::\-Parameters@{Tspeed\-::\-Parameters}!lambda@{lambda}}
 \index{lambda@{lambda}!Tspeed::Parameters@{Tspeed\-::\-Parameters}}
 \subsubsection[{lambda}]{\setlength{\rightskip}{0pt plus 5cm}double const\& Tspeed\-::\-Parameters\-::lambda (
@@ -58,6 +82,15 @@ double \hyperlink{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}{a
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Parameters_aec8ee931eddac3812e09db45a412685d}
+
+
+Get lambda on element i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the element \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Parameters_a4edca911ff34296039e07b9665ebcfa1}{\index{Tspeed\-::\-Parameters@{Tspeed\-::\-Parameters}!mu@{mu}}
 \index{mu@{mu}!Tspeed::Parameters@{Tspeed\-::\-Parameters}}
 \subsubsection[{mu}]{\setlength{\rightskip}{0pt plus 5cm}double const\& Tspeed\-::\-Parameters\-::mu (
@@ -65,6 +98,15 @@ double \hyperlink{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}{a
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Parameters_a4edca911ff34296039e07b9665ebcfa1}
+
+
+Get mu on element i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the element \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Parameters_ad111ae3220d2ff1c68130d9dee83665e}{\index{Tspeed\-::\-Parameters@{Tspeed\-::\-Parameters}!rho@{rho}}
 \index{rho@{rho}!Tspeed::Parameters@{Tspeed\-::\-Parameters}}
 \subsubsection[{rho}]{\setlength{\rightskip}{0pt plus 5cm}double const\& Tspeed\-::\-Parameters\-::rho (
@@ -72,7 +114,16 @@ double \hyperlink{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}{a
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Parameters_ad111ae3220d2ff1c68130d9dee83665e}
-\hypertarget{classTspeed_1_1Parameters_a7ff1641236adefffc1a4883713b357a8}{\index{Tspeed\-::\-Parameters@{Tspeed\-::\-Parameters}!setp@{setp}}
+
+
+Get rho on element i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the element \\
+\hline
+\end{DoxyParams}
+\hypertarget{classTspeed_1_1Parameters_a3f92e66ca503e376f51cdceebdc1afaa}{\index{Tspeed\-::\-Parameters@{Tspeed\-::\-Parameters}!setp@{setp}}
 \index{setp@{setp}!Tspeed::Parameters@{Tspeed\-::\-Parameters}}
 \subsubsection[{setp}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Parameters\-::setp (
 \begin{DoxyParamCaption}
@@ -80,7 +131,20 @@ double \hyperlink{classTspeed_1_1Parameters_a70f5fb2033220a579d5c7228a231a619}{a
 \item[{int const}]{lab, }
 \item[{double const}]{lambda}
 \end{DoxyParamCaption}
-)}}\label{classTspeed_1_1Parameters_a7ff1641236adefffc1a4883713b357a8}
+)}}\label{classTspeed_1_1Parameters_a3f92e66ca503e376f51cdceebdc1afaa}
+
+
+Set a parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & string with the name of the parameter (\char`\"{}lambda\char`\"{}, \char`\"{}mu\char`\"{}, \char`\"{}rho\char`\"{}) \\
+\hline
+{\em lab} & attribute of the mesh partition on which the parameter is set \\
+\hline
+{\em lambda} & value of the parameter \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

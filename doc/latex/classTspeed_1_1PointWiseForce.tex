@@ -3,6 +3,11 @@
 }
 
 
+Time dependent force acting on a point.  
+
+
+
+
 {\ttfamily \#include $<$Force.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Point\-Wise\-Force\-:\begin{figure}[H]
@@ -14,25 +19,46 @@ Inheritance diagram for Tspeed\-:\-:Point\-Wise\-Force\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$int N, typename Q , typename S $>$ }\\\hyperlink{classTspeed_1_1PointWiseForce_ad30aab53a735b22fac2b5cfeaa4d0c28}{Point\-Wise\-Force} (\hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}$<$ std\-::array$<$ double, 2 $>$(const double \&)$>$ const \&, \hyperlink{classTspeed_1_1Geo_1_1Point}{Geo\-::\-Point}, \hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$)
-\item 
+{\footnotesize template$<$int N, typename Q , typename S $>$ }\\\hyperlink{classTspeed_1_1PointWiseForce_afbc52ae18411c6a212ed68812fd0fd36}{Point\-Wise\-Force} (std\-::function$<$ std\-::array$<$ double, 2 $>$(const double \&)$>$ const \&f, \hyperlink{classTspeed_1_1Geo_1_1Point}{Geo\-::\-Point} p, \hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$ Xh)
+\begin{DoxyCompactList}\small\item\em Costructor taking the function, the point where the force is applied and the function space. \end{DoxyCompactList}\item 
 virtual \hyperlink{classTspeed_1_1PointWiseForce_a34ad80033ed1e9d5ba31feffae4ab7c9}{$\sim$\-Point\-Wise\-Force} ()
 \item 
-\hyperlink{classTspeed_1_1Force_ab33d4f6bed9bf9a136afd1ac5a918c93}{Vec} \hyperlink{classTspeed_1_1PointWiseForce_ae52b1302d87e4535620e205fe030d542}{eval} (const double \&) const 
-\end{DoxyCompactItemize}
+\hyperlink{classTspeed_1_1Force_ab33d4f6bed9bf9a136afd1ac5a918c93}{Vec} \hyperlink{classTspeed_1_1PointWiseForce_a6689b6fa7289a81fc4feed63dafab143}{eval} (const double \&t) const 
+\begin{DoxyCompactList}\small\item\em Get value of force vector, i.\-e. \[ r_i = \int_K f \psi_i \] at time t, where $f$ is non null in $K$. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+Time dependent force acting on a point. 
+
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classTspeed_1_1PointWiseForce_ad30aab53a735b22fac2b5cfeaa4d0c28}{\index{Tspeed\-::\-Point\-Wise\-Force@{Tspeed\-::\-Point\-Wise\-Force}!Point\-Wise\-Force@{Point\-Wise\-Force}}
+\hypertarget{classTspeed_1_1PointWiseForce_afbc52ae18411c6a212ed68812fd0fd36}{\index{Tspeed\-::\-Point\-Wise\-Force@{Tspeed\-::\-Point\-Wise\-Force}!Point\-Wise\-Force@{Point\-Wise\-Force}}
 \index{Point\-Wise\-Force@{Point\-Wise\-Force}!Tspeed::PointWiseForce@{Tspeed\-::\-Point\-Wise\-Force}}
 \subsubsection[{Point\-Wise\-Force}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ Tspeed\-::\-Point\-Wise\-Force\-::\-Point\-Wise\-Force (
 \begin{DoxyParamCaption}
-\item[{{\bf std\-::function}$<$ std\-::array$<$ double, 2 $>$(const double \&)$>$ const \&}]{f, }
+\item[{std\-::function$<$ std\-::array$<$ double, 2 $>$(const double \&)$>$ const \&}]{f, }
 \item[{{\bf Geo\-::\-Point}}]{p, }
 \item[{{\bf F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$}]{Xh}
 \end{DoxyParamCaption}
-)}}\label{classTspeed_1_1PointWiseForce_ad30aab53a735b22fac2b5cfeaa4d0c28}
+)}}\label{classTspeed_1_1PointWiseForce_afbc52ae18411c6a212ed68812fd0fd36}
+
+
+Costructor taking the function, the point where the force is applied and the function space. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N,Q,S} & the template parameters of the function space \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the force \\
+\hline
+{\em p} & the point \\
+\hline
+{\em Xh} & the space \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1PointWiseForce_a34ad80033ed1e9d5ba31feffae4ab7c9}{\index{Tspeed\-::\-Point\-Wise\-Force@{Tspeed\-::\-Point\-Wise\-Force}!$\sim$\-Point\-Wise\-Force@{$\sim$\-Point\-Wise\-Force}}
 \index{$\sim$\-Point\-Wise\-Force@{$\sim$\-Point\-Wise\-Force}!Tspeed::PointWiseForce@{Tspeed\-::\-Point\-Wise\-Force}}
 \subsubsection[{$\sim$\-Point\-Wise\-Force}]{\setlength{\rightskip}{0pt plus 5cm}virtual Tspeed\-::\-Point\-Wise\-Force\-::$\sim$\-Point\-Wise\-Force (
@@ -43,13 +69,25 @@ virtual \hyperlink{classTspeed_1_1PointWiseForce_a34ad80033ed1e9d5ba31feffae4ab7
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classTspeed_1_1PointWiseForce_ae52b1302d87e4535620e205fe030d542}{\index{Tspeed\-::\-Point\-Wise\-Force@{Tspeed\-::\-Point\-Wise\-Force}!eval@{eval}}
+\hypertarget{classTspeed_1_1PointWiseForce_a6689b6fa7289a81fc4feed63dafab143}{\index{Tspeed\-::\-Point\-Wise\-Force@{Tspeed\-::\-Point\-Wise\-Force}!eval@{eval}}
 \index{eval@{eval}!Tspeed::PointWiseForce@{Tspeed\-::\-Point\-Wise\-Force}}
 \subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Vector\-Xd Tspeed\-::\-Point\-Wise\-Force\-::eval (
 \begin{DoxyParamCaption}
 \item[{const double \&}]{t}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTspeed_1_1PointWiseForce_ae52b1302d87e4535620e205fe030d542}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTspeed_1_1PointWiseForce_a6689b6fa7289a81fc4feed63dafab143}
+
+
+Get value of force vector, i.\-e. \[ r_i = \int_K f \psi_i \] at time t, where $f$ is non null in $K$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & the time\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector with elements $ r_i $ 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classTspeed_1_1Force_ac174525b11c7c6a490411d00330a3564}{Tspeed\-::\-Force}.

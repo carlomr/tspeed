@@ -95,6 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>The class containing the matrices resulting from the spatial discretization.  
+ <a href="classTspeed_1_1Matrices.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TimeAdvance_8hpp_source.html">TimeAdvance.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -107,22 +110,41 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4b46e2f7a2056a6c5f3a803157236bc"><td class="memTemplParams" colspan="2">template&lt;int N, typename Q , typename S &gt; </td></tr>
 <tr class="memitem:ad4b46e2f7a2056a6c5f3a803157236bc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Matrices.html#ad4b46e2f7a2056a6c5f3a803157236bc">Matrices</a> (<a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr</a>&lt; N, Q, S &gt;, <a class="el" href="classTspeed_1_1Parameters.html">Parameters</a> const &amp;)</td></tr>
+<tr class="memdesc:ad4b46e2f7a2056a6c5f3a803157236bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor taking the space and the parameters.  <a href="#ad4b46e2f7a2056a6c5f3a803157236bc">More...</a><br/></td></tr>
 <tr class="separator:ad4b46e2f7a2056a6c5f3a803157236bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee3310af2c6fa476099673ebf61c242"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1MyMatMultiDim.html">MyMatMultiDim</a>&lt; <a class="el" href="classTspeed_1_1MyMatBlockDiag.html">MyMatBlockDiag</a> &gt;<br class="typebreak"/>
  const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Matrices.html#a4ee3310af2c6fa476099673ebf61c242">getA</a> ()</td></tr>
+<tr class="memdesc:a4ee3310af2c6fa476099673ebf61c242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stiffness matrix </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ A_{ij} = \sum_K \int_K \sigma(\phi_j):\epsilon(\phi_i) \]" src="form_20.png"/>
+</p>
+<p>.  <a href="#a4ee3310af2c6fa476099673ebf61c242">More...</a><br/></td></tr>
 <tr class="separator:a4ee3310af2c6fa476099673ebf61c242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95dfd802f178cf5dc51967ad70cf36cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1MyMatMultiDim.html">MyMatMultiDim</a>&lt; <a class="el" href="classTspeed_1_1MyMat.html">MyMat</a> &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Matrices.html#a95dfd802f178cf5dc51967ad70cf36cd">getS</a> ()</td></tr>
+<tr class="memdesc:a95dfd802f178cf5dc51967ad70cf36cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stability matrix </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ S_{ij} = \sum_e \int_e [[\phi_j]] : [[\phi_i]] \]" src="form_22.png"/>
+</p>
+<p>.  <a href="#a95dfd802f178cf5dc51967ad70cf36cd">More...</a><br/></td></tr>
 <tr class="separator:a95dfd802f178cf5dc51967ad70cf36cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c435049af0aa48eacd9a9dc99627fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1MyMatMultiDim.html">MyMatMultiDim</a>&lt; <a class="el" href="classTspeed_1_1MyMat.html">MyMat</a> &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Matrices.html#a78c435049af0aa48eacd9a9dc99627fa">getI</a> ()</td></tr>
+<tr class="memdesc:a78c435049af0aa48eacd9a9dc99627fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the interelement matrix </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ S_{ij} = \sum_e \int_e \lbrace\lbrace\sigma(\phi_j)\rbrace\rbrace : [[\phi_i]] + \lbrace\lbrace\sigma(\phi_i)\rbrace\rbrace : [[\phi_j]] \]" src="form_25.png"/>
+</p>
+<p>.  <a href="#a78c435049af0aa48eacd9a9dc99627fa">More...</a><br/></td></tr>
 <tr class="separator:a78c435049af0aa48eacd9a9dc99627fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5358482d27d03d838c597ec2eb79a71c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1MyMatMultiDimBlockDiag.html">MyMatMultiDimBlockDiag</a><br class="typebreak"/>
 &lt; <a class="el" href="classTspeed_1_1MyMatBlockDiag.html">MyMatBlockDiag</a> &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Matrices.html#a5358482d27d03d838c597ec2eb79a71c">getinvM</a> ()</td></tr>
+<tr class="memdesc:a5358482d27d03d838c597ec2eb79a71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get inverse of the global mass matrix.  <a href="#a5358482d27d03d838c597ec2eb79a71c">More...</a><br/></td></tr>
 <tr class="separator:a5358482d27d03d838c597ec2eb79a71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1893bd97b0320d078e6cd1e97e3cbd5a"><td class="memTemplParams" colspan="2">template&lt;int N, typename Q , typename T &gt; </td></tr>
 <tr class="memitem:a1893bd97b0320d078e6cd1e97e3cbd5a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Matrices.html#a1893bd97b0320d078e6cd1e97e3cbd5a">Matrices</a> (<a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr</a>&lt; N, Q, T &gt; Xh, <a class="el" href="classTspeed_1_1Parameters.html">Parameters</a> const &amp;P)</td></tr>
 <tr class="separator:a1893bd97b0320d078e6cd1e97e3cbd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The class containing the matrices resulting from the spatial discretization. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aec4249f1ac32c3249adae9c91bac1cbf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -161,6 +183,8 @@ template&lt;int N, typename Q , typename S &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor taking the space and the parameters. </p>
 
 </div>
 </div>
@@ -214,6 +238,13 @@ template&lt;int N, typename Q , typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the stiffness matrix </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ A_{ij} = \sum_K \int_K \sigma(\phi_j):\epsilon(\phi_i) \]" src="form_20.png"/>
+</p>
+<p>. </p>
+<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl" alt="$\mathbf{A}$" src="form_21.png"/> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a78c435049af0aa48eacd9a9dc99627fa"></a>
@@ -236,6 +267,13 @@ template&lt;int N, typename Q , typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the interelement matrix </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ S_{ij} = \sum_e \int_e \lbrace\lbrace\sigma(\phi_j)\rbrace\rbrace : [[\phi_i]] + \lbrace\lbrace\sigma(\phi_i)\rbrace\rbrace : [[\phi_j]] \]" src="form_25.png"/>
+</p>
+<p>. </p>
+<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl" alt="$\mathbf{S}$" src="form_23.png"/> </dd></dl>
 
 </div>
 </div>
@@ -260,6 +298,9 @@ template&lt;int N, typename Q , typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get inverse of the global mass matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl" alt="$ \mathbf{M}^{-1}$" src="form_26.png"/> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a95dfd802f178cf5dc51967ad70cf36cd"></a>
@@ -283,6 +324,13 @@ template&lt;int N, typename Q , typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the stability matrix </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ S_{ij} = \sum_e \int_e [[\phi_j]] : [[\phi_i]] \]" src="form_22.png"/>
+</p>
+<p>. </p>
+<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl" alt="$\mathbf{S}$" src="form_23.png"/> </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -292,7 +340,7 @@ template&lt;int N, typename Q , typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:04 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:59 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

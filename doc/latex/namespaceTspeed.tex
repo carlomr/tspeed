@@ -10,56 +10,58 @@ namespace \hyperlink{namespaceTspeed_1_1Geo}{Geo}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classTspeed_1_1FESpace}{F\-E\-Space}
-\item 
+\begin{DoxyCompactList}\small\item\em Functional space. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Parameters}{Parameters}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for the parameters $\lambda, \rho, \mu$ of the elastodynamics equations. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Force}{Force}
-\item 
+\begin{DoxyCompactList}\small\item\em virtual base class for forces \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1PointWiseForce}{Point\-Wise\-Force}
-\item 
+\begin{DoxyCompactList}\small\item\em Time dependent force acting on a point. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Entity}{Entity}
-\item 
+\begin{DoxyCompactList}\small\item\em Base class for geometrical entities. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Mesh}{Mesh}
 \item 
 class \hyperlink{classTspeed_1_1BaseMat}{Base\-Mat}
-\item 
+\begin{DoxyCompactList}\small\item\em Base monodimensional matrix class. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag}
-\item 
+\begin{DoxyCompactList}\small\item\em Block diagonal monodimensional matrix (monodimensional block of mass and stress-\/strain matrices) \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1MyMat}{My\-Mat}
-\item 
+\begin{DoxyCompactList}\small\item\em Block Matrix (monodimensial blocks of stability and interelement matrices) \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}
-\item 
+\begin{DoxyCompactList}\small\item\em Multidimensional matrix. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag}
-\item 
-class {\bfseries Quadrature\-Rule}
-\item 
+\begin{DoxyCompactList}\small\item\em Matrix class for matrices where only the diagonal monodimensional matrices are non zero (i.\-e. the mass matrix) \end{DoxyCompactList}\item 
+class \hyperlink{classTspeed_1_1QuadratureRule}{Quadrature\-Rule}
+\begin{DoxyCompactList}\small\item\em Base class for quadrature rules. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Gauss}{Gauss}
-\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTspeed_1_1Gauss}{Gauss} quadrature rule on the triangle. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Dunavant}{Dunavant}
-\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTspeed_1_1Dunavant}{Dunavant} \mbox{[}1\mbox{]} quadrature rule. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1PointWiseEntity}{Point\-Wise\-Entity}
-\item 
+\begin{DoxyCompactList}\small\item\em A base class for pointwise entities, with the points and the basis function in that points. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Receivers}{Receivers}
-\item 
+\begin{DoxyCompactList}\small\item\em A class for seismic receivers, i.\-e., receivers recording the movement at a point. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1ShapeFunction}{Shape\-Function}
-\item 
+\begin{DoxyCompactList}\small\item\em Base class for the shared functions. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Dubiner}{Dubiner}
-\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTspeed_1_1Dubiner}{Dubiner} \mbox{[}1\mbox{]} basis. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1BoundaryAdapted}{Boundary\-Adapted}
-\item 
+\begin{DoxyCompactList}\small\item\em Boundary adapted \mbox{[}2\mbox{]} basis. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Matrices}{Matrices}
-\item 
+\begin{DoxyCompactList}\small\item\em The class containing the matrices resulting from the spatial discretization. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1TimeAdvance}{Time\-Advance}
-\item 
+\begin{DoxyCompactList}\small\item\em Base class for time stepping methods. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1LeapFrog}{Leap\-Frog}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Implementation of the second order Leap-\/\-Frog explicit time stepping scheme. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 {\footnotesize template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ }\\using \hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr} = std\-::shared\-\_\-ptr$<$ \hyperlink{classTspeed_1_1FESpace}{F\-E\-Space}$<$ N, Q, S $>$$>$
+\begin{DoxyCompactList}\small\item\em template pointer to \hyperlink{classTspeed_1_1FESpace}{F\-E\-Space} \end{DoxyCompactList}\item 
+typedef std\-::shared\-\_\-ptr$<$ \hyperlink{classTspeed_1_1Force}{Force} $>$ \hyperlink{namespaceTspeed_a3795c740b127fc84de9d80cc919dd4d1}{Force\-\_\-ptr}
 \item 
 typedef std\-::shared\-\_\-ptr$<$ \hyperlink{classTspeed_1_1Mesh}{Mesh} $>$ \hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Shared pointer to an element of type mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -78,29 +80,27 @@ Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_a47058bd8c3ef387978ab2b5c810386
 \item 
 Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_a709169815b0e02183d3c4d5b581e735f}{operator$\ast$} (\hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} const \&, Eigen\-::\-Vector\-Xd const \&)
 \item 
-\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{namespaceTspeed_ab8df12f3c804c527b4d9006350d50c62}{operator+} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, \hyperlink{classTspeed_1_1MyMat}{My\-Mat} const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{namespaceTspeed_ab8df12f3c804c527b4d9006350d50c62}{operator+} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} a, \hyperlink{classTspeed_1_1MyMat}{My\-Mat} const \&b)
 \item 
-\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{namespaceTspeed_a1f4d38ebd3223a0e5ea8cfad29fcc10c}{operator+} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
-\item 
-{\footnotesize template$<$int N$>$ }\\constexpr int \hyperlink{namespaceTspeed_abe613e0b4c7defa00ceffeca9747e2a6}{dunavant\-\_\-num\-\_\-points} ()
+\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{namespaceTspeed_a1f4d38ebd3223a0e5ea8cfad29fcc10c}{operator+} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} a, \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} const \&b)
 \item 
 Eigen\-::\-Array\-Xd \hyperlink{namespaceTspeed_a9ba8173dee16becd9ff4f59553c2d042}{jacobi\-\_\-polynomial} (int N, int alpha, int beta, Eigen\-::\-Array\-Xd const \&z)
 \item 
-double \hyperlink{namespaceTspeed_a6a29478b3e21b48d3017dab2e3b10291}{mat\-\_\-dot} (Eigen\-::\-Matrix2d const \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, Eigen\-::\-Matrix2d const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
-\item 
+double \hyperlink{namespaceTspeed_a6a29478b3e21b48d3017dab2e3b10291}{mat\-\_\-dot} (Eigen\-::\-Matrix2d const \&a, Eigen\-::\-Matrix2d const \&b)
+\begin{DoxyCompactList}\small\item\em Dot product between two 2x2 matrices. \end{DoxyCompactList}\item 
 Eigen\-::\-Matrix2d \hyperlink{namespaceTspeed_a9d11c91c5dfc1a66b18914535aaf57b3}{C\-Tensor\-Product} (Eigen\-::\-Matrix2d const \&A, double lambda, double mu)
-\item 
+\begin{DoxyCompactList}\small\item\em tensor product between Hooke's tensor and matrix A \end{DoxyCompactList}\item 
 Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_a50c55e28e30f425387c5cd23c59fbcbc}{operator$\ast$} (\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&A, Eigen\-::\-Vector\-Xd const \&v)
 \item 
 Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_a9c66d3a5dfbcc24d4a5a60af27d25e79}{operator$\ast$} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \&A, Eigen\-::\-Vector\-Xd const \&v)
 \item 
 Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a70}{operator$\ast$} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ \&A, Eigen\-::\-Vector\-Xd const \&v)
 \item 
-\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \hyperlink{namespaceTspeed_aba1b7bce0d7c55cda2d7452fe2675879}{operator+} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \hyperlink{namespaceTspeed_aba1b7bce0d7c55cda2d7452fe2675879}{operator+} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&a, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&b)
 \item 
-\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \hyperlink{namespaceTspeed_aa89f27c4c9e53c2e7ec8e25f2e1451de}{operator+} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ \hyperlink{namespaceTspeed_aa89f27c4c9e53c2e7ec8e25f2e1451de}{operator+} (\hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \&a, \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&b)
 \item 
-\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{namespaceTspeed_a5c1d03d05f350c1ae6239e07f80b6eb8}{operator+} (\hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b}, \hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a})
+\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{namespaceTspeed_a5c1d03d05f350c1ae6239e07f80b6eb8}{operator+} (\hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} const \&b, \hyperlink{classTspeed_1_1MyMat}{My\-Mat} a)
 \end{DoxyCompactItemize}
 
 
@@ -108,9 +108,25 @@ Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a
 \hypertarget{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{\index{Tspeed@{Tspeed}!F\-E\-Space\-\_\-ptr@{F\-E\-Space\-\_\-ptr}}
 \index{F\-E\-Space\-\_\-ptr@{F\-E\-Space\-\_\-ptr}!Tspeed@{Tspeed}}
 \subsubsection[{F\-E\-Space\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q  = Gauss$<$\-N+1$>$, typename S  = Dubiner$<$\-N$>$$>$ using {\bf Tspeed\-::\-F\-E\-Space\-\_\-ptr} = typedef std\-::shared\-\_\-ptr$<${\bf F\-E\-Space}$<$N,Q,S$>$$>$}}\label{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}
+
+
+template pointer to \hyperlink{classTspeed_1_1FESpace}{F\-E\-Space} 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N,Q,S} & the same template parameters as \hyperlink{classTspeed_1_1FESpace}{F\-E\-Space} \\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{namespaceTspeed_a3795c740b127fc84de9d80cc919dd4d1}{\index{Tspeed@{Tspeed}!Force\-\_\-ptr@{Force\-\_\-ptr}}
+\index{Force\-\_\-ptr@{Force\-\_\-ptr}!Tspeed@{Tspeed}}
+\subsubsection[{Force\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::shared\-\_\-ptr$<${\bf Force}$>$ {\bf Tspeed\-::\-Force\-\_\-ptr}}}\label{namespaceTspeed_a3795c740b127fc84de9d80cc919dd4d1}
 \hypertarget{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{\index{Tspeed@{Tspeed}!Mesh\-\_\-ptr@{Mesh\-\_\-ptr}}
 \index{Mesh\-\_\-ptr@{Mesh\-\_\-ptr}!Tspeed@{Tspeed}}
 \subsubsection[{Mesh\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::shared\-\_\-ptr$<${\bf Mesh}$>$ {\bf Tspeed\-::\-Mesh\-\_\-ptr}}}\label{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}
+
+
+Shared pointer to an element of type mesh. 
+
 
 
 \subsection{Enumeration Type Documentation}
@@ -142,13 +158,20 @@ Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a
 \item[{double}]{mu}
 \end{DoxyParamCaption}
 )}}\label{namespaceTspeed_a9d11c91c5dfc1a66b18914535aaf57b3}
-\hypertarget{namespaceTspeed_abe613e0b4c7defa00ceffeca9747e2a6}{\index{Tspeed@{Tspeed}!dunavant\-\_\-num\-\_\-points@{dunavant\-\_\-num\-\_\-points}}
-\index{dunavant\-\_\-num\-\_\-points@{dunavant\-\_\-num\-\_\-points}!Tspeed@{Tspeed}}
-\subsubsection[{dunavant\-\_\-num\-\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ constexpr int Tspeed\-::dunavant\-\_\-num\-\_\-points (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{namespaceTspeed_abe613e0b4c7defa00ceffeca9747e2a6}
+
+
+tensor product between Hooke's tensor and matrix A 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the matrix \\
+\hline
+{\em lambda,mu} & Hooke's constants\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \hypertarget{namespaceTspeed_a9ba8173dee16becd9ff4f59553c2d042}{\index{Tspeed@{Tspeed}!jacobi\-\_\-polynomial@{jacobi\-\_\-polynomial}}
 \index{jacobi\-\_\-polynomial@{jacobi\-\_\-polynomial}!Tspeed@{Tspeed}}
 \subsubsection[{jacobi\-\_\-polynomial}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Array\-Xd Tspeed\-::jacobi\-\_\-polynomial (
@@ -167,6 +190,18 @@ Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a
 \item[{Eigen\-::\-Matrix2d const \&}]{b}
 \end{DoxyParamCaption}
 )}}\label{namespaceTspeed_a6a29478b3e21b48d3017dab2e3b10291}
+
+
+Dot product between two 2x2 matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a,b} & the matrices $\mathbf{A}, \mathbf{B}$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\sum_{ij} A_{ij} B_{ij} $ 
+\end{DoxyReturn}
 \hypertarget{namespaceTspeed_a50c55e28e30f425387c5cd23c59fbcbc}{\index{Tspeed@{Tspeed}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!Tspeed@{Tspeed}}
 \subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Vector\-Xd Tspeed\-::operator$\ast$ (
@@ -183,6 +218,14 @@ Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a
 \item[{Eigen\-::\-Vector\-Xd const \&}]{v}
 \end{DoxyParamCaption}
 )}}\label{namespaceTspeed_a9c66d3a5dfbcc24d4a5a60af27d25e79}
+\hypertarget{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a70}{\index{Tspeed@{Tspeed}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Tspeed@{Tspeed}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Vector\-Xd Tspeed\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{My\-Mat\-Multi\-Dim$<$ My\-Mat\-Block\-Diag $>$ \&}]{A, }
+\item[{Eigen\-::\-Vector\-Xd const \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a70}
 \hypertarget{namespaceTspeed_ae052fa580f4cab9151f68a690e8d5bca}{\index{Tspeed@{Tspeed}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!Tspeed@{Tspeed}}
 \subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat} Tspeed\-::operator$\ast$ (
@@ -207,14 +250,6 @@ Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a
 \item[{Eigen\-::\-Vector\-Xd const \&}]{x}
 \end{DoxyParamCaption}
 )}}\label{namespaceTspeed_a709169815b0e02183d3c4d5b581e735f}
-\hypertarget{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a70}{\index{Tspeed@{Tspeed}!operator$\ast$@{operator$\ast$}}
-\index{operator$\ast$@{operator$\ast$}!Tspeed@{Tspeed}}
-\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Vector\-Xd Tspeed\-::operator$\ast$ (
-\begin{DoxyParamCaption}
-\item[{My\-Mat\-Multi\-Dim$<$ My\-Mat\-Block\-Diag $>$ \&}]{A, }
-\item[{Eigen\-::\-Vector\-Xd const \&}]{v}
-\end{DoxyParamCaption}
-)}}\label{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a70}
 \hypertarget{namespaceTspeed_ab8df12f3c804c527b4d9006350d50c62}{\index{Tspeed@{Tspeed}!operator+@{operator+}}
 \index{operator+@{operator+}!Tspeed@{Tspeed}}
 \subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat} Tspeed\-::operator+ (

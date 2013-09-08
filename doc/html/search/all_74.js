@@ -1,25 +1,20 @@
 var searchData=
 [
   ['geo',['Geo',['../namespaceTspeed_1_1Geo.html',1,'Tspeed']]],
-  ['t',['t',['../load__and__plot_8m.html#abb55df6ac50646b7ac5e158e61b71270',1,'t():&#160;load_and_plot.m'],['../plot__seismogram_8m.html#aaccc9105df5383111407fd5b41255e23',1,'t():&#160;plot_seismogram.m']]],
-  ['text',['text',['../load__and__plot__lamb_8m.html#af575f17e6be3f269b86b041a60560dbf',1,'load_and_plot_lamb.m']]],
   ['time_5fsize',['TIME_SIZE',['../Dunavant_8cpp.html#ac1c7bc76dbfd8378fc96541a6243afd1',1,'TIME_SIZE():&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#ac1c7bc76dbfd8378fc96541a6243afd1',1,'TIME_SIZE():&#160;Dunavant.cpp']]],
   ['timeadvance',['TimeAdvance',['../classTspeed_1_1TimeAdvance.html',1,'Tspeed']]],
-  ['timeadvance',['TimeAdvance',['../classTspeed_1_1TimeAdvance.html#a0ab9c0637d3de35291c4f845dba713fe',1,'Tspeed::TimeAdvance']]],
+  ['timeadvance',['TimeAdvance',['../classTspeed_1_1TimeAdvance.html#ab7fb5289ea62abe7da6c4423bf19f667',1,'Tspeed::TimeAdvance']]],
   ['timeadvance_2ecpp',['TimeAdvance.cpp',['../TimeAdvance_8cpp.html',1,'']]],
   ['timeadvance_2ehpp',['TimeAdvance.hpp',['../TimeAdvance_8hpp.html',1,'']]],
   ['timeadvance_5fimp_2ehpp',['TimeAdvance_imp.hpp',['../TimeAdvance__imp_8hpp.html',1,'']]],
   ['timestamp',['timestamp',['../Dunavant_8hpp.html#a02d8f81e512334c1e2e5be025c41afa8',1,'timestamp(void):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#a2219d86aef2195ff323e8349d92abe86',1,'timestamp():&#160;Dunavant.cpp']]],
   ['timestring',['timestring',['../Dunavant_8hpp.html#a887a2ef0f2104b41fc76c017d6b6bf78',1,'timestring(void):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#aed39b9263496de5339e7a0ca2f993693',1,'timestring():&#160;Dunavant.cpp']]],
-  ['title',['title',['../load__and__plot_8m.html#a943bb93e971d94efb4439b0d7e3145f6',1,'title(&apos;u_x&apos;):&#160;load_and_plot.m'],['../load__and__plot_8m.html#aac61e03872b4f67a9780aac4b265457e',1,'title(&apos;u_y&apos;):&#160;load_and_plot.m'],['../load__and__plot__lamb_8m.html#a943bb93e971d94efb4439b0d7e3145f6',1,'title(&apos;u_x&apos;):&#160;load_and_plot_lamb.m'],['../load__and__plot__lamb_8m.html#aac61e03872b4f67a9780aac4b265457e',1,'title(&apos;u_y&apos;):&#160;load_and_plot_lamb.m']]],
   ['toeig',['toEig',['../classTspeed_1_1Geo_1_1Point.html#a4a3f7bd060f187b20cc258c47bf89da9',1,'Tspeed::Geo::Point']]],
-  ['tri',['tri',['../vtk__mesh__out_8m.html#a7ac8b2d1e6f9bc687fb4686e3db0e5c2',1,'vtk_mesh_out.m']]],
   ['triangle',['Triangle',['../classTspeed_1_1Geo_1_1Triangle.html',1,'Tspeed::Geo']]],
-  ['triangle',['Triangle',['../classTspeed_1_1Geo_1_1Triangle.html#a96ea06e6dbd9b707184c5e22d305e6e6',1,'Tspeed::Geo::Triangle::Triangle()'],['../classTspeed_1_1Geo_1_1Triangle.html#a30f712bbedbf84ef114de38c04c7b274',1,'Tspeed::Geo::Triangle::Triangle(const Point &amp;, const Point &amp;, const Point &amp;)'],['../classTspeed_1_1Geo_1_1Triangle.html#a3688a8a85846b3262366267d85e80d5a',1,'Tspeed::Geo::Triangle::Triangle(const Triangle &amp;)=default']]],
+  ['triangle',['Triangle',['../classTspeed_1_1Geo_1_1Triangle.html#a96ea06e6dbd9b707184c5e22d305e6e6',1,'Tspeed::Geo::Triangle::Triangle()'],['../classTspeed_1_1Geo_1_1Triangle.html#a06a3c8a78d0e633b48df2a62db82e1cf',1,'Tspeed::Geo::Triangle::Triangle(const Point &amp;a, const Point &amp;b, const Point &amp;c)'],['../classTspeed_1_1Geo_1_1Triangle.html#a3688a8a85846b3262366267d85e80d5a',1,'Tspeed::Geo::Triangle::Triangle(const Triangle &amp;)=default']]],
   ['triangle_5farea',['triangle_area',['../Dunavant_8hpp.html#a08a0e9db99fb867596e84d1871713606',1,'triangle_area(double t[2 *3]):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#a08a0e9db99fb867596e84d1871713606',1,'triangle_area(double t[2 *3]):&#160;Dunavant.cpp']]],
   ['triangle_5fpoints_5fplot',['triangle_points_plot',['../Dunavant_8hpp.html#af9c39491facec8d0f07a1a458c4323e8',1,'triangle_points_plot(char *file_name, double node_xy[], int node_show, int point_num, double point_xy[], int point_show):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#af9c39491facec8d0f07a1a458c4323e8',1,'triangle_points_plot(char *file_name, double node_xy[], int node_show, int point_num, double point_xy[], int point_show):&#160;Dunavant.cpp']]],
   ['tspeed',['Tspeed',['../namespaceTspeed.html',1,'']]],
-  ['tspeed_2ehpp',['TSPEED.hpp',['../TSPEED_8hpp.html',1,'']]],
   ['tspeed_2ehpp',['TSPEED.hpp',['../lib_2include_2TSPEED_8hpp.html',1,'']]],
-  ['type',['type',['../load__and__plot__lamb_8m.html#a7aead736a07eaf25623ad7bfa1f0ee2d',1,'load_and_plot_lamb.m']]]
+  ['tspeed_2ehpp',['TSPEED.hpp',['../TSPEED_8hpp.html',1,'']]]
 ];

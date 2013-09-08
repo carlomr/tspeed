@@ -27,24 +27,24 @@ $<$ Eigen\-::\-Vector2d $>$ $>$ \hyperlink{classTspeed_1_1Mesh_aa8aac31131166087
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classTspeed_1_1Mesh_a0f7593775e6a7b36d877551df395299f}{Mesh} (const std\-::string)
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Triangle}{Geo\-::\-Triangle} const \& \hyperlink{classTspeed_1_1Mesh_a20ac8fd5940e93ec902f343211100d78}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Triangle}{Geo\-::\-Triangle} \& \hyperlink{classTspeed_1_1Mesh_af6688d1a47cee1baf69ea6d38d721a4a}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i})
-\item 
+\hyperlink{classTspeed_1_1Mesh_a2359bc61d5acea3515e31b5b3a9d1edf}{Mesh} (const std\-::string file\-Name)
+\begin{DoxyCompactList}\small\item\em Generate mesh from a Gmsh mesh. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Triangle}{Geo\-::\-Triangle} const \& \hyperlink{classTspeed_1_1Mesh_a20ac8fd5940e93ec902f343211100d78}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t i) const 
+\begin{DoxyCompactList}\small\item\em Get triangle with index i (const) \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Triangle}{Geo\-::\-Triangle} \& \hyperlink{classTspeed_1_1Mesh_af6688d1a47cee1baf69ea6d38d721a4a}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t i)
+\begin{DoxyCompactList}\small\item\em Get triangle with index i ( non-\/const) \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Mesh_ae62a59eea301689dd9f7c9663414db18}{Aligned\-Vec\-T} const \& \hyperlink{classTspeed_1_1Mesh_ac889d7a89a2d98e84dbc9f0f1b2ebb45}{elements} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get all triangles in the mesh (const) \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Mesh_ae62a59eea301689dd9f7c9663414db18}{Aligned\-Vec\-T} \& \hyperlink{classTspeed_1_1Mesh_a0e9102ce786fc8c4cda93c4b012c8668}{elements} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get all triangles in the mesh (non-\/const) \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Mesh_ae4422add9d3952fe2c02f62053ec120f}{$\sim$\-Mesh} ()
 \item 
 void \hyperlink{classTspeed_1_1Mesh_a10b24b91186b9905847232e7e14d4b2e}{stats} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Print stats about the mesh (e.\-g. number of elements, anisotropy etc.) \end{DoxyCompactList}\item 
 unsigned int \hyperlink{classTspeed_1_1Mesh_ac5b8a388b633ac0d280f89f56f2b15c5}{ne} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get number of triangles in the mesh. \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1Mesh_a7ea0757951214e8dc3a68e9a60a1c17c}{printall\-Neigh} () const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Print neighbors structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -69,13 +69,22 @@ $<$ unsigned int, unsigned int $>$ $>$ \hyperlink{classTspeed_1_1Mesh_a8cb823f02
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classTspeed_1_1Mesh_a0f7593775e6a7b36d877551df395299f}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!Mesh@{Mesh}}
+\hypertarget{classTspeed_1_1Mesh_a2359bc61d5acea3515e31b5b3a9d1edf}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!Tspeed::Mesh@{Tspeed\-::\-Mesh}}
 \subsubsection[{Mesh}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Mesh\-::\-Mesh (
 \begin{DoxyParamCaption}
 \item[{const std\-::string}]{file\-Name}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classTspeed_1_1Mesh_a0f7593775e6a7b36d877551df395299f}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classTspeed_1_1Mesh_a2359bc61d5acea3515e31b5b3a9d1edf}
+
+
+Generate mesh from a Gmsh mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & Name of the .msh file containing the mesh \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Mesh_ae4422add9d3952fe2c02f62053ec120f}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!$\sim$\-Mesh@{$\sim$\-Mesh}}
 \index{$\sim$\-Mesh@{$\sim$\-Mesh}!Tspeed::Mesh@{Tspeed\-::\-Mesh}}
 \subsubsection[{$\sim$\-Mesh}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Mesh\-::$\sim$\-Mesh (
@@ -93,6 +102,13 @@ $<$ unsigned int, unsigned int $>$ $>$ \hyperlink{classTspeed_1_1Mesh_a8cb823f02
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Mesh_ac889d7a89a2d98e84dbc9f0f1b2ebb45}
+
+
+Get all triangles in the mesh (const) 
+
+\begin{DoxyReturn}{Returns}
+Constant reference to a vector of triangles 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Mesh_a0e9102ce786fc8c4cda93c4b012c8668}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!elements@{elements}}
 \index{elements@{elements}!Tspeed::Mesh@{Tspeed\-::\-Mesh}}
 \subsubsection[{elements}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Aligned\-Vec\-T}\& Tspeed\-::\-Mesh\-::elements (
@@ -100,6 +116,13 @@ $<$ unsigned int, unsigned int $>$ $>$ \hyperlink{classTspeed_1_1Mesh_a8cb823f02
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Mesh_a0e9102ce786fc8c4cda93c4b012c8668}
+
+
+Get all triangles in the mesh (non-\/const) 
+
+\begin{DoxyReturn}{Returns}
+Reference to a vector of triangles 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Mesh_ac5b8a388b633ac0d280f89f56f2b15c5}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!ne@{ne}}
 \index{ne@{ne}!Tspeed::Mesh@{Tspeed\-::\-Mesh}}
 \subsubsection[{ne}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Tspeed\-::\-Mesh\-::ne (
@@ -107,6 +130,10 @@ $<$ unsigned int, unsigned int $>$ $>$ \hyperlink{classTspeed_1_1Mesh_a8cb823f02
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Mesh_ac5b8a388b633ac0d280f89f56f2b15c5}
+
+
+Get number of triangles in the mesh. 
+
 \hypertarget{classTspeed_1_1Mesh_a20ac8fd5940e93ec902f343211100d78}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
 \index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tspeed::Mesh@{Tspeed\-::\-Mesh}}
 \subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo\-::\-Triangle} const\& Tspeed\-::\-Mesh\-::operator\mbox{[}$\,$\mbox{]} (
@@ -114,6 +141,18 @@ $<$ unsigned int, unsigned int $>$ $>$ \hyperlink{classTspeed_1_1Mesh_a8cb823f02
 \item[{size\-\_\-t}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Mesh_a20ac8fd5940e93ec902f343211100d78}
+
+
+Get triangle with index i (const) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & index of the triangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Constant reference to triangle 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Mesh_af6688d1a47cee1baf69ea6d38d721a4a}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
 \index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tspeed::Mesh@{Tspeed\-::\-Mesh}}
 \subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo\-::\-Triangle}\& Tspeed\-::\-Mesh\-::operator\mbox{[}$\,$\mbox{]} (
@@ -121,6 +160,18 @@ $<$ unsigned int, unsigned int $>$ $>$ \hyperlink{classTspeed_1_1Mesh_a8cb823f02
 \item[{size\-\_\-t}]{i}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Mesh_af6688d1a47cee1baf69ea6d38d721a4a}
+
+
+Get triangle with index i ( non-\/const) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & index of the triangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to triangle 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Mesh_a7ea0757951214e8dc3a68e9a60a1c17c}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!printall\-Neigh@{printall\-Neigh}}
 \index{printall\-Neigh@{printall\-Neigh}!Tspeed::Mesh@{Tspeed\-::\-Mesh}}
 \subsubsection[{printall\-Neigh}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Mesh\-::printall\-Neigh (
@@ -128,6 +179,10 @@ $<$ unsigned int, unsigned int $>$ $>$ \hyperlink{classTspeed_1_1Mesh_a8cb823f02
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Mesh_a7ea0757951214e8dc3a68e9a60a1c17c}
+
+
+Print neighbors structure. 
+
 \hypertarget{classTspeed_1_1Mesh_a10b24b91186b9905847232e7e14d4b2e}{\index{Tspeed\-::\-Mesh@{Tspeed\-::\-Mesh}!stats@{stats}}
 \index{stats@{stats}!Tspeed::Mesh@{Tspeed\-::\-Mesh}}
 \subsubsection[{stats}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Mesh\-::stats (
@@ -135,6 +190,10 @@ $<$ unsigned int, unsigned int $>$ $>$ \hyperlink{classTspeed_1_1Mesh_a8cb823f02
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classTspeed_1_1Mesh_a10b24b91186b9905847232e7e14d4b2e}
+
+
+Print stats about the mesh (e.\-g. number of elements, anisotropy etc.) 
+
 
 
 \subsection{Member Data Documentation}

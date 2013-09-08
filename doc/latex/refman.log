@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.8)  8 SEP 2013 15:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.8)  8 SEP 2013 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,6 +914,64 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip106
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks27
+\ex@=\dimen149
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen150
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count139
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count140
+\leftroot@=\count141
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count142
+\DOTSCASE@=\count143
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box62
+\strutbox@=\box63
+\big@size=\dimen151
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count144
+\c@MaxMatrixCols=\count145
+\dotsspace@=\muskip11
+\c@parentequation=\count146
+\dspbrk@lvl=\count147
+\tag@help=\toks28
+\row@=\count148
+\column@=\count149
+\maxfields@=\count150
+\andhelp@=\toks29
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks30
+\multlinegap=\skip107
+\multlinetaggap=\skip108
+\mathdisplay@stack=\toks31
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
 \@indexfile=\write3
 \openout3 = `refman.idx'.
 
@@ -927,35 +985,35 @@ LaTeX Warning: Label `Dunavant_8cpp_ac1c7bc76dbfd8378fc96541a6243afd1' multiply
 )
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 50.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 48.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 48.
+(Font)              scaled to size 8.99994pt on input line 50.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -993,17 +1051,17 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
-\scratchdimen=\dimen149
-\scratchbox=\box62
-\nofMPsegments=\count140
-\nofMParguments=\count141
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count142
-\MPscratchDim=\dimen150
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count151
+\scratchdimen=\dimen158
+\scratchbox=\box64
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen159
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1019,10 +1077,10 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count145
-\AtBeginShipoutBox=\box63
-Package backref Info: ** backref set up for natbib ** on input line 48.
-Package hyperref Info: Link coloring ON on input line 48.
+\c@lstlisting=\count157
+\AtBeginShipoutBox=\box65
+Package backref Info: ** backref set up for natbib ** on input line 50.
+Package hyperref Info: Link coloring ON on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1030,24 +1088,23 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count146
+\c@section@level=\count158
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (./refman.out) (./refman.out)
 \@outlinefile=\write4
 \openout4 = `refman.out'.
 
-\big@size=\dimen151
-Package hyperref Info: Option `pageanchor' set `false' on input line 49.
+Package hyperref Info: Option `pageanchor' set `false' on input line 51.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 53.
+(Font)              scaled to size 12.9599pt on input line 55.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 55.
+(Font)              scaled to size 10.79993pt on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 57.
+(Font)              scaled to size 8.09995pt on input line 59.
  [1
 
 
@@ -1055,17 +1112,17 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 62.
+(Font)              scaled to size 22.39185pt on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 62.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 62.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 62.
+(Font)              scaled to size 22.39185pt on input line 64.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 64.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 62.
+(Font)              scaled to size 22.39185pt on input line 64.
 
 (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
@@ -1116,37 +1173,31 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
  [2] [3] [4]
 [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 626.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 603.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 626.
+(Font)              scaled to size 10.79993pt on input line 603.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 626.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 603.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 626.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 603.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 626.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 603.
 )
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [16]
-[17] [18
-
-]
-Package hyperref Info: Option `pageanchor' set `true' on input line 65.
+Package hyperref Info: Option `pageanchor' set `true' on input line 67.
 
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 66.
+(Font)              scaled to size 18.66588pt on input line 68.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 66.
+(Font)              scaled to size 18.66588pt on input line 68.
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 66.
+(Font)              scaled to size 18.66588pt on input line 68.
 (./namespaces.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1156,6 +1207,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
 
+
 ] [2
 
 ]
@@ -1164,13 +1216,15 @@ Chapter 2.
 
 ]
 Chapter 3.
-(./annotated.tex) [5] [6
+(./annotated.tex
+Underfull \vbox (badness 3250) has occurred while \output is active []
 
-]
+ [5])
+[6]
 Chapter 4.
-(./files.tex) [7] [8
+(./files.tex [7
 
-]
+]) [8]
 Chapter 5.
 (./namespaceTspeed.tex
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
@@ -1182,99 +1236,121 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+ [9
+
+]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
- [9]
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 110.
+ [10]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 117.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 117.
+
+Underfull \vbox (badness 10000) detected at line 119
+ []
+
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 125.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 125.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 8.99994pt on input line 125.
+(Font)              scaled to size 8.99994pt on input line 141.
 LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
-(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 144.
+(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 160.
 
 LaTeX Font Info:    Font shape `OT1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 144.
+(Font)              scaled to size 8.99994pt on input line 160.
+
+Underfull \vbox (badness 10000) detected at line 171
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 201
+ []
+
+[11]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 177.
+(hyperref)                removing `\ast' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 177.
+(hyperref)                removing `math shift' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 177.
-
-[10]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 185.
+(hyperref)                removing `math shift' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 185.
+(hyperref)                removing `\ast' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 185.
+(hyperref)                removing `math shift' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 228.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 193.
+(hyperref)                removing `\ast' on input line 228.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 228.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 201.
+(hyperref)                removing `math shift' on input line 236.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 201.
+(hyperref)                removing `\ast' on input line 236.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 201.
+(hyperref)                removing `math shift' on input line 236.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 209.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 209.
+(hyperref)                removing `\ast' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 209.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 217.
+(hyperref)                removing `math shift' on input line 252.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 217.
+(hyperref)                removing `\ast' on input line 252.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 217.
+(hyperref)                removing `math shift' on input line 252.
 
 ) (./namespaceTspeed_1_1Geo.tex
 
@@ -1289,78 +1365,122 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 44.
 
-[11]
+[12]
+Underfull \vbox (badness 10000) detected at line 59
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 77
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 95
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 113
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 131
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
+(hyperref)                removing `math shift' on input line 150.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
+(hyperref)                removing `math shift' on input line 150.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
+(hyperref)                removing `math shift' on input line 150.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
+(hyperref)                removing `math shift' on input line 150.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 108.
+(hyperref)                removing `math shift' on input line 158.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 108.
+(hyperref)                removing `math shift' on input line 158.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 108.
+(hyperref)                removing `math shift' on input line 158.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 108.
+(hyperref)                removing `math shift' on input line 158.
 
-) [12]
+) [14]
 Chapter 6.
 (./classTspeed_1_1BaseMat.tex
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<classTspeed_1_1BaseMat.pdf, id=3670, 501.875pt x 123.16013pt>
+<classTspeed_1_1BaseMat.pdf, id=3541, 501.875pt x 123.16013pt>
 File: classTspeed_1_1BaseMat.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1BaseMat.pdf>
-Package pdftex.def Info: classTspeed_1_1BaseMat.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1BaseMat.pdf used on input line 16.
 (pdftex.def)             Requested size: 231.89146pt x 56.9055pt.
- [13
+ [15
 
  <./classTspeed_1_1BaseMat.pdf>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 98.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 106.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
 LaTeX Font Warning: Font shape `OT1/pcr/bc/n' undefined
-(Font)              using `OT1/pcr/m/n' instead on input line 98.
+(Font)              using `OT1/pcr/m/n' instead on input line 106.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 98.
+(hyperref)                removing `math shift' on input line 106.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 98.
+(hyperref)                removing `\sim' on input line 106.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 98.
+(hyperref)                removing `math shift' on input line 106.
 
-[14]) (./classTspeed_1_1BoundaryAdapted.tex
+
+Underfull \vbox (badness 10000) detected at line 126
+ []
+
+[16]
+Underfull \vbox (badness 10000) detected at line 146
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 198
+ []
+
+[17]
+Underfull \vbox (badness 10000) detected at line 265
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 295
+ []
+
+) (./classTspeed_1_1BoundaryAdapted.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
@@ -1382,25 +1502,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-<classTspeed_1_1BoundaryAdapted.pdf, id=3747, 501.875pt x 198.76257pt>
+<classTspeed_1_1BoundaryAdapted.pdf, id=3618, 501.875pt x 198.76257pt>
 File: classTspeed_1_1BoundaryAdapted.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1BoundaryAdapted.pdf>
 Package pdftex.def Info: classTspeed_1_1BoundaryAdapted.pdf used on input line 
-11.
+16.
 (pdftex.def)             Requested size: 143.67912pt x 56.9055pt.
+ [18 <./classTspeed_1_1BoundaryAdapted.pdf>]
+Underfull \vbox (badness 10000) detected at line 44
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 48.
+(hyperref)                removing `math shift' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 48.
+(hyperref)                removing `\sim' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 48.
+(hyperref)                removing `math shift' on input line 69.
 
 ) (./classTspeed_1_1Dubiner.tex
 
@@ -1419,25 +1542,27 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-[15 <./classTspeed_1_1BoundaryAdapted.pdf>]
-<classTspeed_1_1Dubiner.pdf, id=3769, 501.875pt x 217.03082pt>
+<classTspeed_1_1Dubiner.pdf, id=3638, 501.875pt x 217.03082pt>
 File: classTspeed_1_1Dubiner.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1Dubiner.pdf>
-Package pdftex.def Info: classTspeed_1_1Dubiner.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1Dubiner.pdf used on input line 16.
 (pdftex.def)             Requested size: 131.58716pt x 56.9055pt.
+ [19 <./classTspeed_1_1Dubiner.pdf>]
+Underfull \vbox (badness 10000) detected at line 44
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 48.
+(hyperref)                removing `math shift' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 48.
+(hyperref)                removing `\sim' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 48.
+(hyperref)                removing `math shift' on input line 69.
 
 ) (./classTspeed_1_1Dunavant.tex
 
@@ -1456,35 +1581,52 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-[16 <./classTspeed_1_1Dubiner.pdf>]) (./classTspeed_1_1Geo_1_1Edge.tex
-<classTspeed_1_1Geo_1_1Edge.pdf, id=3804, 501.875pt x 321.2pt>
+<classTspeed_1_1Dunavant.pdf, id=3666, 501.875pt x 211.31949pt>
+File: classTspeed_1_1Dunavant.pdf Graphic file (type pdf)
+
+<use classTspeed_1_1Dunavant.pdf>
+Package pdftex.def Info: classTspeed_1_1Dunavant.pdf used on input line 16.
+(pdftex.def)             Requested size: 135.14813pt x 56.9055pt.
+ [20]
+Underfull \vbox (badness 10000) detected at line 51
+ []
+
+[21 <./classTspeed_1_1Dunavant.pdf>]) (./classTspeed_1_1Geo_1_1Edge.tex
+<classTspeed_1_1Geo_1_1Edge.pdf, id=3719, 501.875pt x 321.2pt>
 File: classTspeed_1_1Geo_1_1Edge.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1Geo_1_1Edge.pdf>
-Package pdftex.def Info: classTspeed_1_1Geo_1_1Edge.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1Geo_1_1Edge.pdf used on input line 16.
 (pdftex.def)             Requested size: 88.90921pt x 56.9055pt.
- [17 <./classTspeed_1_1Geo_1_1Edge.pdf>]
+ [22 <./classTspeed_1_1Geo_1_1Edge.pdf>]
+Underfull \vbox (badness 10000) detected at line 72
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 88
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 63.
+(hyperref)                removing `math shift' on input line 95.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 63.
+(hyperref)                removing `\sim' on input line 95.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 63.
+(hyperref)                removing `math shift' on input line 95.
 
 ) (./classTspeed_1_1Entity.tex
-<classTspeed_1_1Entity.pdf, id=3840, 501.875pt x 94.25212pt>
+<classTspeed_1_1Entity.pdf, id=3752, 501.875pt x 94.25212pt>
 File: classTspeed_1_1Entity.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1Entity.pdf>
-Package pdftex.def Info: classTspeed_1_1Entity.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1Entity.pdf used on input line 16.
 (pdftex.def)             Requested size: 303.01118pt x 56.9055pt.
- [18 <./classTspeed_1_1Entity.pdf>] [19])
-(./classTspeed_1_1FESpace.tex
+ [23] [24 <./classTspeed_1_1Entity.pdf>]
+[25]) (./classTspeed_1_1FESpace.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
@@ -1501,47 +1643,82 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
+[26] [27]
+Underfull \vbox (badness 10000) detected at line 70
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 62.
+(hyperref)                removing `math shift' on input line 96.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 62.
+(hyperref)                removing `\sim' on input line 96.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 62.
+(hyperref)                removing `math shift' on input line 96.
 
-[20]) (./classTspeed_1_1Force.tex
-<classTspeed_1_1Force.pdf, id=3955, 501.875pt x 257.37154pt>
+
+Underfull \vbox (badness 10000) detected at line 118
+ []
+
+[28]
+Underfull \vbox (badness 10000) detected at line 171
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 193
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 215
+ []
+
+[29]
+Underfull \vbox (badness 10000) detected at line 234
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 256
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 278
+ []
+
+[30]
+Underfull \vbox (badness 10000) detected at line 333
+ []
+
+) (./classTspeed_1_1Force.tex [31]
+<classTspeed_1_1Force.pdf, id=3899, 501.875pt x 257.37154pt>
 File: classTspeed_1_1Force.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1Force.pdf>
-Package pdftex.def Info: classTspeed_1_1Force.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1Force.pdf used on input line 16.
 (pdftex.def)             Requested size: 110.9642pt x 56.9055pt.
- [21 <./classTspeed_1_1Force.pdf>]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 71.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 71.
+Underfull \vbox (badness 10000) detected at line 81
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 71.
-
-) (./classTspeed_1_1Gauss.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
+(hyperref)                removing `math shift' on input line 88.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
+(hyperref)                removing `\sim' on input line 88.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 88.
+
+[32 <./classTspeed_1_1Force.pdf>]) (./classTspeed_1_1Gauss.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
@@ -1550,225 +1727,88 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-[22]) (./classTspeed_1_1LeapFrog.tex
-<classTspeed_1_1LeapFrog.pdf, id=4003, 501.875pt x 278.82167pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+<classTspeed_1_1Gauss.pdf, id=3932, 501.875pt x 211.31949pt>
+File: classTspeed_1_1Gauss.pdf Graphic file (type pdf)
+
+<use classTspeed_1_1Gauss.pdf>
+Package pdftex.def Info: classTspeed_1_1Gauss.pdf used on input line 16.
+(pdftex.def)             Requested size: 135.14813pt x 56.9055pt.
+
+Underfull \vbox (badness 10000) detected at line 51
+ []
+
+
+Overfull \vbox (3.78848pt too high) has occurred while \output is active []
+
+
+[33 <./classTspeed_1_1Gauss.pdf>]) (./classTspeed_1_1LeapFrog.tex
+<classTspeed_1_1LeapFrog.pdf, id=3969, 501.875pt x 278.82167pt>
 File: classTspeed_1_1LeapFrog.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1LeapFrog.pdf>
-Package pdftex.def Info: classTspeed_1_1LeapFrog.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1LeapFrog.pdf used on input line 16.
 (pdftex.def)             Requested size: 102.42555pt x 56.9055pt.
- [23]) (./classTspeed_1_1Matrices.tex [24 <./classTspeed_1_1LeapFrog.pdf>]) (./
-classTspeed_1_1Mesh.tex [25]
+ [34 <./classTspeed_1_1LeapFrog.pdf>]
+Underfull \vbox (badness 10000) detected at line 73
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 85.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 85.
+) (./classTspeed_1_1Matrices.tex [35] [36]) (./classTspeed_1_1Mesh.tex [37]
+Underfull \vbox (badness 10000) detected at line 87
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 85.
+(hyperref)                removing `math shift' on input line 94.
 
-) (./classTspeed_1_1MyMat.tex [26]
-<classTspeed_1_1MyMat.pdf, id=4125, 501.875pt x 346.1231pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 94.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 94.
+
+
+Underfull \vbox (badness 4940) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 10000) detected at line 152
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 171
+ []
+
+[39]) (./classTspeed_1_1MyMat.tex
+<classTspeed_1_1MyMat.pdf, id=4092, 501.875pt x 346.1231pt>
 File: classTspeed_1_1MyMat.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1MyMat.pdf>
-Package pdftex.def Info: classTspeed_1_1MyMat.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1MyMat.pdf used on input line 16.
 (pdftex.def)             Requested size: 82.50713pt x 56.9055pt.
+ [40 <./classTspeed_1_1MyMat.pdf>]
+Underfull \vbox (badness 10000) detected at line 78
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 80.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 80.
+(hyperref)                removing `\sim' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 80.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 90.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 90.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 90.
-
-[27 <./classTspeed_1_1MyMat.pdf>]) (./classTspeed_1_1MyMatBlockDiag.tex
-<classTspeed_1_1MyMatBlockDiag.pdf, id=4176, 501.875pt x 246.32025pt>
-File: classTspeed_1_1MyMatBlockDiag.pdf Graphic file (type pdf)
-
-<use classTspeed_1_1MyMatBlockDiag.pdf>
-Package pdftex.def Info: classTspeed_1_1MyMatBlockDiag.pdf used on input line 1
-1.
-(pdftex.def)             Requested size: 115.9419pt x 56.9055pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 70.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 70.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 70.
-
-[28 <./classTspeed_1_1MyMatBlockDiag.pdf>]) (./classTspeed_1_1MyMatMultiDim.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 56.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 56.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 56.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 97.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 97.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 97.
-
-[29]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 130.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
-
-) (./classTspeed_1_1MyMatMultiDimBlockDiag.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-[30]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 98.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 98.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 98.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 124.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 124.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 124.
-
-) (./classTspeed_1_1Parameters.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 34.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
-
-[31]) (./classTspeed_1_1Geo_1_1Point.tex
-<classTspeed_1_1Geo_1_1Point.pdf, id=4342, 501.875pt x 323.78966pt>
-File: classTspeed_1_1Geo_1_1Point.pdf Graphic file (type pdf)
-
-<use classTspeed_1_1Geo_1_1Point.pdf>
-Package pdftex.def Info: classTspeed_1_1Geo_1_1Point.pdf used on input line 11.
-
-(pdftex.def)             Requested size: 88.20468pt x 56.9055pt.
- [32 <./classTspeed_1_1Geo_1_1Point.pdf>]
-
-LaTeX Font Warning: Font shape `OT1/pcr/bc/it' undefined
-(Font)              using `OT1/pcr/bc/n' instead on input line 71.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 92.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 92.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 92.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1783,48 +1823,179 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 109.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 170.
+Underfull \vbox (badness 10000) detected at line 153
+ []
+
+) (./classTspeed_1_1MyMatBlockDiag.tex
+<classTspeed_1_1MyMatBlockDiag.pdf, id=4143, 501.875pt x 246.32025pt>
+File: classTspeed_1_1MyMatBlockDiag.pdf Graphic file (type pdf)
+
+<use classTspeed_1_1MyMatBlockDiag.pdf>
+Package pdftex.def Info: classTspeed_1_1MyMatBlockDiag.pdf used on input line 1
+6.
+(pdftex.def)             Requested size: 115.9419pt x 56.9055pt.
+ [41 <./classTspeed_1_1MyMatBlockDiag.pdf>]
+Underfull \vbox (badness 10000) detected at line 68
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 170.
+(hyperref)                removing `math shift' on input line 89.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 170.
-
-) (./classTspeed_1_1PointWiseEntity.tex [33]
-<classTspeed_1_1PointWiseEntity.pdf, id=4428, 501.875pt x 128.6908pt>
-File: classTspeed_1_1PointWiseEntity.pdf Graphic file (type pdf)
-
-<use classTspeed_1_1PointWiseEntity.pdf>
-Package pdftex.def Info: classTspeed_1_1PointWiseEntity.pdf used on input line 
-11.
-(pdftex.def)             Requested size: 221.92076pt x 56.9055pt.
+(hyperref)                removing `\sim' on input line 89.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
+(hyperref)                removing `math shift' on input line 89.
+
+) (./classTspeed_1_1MyMatMultiDim.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 52.
+(hyperref)                removing `math shift' on input line 3.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
+(hyperref)                removing `math shift' on input line 3.
 
-[34 <./classTspeed_1_1PointWiseEntity.pdf>])
-(./classTspeed_1_1PointWiseForce.tex
-<classTspeed_1_1PointWiseForce.pdf, id=4471, 501.875pt x 128.6908pt>
-File: classTspeed_1_1PointWiseForce.pdf Graphic file (type pdf)
 
-<use classTspeed_1_1PointWiseForce.pdf>
-Package pdftex.def Info: classTspeed_1_1PointWiseForce.pdf used on input line 1
-1.
-(pdftex.def)             Requested size: 221.92076pt x 56.9055pt.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
 
+[42]
+Underfull \vbox (badness 10000) detected at line 56
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 73.
+
+[43]
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 132
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Underfull \vbox (badness 10000) detected at line 179
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 190.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 190.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 190.
+
+[44]) (./classTspeed_1_1MyMatMultiDimBlockDiag.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Underfull \vbox (badness 10000) detected at line 52
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 69.
+
+
+Underfull \vbox (badness 4316) has occurred while \output is active []
+
+ [45]
+Underfull \vbox (badness 10000) detected at line 103
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 122
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 143.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 143.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 143.
+
+
+Underfull \vbox (badness 10000) detected at line 169
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46])
+(./classTspeed_1_1Parameters.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 42.
@@ -1837,13 +2008,271 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 42.
 
-) (./classTspeed_1_1Receivers.tex [35 <./classTspeed_1_1PointWiseForce.pdf>]
-<classTspeed_1_1Receivers.pdf, id=4498, 501.875pt x 262.4204pt>
+
+Underfull \vbox (badness 10000) detected at line 74
+ []
+
+[47]
+Underfull \vbox (badness 10000) detected at line 93
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 109
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 125
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 147
+ []
+
+) (./classTspeed_1_1Geo_1_1Point.tex
+<classTspeed_1_1Geo_1_1Point.pdf, id=4317, 501.875pt x 323.78966pt>
+File: classTspeed_1_1Geo_1_1Point.pdf Graphic file (type pdf)
+
+<use classTspeed_1_1Geo_1_1Point.pdf>
+Package pdftex.def Info: classTspeed_1_1Geo_1_1Point.pdf used on input line 16.
+
+(pdftex.def)             Requested size: 88.20468pt x 56.9055pt.
+
+Underfull \vbox (badness 4647) has occurred while \output is active []
+
+ [48]
+[49 <./classTspeed_1_1Geo_1_1Point.pdf>]
+
+LaTeX Font Warning: Font shape `OT1/pcr/bc/it' undefined
+(Font)              using `OT1/pcr/bc/n' instead on input line 79.
+
+
+Underfull \vbox (badness 10000) detected at line 90
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 106
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 122
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 153.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 153.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 153.
+
+
+Underfull \vbox (badness 10000) detected at line 162
+ []
+
+[50] [51]
+Underfull \vbox (badness 10000) detected at line 268
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 279.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ast' on input line 279.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 279.
+
+
+Underfull \vbox (badness 10000) detected at line 298
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 320
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 342
+ []
+
+[52]
+Underfull \vbox (badness 10000) detected at line 364
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 386
+ []
+
+) (./classTspeed_1_1PointWiseEntity.tex
+<classTspeed_1_1PointWiseEntity.pdf, id=4431, 501.875pt x 128.6908pt>
+File: classTspeed_1_1PointWiseEntity.pdf Graphic file (type pdf)
+
+<use classTspeed_1_1PointWiseEntity.pdf>
+Package pdftex.def Info: classTspeed_1_1PointWiseEntity.pdf used on input line 
+16.
+(pdftex.def)             Requested size: 221.92076pt x 56.9055pt.
+ [53 <./classTspeed_1_1PointWiseEntity.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Underfull \vbox (badness 10000) detected at line 79
+ []
+
+[54]
+Underfull \vbox (badness 10000) detected at line 106
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 125
+ []
+
+) (./classTspeed_1_1PointWiseForce.tex
+<classTspeed_1_1PointWiseForce.pdf, id=4477, 501.875pt x 128.6908pt>
+File: classTspeed_1_1PointWiseForce.pdf Graphic file (type pdf)
+
+<use classTspeed_1_1PointWiseForce.pdf>
+Package pdftex.def Info: classTspeed_1_1PointWiseForce.pdf used on input line 1
+6.
+(pdftex.def)             Requested size: 221.92076pt x 56.9055pt.
+ [55 <./classTspeed_1_1PointWiseForce.pdf>]
+Underfull \vbox (badness 10000) detected at line 52
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 61
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 68.
+
+
+Underfull \vbox (badness 10000) detected at line 87
+ []
+
+[56]) (./classTspeed_1_1QuadratureRule.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+<classTspeed_1_1QuadratureRule.pdf, id=4513, 501.875pt x 105.65472pt>
+File: classTspeed_1_1QuadratureRule.pdf Graphic file (type pdf)
+
+<use classTspeed_1_1QuadratureRule.pdf>
+Package pdftex.def Info: classTspeed_1_1QuadratureRule.pdf used on input line 1
+6.
+(pdftex.def)             Requested size: 270.31158pt x 56.9055pt.
+ [57 <./classTspeed_1_1QuadratureRule.pdf>]
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 118.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 118.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 118.
+
+[58]
+Underfull \vbox (badness 10000) detected at line 150
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 183
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 202
+ []
+
+[59]
+Underfull \vbox (badness 10000) detected at line 260
+ []
+
+[60]) (./classTspeed_1_1Receivers.tex
+<classTspeed_1_1Receivers.pdf, id=4599, 501.875pt x 262.4204pt>
 File: classTspeed_1_1Receivers.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1Receivers.pdf>
-Package pdftex.def Info: classTspeed_1_1Receivers.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1Receivers.pdf used on input line 16.
 (pdftex.def)             Requested size: 108.82764pt x 56.9055pt.
+ [61 <./classTspeed_1_1Receivers.pdf>]
+Underfull \vbox (badness 10000) detected at line 53
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 60
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 77
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 84
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 112
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 128
+ []
+
 ) (./classTspeed_1_1ShapeFunction.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1861,68 +2290,163 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-<classTspeed_1_1ShapeFunction.pdf, id=4511, 501.875pt x 99.38129pt>
+[62] <classTspeed_1_1ShapeFunction.pdf, id=4636, 501.875pt x 99.38129pt>
 File: classTspeed_1_1ShapeFunction.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1ShapeFunction.pdf>
-Package pdftex.def Info: classTspeed_1_1ShapeFunction.pdf used on input line 11
+Package pdftex.def Info: classTspeed_1_1ShapeFunction.pdf used on input line 16
 .
 (pdftex.def)             Requested size: 287.37357pt x 56.9055pt.
- [36 <./classTspeed_1_1Receivers.pdf> <./classTspeed_1_1ShapeFunction.pdf>]
+
+Underfull \vbox (badness 10000) detected at line 61
+ []
+
+[63 <./classTspeed_1_1ShapeFunction.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 73.
+(hyperref)                removing `math shift' on input line 98.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 73.
+(hyperref)                removing `\sim' on input line 98.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 73.
+(hyperref)                removing `math shift' on input line 98.
 
-[37]) (./classTspeed_1_1TimeAdvance.tex
-<classTspeed_1_1TimeAdvance.pdf, id=4566, 501.875pt x 278.82167pt>
+
+Underfull \vbox (badness 10000) detected at line 130
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 155
+ []
+
+[64]
+Underfull \vbox (badness 10000) detected at line 180
+ []
+
+) (./classTspeed_1_1TimeAdvance.tex
+<classTspeed_1_1TimeAdvance.pdf, id=4679, 501.875pt x 278.82167pt>
 File: classTspeed_1_1TimeAdvance.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1TimeAdvance.pdf>
-Package pdftex.def Info: classTspeed_1_1TimeAdvance.pdf used on input line 11.
+Package pdftex.def Info: classTspeed_1_1TimeAdvance.pdf used on input line 16.
 (pdftex.def)             Requested size: 102.42555pt x 56.9055pt.
- [38 <./classTspeed_1_1TimeAdvance.pdf>]
+ [65 <./classTspeed_1_1TimeAdvance.pdf>]
+[66]
+Underfull \vbox (badness 10000) detected at line 121
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 130
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 102.
+(hyperref)                removing `math shift' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 102.
+(hyperref)                removing `\sim' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 102.
+(hyperref)                removing `math shift' on input line 137.
 
-[39]) (./classTspeed_1_1Geo_1_1Triangle.tex
-<classTspeed_1_1Geo_1_1Triangle.pdf, id=4673, 501.875pt x 282.74634pt>
+
+Underfull \vbox (badness 10000) detected at line 156
+ []
+
+[67]
+Underfull \vbox (badness 10000) detected at line 222
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 241
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 260
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 276
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 292
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 308
+ []
+
+[68]
+Underfull \vbox (badness 10000) detected at line 338
+ []
+
+) (./classTspeed_1_1Geo_1_1Triangle.tex [69]
+<classTspeed_1_1Geo_1_1Triangle.pdf, id=4806, 501.875pt x 282.74634pt>
 File: classTspeed_1_1Geo_1_1Triangle.pdf Graphic file (type pdf)
 
 <use classTspeed_1_1Geo_1_1Triangle.pdf>
 Package pdftex.def Info: classTspeed_1_1Geo_1_1Triangle.pdf used on input line 
-11.
+16.
 (pdftex.def)             Requested size: 101.00117pt x 56.9055pt.
- [40]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 95.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 95.
+ [70 <./classTspeed_1_1Geo_1_1Triangle.pdf>]
+Underfull \vbox (badness 10000) detected at line 98
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 95.
+(hyperref)                removing `math shift' on input line 116.
 
-[41 <./classTspeed_1_1Geo_1_1Triangle.pdf>]) [42]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 116.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 116.
+
+[71]
+Underfull \vbox (badness 10000) detected at line 177
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 196
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 229
+ []
+
+[72]
+Underfull \vbox (badness 10000) detected at line 262
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 281
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 300
+ []
+
+[73]
+Underfull \vbox (badness 10000) detected at line 341
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 363
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 382
+ []
+
+) [74]
 Chapter 7.
 (./Lamb_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
@@ -1934,158 +2458,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
-) (./Dunavant_8hpp.tex [43
+) (./Dunavant_8hpp.tex [75
 
-] [44] [45]) (./FESpace_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--11
-
- []
-
-) (./FESpace__imp_8hpp.tex) (./Force_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
+] [76] [77]) (./FESpace_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--16
 
  []
 
-[46]) (./Force__imp_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[78]) (./FESpace__imp_8hpp.tex) (./Force_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
+
+ []
+
+[79]) (./Force__imp_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 ) (./Geometry_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
 
  []
 
-[47]) (./Matrices__imp_8hpp.tex) (./Mesh_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--11
+[80]) (./Matrices__imp_8hpp.tex [81]) (./Mesh_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--16
 
  []
 
-) (./MyMat_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
+) (./MyMat_8hpp.tex [82]
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
  []
 
-[48]) (./QuadratureRule_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
+) (./QuadratureRule_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
 
  []
 
-) (./QuadratureRule__imp_8hpp.tex [49]) (./Receivers_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
+[83]) (./QuadratureRule__imp_8hpp.tex [84]) (./Receivers_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
 
  []
 
 ) (./Receivers__imp_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-) (./ShapeFunctions_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[85]) (./ShapeFunctions_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
  []
 
-[50]) (./ShapeFunctions__imp_8hpp.tex) (./TimeAdvance_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--15
+[86]) (./ShapeFunctions__imp_8hpp.tex) (./TimeAdvance_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--20
 
  []
 
-) (./TimeAdvance__imp_8hpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[87]) (./TimeAdvance__imp_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[51]) (./lib_2include_2TSPEED_8hpp.tex) (./TSPEED_8hpp.tex)
+) (./lib_2include_2TSPEED_8hpp.tex) (./TSPEED_8hpp.tex [88])
 (./Dunavant_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 9--17
 
  []
 
-[52] [53pdfTeX warning (ext4): destination with the same identifier (name{Dunav
+[89] [90pdfTeX warning (ext4): destination with the same identifier (name{Dunav
 ant_8cpp_ac1c7bc76dbfd8378fc96541a6243afd1}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.144 )}}
-         \label{Dunavant_8cpp_aea8f89b8202d514393b2f39ed7f799a9}] [54])
+l.163 )}}
+         \label{Dunavant_8cpp_a5ae0dfda7f95af1106f0098a13cd9dc6}] [91])
 (./Force_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 ) (./Geometry_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-) (./Mesh_8cpp.tex [55]
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[92]) (./Mesh_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 ) (./MyMat_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-) (./Parameters_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[93]) (./Parameters_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-) (./QuadratureRule_8cpp.tex) (./Receivers_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+) (./Receivers_8cpp.tex [94]
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[56]) (./ShapeFunctions_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+) (./ShapeFunctions_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 ) (./TimeAdvance_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-) (./main_8cpp.tex
+[95]) (./main_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[57]) (./load__and__plot_8m.tex
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 75.
+) (./refman.ind [96] [97
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
-File: omsphv.fd 
-)
+] [98] [99] [100] [101] [102] [103] [104] [105]
+[106
 
-LaTeX Font Warning: Font shape `OMS/phv/bc/n' undefined
-(Font)              using `OMS/phv/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 75.
-
-LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
-LaTeX Font Info:    Font shape `OMS/phv/bc/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
-[58]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 175.
-) (./load__and__plot__lamb_8m.tex [59] [60]) (./plot__seismogram_8m.tex)
-(./vtk__mesh__out_8m.tex [61] [62]) (./vtk__output_8m.tex [63])
-(./vtk__vector__out_8m.tex) (./refman.ind [64] [65
-
-] [66] [67] [68] [69]
-[70] [71] [72] [73] [74])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: D45DB26A34622FE3D32776766B2C280A;92502.
+(rerunfilecheck)             Checksum: 4CCA714773CEB0DE10982D3C7BDA1EF6;92596.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2093,28 +2599,37 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 14263 strings out of 495048
- 248612 string characters out of 3181555
- 314912 words of memory out of 3000000
- 15705 multiletter control sequences out of 15000+200000
- 91523 words of font info for 152 fonts, out of 3000000 for 9000
+ 14890 strings out of 495048
+ 249222 string characters out of 3181555
+ 325598 words of memory out of 3000000
+ 16250 multiletter control sequences out of 15000+200000
+ 112312 words of font info for 186 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,13n,58p,911b,669s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,58p,913b,647s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic
-/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (94 pages, 444173 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
+rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on refman.pdf (124 pages, 549460 bytes).
 PDF statistics:
- 6697 PDF objects out of 7423 (max. 8388607)
- 6496 compressed objects within 65 object streams
- 1364 named destinations out of 1440 (max. 500000)
- 5089 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6491 PDF objects out of 7423 (max. 8388607)
+ 6246 compressed objects within 63 object streams
+ 1410 named destinations out of 1440 (max. 500000)
+ 4920 words of extra memory for PDF output out of 10000 (max. 10000000)
 

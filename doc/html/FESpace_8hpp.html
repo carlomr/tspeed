@@ -92,6 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">FESpace.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Header file for the Galerkin space and for the parameters of the elastodynamics equation.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="QuadratureRule_8hpp_source.html">QuadratureRule.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ShapeFunctions_8hpp_source.html">ShapeFunctions.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>&quot;</code><br/>
@@ -105,8 +108,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1FESpace.html">Tspeed::FESpace&lt; N, Q, S &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functional space.  <a href="classTspeed_1_1FESpace.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Parameters.html">Tspeed::Parameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for the parameters <img class="formulaInl" alt="$\lambda, \rho, \mu$" src="form_13.png"/> of the elastodynamics equations.  <a href="classTspeed_1_1Parameters.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -118,12 +123,17 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a05fcb57094666c8f5ab1e90d1a6fecf8"><td class="memTemplParams" colspan="2">template&lt;int N, typename Q  = Gauss&lt;N+1&gt;, typename S  = Dubiner&lt;N&gt;&gt; </td></tr>
 <tr class="memitem:a05fcb57094666c8f5ab1e90d1a6fecf8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">Tspeed::FESpace_ptr</a> = std::shared_ptr&lt; FESpace&lt; N, Q, S &gt;&gt;</td></tr>
+<tr class="memdesc:a05fcb57094666c8f5ab1e90d1a6fecf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">template pointer to <a class="el" href="classTspeed_1_1FESpace.html" title="Functional space.">FESpace</a>  <a href="#a05fcb57094666c8f5ab1e90d1a6fecf8">More...</a><br/></td></tr>
 <tr class="separator:a05fcb57094666c8f5ab1e90d1a6fecf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Header file for the Galerkin space and for the parameters of the elastodynamics equation. </p>
+<dl class="section author"><dt>Author</dt><dd>Carlo Marcati </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013-09-08 </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:57 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

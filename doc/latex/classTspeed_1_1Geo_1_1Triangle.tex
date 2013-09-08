@@ -3,6 +3,11 @@
 }
 
 
+Class describing a triangle.  
+
+
+
+
 {\ttfamily \#include $<$Geometry.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Geo\-:\-:Triangle\-:\begin{figure}[H]
@@ -16,44 +21,44 @@ Inheritance diagram for Tspeed\-:\-:Geo\-:\-:Triangle\-:\begin{figure}[H]
 \item 
 \hyperlink{classTspeed_1_1Geo_1_1Triangle_a96ea06e6dbd9b707184c5e22d305e6e6}{Triangle} ()
 \item 
-\hyperlink{classTspeed_1_1Geo_1_1Triangle_a30f712bbedbf84ef114de38c04c7b274}{Triangle} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&)
-\item 
+\hyperlink{classTspeed_1_1Geo_1_1Triangle_a06a3c8a78d0e633b48df2a62db82e1cf}{Triangle} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&a, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&b, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&c)
+\begin{DoxyCompactList}\small\item\em Create a triangle from three points. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Triangle_a3688a8a85846b3262366267d85e80d5a}{Triangle} (const \hyperlink{classTspeed_1_1Geo_1_1Triangle}{Triangle} \&)=default
-\item 
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Triangle}{Triangle} \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_a38b03bcff96b6ed334d381d56507c91d}{operator=} (const \hyperlink{classTspeed_1_1Geo_1_1Triangle}{Triangle} \&)
-\item 
+\begin{DoxyCompactList}\small\item\em Assignement. \end{DoxyCompactList}\item 
 virtual \hyperlink{classTspeed_1_1Geo_1_1Triangle_af195c8c8c367a11fa9dc95f4a4ef8898}{$\sim$\-Triangle} ()
 \item 
 std\-::array$<$ \hyperlink{classTspeed_1_1Geo_1_1Point}{Point}, 3 $>$ \hyperlink{classTspeed_1_1Geo_1_1Triangle_a5749a0b4d9cec7c73fdfa13904ab04c6}{all\-\_\-pts} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get all points of the triangle. \end{DoxyCompactList}\item 
 std\-::array$<$ \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge}, 3 $>$ \hyperlink{classTspeed_1_1Geo_1_1Triangle_a95aad39ebd133e7fc23fd6a2431c601e}{all\-\_\-edges} () const 
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} const \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_a6c4b1ba6d7adf584776089ecfc8d4f8e}{pt} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} const \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_aabfd53348c1c63905abf4eeda9cd42ae}{edg} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get all edges of a triangle. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} const \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_a6c4b1ba6d7adf584776089ecfc8d4f8e}{pt} (int i) const 
+\begin{DoxyCompactList}\small\item\em Get a point. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} const \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_aabfd53348c1c63905abf4eeda9cd42ae}{edg} (int i) const 
+\begin{DoxyCompactList}\small\item\em Get a edge. \end{DoxyCompactList}\item 
 Eigen\-::\-Matrix2d \hyperlink{classTspeed_1_1Geo_1_1Triangle_a936a5210cb5fdc598fa55a703b0d776d}{Jac} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get Jacobian of the transformation from the reference triangle. \end{DoxyCompactList}\item 
 Eigen\-::\-Matrix2d \hyperlink{classTspeed_1_1Geo_1_1Triangle_acadcc4f5328209374fa1060e42d564bb}{inv\-Jac} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get the inverse Jacobian of the transformation from the reference triangle. \end{DoxyCompactList}\item 
 double \hyperlink{classTspeed_1_1Geo_1_1Triangle_a2737a2218f6ecbf80e34e360fd2c0ccd}{det\-J} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get the determinant of the Jacobian of the tranformation from the reference triangle. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Triangle_a3ae4d893a8a0b5612aa5530914fbe704}{map} (\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} const \&p) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Map a point from its relative position in the reference triangle to the physical point. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \hyperlink{classTspeed_1_1Geo_1_1Triangle_aa607d5ba63bf021d0ca818c4727ff2c9}{invmap} (\hyperlink{classTspeed_1_1Geo_1_1Point}{Point} const \&p) const 
-\item 
-int const \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_a9258f1265a916d2ed4ccf4c0d0ddcbb7}{neigh} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-int const \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_a223bb2cb8fc96ea689daa5e7312aa7ca}{neighedges} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-void \hyperlink{classTspeed_1_1Geo_1_1Triangle_a1d71aed7672a87aed76934626d671ba7}{set\-Neigh} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}, int \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j})
-\item 
-void \hyperlink{classTspeed_1_1Geo_1_1Triangle_a8c174fbb7b71ef4625f021166bd1c8a6}{set\-Neighedges} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}, int \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j})
-\item 
+\begin{DoxyCompactList}\small\item\em Map a point from the physical triangle to the reference one. \end{DoxyCompactList}\item 
+int const \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_a9258f1265a916d2ed4ccf4c0d0ddcbb7}{neigh} (int i) const 
+\begin{DoxyCompactList}\small\item\em Ged index of neighboring triangle on edge i. \end{DoxyCompactList}\item 
+int const \& \hyperlink{classTspeed_1_1Geo_1_1Triangle_a223bb2cb8fc96ea689daa5e7312aa7ca}{neighedges} (int i) const 
+\begin{DoxyCompactList}\small\item\em Index of the edge i in the nieghboring triangle. \end{DoxyCompactList}\item 
+void \hyperlink{classTspeed_1_1Geo_1_1Triangle_a1d71aed7672a87aed76934626d671ba7}{set\-Neigh} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Set neighboring triangle. \end{DoxyCompactList}\item 
+void \hyperlink{classTspeed_1_1Geo_1_1Triangle_a8c174fbb7b71ef4625f021166bd1c8a6}{set\-Neighedges} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Set index of the edge of the nieghboring triangle. \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1Geo_1_1Triangle_a91d1f81ecb8f0524257ea821245d6c3f}{print\-Neigh} () const 
-\item 
-bool \hyperlink{classTspeed_1_1Geo_1_1Triangle_aad0c0d46a33f78fb05f87d923d65a5c6}{intriangle} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pirnt neighbors for the current triangle. \end{DoxyCompactList}\item 
+bool \hyperlink{classTspeed_1_1Geo_1_1Triangle_af35a8855e804d92c28a922aaa5abf187}{intriangle} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&p) const 
+\begin{DoxyCompactList}\small\item\em Check if point p is in triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -61,6 +66,9 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Class describing a triangle. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a96ea06e6dbd9b707184c5e22d305e6e6}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!Triangle@{Triangle}}
@@ -70,7 +78,7 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 {}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1Geo_1_1Triangle_a96ea06e6dbd9b707184c5e22d305e6e6}
-\hypertarget{classTspeed_1_1Geo_1_1Triangle_a30f712bbedbf84ef114de38c04c7b274}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!Triangle@{Triangle}}
+\hypertarget{classTspeed_1_1Geo_1_1Triangle_a06a3c8a78d0e633b48df2a62db82e1cf}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!Triangle@{Triangle}}
 \index{Triangle@{Triangle}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{Triangle}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Geo\-::\-Triangle\-::\-Triangle (
 \begin{DoxyParamCaption}
@@ -78,7 +86,16 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{const {\bf Point} \&}]{b, }
 \item[{const {\bf Point} \&}]{c}
 \end{DoxyParamCaption}
-)}}\label{classTspeed_1_1Geo_1_1Triangle_a30f712bbedbf84ef114de38c04c7b274}
+)}}\label{classTspeed_1_1Geo_1_1Triangle_a06a3c8a78d0e633b48df2a62db82e1cf}
+
+
+Create a triangle from three points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a,b,c} & The three points \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a3688a8a85846b3262366267d85e80d5a}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!Triangle@{Triangle}}
 \index{Triangle@{Triangle}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{Triangle}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Geo\-::\-Triangle\-::\-Triangle (
@@ -86,6 +103,10 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{const {\bf Triangle} \&}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [default]}}}\label{classTspeed_1_1Geo_1_1Triangle_a3688a8a85846b3262366267d85e80d5a}
+
+
+Copy constructor. 
+
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_af195c8c8c367a11fa9dc95f4a4ef8898}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!$\sim$\-Triangle@{$\sim$\-Triangle}}
 \index{$\sim$\-Triangle@{$\sim$\-Triangle}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{$\sim$\-Triangle}]{\setlength{\rightskip}{0pt plus 5cm}virtual Tspeed\-::\-Geo\-::\-Triangle\-::$\sim$\-Triangle (
@@ -103,6 +124,13 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_a95aad39ebd133e7fc23fd6a2431c601e}
+
+
+Get all edges of a triangle. 
+
+\begin{DoxyReturn}{Returns}
+An array of the three edge 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a5749a0b4d9cec7c73fdfa13904ab04c6}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!all\-\_\-pts@{all\-\_\-pts}}
 \index{all\-\_\-pts@{all\-\_\-pts}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{all\-\_\-pts}]{\setlength{\rightskip}{0pt plus 5cm}std\-::array$<${\bf Point},3$>$ Tspeed\-::\-Geo\-::\-Triangle\-::all\-\_\-pts (
@@ -110,6 +138,13 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_a5749a0b4d9cec7c73fdfa13904ab04c6}
+
+
+Get all points of the triangle. 
+
+\begin{DoxyReturn}{Returns}
+An array of three points 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a2737a2218f6ecbf80e34e360fd2c0ccd}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!det\-J@{det\-J}}
 \index{det\-J@{det\-J}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{det\-J}]{\setlength{\rightskip}{0pt plus 5cm}double Tspeed\-::\-Geo\-::\-Triangle\-::det\-J (
@@ -117,6 +152,13 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classTspeed_1_1Geo_1_1Triangle_a2737a2218f6ecbf80e34e360fd2c0ccd}
+
+
+Get the determinant of the Jacobian of the tranformation from the reference triangle. 
+
+\begin{DoxyReturn}{Returns}
+the determinant of the Jacobian (i.\-e., Area(\-T)$\ast$2) 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_aabfd53348c1c63905abf4eeda9cd42ae}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!edg@{edg}}
 \index{edg@{edg}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{edg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Edge} const\& Tspeed\-::\-Geo\-::\-Triangle\-::edg (
@@ -124,13 +166,37 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_aabfd53348c1c63905abf4eeda9cd42ae}
-\hypertarget{classTspeed_1_1Geo_1_1Triangle_aad0c0d46a33f78fb05f87d923d65a5c6}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!intriangle@{intriangle}}
+
+
+Get a edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Number of the edge in the triangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The i-\/th edge 
+\end{DoxyReturn}
+\hypertarget{classTspeed_1_1Geo_1_1Triangle_af35a8855e804d92c28a922aaa5abf187}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!intriangle@{intriangle}}
 \index{intriangle@{intriangle}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{intriangle}]{\setlength{\rightskip}{0pt plus 5cm}bool Tspeed\-::\-Geo\-::\-Triangle\-::intriangle (
 \begin{DoxyParamCaption}
 \item[{const {\bf Point} \&}]{p}
 \end{DoxyParamCaption}
-) const}}\label{classTspeed_1_1Geo_1_1Triangle_aad0c0d46a33f78fb05f87d923d65a5c6}
+) const}}\label{classTspeed_1_1Geo_1_1Triangle_af35a8855e804d92c28a922aaa5abf187}
+
+
+Check if point p is in triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-R\-U\-E if the point is in the triangle 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_acadcc4f5328209374fa1060e42d564bb}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!inv\-Jac@{inv\-Jac}}
 \index{inv\-Jac@{inv\-Jac}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{inv\-Jac}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Matrix2d Tspeed\-::\-Geo\-::\-Triangle\-::inv\-Jac (
@@ -138,6 +204,13 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classTspeed_1_1Geo_1_1Triangle_acadcc4f5328209374fa1060e42d564bb}
+
+
+Get the inverse Jacobian of the transformation from the reference triangle. 
+
+\begin{DoxyReturn}{Returns}
+The inverse Jacobian, in matrix form 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_aa607d5ba63bf021d0ca818c4727ff2c9}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!invmap@{invmap}}
 \index{invmap@{invmap}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{invmap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Tspeed\-::\-Geo\-::\-Triangle\-::invmap (
@@ -145,6 +218,18 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{{\bf Point} const \&}]{p}
 \end{DoxyParamCaption}
 ) const}}\label{classTspeed_1_1Geo_1_1Triangle_aa607d5ba63bf021d0ca818c4727ff2c9}
+
+
+Map a point from the physical triangle to the reference one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The physical point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The point in the reference triangle 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a936a5210cb5fdc598fa55a703b0d776d}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!Jac@{Jac}}
 \index{Jac@{Jac}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{Jac}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Matrix2d Tspeed\-::\-Geo\-::\-Triangle\-::\-Jac (
@@ -152,6 +237,13 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classTspeed_1_1Geo_1_1Triangle_a936a5210cb5fdc598fa55a703b0d776d}
+
+
+Get Jacobian of the transformation from the reference triangle. 
+
+\begin{DoxyReturn}{Returns}
+The Jacobian, in matrix form 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a3ae4d893a8a0b5612aa5530914fbe704}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!map@{map}}
 \index{map@{map}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Tspeed\-::\-Geo\-::\-Triangle\-::map (
@@ -159,6 +251,18 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{{\bf Point} const \&}]{p}
 \end{DoxyParamCaption}
 ) const}}\label{classTspeed_1_1Geo_1_1Triangle_a3ae4d893a8a0b5612aa5530914fbe704}
+
+
+Map a point from its relative position in the reference triangle to the physical point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point in the reference triangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The physical point in the actual triangle 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a9258f1265a916d2ed4ccf4c0d0ddcbb7}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!neigh@{neigh}}
 \index{neigh@{neigh}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{neigh}]{\setlength{\rightskip}{0pt plus 5cm}int const\& Tspeed\-::\-Geo\-::\-Triangle\-::neigh (
@@ -166,6 +270,18 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_a9258f1265a916d2ed4ccf4c0d0ddcbb7}
+
+
+Ged index of neighboring triangle on edge i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} of the triangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of the neighbor 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a223bb2cb8fc96ea689daa5e7312aa7ca}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!neighedges@{neighedges}}
 \index{neighedges@{neighedges}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{neighedges}]{\setlength{\rightskip}{0pt plus 5cm}int const\& Tspeed\-::\-Geo\-::\-Triangle\-::neighedges (
@@ -173,6 +289,18 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_a223bb2cb8fc96ea689daa5e7312aa7ca}
+
+
+Index of the edge i in the nieghboring triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} of the present triangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of the edge in the neighboring triangle 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a38b03bcff96b6ed334d381d56507c91d}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!operator=@{operator=}}
 \index{operator=@{operator=}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Triangle} \& Tspeed\-::\-Geo\-::\-Triangle\-::operator= (
@@ -180,6 +308,10 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{const {\bf Triangle} \&}]{t}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1Geo_1_1Triangle_a38b03bcff96b6ed334d381d56507c91d}
+
+
+Assignement. 
+
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a91d1f81ecb8f0524257ea821245d6c3f}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!print\-Neigh@{print\-Neigh}}
 \index{print\-Neigh@{print\-Neigh}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{print\-Neigh}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Geo\-::\-Triangle\-::print\-Neigh (
@@ -187,6 +319,10 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_a91d1f81ecb8f0524257ea821245d6c3f}
+
+
+Pirnt neighbors for the current triangle. 
+
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a6c4b1ba6d7adf584776089ecfc8d4f8e}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!pt@{pt}}
 \index{pt@{pt}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{pt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} const\& Tspeed\-::\-Geo\-::\-Triangle\-::pt (
@@ -194,6 +330,18 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_a6c4b1ba6d7adf584776089ecfc8d4f8e}
+
+
+Get a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Number of the point in the triangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The i-\/th point 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a1d71aed7672a87aed76934626d671ba7}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!set\-Neigh@{set\-Neigh}}
 \index{set\-Neigh@{set\-Neigh}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{set\-Neigh}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Geo\-::\-Triangle\-::set\-Neigh (
@@ -202,6 +350,17 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{int}]{j}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_a1d71aed7672a87aed76934626d671ba7}
+
+
+Set neighboring triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} of the current triangle \\
+\hline
+{\em j} & Index of the neighbor \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Geo_1_1Triangle_a8c174fbb7b71ef4625f021166bd1c8a6}{\index{Tspeed\-::\-Geo\-::\-Triangle@{Tspeed\-::\-Geo\-::\-Triangle}!set\-Neighedges@{set\-Neighedges}}
 \index{set\-Neighedges@{set\-Neighedges}!Tspeed::Geo::Triangle@{Tspeed\-::\-Geo\-::\-Triangle}}
 \subsubsection[{set\-Neighedges}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Geo\-::\-Triangle\-::set\-Neighedges (
@@ -210,6 +369,17 @@ static const int \hyperlink{classTspeed_1_1Geo_1_1Triangle_af01040fae660e384b791
 \item[{int}]{j}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Triangle_a8c174fbb7b71ef4625f021166bd1c8a6}
+
+
+Set index of the edge of the nieghboring triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} of the current trinagle \\
+\hline
+{\em j} & \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} in the neighboring triangle \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}

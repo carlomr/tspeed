@@ -4,7 +4,6 @@ var searchData=
   ['dubiner',['Dubiner',['../classTspeed_1_1Dubiner.html#a0a4315462e09a1d2e4695b3f636ccd35',1,'Tspeed::Dubiner']]],
   ['dunavant',['Dunavant',['../classTspeed_1_1Dunavant.html#ac20f5d5f0ed9496a7b37a7ee082f635d',1,'Tspeed::Dunavant']]],
   ['dunavant_5fdegree',['dunavant_degree',['../Dunavant_8hpp.html#a49f9323b787a4399cf9affa237f7f6d2',1,'dunavant_degree(int rule):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#a49f9323b787a4399cf9affa237f7f6d2',1,'dunavant_degree(int rule):&#160;Dunavant.cpp']]],
-  ['dunavant_5fnum_5fpoints',['dunavant_num_points',['../namespaceTspeed.html#abe613e0b4c7defa00ceffeca9747e2a6',1,'Tspeed']]],
   ['dunavant_5forder_5fnum',['dunavant_order_num',['../Dunavant_8hpp.html#a1506127b60e81139ccd544a035465548',1,'dunavant_order_num(int rule):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#a1506127b60e81139ccd544a035465548',1,'dunavant_order_num(int rule):&#160;Dunavant.cpp']]],
   ['dunavant_5frule',['dunavant_rule',['../Dunavant_8hpp.html#a3b388ae21eee20f71f7bca9d357e26d5',1,'dunavant_rule(int rule, int order_num, double xy[], double w[]):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#a3b388ae21eee20f71f7bca9d357e26d5',1,'dunavant_rule(int rule, int order_num, double xy[], double w[]):&#160;Dunavant.cpp']]],
   ['dunavant_5frule_5fnum',['dunavant_rule_num',['../Dunavant_8hpp.html#af6a4b0c6021f8d06ca8c1740967141a1',1,'dunavant_rule_num(void):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#aea8f89b8202d514393b2f39ed7f799a9',1,'dunavant_rule_num():&#160;Dunavant.cpp']]],

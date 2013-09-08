@@ -1,6 +1,11 @@
 \hypertarget{MyMat_8cpp}{\section{lib/src/\-My\-Mat.cpp File Reference}
 \label{MyMat_8cpp}\index{lib/src/\-My\-Mat.\-cpp@{lib/src/\-My\-Mat.\-cpp}}
 }
+
+
+Implementation of the matrix classes.  
+
+
 {\ttfamily \#include \char`\"{}My\-Mat.\-hpp\char`\"{}}\\*
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
@@ -18,17 +23,26 @@ Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_aa1cf50773f63e4c0cde90696c38e8a
 \item 
 My\-Mat \hyperlink{namespaceTspeed_ae052fa580f4cab9151f68a690e8d5bca}{Tspeed\-::operator$\ast$} (double const \&c, My\-Mat const \&M)
 \item 
-My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ \hyperlink{namespaceTspeed_aba1b7bce0d7c55cda2d7452fe2675879}{Tspeed\-::operator+} (My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ const \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ \hyperlink{namespaceTspeed_aba1b7bce0d7c55cda2d7452fe2675879}{Tspeed\-::operator+} (My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ const \&a, My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ const \&b)
 \item 
-My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ \hyperlink{namespaceTspeed_aa89f27c4c9e53c2e7ec8e25f2e1451de}{Tspeed\-::operator+} (My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ const \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, My\-Mat\-Multi\-Dim$<$ My\-Mat\-Block\-Diag $>$ const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ \hyperlink{namespaceTspeed_aa89f27c4c9e53c2e7ec8e25f2e1451de}{Tspeed\-::operator+} (My\-Mat\-Multi\-Dim$<$ My\-Mat $>$ const \&a, My\-Mat\-Multi\-Dim$<$ My\-Mat\-Block\-Diag $>$ const \&b)
 \item 
-My\-Mat \hyperlink{namespaceTspeed_a5c1d03d05f350c1ae6239e07f80b6eb8}{Tspeed\-::operator+} (My\-Mat\-Block\-Diag const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b}, My\-Mat \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a})
+My\-Mat \hyperlink{namespaceTspeed_a5c1d03d05f350c1ae6239e07f80b6eb8}{Tspeed\-::operator+} (My\-Mat\-Block\-Diag const \&b, My\-Mat a)
 \item 
-My\-Mat \hyperlink{namespaceTspeed_a1f4d38ebd3223a0e5ea8cfad29fcc10c}{Tspeed\-::operator+} (My\-Mat \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, My\-Mat\-Block\-Diag const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+My\-Mat \hyperlink{namespaceTspeed_a1f4d38ebd3223a0e5ea8cfad29fcc10c}{Tspeed\-::operator+} (My\-Mat a, My\-Mat\-Block\-Diag const \&b)
 \item 
-My\-Mat \hyperlink{namespaceTspeed_ab8df12f3c804c527b4d9006350d50c62}{Tspeed\-::operator+} (My\-Mat \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, My\-Mat const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+My\-Mat \hyperlink{namespaceTspeed_ab8df12f3c804c527b4d9006350d50c62}{Tspeed\-::operator+} (My\-Mat a, My\-Mat const \&b)
 \item 
 Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_a709169815b0e02183d3c4d5b581e735f}{Tspeed\-::operator$\ast$} (My\-Mat\-Block\-Diag const \&, Eigen\-::\-Vector\-Xd const \&)
 \item 
 Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_a47058bd8c3ef387978ab2b5c81038632}{Tspeed\-::operator$\ast$} (My\-Mat const \&, Eigen\-::\-Vector\-Xd const \&)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the matrix classes. \begin{DoxyAuthor}{Author}
+Carlo Marcati 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2013-\/09-\/08 
+\end{DoxyDate}

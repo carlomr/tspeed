@@ -88,64 +88,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Mesh.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Mesh_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __MESH_HPP__</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __MESH_HPP__ 1</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include&lt;string&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;fstream&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;map&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;Eigen/StdVector&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="Geometry_8hpp.html">Geometry.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>Tspeed</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classTspeed_1_1Mesh.html">Mesh</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {   </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a097181c50faa6c8cec5dbe135694606b">   16</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classTspeed_1_1Mesh.html#a097181c50faa6c8cec5dbe135694606b">size_type</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">   17</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;Geo::Triangle,Eigen::aligned_allocator&lt;Eigen::Vector2d&gt;&gt; <a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">AlignedVecT</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a09031b0dab0f2efcef61981dfc9d1640">   18</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;Geo::Edge,Eigen::aligned_allocator&lt;Eigen::Vector2d&gt;&gt; <a class="code" href="classTspeed_1_1Mesh.html#a09031b0dab0f2efcef61981dfc9d1640">AlignedVecE</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#aa8aac31131166087d192ef77c49fb5b2">   19</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;Geo::Point,Eigen::aligned_allocator&lt;Eigen::Vector2d&gt;&gt; <a class="code" href="classTspeed_1_1Mesh.html#aa8aac31131166087d192ef77c49fb5b2">AlignedVecP</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classTspeed_1_1Mesh.html#a0f7593775e6a7b36d877551df395299f">Mesh</a>(<span class="keyword">const</span> std::string);</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a20ac8fd5940e93ec902f343211100d78">   21</a></span>&#160;        <a class="code" href="classTspeed_1_1Geo_1_1Triangle.html">Geo::Triangle</a> <span class="keyword">const</span> &amp; <a class="code" href="classTspeed_1_1Mesh.html#a20ac8fd5940e93ec902f343211100d78">operator[]</a>(<span class="keywordtype">size_t</span> <a class="code" href="load__and__plot_8m.html#a3359ed5f123e10953f77a90207beaa1b">i</a>)<span class="keyword">const</span>{<span class="keywordflow">return</span> M_tri[<a class="code" href="load__and__plot_8m.html#a3359ed5f123e10953f77a90207beaa1b">i</a>];}</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#af6688d1a47cee1baf69ea6d38d721a4a">   22</a></span>&#160;        <a class="code" href="classTspeed_1_1Geo_1_1Triangle.html">Geo::Triangle</a> &amp; <a class="code" href="classTspeed_1_1Mesh.html#af6688d1a47cee1baf69ea6d38d721a4a">operator[]</a>(<span class="keywordtype">size_t</span> <a class="code" href="load__and__plot_8m.html#a3359ed5f123e10953f77a90207beaa1b">i</a>){<span class="keywordflow">return</span> M_tri[<a class="code" href="load__and__plot_8m.html#a3359ed5f123e10953f77a90207beaa1b">i</a>];}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">//std::vector&lt;Geo::Triangle&gt; get_tria()const{return M_tri;}</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">//int connectivity(const unsigned int ie,const unsigned int iedg)const{return M_conn[ie*3+iedg];}</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">//Mesh(const Mesh &amp;);</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">//Mesh &amp; operator =(Mesh const &amp;);</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#ac889d7a89a2d98e84dbc9f0f1b2ebb45">   27</a></span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">AlignedVecT</a> <span class="keyword">const</span> &amp; <a class="code" href="classTspeed_1_1Mesh.html#ac889d7a89a2d98e84dbc9f0f1b2ebb45">elements</a>()<span class="keyword">const</span>{<span class="keywordflow">return</span> M_tri;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a0e9102ce786fc8c4cda93c4b012c8668">   28</a></span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">AlignedVecT</a> &amp; <a class="code" href="classTspeed_1_1Mesh.html#a0e9102ce786fc8c4cda93c4b012c8668">elements</a>(){<span class="keywordflow">return</span> M_tri;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#ae4422add9d3952fe2c02f62053ec120f">   29</a></span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#ae4422add9d3952fe2c02f62053ec120f">~Mesh</a>(){};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classTspeed_1_1Mesh.html#a10b24b91186b9905847232e7e14d4b2e">stats</a>()<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#ac5b8a388b633ac0d280f89f56f2b15c5">   31</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classTspeed_1_1Mesh.html#ac5b8a388b633ac0d280f89f56f2b15c5">ne</a>()<span class="keyword">const</span>{<span class="keywordflow">return</span> M_tri.size();};</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a7ea0757951214e8dc3a68e9a60a1c17c">   32</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classTspeed_1_1Mesh.html#a7ea0757951214e8dc3a68e9a60a1c17c">printallNeigh</a>()<span class="keyword">const</span>{<span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; ie:M_tri) ie.printNeigh();};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">//friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;, Mesh const&amp;);</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::vector&lt;std::pair&lt;unsigned int,unsigned int&gt;&gt; <a class="code" href="classTspeed_1_1Mesh.html#a8cb823f02d7c75e48bf714b367b25b7d">M_bed_map</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::map&lt;std::string, Bc&gt; M_BcMap;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        std::map&lt;Bc,std::string&gt; M_BcMap_inv;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">AlignedVecT</a> M_tri;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#aa8aac31131166087d192ef77c49fb5b2">AlignedVecP</a> M_points;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#a09031b0dab0f2efcef61981dfc9d1640">AlignedVecE</a> M_bed;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> M_neighbors();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string  M_fname;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//int M_verbose;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//std::vector&lt;Geo::Edges&gt; M_edg;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//std::vector&lt;int&gt; M_conn;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="namespaceTspeed.html#a7367a01365c4cc2c1a09305b3effc4e8">   48</a></span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;Mesh&gt; <a class="code" href="namespaceTspeed.html#a7367a01365c4cc2c1a09305b3effc4e8">Mesh_ptr</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<a href="Mesh_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/* This program is free software: you can redistribute it and/or modify </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *  it under the terms of the GNU General Public License as published by </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *  the Free Software Foundation, either version 3 of the License, or </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *  (at your option) any later version. </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful, </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *  GNU General Public License for more details. </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef __MESH_HPP__</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __MESH_HPP__ 1</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include&lt;string&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include&lt;fstream&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include&lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include&lt;map&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include&lt;Eigen/StdVector&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="Geometry_8hpp.html" title="Header file for the geometrical entities.">Geometry.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>Tspeed</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classTspeed_1_1Mesh.html">Mesh</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {   </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a097181c50faa6c8cec5dbe135694606b">   35</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classTspeed_1_1Mesh.html#a097181c50faa6c8cec5dbe135694606b">size_type</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">   36</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;Geo::Triangle,Eigen::aligned_allocator&lt;Eigen::Vector2d&gt;&gt; <a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">AlignedVecT</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a09031b0dab0f2efcef61981dfc9d1640">   37</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;Geo::Edge,Eigen::aligned_allocator&lt;Eigen::Vector2d&gt;&gt; <a class="code" href="classTspeed_1_1Mesh.html#a09031b0dab0f2efcef61981dfc9d1640">AlignedVecE</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#aa8aac31131166087d192ef77c49fb5b2">   38</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;Geo::Point,Eigen::aligned_allocator&lt;Eigen::Vector2d&gt;&gt; <a class="code" href="classTspeed_1_1Mesh.html#aa8aac31131166087d192ef77c49fb5b2">AlignedVecP</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classTspeed_1_1Mesh.html#a2359bc61d5acea3515e31b5b3a9d1edf" title="Generate mesh from a Gmsh mesh.">Mesh</a>(<span class="keyword">const</span> std::string fileName);</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a20ac8fd5940e93ec902f343211100d78">   52</a></span>&#160;        <a class="code" href="classTspeed_1_1Geo_1_1Triangle.html" title="Class describing a triangle.">Geo::Triangle</a> <span class="keyword">const</span> &amp; <a class="code" href="classTspeed_1_1Mesh.html#a20ac8fd5940e93ec902f343211100d78" title="Get triangle with index i (const)">operator[]</a>(<span class="keywordtype">size_t</span> i)<span class="keyword">const</span>{<span class="keywordflow">return</span> M_tri[i];}</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#af6688d1a47cee1baf69ea6d38d721a4a">   60</a></span>&#160;        <a class="code" href="classTspeed_1_1Geo_1_1Triangle.html" title="Class describing a triangle.">Geo::Triangle</a> &amp; <a class="code" href="classTspeed_1_1Mesh.html#af6688d1a47cee1baf69ea6d38d721a4a" title="Get triangle with index i ( non-const)">operator[]</a>(<span class="keywordtype">size_t</span> i){<span class="keywordflow">return</span> M_tri[i];}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//std::vector&lt;Geo::Triangle&gt; get_tria()const{return M_tri;}</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">//int connectivity(const unsigned int ie,const unsigned int iedg)const{return M_conn[ie*3+iedg];}</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">//Mesh(const Mesh &amp;);</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">//Mesh &amp; operator =(Mesh const &amp;);</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#ac889d7a89a2d98e84dbc9f0f1b2ebb45">   70</a></span>&#160;<span class="comment"></span>        <a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">AlignedVecT</a> <span class="keyword">const</span> &amp; <a class="code" href="classTspeed_1_1Mesh.html#ac889d7a89a2d98e84dbc9f0f1b2ebb45" title="Get all triangles in the mesh (const)">elements</a>()<span class="keyword">const</span>{<span class="keywordflow">return</span> M_tri;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a0e9102ce786fc8c4cda93c4b012c8668">   76</a></span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">AlignedVecT</a> &amp; <a class="code" href="classTspeed_1_1Mesh.html#a0e9102ce786fc8c4cda93c4b012c8668" title="Get all triangles in the mesh (non-const)">elements</a>(){<span class="keywordflow">return</span> M_tri;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#ae4422add9d3952fe2c02f62053ec120f">   77</a></span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#ae4422add9d3952fe2c02f62053ec120f">~Mesh</a>(){};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classTspeed_1_1Mesh.html#a10b24b91186b9905847232e7e14d4b2e" title="Print stats about the mesh (e.g. number of elements, anisotropy etc.)">stats</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#ac5b8a388b633ac0d280f89f56f2b15c5">   86</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classTspeed_1_1Mesh.html#ac5b8a388b633ac0d280f89f56f2b15c5" title="Get number of triangles in the mesh.">ne</a>()<span class="keyword">const</span>{<span class="keywordflow">return</span> M_tri.size();};</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="classTspeed_1_1Mesh.html#a7ea0757951214e8dc3a68e9a60a1c17c">   90</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classTspeed_1_1Mesh.html#a7ea0757951214e8dc3a68e9a60a1c17c" title="Print neighbors structure.">printallNeigh</a>()<span class="keyword">const</span>{<span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; ie:M_tri) ie.printNeigh();};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">//friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;, Mesh const&amp;);</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        std::vector&lt;std::pair&lt;unsigned int,unsigned int&gt;&gt; <a class="code" href="classTspeed_1_1Mesh.html#a8cb823f02d7c75e48bf714b367b25b7d">M_bed_map</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        std::map&lt;std::string, Bc&gt; M_BcMap;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        std::map&lt;Bc,std::string&gt; M_BcMap_inv;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#ae62a59eea301689dd9f7c9663414db18">AlignedVecT</a> M_tri;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#aa8aac31131166087d192ef77c49fb5b2">AlignedVecP</a> M_points;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="classTspeed_1_1Mesh.html#a09031b0dab0f2efcef61981dfc9d1640">AlignedVecE</a> M_bed;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">void</span> M_neighbors();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        std::string  M_fname;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">//int M_verbose;</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">//std::vector&lt;Geo::Edges&gt; M_edg;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="comment">//std::vector&lt;int&gt; M_conn;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    };</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="namespaceTspeed.html#a7367a01365c4cc2c1a09305b3effc4e8">  109</a></span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;Mesh&gt; <a class="code" href="namespaceTspeed.html#a7367a01365c4cc2c1a09305b3effc4e8" title="Shared pointer to an element of type mesh.">Mesh_ptr</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:57 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -96,6 +96,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>virtual base class for forces  
+ <a href="classTspeed_1_1Force.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Force_8hpp_source.html">Force.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tspeed::Force:</div>
@@ -103,7 +106,7 @@ Inheritance diagram for Tspeed::Force:</div>
  <div class="center">
   <img src="classTspeed_1_1Force.png" usemap="#Tspeed::Force_map" alt=""/>
   <map id="Tspeed::Force_map" name="Tspeed::Force_map">
-<area href="classTspeed_1_1PointWiseForce.html" alt="Tspeed::PointWiseForce" shape="rect" coords="0,56,148,80"/>
+<area href="classTspeed_1_1PointWiseForce.html" title="Time dependent force acting on a point." alt="Tspeed::PointWiseForce" shape="rect" coords="0,56,148,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -119,8 +122,9 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1763e5fb61e4ef56be851800d854c96d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d">Force</a> ()</td></tr>
 <tr class="separator:a1763e5fb61e4ef56be851800d854c96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a802a5b025cfde563e3c874c0dc3cb858"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Force.html#a802a5b025cfde563e3c874c0dc3cb858">Force</a> (<a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a>&lt; std::array&lt; double, 2 &gt;(const double &amp;)&gt; const &amp;)</td></tr>
-<tr class="separator:a802a5b025cfde563e3c874c0dc3cb858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e90175e9cde9e42844ecad2e9123fbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Force.html#a2e90175e9cde9e42844ecad2e9123fbd">Force</a> (std::function&lt; std::array&lt; double, 2 &gt;(const double &amp;)&gt; const &amp;fun)</td></tr>
+<tr class="memdesc:a2e90175e9cde9e42844ecad2e9123fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, taking the function (time dependent)  <a href="#a2e90175e9cde9e42844ecad2e9123fbd">More...</a><br/></td></tr>
+<tr class="separator:a2e90175e9cde9e42844ecad2e9123fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4789eaa544d8b37d25873a6c8aede55"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Force.html#aa4789eaa544d8b37d25873a6c8aede55">~Force</a> ()</td></tr>
 <tr class="separator:aa4789eaa544d8b37d25873a6c8aede55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac174525b11c7c6a490411d00330a3564"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Force.html#ac174525b11c7c6a490411d00330a3564">eval</a> (const double &amp;) const =0</td></tr>
@@ -128,11 +132,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a71c3dbf2cbca2fe0c4db4db1673794e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a>&lt; std::array<br class="typebreak"/>
+<tr class="memitem:a71c3dbf2cbca2fe0c4db4db1673794e6"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::array<br class="typebreak"/>
 &lt; double, 2 &gt;const double &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Force.html#a71c3dbf2cbca2fe0c4db4db1673794e6">M_f</a></td></tr>
 <tr class="separator:a71c3dbf2cbca2fe0c4db4db1673794e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>virtual base class for forces </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a5f4cd0ccfce951a7edded01c87ba6fb6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -181,19 +187,27 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a802a5b025cfde563e3c874c0dc3cb858"></a>
+<a class="anchor" id="a2e90175e9cde9e42844ecad2e9123fbd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Tspeed::Force::Force </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a>&lt; std::array&lt; double, 2 &gt;(const double &amp;)&gt; const &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::function&lt; std::array&lt; double, 2 &gt;(const double &amp;)&gt; const &amp;&#160;</td>
+          <td class="paramname"><em>fun</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor, taking the function (time dependent) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fun</td><td>The function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -243,7 +257,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classTspeed_1_1PointWiseForce.html#ae52b1302d87e4535620e205fe030d542">Tspeed::PointWiseForce</a>.</p>
+<p>Implemented in <a class="el" href="classTspeed_1_1PointWiseForce.html#a6689b6fa7289a81fc4feed63dafab143">Tspeed::PointWiseForce</a>.</p>
 
 </div>
 </div>
@@ -256,7 +270,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a>&lt;std::array&lt;double,2&gt;const double &amp;)&gt; Tspeed::Force::M_f</td>
+          <td class="memname">std::function&lt;std::array&lt;double,2&gt;const double &amp;)&gt; Tspeed::Force::M_f</td>
         </tr>
       </table>
   </td>
@@ -274,7 +288,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:58 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

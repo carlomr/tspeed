@@ -15,6 +15,7 @@ var searchData=
   ['_7epoint',['~Point',['../classTspeed_1_1Geo_1_1Point.html#a473a872a53b39b9ff91d4030c5a23003',1,'Tspeed::Geo::Point']]],
   ['_7epointwiseentity',['~PointWiseEntity',['../classTspeed_1_1PointWiseEntity.html#a602393b4fd96ffd3d40ea3ff30cdc366',1,'Tspeed::PointWiseEntity']]],
   ['_7epointwiseforce',['~PointWiseForce',['../classTspeed_1_1PointWiseForce.html#a34ad80033ed1e9d5ba31feffae4ab7c9',1,'Tspeed::PointWiseForce']]],
+  ['_7equadraturerule',['~QuadratureRule',['../classTspeed_1_1QuadratureRule.html#a87e11953614fb19072d723fe012993e1',1,'Tspeed::QuadratureRule']]],
   ['_7eshapefunction',['~ShapeFunction',['../classTspeed_1_1ShapeFunction.html#abfab4ad1f425751c62102f74f6ff8040',1,'Tspeed::ShapeFunction']]],
   ['_7etimeadvance',['~TimeAdvance',['../classTspeed_1_1TimeAdvance.html#a73dfdea3bdb8e9f33e7223399ac9f14c',1,'Tspeed::TimeAdvance']]],
   ['_7etriangle',['~Triangle',['../classTspeed_1_1Geo_1_1Triangle.html#af195c8c8c367a11fa9dc95f4a4ef8898',1,'Tspeed::Geo::Triangle']]]

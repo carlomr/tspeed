@@ -3,6 +3,11 @@
 }
 
 
+The class containing the matrices resulting from the spatial discretization.  
+
+
+
+
 {\ttfamily \#include $<$Time\-Advance.\-hpp$>$}
 
 \subsection*{Public Types}
@@ -15,20 +20,23 @@ $<$ double $>$ \hyperlink{classTspeed_1_1Matrices_aec4249f1ac32c3249adae9c91bac1
 \begin{DoxyCompactItemize}
 \item 
 {\footnotesize template$<$int N, typename Q , typename S $>$ }\\\hyperlink{classTspeed_1_1Matrices_ad4b46e2f7a2056a6c5f3a803157236bc}{Matrices} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$, \hyperlink{classTspeed_1_1Parameters}{Parameters} const \&)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor taking the space and the parameters. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$\\*
  const \& \hyperlink{classTspeed_1_1Matrices_a4ee3310af2c6fa476099673ebf61c242}{get\-A} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the stiffness matrix \[ A_{ij} = \sum_K \int_K \sigma(\phi_j):\epsilon(\phi_i) \]. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \& \hyperlink{classTspeed_1_1Matrices_a95dfd802f178cf5dc51967ad70cf36cd}{get\-S} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the stability matrix \[ S_{ij} = \sum_e \int_e [[\phi_j]] : [[\phi_i]] \]. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1MyMatMultiDim}{My\-Mat\-Multi\-Dim}$<$ \hyperlink{classTspeed_1_1MyMat}{My\-Mat} $>$ const \& \hyperlink{classTspeed_1_1Matrices_a78c435049af0aa48eacd9a9dc99627fa}{get\-I} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the interelement matrix \[ S_{ij} = \sum_e \int_e \lbrace\lbrace\sigma(\phi_j)\rbrace\rbrace : [[\phi_i]] + \lbrace\lbrace\sigma(\phi_i)\rbrace\rbrace : [[\phi_j]] \]. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag}\\*
 $<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \& \hyperlink{classTspeed_1_1Matrices_a5358482d27d03d838c597ec2eb79a71c}{getinv\-M} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get inverse of the global mass matrix. \end{DoxyCompactList}\item 
 {\footnotesize template$<$int N, typename Q , typename T $>$ }\\\hyperlink{classTspeed_1_1Matrices_a1893bd97b0320d078e6cd1e97e3cbd5a}{Matrices} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, T $>$ Xh, \hyperlink{classTspeed_1_1Parameters}{Parameters} const \&P)
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+The class containing the matrices resulting from the spatial discretization. 
 
 \subsection{Member Typedef Documentation}
 \hypertarget{classTspeed_1_1Matrices_aec4249f1ac32c3249adae9c91bac1cbf}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!Sp\-Mat@{Sp\-Mat}}
@@ -45,6 +53,10 @@ $<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&
 \item[{{\bf Parameters} const \&}]{}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1Matrices_ad4b46e2f7a2056a6c5f3a803157236bc}
+
+
+Constructor taking the space and the parameters. 
+
 \hypertarget{classTspeed_1_1Matrices_a1893bd97b0320d078e6cd1e97e3cbd5a}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!Matrices@{Matrices}}
 \index{Matrices@{Matrices}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
 \subsubsection[{Matrices}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename T $>$ Tspeed\-::\-Matrices\-::\-Matrices (
@@ -63,6 +75,13 @@ $<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Matrices_a4ee3310af2c6fa476099673ebf61c242}
+
+
+Get the stiffness matrix \[ A_{ij} = \sum_K \int_K \sigma(\phi_j):\epsilon(\phi_i) \]. 
+
+\begin{DoxyReturn}{Returns}
+$\mathbf{A}$ 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Matrices_a78c435049af0aa48eacd9a9dc99627fa}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!get\-I@{get\-I}}
 \index{get\-I@{get\-I}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
 \subsubsection[{get\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat\-Multi\-Dim}$<${\bf My\-Mat}$>$ const\& Tspeed\-::\-Matrices\-::get\-I (
@@ -70,6 +89,13 @@ $<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Matrices_a78c435049af0aa48eacd9a9dc99627fa}
+
+
+Get the interelement matrix \[ S_{ij} = \sum_e \int_e \lbrace\lbrace\sigma(\phi_j)\rbrace\rbrace : [[\phi_i]] + \lbrace\lbrace\sigma(\phi_i)\rbrace\rbrace : [[\phi_j]] \]. 
+
+\begin{DoxyReturn}{Returns}
+$\mathbf{S}$ 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Matrices_a5358482d27d03d838c597ec2eb79a71c}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!getinv\-M@{getinv\-M}}
 \index{getinv\-M@{getinv\-M}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
 \subsubsection[{getinv\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat\-Multi\-Dim\-Block\-Diag}$<${\bf My\-Mat\-Block\-Diag}$>$ const\& Tspeed\-::\-Matrices\-::getinv\-M (
@@ -77,6 +103,13 @@ $<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Matrices_a5358482d27d03d838c597ec2eb79a71c}
+
+
+Get inverse of the global mass matrix. 
+
+\begin{DoxyReturn}{Returns}
+$ \mathbf{M}^{-1}$ 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Matrices_a95dfd802f178cf5dc51967ad70cf36cd}{\index{Tspeed\-::\-Matrices@{Tspeed\-::\-Matrices}!get\-S@{get\-S}}
 \index{get\-S@{get\-S}!Tspeed::Matrices@{Tspeed\-::\-Matrices}}
 \subsubsection[{get\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Mat\-Multi\-Dim}$<${\bf My\-Mat}$>$ const\& Tspeed\-::\-Matrices\-::get\-S (
@@ -84,6 +117,13 @@ $<$ \hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} $>$ const \&
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Matrices_a95dfd802f178cf5dc51967ad70cf36cd}
+
+
+Get the stability matrix \[ S_{ij} = \sum_e \int_e [[\phi_j]] : [[\phi_i]] \]. 
+
+\begin{DoxyReturn}{Returns}
+$\mathbf{S}$ 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

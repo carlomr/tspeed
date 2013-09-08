@@ -3,6 +3,11 @@
 }
 
 
+Base class for the shared functions.  
+
+
+
+
 {\ttfamily \#include $<$Shape\-Functions.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Shape\-Function$<$ N $>$\-:\begin{figure}[H]
@@ -16,10 +21,10 @@ Inheritance diagram for Tspeed\-:\-:Shape\-Function$<$ N $>$\-:\begin{figure}[H]
 \item 
 enum \{ \hyperlink{classTspeed_1_1ShapeFunction_aae4b82bb304115736483f3549b135662a5000f7869288e4deef5af90732ca04fc}{gdl} = (N+1)$\ast$(N+2)/2
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Number of degrees of freedom. \end{DoxyCompactList}\item 
 enum \{ \hyperlink{classTspeed_1_1ShapeFunction_ab93d04cd0692e117dffed761620d57c1a62f499700236320c9364d9c4bc9ab564}{is\-\_\-orthonormal} = false
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Orthonormality of the basis. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,24 +33,40 @@ virtual \hyperlink{classTspeed_1_1ShapeFunction_abfab4ad1f425751c62102f74f6ff804
 \hyperlink{classTspeed_1_1ShapeFunction_ad445923bd9ccbd1c50580f43a6342f5c}{Shape\-Function} ()
 \item 
 Eigen\-::\-Array\-Xd \hyperlink{classTspeed_1_1ShapeFunction_a30886f42b86096f6ea4b621cd4255dd1}{phi} (unsigned int s, Arr const \&v, Arr const \&w) const 
-\item 
-double \hyperlink{classTspeed_1_1ShapeFunction_a45ca655484d81ea09b474ae628d79ecf}{phi} (unsigned int s, double \hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x}, double \hyperlink{vtk__mesh__out_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get value of base function with index s, on points (v,w) \end{DoxyCompactList}\item 
+double \hyperlink{classTspeed_1_1ShapeFunction_a45ca655484d81ea09b474ae628d79ecf}{phi} (unsigned int s, double x, double y) const 
+\begin{DoxyCompactList}\small\item\em Get value of base function with index s, on point (x,y) \end{DoxyCompactList}\item 
 Arr\-G \hyperlink{classTspeed_1_1ShapeFunction_aac13d9c4a86f3a2f9b188a199676c2da}{grad} (unsigned int s, Arr const \&v, Arr const \&w)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get values of gradient of basis function s, on points (v,w) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\-::vector$<$ \hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}\\*
+std\-::vector$<$ std\-::function\\*
 $<$ Arr(Arr const \&, Arr const \&)$>$ $>$ \hyperlink{classTspeed_1_1ShapeFunction_a6d8010d0c9d5e40f21f57c8201149ad5}{M\-\_\-phi}
 \item 
-std\-::vector$<$ \hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}\\*
+std\-::vector$<$ std\-::function\\*
 $<$ Arr\-G(Arr const \&, Arr const \&)$>$ $>$ \hyperlink{classTspeed_1_1ShapeFunction_a282cf4ac589829f07a6c24e443d7bd05}{M\-\_\-grad}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$int N$>$class Tspeed\-::\-Shape\-Function$<$ N $>$}
+
+Base class for the shared functions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & degree of the space $\mathbb{P}_N$ \\
+\hline
+\end{DoxyTemplParams}
+
+
 \subsection{Member Enumeration Documentation}
 \hypertarget{classTspeed_1_1ShapeFunction_aae4b82bb304115736483f3549b135662}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ anonymous enum}}\label{classTspeed_1_1ShapeFunction_aae4b82bb304115736483f3549b135662}
+
+
+Number of degrees of freedom. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -54,6 +75,10 @@ $<$ Arr\-G(Arr const \&, Arr const \&)$>$ $>$ \hyperlink{classTspeed_1_1ShapeFun
 }]\end{description}
 \end{Desc}
 \hypertarget{classTspeed_1_1ShapeFunction_ab93d04cd0692e117dffed761620d57c1}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ anonymous enum}}\label{classTspeed_1_1ShapeFunction_ab93d04cd0692e117dffed761620d57c1}
+
+
+Orthonormality of the basis. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -90,6 +115,22 @@ $<$ Arr\-G(Arr const \&, Arr const \&)$>$ $>$ \hyperlink{classTspeed_1_1ShapeFun
 \item[{Arr const \&}]{w}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1ShapeFunction_aac13d9c4a86f3a2f9b188a199676c2da}
+
+
+Get values of gradient of basis function s, on points (v,w) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Index f the function \\
+\hline
+{\em v} & x-\/coordinates of the points \\
+\hline
+{\em w} & y-\/coordinates of the points\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of dimension length(v) , 2 with the values 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1ShapeFunction_a30886f42b86096f6ea4b621cd4255dd1}{\index{Tspeed\-::\-Shape\-Function@{Tspeed\-::\-Shape\-Function}!phi@{phi}}
 \index{phi@{phi}!Tspeed::ShapeFunction@{Tspeed\-::\-Shape\-Function}}
 \subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ Eigen\-::\-Array\-Xd {\bf Tspeed\-::\-Shape\-Function}$<$ N $>$\-::phi (
@@ -99,6 +140,22 @@ $<$ Arr\-G(Arr const \&, Arr const \&)$>$ $>$ \hyperlink{classTspeed_1_1ShapeFun
 \item[{Arr const \&}]{w}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1ShapeFunction_a30886f42b86096f6ea4b621cd4255dd1}
+
+
+Get value of base function with index s, on points (v,w) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & index of the basis function \\
+\hline
+{\em v} & x-\/coordinates of the points \\
+\hline
+{\em w} & y-\/coordinates of the points\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Eigen array with the values 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1ShapeFunction_a45ca655484d81ea09b474ae628d79ecf}{\index{Tspeed\-::\-Shape\-Function@{Tspeed\-::\-Shape\-Function}!phi@{phi}}
 \index{phi@{phi}!Tspeed::ShapeFunction@{Tspeed\-::\-Shape\-Function}}
 \subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ double {\bf Tspeed\-::\-Shape\-Function}$<$ N $>$\-::phi (
@@ -110,13 +167,29 @@ $<$ Arr\-G(Arr const \&, Arr const \&)$>$ $>$ \hyperlink{classTspeed_1_1ShapeFun
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1ShapeFunction_a45ca655484d81ea09b474ae628d79ecf}
 
 
+Get value of base function with index s, on point (x,y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & index of the basis function \\
+\hline
+{\em x} & x-\/coordinates of the point \\
+\hline
+{\em y} & y-\/coordinates of the point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value 
+\end{DoxyReturn}
+
+
 \subsection{Member Data Documentation}
 \hypertarget{classTspeed_1_1ShapeFunction_a282cf4ac589829f07a6c24e443d7bd05}{\index{Tspeed\-::\-Shape\-Function@{Tspeed\-::\-Shape\-Function}!M\-\_\-grad@{M\-\_\-grad}}
 \index{M\-\_\-grad@{M\-\_\-grad}!Tspeed::ShapeFunction@{Tspeed\-::\-Shape\-Function}}
-\subsubsection[{M\-\_\-grad}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ std\-::vector$<${\bf std\-::function}$<$Arr\-G(Arr const \&, Arr const \&)$>$ $>$ {\bf Tspeed\-::\-Shape\-Function}$<$ N $>$\-::M\-\_\-grad\hspace{0.3cm}{\ttfamily [protected]}}}\label{classTspeed_1_1ShapeFunction_a282cf4ac589829f07a6c24e443d7bd05}
+\subsubsection[{M\-\_\-grad}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ std\-::vector$<$std\-::function$<$Arr\-G(Arr const \&, Arr const \&)$>$ $>$ {\bf Tspeed\-::\-Shape\-Function}$<$ N $>$\-::M\-\_\-grad\hspace{0.3cm}{\ttfamily [protected]}}}\label{classTspeed_1_1ShapeFunction_a282cf4ac589829f07a6c24e443d7bd05}
 \hypertarget{classTspeed_1_1ShapeFunction_a6d8010d0c9d5e40f21f57c8201149ad5}{\index{Tspeed\-::\-Shape\-Function@{Tspeed\-::\-Shape\-Function}!M\-\_\-phi@{M\-\_\-phi}}
 \index{M\-\_\-phi@{M\-\_\-phi}!Tspeed::ShapeFunction@{Tspeed\-::\-Shape\-Function}}
-\subsubsection[{M\-\_\-phi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ std\-::vector$<${\bf std\-::function}$<$Arr(Arr const \&, Arr const \&)$>$ $>$ {\bf Tspeed\-::\-Shape\-Function}$<$ N $>$\-::M\-\_\-phi\hspace{0.3cm}{\ttfamily [protected]}}}\label{classTspeed_1_1ShapeFunction_a6d8010d0c9d5e40f21f57c8201149ad5}
+\subsubsection[{M\-\_\-phi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N$>$ std\-::vector$<$std\-::function$<$Arr(Arr const \&, Arr const \&)$>$ $>$ {\bf Tspeed\-::\-Shape\-Function}$<$ N $>$\-::M\-\_\-phi\hspace{0.3cm}{\ttfamily [protected]}}}\label{classTspeed_1_1ShapeFunction_a6d8010d0c9d5e40f21f57c8201149ad5}
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}

@@ -3,6 +3,11 @@
 }
 
 
+virtual base class for forces  
+
+
+
+
 {\ttfamily \#include $<$Force.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Force\-:\begin{figure}[H]
@@ -24,8 +29,8 @@ typedef Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1Force_ab33d4f6bed9bf9a13
 \item 
 \hyperlink{classTspeed_1_1Force_a1763e5fb61e4ef56be851800d854c96d}{Force} ()
 \item 
-\hyperlink{classTspeed_1_1Force_a802a5b025cfde563e3c874c0dc3cb858}{Force} (\hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}$<$ std\-::array$<$ double, 2 $>$(const double \&)$>$ const \&)
-\item 
+\hyperlink{classTspeed_1_1Force_a2e90175e9cde9e42844ecad2e9123fbd}{Force} (std\-::function$<$ std\-::array$<$ double, 2 $>$(const double \&)$>$ const \&fun)
+\begin{DoxyCompactList}\small\item\em Constructor, taking the function (time dependent) \end{DoxyCompactList}\item 
 virtual \hyperlink{classTspeed_1_1Force_aa4789eaa544d8b37d25873a6c8aede55}{$\sim$\-Force} ()
 \item 
 virtual \hyperlink{classTspeed_1_1Force_ab33d4f6bed9bf9a136afd1ac5a918c93}{Vec} \hyperlink{classTspeed_1_1Force_ac174525b11c7c6a490411d00330a3564}{eval} (const double \&) const =0
@@ -33,10 +38,13 @@ virtual \hyperlink{classTspeed_1_1Force_ab33d4f6bed9bf9a136afd1ac5a918c93}{Vec} 
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}$<$ std\-::array\\*
+std\-::function$<$ std\-::array\\*
 $<$ double, 2 $>$const double \&)$>$ \hyperlink{classTspeed_1_1Force_a71c3dbf2cbca2fe0c4db4db1673794e6}{M\-\_\-f}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+virtual base class for forces 
 
 \subsection{Member Typedef Documentation}
 \hypertarget{classTspeed_1_1Force_a5f4cd0ccfce951a7edded01c87ba6fb6}{\index{Tspeed\-::\-Force@{Tspeed\-::\-Force}!S\-P\-Vec@{S\-P\-Vec}}
@@ -55,13 +63,22 @@ $<$ double, 2 $>$const double \&)$>$ \hyperlink{classTspeed_1_1Force_a71c3dbf2cb
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Force_a1763e5fb61e4ef56be851800d854c96d}
-\hypertarget{classTspeed_1_1Force_a802a5b025cfde563e3c874c0dc3cb858}{\index{Tspeed\-::\-Force@{Tspeed\-::\-Force}!Force@{Force}}
+\hypertarget{classTspeed_1_1Force_a2e90175e9cde9e42844ecad2e9123fbd}{\index{Tspeed\-::\-Force@{Tspeed\-::\-Force}!Force@{Force}}
 \index{Force@{Force}!Tspeed::Force@{Tspeed\-::\-Force}}
 \subsubsection[{Force}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Force\-::\-Force (
 \begin{DoxyParamCaption}
-\item[{{\bf std\-::function}$<$ std\-::array$<$ double, 2 $>$(const double \&)$>$ const \&}]{}
+\item[{std\-::function$<$ std\-::array$<$ double, 2 $>$(const double \&)$>$ const \&}]{fun}
 \end{DoxyParamCaption}
-)}}\label{classTspeed_1_1Force_a802a5b025cfde563e3c874c0dc3cb858}
+)}}\label{classTspeed_1_1Force_a2e90175e9cde9e42844ecad2e9123fbd}
+
+
+Constructor, taking the function (time dependent) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fun} & The function \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Force_aa4789eaa544d8b37d25873a6c8aede55}{\index{Tspeed\-::\-Force@{Tspeed\-::\-Force}!$\sim$\-Force@{$\sim$\-Force}}
 \index{$\sim$\-Force@{$\sim$\-Force}!Tspeed::Force@{Tspeed\-::\-Force}}
 \subsubsection[{$\sim$\-Force}]{\setlength{\rightskip}{0pt plus 5cm}virtual Tspeed\-::\-Force\-::$\sim$\-Force (
@@ -81,14 +98,14 @@ $<$ double, 2 $>$const double \&)$>$ \hyperlink{classTspeed_1_1Force_a71c3dbf2cb
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classTspeed_1_1Force_ac174525b11c7c6a490411d00330a3564}
 
 
-Implemented in \hyperlink{classTspeed_1_1PointWiseForce_ae52b1302d87e4535620e205fe030d542}{Tspeed\-::\-Point\-Wise\-Force}.
+Implemented in \hyperlink{classTspeed_1_1PointWiseForce_a6689b6fa7289a81fc4feed63dafab143}{Tspeed\-::\-Point\-Wise\-Force}.
 
 
 
 \subsection{Member Data Documentation}
 \hypertarget{classTspeed_1_1Force_a71c3dbf2cbca2fe0c4db4db1673794e6}{\index{Tspeed\-::\-Force@{Tspeed\-::\-Force}!M\-\_\-f@{M\-\_\-f}}
 \index{M\-\_\-f@{M\-\_\-f}!Tspeed::Force@{Tspeed\-::\-Force}}
-\subsubsection[{M\-\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::function}$<$std\-::array$<$double,2$>$const double \&)$>$ Tspeed\-::\-Force\-::\-M\-\_\-f\hspace{0.3cm}{\ttfamily [protected]}}}\label{classTspeed_1_1Force_a71c3dbf2cbca2fe0c4db4db1673794e6}
+\subsubsection[{M\-\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}std\-::function$<$std\-::array$<$double,2$>$const double \&)$>$ Tspeed\-::\-Force\-::\-M\-\_\-f\hspace{0.3cm}{\ttfamily [protected]}}}\label{classTspeed_1_1Force_a71c3dbf2cbca2fe0c4db4db1673794e6}
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}

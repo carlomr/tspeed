@@ -92,6 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">MyMat.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Header file for the matrices specialized for the Discontinuous Galerkin method.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;Eigen/Dense&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &quot;<a class="el" href="Mesh_8hpp_source.html">Mesh.hpp</a>&quot;</code><br/>
@@ -102,14 +105,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1BaseMat.html">Tspeed::BaseMat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base monodimensional matrix class.  <a href="classTspeed_1_1BaseMat.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1MyMatBlockDiag.html">Tspeed::MyMatBlockDiag</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block diagonal monodimensional matrix (monodimensional block of mass and stress-strain matrices)  <a href="classTspeed_1_1MyMatBlockDiag.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1MyMat.html">Tspeed::MyMat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block Matrix (monodimensial blocks of stability and interelement matrices)  <a href="classTspeed_1_1MyMat.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1MyMatMultiDim.html">Tspeed::MyMatMultiDim&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multidimensional matrix.  <a href="classTspeed_1_1MyMatMultiDim.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1MyMatMultiDimBlockDiag.html">Tspeed::MyMatMultiDimBlockDiag&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class for matrices where only the diagonal monodimensional matrices are non zero (i.e. the mass matrix)  <a href="classTspeed_1_1MyMatMultiDimBlockDiag.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -125,15 +133,19 @@ Functions</h2></td></tr>
 <tr class="separator:a47058bd8c3ef387978ab2b5c81038632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709169815b0e02183d3c4d5b581e735f"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#a709169815b0e02183d3c4d5b581e735f">Tspeed::operator*</a> (MyMatBlockDiag const &amp;, Eigen::VectorXd const &amp;)</td></tr>
 <tr class="separator:a709169815b0e02183d3c4d5b581e735f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8df12f3c804c527b4d9006350d50c62"><td class="memItemLeft" align="right" valign="top">MyMat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#ab8df12f3c804c527b4d9006350d50c62">Tspeed::operator+</a> (MyMat <a class="el" href="load__and__plot__lamb_8m.html#aa875ab3a8009406dcace7fa71a0f490d">a</a>, MyMat const &amp;<a class="el" href="load__and__plot__lamb_8m.html#a21c7e548e910bb7ce7dcea81de72c8f7">b</a>)</td></tr>
+<tr class="memitem:ab8df12f3c804c527b4d9006350d50c62"><td class="memItemLeft" align="right" valign="top">MyMat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#ab8df12f3c804c527b4d9006350d50c62">Tspeed::operator+</a> (MyMat a, MyMat const &amp;b)</td></tr>
 <tr class="separator:ab8df12f3c804c527b4d9006350d50c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f4d38ebd3223a0e5ea8cfad29fcc10c"><td class="memItemLeft" align="right" valign="top">MyMat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#a1f4d38ebd3223a0e5ea8cfad29fcc10c">Tspeed::operator+</a> (MyMat <a class="el" href="load__and__plot__lamb_8m.html#aa875ab3a8009406dcace7fa71a0f490d">a</a>, MyMatBlockDiag const &amp;<a class="el" href="load__and__plot__lamb_8m.html#a21c7e548e910bb7ce7dcea81de72c8f7">b</a>)</td></tr>
+<tr class="memitem:a1f4d38ebd3223a0e5ea8cfad29fcc10c"><td class="memItemLeft" align="right" valign="top">MyMat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html#a1f4d38ebd3223a0e5ea8cfad29fcc10c">Tspeed::operator+</a> (MyMat a, MyMatBlockDiag const &amp;b)</td></tr>
 <tr class="separator:a1f4d38ebd3223a0e5ea8cfad29fcc10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Header file for the matrices specialized for the Discontinuous Galerkin method. </p>
+<dl class="section author"><dt>Author</dt><dd>Carlo Marcati </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013-09-08 </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:57 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

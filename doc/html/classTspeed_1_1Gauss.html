@@ -95,9 +95,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="QuadratureRule_8hpp_source.html">QuadratureRule.hpp</a>&gt;</code></p>
+<p><a class="el" href="classTspeed_1_1Gauss.html" title="Gauss quadrature rule on the triangle.">Gauss</a> quadrature rule on the triangle.  
+ <a href="classTspeed_1_1Gauss.html#details">More...</a></p>
 
-<p>Inherits Tspeed::QuadratureRule&lt; N &gt;.</p>
+<p><code>#include &lt;<a class="el" href="QuadratureRule_8hpp_source.html">QuadratureRule.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Tspeed::Gauss&lt; N &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classTspeed_1_1Gauss.png" usemap="#Tspeed::Gauss&lt; N &gt;_map" alt=""/>
+  <map id="Tspeed::Gauss&lt; N &gt;_map" name="Tspeed::Gauss&lt; N &gt;_map">
+<area href="classTspeed_1_1QuadratureRule.html" title="Base class for quadrature rules." alt="Tspeed::QuadratureRule&lt; N &gt;" shape="rect" coords="0,0,182,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -107,11 +117,11 @@ Public Types</h2></td></tr>
 <tr class="memitem:a501ad3412838918f9e2301655f64eafe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classTspeed_1_1Gauss.html#a501ad3412838918f9e2301655f64eafeadbbfd28e9b0adcf7dfae2dd2b344ff62">nqn1d</a> = N
  }</td></tr>
 <tr class="separator:a501ad3412838918f9e2301655f64eafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e6ce3b329db121166dc94669eeb64c"><td class="memItemLeft" align="right" valign="top">typedef QuadratureRule&lt; N &gt;::Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Gauss.html#aa7e6ce3b329db121166dc94669eeb64c">Vec</a></td></tr>
+<tr class="memitem:aa7e6ce3b329db121166dc94669eeb64c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classTspeed_1_1QuadratureRule.html">QuadratureRule</a>&lt; N &gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Gauss.html#aa7e6ce3b329db121166dc94669eeb64c">Vec</a></td></tr>
 <tr class="separator:aa7e6ce3b329db121166dc94669eeb64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a04af13bc0e53cfae47226d1d3e6c2"><td class="memItemLeft" align="right" valign="top">typedef QuadratureRule&lt; N &gt;::<a class="el" href="classTspeed_1_1Gauss.html#aa7e6ce3b329db121166dc94669eeb64c">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Gauss.html#a60a04af13bc0e53cfae47226d1d3e6c2">Mat</a></td></tr>
+<tr class="memitem:a60a04af13bc0e53cfae47226d1d3e6c2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classTspeed_1_1QuadratureRule.html">QuadratureRule</a>&lt; N &gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Gauss.html#a60a04af13bc0e53cfae47226d1d3e6c2">Mat</a></td></tr>
 <tr class="separator:a60a04af13bc0e53cfae47226d1d3e6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f9176585d652260498c0b142b183eb"><td class="memItemLeft" align="right" valign="top">typedef QuadratureRule&lt; N &gt;::<a class="el" href="classTspeed_1_1Gauss.html#aa7e6ce3b329db121166dc94669eeb64c">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Gauss.html#ae0f9176585d652260498c0b142b183eb">Vec2</a></td></tr>
+<tr class="memitem:ae0f9176585d652260498c0b142b183eb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classTspeed_1_1QuadratureRule.html">QuadratureRule</a>&lt; N &gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Gauss.html#ae0f9176585d652260498c0b142b183eb">Vec2</a></td></tr>
 <tr class="separator:ae0f9176585d652260498c0b142b183eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -119,61 +129,84 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0bcffd5c12cefd767a96a597c3c250ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Gauss.html#a0bcffd5c12cefd767a96a597c3c250ce">Gauss</a> ()</td></tr>
 <tr class="separator:a0bcffd5c12cefd767a96a597c3c250ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classTspeed_1_1QuadratureRule"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTspeed_1_1QuadratureRule')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classTspeed_1_1QuadratureRule.html">Tspeed::QuadratureRule&lt; N &gt;</a></td></tr>
-<tr class="memitem:aa658eff598f446b5398a818d7524d71d inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>QuadratureRule</b> ()=default</td></tr>
+<tr class="memitem:aa658eff598f446b5398a818d7524d71d inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#aa658eff598f446b5398a818d7524d71d">QuadratureRule</a> ()=default</td></tr>
 <tr class="separator:aa658eff598f446b5398a818d7524d71d inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a7c099a23dde465b962f7598205af61 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Vec&#160;</td><td class="memItemRight" valign="bottom"><b>edge_weights</b> () const </td></tr>
+<tr class="memitem:a8a7c099a23dde465b962f7598205af61 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a8a7c099a23dde465b962f7598205af61">edge_weights</a> () const </td></tr>
+<tr class="memdesc:a8a7c099a23dde465b962f7598205af61 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get weights on the edge.  <a href="#a8a7c099a23dde465b962f7598205af61">More...</a><br/></td></tr>
 <tr class="separator:a8a7c099a23dde465b962f7598205af61 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af79d17fa10d0d780d4681465fa99420b inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Vec2&#160;</td><td class="memItemRight" valign="bottom"><b>int_weights</b> () const </td></tr>
+<tr class="memitem:af79d17fa10d0d780d4681465fa99420b inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#ae5410eb7a3d04b222b540c599f18fa62">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#af79d17fa10d0d780d4681465fa99420b">int_weights</a> () const </td></tr>
+<tr class="memdesc:af79d17fa10d0d780d4681465fa99420b inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get internal weights.  <a href="#af79d17fa10d0d780d4681465fa99420b">More...</a><br/></td></tr>
 <tr class="separator:af79d17fa10d0d780d4681465fa99420b inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c509e115de2cd1a2a2dabea629c1a8 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Geo_1_1Point.html">Geo::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inode</b> (unsigned int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:ab9c509e115de2cd1a2a2dabea629c1a8 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Geo_1_1Point.html">Geo::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ab9c509e115de2cd1a2a2dabea629c1a8">inode</a> (unsigned int i) const </td></tr>
+<tr class="memdesc:ab9c509e115de2cd1a2a2dabea629c1a8 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get i-th qudrature node.  <a href="#ab9c509e115de2cd1a2a2dabea629c1a8">More...</a><br/></td></tr>
 <tr class="separator:ab9c509e115de2cd1a2a2dabea629c1a8 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6a9d9ee8aa004963c7bec2d3af22c1 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><b>eweight</b> (unsigned int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:aaa6a9d9ee8aa004963c7bec2d3af22c1 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#aaa6a9d9ee8aa004963c7bec2d3af22c1">eweight</a> (unsigned int i) const </td></tr>
+<tr class="memdesc:aaa6a9d9ee8aa004963c7bec2d3af22c1 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get i-th weight on the edge.  <a href="#aaa6a9d9ee8aa004963c7bec2d3af22c1">More...</a><br/></td></tr>
 <tr class="separator:aaa6a9d9ee8aa004963c7bec2d3af22c1 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4569cf4c9860494e5f7e4dc31a255e93 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><b>iweight</b> (unsigned int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:a4569cf4c9860494e5f7e4dc31a255e93 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a4569cf4c9860494e5f7e4dc31a255e93">iweight</a> (unsigned int i) const </td></tr>
+<tr class="memdesc:a4569cf4c9860494e5f7e4dc31a255e93 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get i-th interior weight.  <a href="#a4569cf4c9860494e5f7e4dc31a255e93">More...</a><br/></td></tr>
 <tr class="separator:a4569cf4c9860494e5f7e4dc31a255e93 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae326baaa5e3a4bcc9ee6e0a14e94bb11 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><b>edge_n</b> () const </td></tr>
+<tr class="memitem:ae326baaa5e3a4bcc9ee6e0a14e94bb11 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ae326baaa5e3a4bcc9ee6e0a14e94bb11">edge_n</a> () const </td></tr>
+<tr class="memdesc:ae326baaa5e3a4bcc9ee6e0a14e94bb11 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of nodes or weights on the edge.  <a href="#ae326baaa5e3a4bcc9ee6e0a14e94bb11">More...</a><br/></td></tr>
 <tr class="separator:ae326baaa5e3a4bcc9ee6e0a14e94bb11 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b41a3c4fc6cbc437424e809c971ae0d inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><b>int_n</b> () const </td></tr>
+<tr class="memitem:a1b41a3c4fc6cbc437424e809c971ae0d inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a1b41a3c4fc6cbc437424e809c971ae0d">int_n</a> () const </td></tr>
+<tr class="memdesc:a1b41a3c4fc6cbc437424e809c971ae0d inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of interior nodes or weights.  <a href="#a1b41a3c4fc6cbc437424e809c971ae0d">More...</a><br/></td></tr>
 <tr class="separator:a1b41a3c4fc6cbc437424e809c971ae0d inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069e32dedbc3314a4b9784462519efb2 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><b>int_nodes</b> () const </td></tr>
+<tr class="memitem:a069e32dedbc3314a4b9784462519efb2 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#a4228962a091bdb502c1d358651d7ab79">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a069e32dedbc3314a4b9784462519efb2">int_nodes</a> () const </td></tr>
+<tr class="memdesc:a069e32dedbc3314a4b9784462519efb2 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all interior nodes.  <a href="#a069e32dedbc3314a4b9784462519efb2">More...</a><br/></td></tr>
 <tr class="separator:a069e32dedbc3314a4b9784462519efb2 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a26b098e2cbc6b7ad2d90a00b34a93 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, N, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edge_nodes</b> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:a32a26b098e2cbc6b7ad2d90a00b34a93 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, N, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a32a26b098e2cbc6b7ad2d90a00b34a93">edge_nodes</a> (int i) const </td></tr>
+<tr class="memdesc:a32a26b098e2cbc6b7ad2d90a00b34a93 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all nodes on edge i of the reference triangle.  <a href="#a32a26b098e2cbc6b7ad2d90a00b34a93">More...</a><br/></td></tr>
 <tr class="separator:a32a26b098e2cbc6b7ad2d90a00b34a93 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87e11953614fb19072d723fe012993e1 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~QuadratureRule</b> ()</td></tr>
+<tr class="memitem:a87e11953614fb19072d723fe012993e1 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a87e11953614fb19072d723fe012993e1">~QuadratureRule</a> ()</td></tr>
 <tr class="separator:a87e11953614fb19072d723fe012993e1 inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a664d3e5b0947d83e2986830958e9887b inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>nqn2d</b> () const </td></tr>
+<tr class="memitem:a664d3e5b0947d83e2986830958e9887b inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a664d3e5b0947d83e2986830958e9887b">nqn2d</a> () const </td></tr>
+<tr class="memdesc:a664d3e5b0947d83e2986830958e9887b inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of internal nodes/weights.  <a href="#a664d3e5b0947d83e2986830958e9887b">More...</a><br/></td></tr>
 <tr class="separator:a664d3e5b0947d83e2986830958e9887b inherit pub_methods_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_classTspeed_1_1QuadratureRule"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classTspeed_1_1QuadratureRule')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classTspeed_1_1QuadratureRule.html">Tspeed::QuadratureRule&lt; N &gt;</a></td></tr>
-<tr class="memitem:ab50520efbaa46b2aa67f62be6f0d21b9 inherit pub_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</b></td></tr>
+<tr class="memitem:ab50520efbaa46b2aa67f62be6f0d21b9 inherit pub_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ab50520efbaa46b2aa67f62be6f0d21b9">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</a></td></tr>
+<tr class="memdesc:ab50520efbaa46b2aa67f62be6f0d21b9 inherit pub_attribs_classTspeed_1_1QuadratureRule"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required by Eigen.  <a href="#ab50520efbaa46b2aa67f62be6f0d21b9">More...</a><br/></td></tr>
 <tr class="separator:ab50520efbaa46b2aa67f62be6f0d21b9 inherit pub_attribs_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classTspeed_1_1QuadratureRule"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classTspeed_1_1QuadratureRule')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classTspeed_1_1QuadratureRule.html">Tspeed::QuadratureRule&lt; N &gt;</a></td></tr>
 <tr class="memitem:ae5410eb7a3d04b222b540c599f18fa62 inherit pro_types_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix&lt; double, <br class="typebreak"/>
-Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Vec2</b></td></tr>
+Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ae5410eb7a3d04b222b540c599f18fa62">Vec2</a></td></tr>
 <tr class="separator:ae5410eb7a3d04b222b540c599f18fa62 inherit pro_types_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4228962a091bdb502c1d358651d7ab79 inherit pro_types_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix&lt; double, <br class="typebreak"/>
-Eigen::Dynamic, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Mat</b></td></tr>
+Eigen::Dynamic, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a4228962a091bdb502c1d358651d7ab79">Mat</a></td></tr>
 <tr class="separator:a4228962a091bdb502c1d358651d7ab79 inherit pro_types_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195c2b71ad957c9dc5408452b11e1302 inherit pro_types_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix&lt; double, <br class="typebreak"/>
-N, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Vec</b></td></tr>
+N, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a></td></tr>
 <tr class="separator:a195c2b71ad957c9dc5408452b11e1302 inherit pro_types_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classTspeed_1_1QuadratureRule"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classTspeed_1_1QuadratureRule')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classTspeed_1_1QuadratureRule.html">Tspeed::QuadratureRule&lt; N &gt;</a></td></tr>
-<tr class="memitem:a4e405a9ebe10ea75dc56191c03d340fe inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Vec2&#160;</td><td class="memItemRight" valign="bottom"><b>M_w_2D</b></td></tr>
+<tr class="memitem:a4e405a9ebe10ea75dc56191c03d340fe inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#ae5410eb7a3d04b222b540c599f18fa62">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a4e405a9ebe10ea75dc56191c03d340fe">M_w_2D</a></td></tr>
 <tr class="separator:a4e405a9ebe10ea75dc56191c03d340fe inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a653baada0a38f6e3a36bc66ab579ef72 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><b>M_node_2D</b></td></tr>
+<tr class="memitem:a653baada0a38f6e3a36bc66ab579ef72 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#a4228962a091bdb502c1d358651d7ab79">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a653baada0a38f6e3a36bc66ab579ef72">M_node_2D</a></td></tr>
 <tr class="separator:a653baada0a38f6e3a36bc66ab579ef72 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3557f1110c8b1f9b91b468df6329a58 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Vec&#160;</td><td class="memItemRight" valign="bottom"><b>M_node_1D</b></td></tr>
+<tr class="memitem:ad3557f1110c8b1f9b91b468df6329a58 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#ad3557f1110c8b1f9b91b468df6329a58">M_node_1D</a></td></tr>
 <tr class="separator:ad3557f1110c8b1f9b91b468df6329a58 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11a4f44e86c2751d5efbf773e6b6c1cb inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">Vec&#160;</td><td class="memItemRight" valign="bottom"><b>M_w_1D</b></td></tr>
+<tr class="memitem:a11a4f44e86c2751d5efbf773e6b6c1cb inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a11a4f44e86c2751d5efbf773e6b6c1cb">M_w_1D</a></td></tr>
 <tr class="separator:a11a4f44e86c2751d5efbf773e6b6c1cb inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f41fe4542680d9585d6fe6cbc1f0662 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><b>M_nqn_1D</b></td></tr>
+<tr class="memitem:a2f41fe4542680d9585d6fe6cbc1f0662 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a2f41fe4542680d9585d6fe6cbc1f0662">M_nqn_1D</a></td></tr>
 <tr class="separator:a2f41fe4542680d9585d6fe6cbc1f0662 inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a650b4ab99b41d5606e7b6ca4ba9fbe inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><b>M_nqn_2D</b></td></tr>
+<tr class="memitem:a5a650b4ab99b41d5606e7b6ca4ba9fbe inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1QuadratureRule.html#a5a650b4ab99b41d5606e7b6ca4ba9fbe">M_nqn_2D</a></td></tr>
 <tr class="separator:a5a650b4ab99b41d5606e7b6ca4ba9fbe inherit pro_attribs_classTspeed_1_1QuadratureRule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;int N&gt;<br/>
+class Tspeed::Gauss&lt; N &gt;</h3>
+
+<p><a class="el" href="classTspeed_1_1Gauss.html" title="Gauss quadrature rule on the triangle.">Gauss</a> quadrature rule on the triangle. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>the order of the rule</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The internal nodes will be N^2; N+1 is the required order to integrate polynomials of order 2N. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a60a04af13bc0e53cfae47226d1d3e6c2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +214,7 @@ N, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Vec</b></td></tr
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef QuadratureRule&lt;N&gt;::<a class="el" href="classTspeed_1_1Gauss.html#aa7e6ce3b329db121166dc94669eeb64c">Vec</a> <a class="el" href="classTspeed_1_1Gauss.html">Tspeed::Gauss</a>&lt; N &gt;::Mat</td>
+          <td class="memname">typedef <a class="el" href="classTspeed_1_1QuadratureRule.html">QuadratureRule</a>&lt;N&gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a> <a class="el" href="classTspeed_1_1Gauss.html">Tspeed::Gauss</a>&lt; N &gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#a4228962a091bdb502c1d358651d7ab79">Mat</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -195,7 +228,7 @@ template&lt;int N&gt; </div>
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef QuadratureRule&lt;N&gt;::Vec <a class="el" href="classTspeed_1_1Gauss.html">Tspeed::Gauss</a>&lt; N &gt;::Vec</td>
+          <td class="memname">typedef <a class="el" href="classTspeed_1_1QuadratureRule.html">QuadratureRule</a>&lt;N&gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a> <a class="el" href="classTspeed_1_1Gauss.html">Tspeed::Gauss</a>&lt; N &gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,7 +242,7 @@ template&lt;int N&gt; </div>
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef QuadratureRule&lt;N&gt;::<a class="el" href="classTspeed_1_1Gauss.html#aa7e6ce3b329db121166dc94669eeb64c">Vec</a> <a class="el" href="classTspeed_1_1Gauss.html">Tspeed::Gauss</a>&lt; N &gt;::Vec2</td>
+          <td class="memname">typedef <a class="el" href="classTspeed_1_1QuadratureRule.html">QuadratureRule</a>&lt;N&gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#a195c2b71ad957c9dc5408452b11e1302">Vec</a> <a class="el" href="classTspeed_1_1Gauss.html">Tspeed::Gauss</a>&lt; N &gt;::<a class="el" href="classTspeed_1_1QuadratureRule.html#ae5410eb7a3d04b222b540c599f18fa62">Vec2</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -278,7 +311,7 @@ template&lt;int N&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:03 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:58 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

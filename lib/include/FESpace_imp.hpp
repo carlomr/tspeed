@@ -1,3 +1,22 @@
+/**
+ * @file FESpace_imp.hpp
+ * @brief Implementation of the functional space class methods
+ * @author Carlo Marcati
+ * @date 2013-09-08
+ */
+/* This program is free software: you can redistribute it and/or modify 
+ *  it under the terms of the GNU General Public License as published by 
+ *  the Free Software Foundation, either version 3 of the License, or 
+ *  (at your option) any later version. 
+ *  
+ *  This program is distributed in the hope that it will be useful, 
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of 
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+ *  GNU General Public License for more details. 
+ *  
+ *  You should have received a copy of the GNU General Public License 
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 #ifndef __FESPACE_IMP_HPP__
 #define __FESPACE_IMP_HPP__ 1
 namespace Tspeed{
@@ -22,9 +41,31 @@ namespace Tspeed{
 		M_Gedge[i*3+iedg].row(1) = M_sh.grad(i, M_quad.edge_nodes(iedg).col(0), M_quad.edge_nodes(iedg).col(1)).col(1);
 	    }
 	}
+	base_mass_and_inv();
 	std::cout << "FESpace :: " << (N+1)*(N+2)/2*M_mesh->ne() << " dof per component." << std::endl;
 
     };
+    template<int N, typename Q, typename S>
+	void FESpace<N,Q,S>::base_mass_and_inv()
+	{
+	    if(S::is_orthonormal)
+	    {
+		M_base_mass = Eigen::MatrixXd::Identity(S::gdl, S::gdl);
+	    }
+	    else
+	    {
+		M_base_mass = Eigen::MatrixXd::Zero(S::gdl, S::gdl);
+		for(int i=0; i<S::gdl ; ++i)
+		{
+		    for (int j = 0; j<S::gdl ; ++j)
+		    {   
+			for(int k = 0; k<Q::nqn2d ; ++k)
+			    M_base_mass(i,j) += M_B(k,i)*M_B(k,j)*M_quad.iweight(k);
+		    }
+		}
+	    }
+	    M_base_invmass = M_base_mass.inverse();
+	};
 
     template<int N, typename Q, typename S>
 	void FESpace<N,Q,S>::points_out(std::string const &fname)const
@@ -99,7 +140,6 @@ namespace Tspeed{
 	    unsigned int startIndex;
 	    unsigned int size = M_nln;
 	    Eigen::VectorXd rhs(M_nln);
-	    Eigen::MatrixXd invM(M_nln,M_nln);//TODO: when using basis different from Dubiner's, this function must move somewhere else(or, we'll need to evaluate M)
 	    for(auto ie: M_mesh->elements())
 	    {
 		startIndex = ie.id()*M_nln;
@@ -108,9 +148,9 @@ namespace Tspeed{
 		//std::cout << ie.Jac() << std::endl << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" << std::endl;
 		//std::cout << rhs << std::endl;
 		//std::cout << std::endl;
-		invM = 1./ie.detJ()*Eigen::MatrixXd::Identity(M_nln,M_nln);
-		uh.segment(startIndex, size) = invM * rhs.segment(0, size);
-		uh.segment(startIndex + M_ne*M_nln, size) = invM * rhs.segment(M_nln, size);
+		//invM = 1./ie.detJ()*Eigen::MatrixXd::Identity(M_nln,M_nln);
+		uh.segment(startIndex, size) = 1./ie.detJ()*M_base_invmass * rhs.segment(0, size);
+		uh.segment(startIndex + M_ne*M_nln, size) = 1./ie.detJ()*M_base_invmass * rhs.segment(M_nln, size);
 
 
 	    }

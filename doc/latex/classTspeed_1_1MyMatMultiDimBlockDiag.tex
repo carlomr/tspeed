@@ -3,6 +3,11 @@
 }
 
 
+Matrix class for matrices where only the diagonal monodimensional matrices are non zero (i.\-e. the mass matrix)  
+
+
+
+
 {\ttfamily \#include $<$My\-Mat.\-hpp$>$}
 
 \subsection*{Public Member Functions}
@@ -14,25 +19,37 @@ virtual \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a3571b43f213adf9d0a267c
 \item 
 \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_aced3b96e49bd12dfeb95f763fbd0757f}{My\-Mat\-Multi\-Dim\-Block\-Diag} (\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr}, unsigned int nln)
 \item 
-T \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_aa430ef9d18b0a68c4bff63047daf0be9}{component} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i})
-\item 
-T const \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a5f813a4f7c0a080cb5e1808941ef7348}{component} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-void \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a4d495f30e8088fd75502fa035e719c14}{vec\-Mult} (Eigen\-::\-Vector\-Xd const \&, Eigen\-::\-Vector\-Xd \&) const 
-\item 
+T \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_aa430ef9d18b0a68c4bff63047daf0be9}{component} (int i)
+\begin{DoxyCompactList}\small\item\em Get monodimensional component (0,0) if i=0 or (1,1) if i=1\-: \end{DoxyCompactList}\item 
+T const \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a5f813a4f7c0a080cb5e1808941ef7348}{component} (int i) const 
+\begin{DoxyCompactList}\small\item\em Get monodimensional component (0,0) if i=0 or (1,1) if i=1 (const version) \end{DoxyCompactList}\item 
+void \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a506cb7bfc917b4a443deb9f5e6409cf7}{vec\-Mult} (Eigen\-::\-Vector\-Xd const \&x, Eigen\-::\-Vector\-Xd \&out) const 
+\begin{DoxyCompactList}\small\item\em Multiplication by a vector. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a64aee8deb9a8477c247778c033dd54c0}{My\-Mat\-Multi\-Dim\-Block\-Diag} (\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} \&\&)=default
 \item 
 \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a2cecd6795a391ecbf1853f8af8926277}{operator=} (\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} \&\&)=default
 \item 
 unsigned int \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a5016da7b2a0ff6099353ddd91f960dd7}{nr} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Get total number of rows. \end{DoxyCompactList}\item 
 Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b76e7da9686a74bed5d0f059c7}{operator$\ast$} (Eigen\-::\-Vector\-Xd const \&v) const 
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} const \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a2be04a4f228649a2efc0af5ac011852e}{operator$\ast$} (double const \&\hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x}, \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} const \&A)
+\hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} const \& \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_a2be04a4f228649a2efc0af5ac011852e}{operator$\ast$} (double const \&x, \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{My\-Mat\-Multi\-Dim\-Block\-Diag} const \&A)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag$<$ T $>$}
+
+Matrix class for matrices where only the diagonal monodimensional matrices are non zero (i.\-e. the mass matrix) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -75,6 +92,18 @@ Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b7
 \item[{int}]{i}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_aa430ef9d18b0a68c4bff63047daf0be9}
+
+
+Get monodimensional component (0,0) if i=0 or (1,1) if i=1\-: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Select component\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Monodimensional matrix of type T 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a5f813a4f7c0a080cb5e1808941ef7348}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!component@{component}}
 \index{component@{component}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
 \subsubsection[{component}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T const\& {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::component (
@@ -82,6 +111,18 @@ Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b7
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a5f813a4f7c0a080cb5e1808941ef7348}
+
+
+Get monodimensional component (0,0) if i=0 or (1,1) if i=1 (const version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Select component\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Monodimensional matrix of type T 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a5016da7b2a0ff6099353ddd91f960dd7}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!nr@{nr}}
 \index{nr@{nr}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
 \subsubsection[{nr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ unsigned int {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::nr (
@@ -89,6 +130,10 @@ Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b7
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a5016da7b2a0ff6099353ddd91f960dd7}
+
+
+Get total number of rows. 
+
 \hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b76e7da9686a74bed5d0f059c7}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
 \subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Eigen\-::\-Vector\-Xd {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::operator$\ast$ (
@@ -103,14 +148,25 @@ Eigen\-::\-Vector\-Xd \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag_ae688f7b7
 \item[{{\bf My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$ \&\&}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [default]}}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a2cecd6795a391ecbf1853f8af8926277}
-\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a4d495f30e8088fd75502fa035e719c14}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!vec\-Mult@{vec\-Mult}}
+\hypertarget{classTspeed_1_1MyMatMultiDimBlockDiag_a506cb7bfc917b4a443deb9f5e6409cf7}{\index{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}!vec\-Mult@{vec\-Mult}}
 \index{vec\-Mult@{vec\-Mult}!Tspeed::MyMatMultiDimBlockDiag@{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}}
 \subsubsection[{vec\-Mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag}$<$ T $>$\-::vec\-Mult (
 \begin{DoxyParamCaption}
 \item[{Eigen\-::\-Vector\-Xd const \&}]{x, }
 \item[{Eigen\-::\-Vector\-Xd \&}]{out}
 \end{DoxyParamCaption}
-) const}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a4d495f30e8088fd75502fa035e719c14}
+) const}}\label{classTspeed_1_1MyMatMultiDimBlockDiag_a506cb7bfc917b4a443deb9f5e6409cf7}
+
+
+Multiplication by a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & term to be multiplied \\
+\hline
+\mbox{\tt out}  & {\em out} & result of the multiplication \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Friends And Related Function Documentation}

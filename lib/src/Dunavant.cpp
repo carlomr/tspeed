@@ -1,3 +1,8 @@
+/**
+ * @file Dunavant.cpp
+ * @brief Functions for Dunavant quadrature (nodes and weights, tabulated)
+ * @author John Burkardt
+ */
 # include <cstdlib>
 # include <iostream>
 # include <fstream>

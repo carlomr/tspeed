@@ -96,6 +96,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Base class for time stepping methods.  
+ <a href="classTspeed_1_1TimeAdvance.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TimeAdvance_8hpp_source.html">TimeAdvance.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tspeed::TimeAdvance:</div>
@@ -103,49 +106,62 @@ Inheritance diagram for Tspeed::TimeAdvance:</div>
  <div class="center">
   <img src="classTspeed_1_1TimeAdvance.png" usemap="#Tspeed::TimeAdvance_map" alt=""/>
   <map id="Tspeed::TimeAdvance_map" name="Tspeed::TimeAdvance_map">
-<area href="classTspeed_1_1LeapFrog.html" alt="Tspeed::LeapFrog" shape="rect" coords="0,56,136,80"/>
+<area href="classTspeed_1_1LeapFrog.html" title="Implementation of the second order Leap-Frog explicit time stepping scheme." alt="Tspeed::LeapFrog" shape="rect" coords="0,56,136,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab7fb5289ea62abe7da6c4423bf19f667"><td class="memTemplParams" colspan="2">template&lt;int N, typename Q , typename S &gt; </td></tr>
+<tr class="memitem:ab7fb5289ea62abe7da6c4423bf19f667"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#ab7fb5289ea62abe7da6c4423bf19f667">TimeAdvance</a> (<a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr</a>&lt; N, Q, S &gt; Xh, <a class="el" href="classTspeed_1_1Parameters.html">Parameters</a> const &amp;p, <a class="el" href="classTspeed_1_1Receivers.html">Receivers</a> const &amp;r)</td></tr>
+<tr class="memdesc:ab7fb5289ea62abe7da6c4423bf19f667"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor from the space, parameters and receivers  <a href="#ab7fb5289ea62abe7da6c4423bf19f667">More...</a><br/></td></tr>
+<tr class="separator:ab7fb5289ea62abe7da6c4423bf19f667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d353495c283af5a29740a70424f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#ae9d353495c283af5a29740a70424f11d">first_step</a> ()</td></tr>
+<tr class="memdesc:ae9d353495c283af5a29740a70424f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first step of the method (which is different for 2nd order methods)  <a href="#ae9d353495c283af5a29740a70424f11d">More...</a><br/></td></tr>
 <tr class="separator:ae9d353495c283af5a29740a70424f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68853509e7ceecbe34d79518530eee7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a68853509e7ceecbe34d79518530eee7b">step</a> (double)</td></tr>
-<tr class="separator:a68853509e7ceecbe34d79518530eee7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3328d4d45d9261de6bfdd8e447f88d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a3328d4d45d9261de6bfdd8e447f88d63">step</a> (double t)</td></tr>
+<tr class="memdesc:a3328d4d45d9261de6bfdd8e447f88d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">step at time t  <a href="#a3328d4d45d9261de6bfdd8e447f88d63">More...</a><br/></td></tr>
+<tr class="separator:a3328d4d45d9261de6bfdd8e447f88d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73dfdea3bdb8e9f33e7223399ac9f14c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a73dfdea3bdb8e9f33e7223399ac9f14c">~TimeAdvance</a> ()</td></tr>
 <tr class="separator:a73dfdea3bdb8e9f33e7223399ac9f14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab9c0637d3de35291c4f845dba713fe"><td class="memTemplParams" colspan="2">template&lt;int N, typename Q , typename S &gt; </td></tr>
-<tr class="memitem:a0ab9c0637d3de35291c4f845dba713fe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a0ab9c0637d3de35291c4f845dba713fe">TimeAdvance</a> (<a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr</a>&lt; N, Q, S &gt;, <a class="el" href="classTspeed_1_1Parameters.html">Parameters</a> const &amp;, <a class="el" href="classTspeed_1_1Receivers.html">Receivers</a> const &amp;)</td></tr>
-<tr class="separator:a0ab9c0637d3de35291c4f845dba713fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2538fb7b6ee62103de78f42158bf38e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a2538fb7b6ee62103de78f42158bf38e6">set_dt</a> (double dt)</td></tr>
+<tr class="memdesc:a2538fb7b6ee62103de78f42158bf38e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time step <img class="formulaInl" alt="$\delta t $" src="form_27.png"/>.  <a href="#a2538fb7b6ee62103de78f42158bf38e6">More...</a><br/></td></tr>
 <tr class="separator:a2538fb7b6ee62103de78f42158bf38e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0d8cd9b2b704e7cd4a2dd0793ce085d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#ac0d8cd9b2b704e7cd4a2dd0793ce085d">set_tmax</a> (double tmax)</td></tr>
+<tr class="memdesc:ac0d8cd9b2b704e7cd4a2dd0793ce085d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set end time of the simulation.  <a href="#ac0d8cd9b2b704e7cd4a2dd0793ce085d">More...</a><br/></td></tr>
 <tr class="separator:ac0d8cd9b2b704e7cd4a2dd0793ce085d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af635a6b3e94ff39467817c4b3890feb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#af635a6b3e94ff39467817c4b3890feb4">set_penalty</a> (double p)</td></tr>
+<tr class="memdesc:af635a6b3e94ff39467817c4b3890feb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">set penalty for the stability matrix  <a href="#af635a6b3e94ff39467817c4b3890feb4">More...</a><br/></td></tr>
 <tr class="separator:af635a6b3e94ff39467817c4b3890feb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248fe5d89a8bff234c84bac80ed31adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a248fe5d89a8bff234c84bac80ed31adf">add_force</a> (std::shared_ptr&lt; <a class="el" href="classTspeed_1_1Force.html">Force</a> &gt; <a class="el" href="classTspeed_1_1TimeAdvance.html#a36dea2ae6ba03546806bbacb83697c01">f</a>)</td></tr>
+<tr class="memdesc:a248fe5d89a8bff234c84bac80ed31adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the force.  <a href="#a248fe5d89a8bff234c84bac80ed31adf">More...</a><br/></td></tr>
 <tr class="separator:a248fe5d89a8bff234c84bac80ed31adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5565d8938d39054dbceae8b5fb26f6bc"><td class="memTemplParams" colspan="2">template&lt;int N, typename Q , typename S &gt; </td></tr>
-<tr class="memitem:a5565d8938d39054dbceae8b5fb26f6bc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a5565d8938d39054dbceae8b5fb26f6bc">set_initial_v</a> (<a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr</a>&lt; N, Q, S &gt; Xh, <a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a>&lt; std::array&lt; double, 2 &gt;(double, double)&gt; fun)</td></tr>
+<tr class="memitem:a5565d8938d39054dbceae8b5fb26f6bc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a5565d8938d39054dbceae8b5fb26f6bc">set_initial_v</a> (<a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr</a>&lt; N, Q, S &gt; Xh, std::function&lt; std::array&lt; double, 2 &gt;(double, double)&gt; fun)</td></tr>
+<tr class="memdesc:a5565d8938d39054dbceae8b5fb26f6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set initial speed <img class="formulaInl" alt="$ \dot{u} $" src="form_28.png"/>.  <a href="#a5565d8938d39054dbceae8b5fb26f6bc">More...</a><br/></td></tr>
 <tr class="separator:a5565d8938d39054dbceae8b5fb26f6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a458fb8edb53992055aceb6fee44f506a"><td class="memTemplParams" colspan="2">template&lt;int N, typename Q , typename S &gt; </td></tr>
-<tr class="memitem:a458fb8edb53992055aceb6fee44f506a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a458fb8edb53992055aceb6fee44f506a">set_initial_u</a> (<a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr</a>&lt; N, Q, S &gt; Xh, <a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a>&lt; std::array&lt; double, 2 &gt;(double, double)&gt; fun)</td></tr>
+<tr class="memitem:a458fb8edb53992055aceb6fee44f506a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a458fb8edb53992055aceb6fee44f506a">set_initial_u</a> (<a class="el" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr</a>&lt; N, Q, S &gt; Xh, std::function&lt; std::array&lt; double, 2 &gt;(double, double)&gt; fun)</td></tr>
+<tr class="memdesc:a458fb8edb53992055aceb6fee44f506a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set initial displacement <img class="formulaInl" alt="$ {u} $" src="form_30.png"/>.  <a href="#a458fb8edb53992055aceb6fee44f506a">More...</a><br/></td></tr>
 <tr class="separator:a458fb8edb53992055aceb6fee44f506a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31398b7880b86622ba3c1378e2ac91d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a31398b7880b86622ba3c1378e2ac91d1">is_running</a> ()</td></tr>
+<tr class="memdesc:a31398b7880b86622ba3c1378e2ac91d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the method has arrived at the final time.  <a href="#a31398b7880b86622ba3c1378e2ac91d1">More...</a><br/></td></tr>
 <tr class="separator:a31398b7880b86622ba3c1378e2ac91d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b4a0ed12f2fea72ce004dcdf467f10a"><td class="memItemLeft" align="right" valign="top">Vec const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a3b4a0ed12f2fea72ce004dcdf467f10a">get_uh</a> () const </td></tr>
+<tr class="memdesc:a3b4a0ed12f2fea72ce004dcdf467f10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the coefficients of the numerical solution <img class="formulaInl" alt="$u_h$" src="form_32.png"/>.  <a href="#a3b4a0ed12f2fea72ce004dcdf467f10a">More...</a><br/></td></tr>
 <tr class="separator:a3b4a0ed12f2fea72ce004dcdf467f10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b4c155a949f5629e49da06a13e2672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#aa4b4c155a949f5629e49da06a13e2672">eval_receivers</a> ()</td></tr>
-<tr class="separator:aa4b4c155a949f5629e49da06a13e2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4030ab6e3606e5b762d236a4bc65fe68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a4030ab6e3606e5b762d236a4bc65fe68">write_receivers</a> (std::string const &amp;fn) const </td></tr>
-<tr class="separator:a4030ab6e3606e5b762d236a4bc65fe68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c27a46c3be458c4c6b9b7802c58a30b"><td class="memItemLeft" align="right" valign="top">Vec const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a3c27a46c3be458c4c6b9b7802c58a30b">u</a> () const </td></tr>
 <tr class="separator:a3c27a46c3be458c4c6b9b7802c58a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b4c155a949f5629e49da06a13e2672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#aa4b4c155a949f5629e49da06a13e2672">eval_receivers</a> ()</td></tr>
+<tr class="memdesc:aa4b4c155a949f5629e49da06a13e2672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute and store the value of the displacement at the receivers.  <a href="#aa4b4c155a949f5629e49da06a13e2672">More...</a><br/></td></tr>
+<tr class="separator:aa4b4c155a949f5629e49da06a13e2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4030ab6e3606e5b762d236a4bc65fe68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#a4030ab6e3606e5b762d236a4bc65fe68">write_receivers</a> (std::string const &amp;fn) const </td></tr>
+<tr class="memdesc:a4030ab6e3606e5b762d236a4bc65fe68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the time series of the displacement at the receivers.  <a href="#a4030ab6e3606e5b762d236a4bc65fe68">More...</a><br/></td></tr>
+<tr class="separator:a4030ab6e3606e5b762d236a4bc65fe68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac083260ffe62e2a3eff1c1ab6068a1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#ac083260ffe62e2a3eff1c1ab6068a1ad">update_variables</a> (double <a class="el" href="plot__seismogram_8m.html#aaccc9105df5383111407fd5b41255e23">t</a>)</td></tr>
+<tr class="memitem:ac083260ffe62e2a3eff1c1ab6068a1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#ac083260ffe62e2a3eff1c1ab6068a1ad">update_variables</a> (double t)</td></tr>
 <tr class="separator:ac083260ffe62e2a3eff1c1ab6068a1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -189,31 +205,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aa03110e12846960054b42b4cf0d05b54"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1TimeAdvance.html#aa03110e12846960054b42b4cf0d05b54">M_ne</a></td></tr>
 <tr class="separator:aa03110e12846960054b42b4cf0d05b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a73dfdea3bdb8e9f33e7223399ac9f14c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Tspeed::TimeAdvance::~TimeAdvance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0ab9c0637d3de35291c4f845dba713fe"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for time stepping methods. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab7fb5289ea62abe7da6c4423bf19f667"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -245,6 +240,45 @@ template&lt;int N, typename Q , typename S &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>constructor from the space, parameters and receivers </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N,Q,S</td><td>template parameters of the space </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Xh</td><td>the function space </td></tr>
+    <tr><td class="paramname">p</td><td>the parameters of the materials </td></tr>
+    <tr><td class="paramname">r</td><td>the receivers </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a73dfdea3bdb8e9f33e7223399ac9f14c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Tspeed::TimeAdvance::~TimeAdvance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -270,6 +304,14 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Add the force. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>force </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aa4b4c155a949f5629e49da06a13e2672"></a>
@@ -285,6 +327,8 @@ template&lt;int N, typename Q , typename S &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Compute and store the value of the displacement at the receivers. </p>
+
 </div>
 </div>
 <a class="anchor" id="ae9d353495c283af5a29740a70424f11d"></a>
@@ -299,6 +343,8 @@ template&lt;int N, typename Q , typename S &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The first step of the method (which is different for 2nd order methods) </p>
 
 </div>
 </div>
@@ -323,6 +369,9 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the coefficients of the numerical solution <img class="formulaInl" alt="$u_h$" src="form_32.png"/>. </p>
+<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl" alt="$ u_h $" src="form_33.png"/> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a31398b7880b86622ba3c1378e2ac91d1"></a>
@@ -345,6 +394,9 @@ template&lt;int N, typename Q , typename S &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Check if the method has arrived at the final time. </p>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if it is still running </dd></dl>
 
 </div>
 </div>
@@ -370,6 +422,14 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Set time step <img class="formulaInl" alt="$\delta t $" src="form_27.png"/>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>the time step </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a458fb8edb53992055aceb6fee44f506a"></a>
@@ -387,7 +447,7 @@ template&lt;int N, typename Q , typename S &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a>&lt; std::array&lt; double, 2 &gt;(double, double)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; std::array&lt; double, 2 &gt;(double, double)&gt;&#160;</td>
           <td class="paramname"><em>fun</em>&#160;</td>
         </tr>
         <tr>
@@ -397,6 +457,15 @@ template&lt;int N, typename Q , typename S &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set initial displacement <img class="formulaInl" alt="$ {u} $" src="form_30.png"/>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Xh</td><td>the function space </td></tr>
+    <tr><td class="paramname">fun</td><td><img class="formulaInl" alt="$ {u}(x,y)$" src="form_31.png"/> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -415,7 +484,7 @@ template&lt;int N, typename Q , typename S &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a>&lt; std::array&lt; double, 2 &gt;(double, double)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; std::array&lt; double, 2 &gt;(double, double)&gt;&#160;</td>
           <td class="paramname"><em>fun</em>&#160;</td>
         </tr>
         <tr>
@@ -425,6 +494,15 @@ template&lt;int N, typename Q , typename S &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set initial speed <img class="formulaInl" alt="$ \dot{u} $" src="form_28.png"/>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Xh</td><td>the function space </td></tr>
+    <tr><td class="paramname">fun</td><td><img class="formulaInl" alt="$ \dot{u}(x,y)$" src="form_29.png"/> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -450,6 +528,14 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>set penalty for the stability matrix </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>the penalty value </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ac0d8cd9b2b704e7cd4a2dd0793ce085d"></a>
@@ -474,9 +560,17 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Set end time of the simulation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tmax</td><td>the end time </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a68853509e7ceecbe34d79518530eee7b"></a>
+<a class="anchor" id="a3328d4d45d9261de6bfdd8e447f88d63"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -484,11 +578,19 @@ template&lt;int N, typename Q , typename S &gt; </div>
           <td class="memname">void Tspeed::TimeAdvance::step </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>step at time t </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>the time </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -560,6 +662,14 @@ template&lt;int N, typename Q , typename S &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Write the time series of the displacement at the receivers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>Base output file name </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -952,7 +1062,7 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:04 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:59 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

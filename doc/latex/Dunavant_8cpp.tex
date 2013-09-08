@@ -1,6 +1,11 @@
 \hypertarget{Dunavant_8cpp}{\section{lib/src/\-Dunavant.cpp File Reference}
 \label{Dunavant_8cpp}\index{lib/src/\-Dunavant.\-cpp@{lib/src/\-Dunavant.\-cpp}}
 }
+
+
+Functions for Dunavant quadrature (nodes and weights, tabulated)  
+
+
 {\ttfamily \#include $<$cstdlib$>$}\\*
 {\ttfamily \#include $<$iostream$>$}\\*
 {\ttfamily \#include $<$fstream$>$}\\*
@@ -79,15 +84,15 @@ int \hyperlink{Dunavant_8cpp_a36f800e4593bdd258feaeb43cf42adf7}{i4\-\_\-max} (in
 \item 
 int \hyperlink{Dunavant_8cpp_ae73c30e1658d722ce9ff2e671db331ca}{i4\-\_\-min} (int i1, int i2)
 \item 
-int \hyperlink{Dunavant_8cpp_a0977ecce2ec88e382435b4bbc08bbdf7}{i4\-\_\-modp} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}, int \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j})
+int \hyperlink{Dunavant_8cpp_a0977ecce2ec88e382435b4bbc08bbdf7}{i4\-\_\-modp} (int i, int j)
 \item 
 int \hyperlink{Dunavant_8cpp_adf604b639ecc974176142f7265829259}{i4\-\_\-wrap} (int ival, int ilo, int ihi)
 \item 
 double \hyperlink{Dunavant_8cpp_ac1f9007627d97e62a4182c30105b9fa4}{r8\-\_\-huge} ()
 \item 
-int \hyperlink{Dunavant_8cpp_a7e0d15a4d0accb8c91928f44aa302394}{r8\-\_\-nint} (double \hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x})
+int \hyperlink{Dunavant_8cpp_a7e0d15a4d0accb8c91928f44aa302394}{r8\-\_\-nint} (double x)
 \item 
-void \hyperlink{Dunavant_8cpp_a25a044f86e2618a1db0da8a925f2572d}{reference\-\_\-to\-\_\-physical\-\_\-t3} (double \hyperlink{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}{t}\mbox{[}$\,$\mbox{]}, int n, double ref\mbox{[}$\,$\mbox{]}, double phy\mbox{[}$\,$\mbox{]})
+void \hyperlink{Dunavant_8cpp_a25a044f86e2618a1db0da8a925f2572d}{reference\-\_\-to\-\_\-physical\-\_\-t3} (double t\mbox{[}$\,$\mbox{]}, int n, double ref\mbox{[}$\,$\mbox{]}, double phy\mbox{[}$\,$\mbox{]})
 \item 
 int \hyperlink{Dunavant_8cpp_aaaab7eaef7b83f16504a609979ac5c7e}{s\-\_\-len\-\_\-trim} (char $\ast$s)
 \item 
@@ -95,10 +100,16 @@ void \hyperlink{Dunavant_8cpp_a2219d86aef2195ff323e8349d92abe86}{timestamp} ()
 \item 
 char $\ast$ \hyperlink{Dunavant_8cpp_aed39b9263496de5339e7a0ca2f993693}{timestring} ()
 \item 
-double \hyperlink{Dunavant_8cpp_a08a0e9db99fb867596e84d1871713606}{triangle\-\_\-area} (double \hyperlink{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}{t}\mbox{[}2 $\ast$3\mbox{]})
+double \hyperlink{Dunavant_8cpp_a08a0e9db99fb867596e84d1871713606}{triangle\-\_\-area} (double t\mbox{[}2 $\ast$3\mbox{]})
 \item 
 void \hyperlink{Dunavant_8cpp_af9c39491facec8d0f07a1a458c4323e8}{triangle\-\_\-points\-\_\-plot} (char $\ast$file\-\_\-name, double node\-\_\-xy\mbox{[}$\,$\mbox{]}, int node\-\_\-show, int point\-\_\-num, double point\-\_\-xy\mbox{[}$\,$\mbox{]}, int point\-\_\-show)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for Dunavant quadrature (nodes and weights, tabulated) \begin{DoxyAuthor}{Author}
+John Burkardt 
+\end{DoxyAuthor}
 
 
 \subsection{Macro Definition Documentation}

@@ -1,4 +1,25 @@
-//constexpr int dunavant_num_points(const int);
+/**
+ * @file Dunavant.hpp
+ * @brief Header files for the implementation of the Dunavant rules
+ * @author John Burkardt
+ */
+//
+//  Purpose:
+//
+//    DUNAVANT_DEGREE returns the degree of a Dunavant rule for the triangle.
+//
+//  Licensing:
+//
+//    This code is distributed under the GNU LGPL license.
+//
+//  Modified:
+//
+//    11 December 2006
+//
+//  Author:
+//
+//    John Burkardt
+//
 int dunavant_degree ( int rule );
 int dunavant_order_num ( int rule );
 void dunavant_rule ( int rule, int order_num, double xy[], double w[] );

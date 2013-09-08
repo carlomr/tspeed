@@ -94,6 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Class describing an edge.  
+ <a href="classTspeed_1_1Geo_1_1Edge.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Geometry_8hpp_source.html">Geometry.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tspeed::Geo::Edge:</div>
@@ -101,46 +104,61 @@ Inheritance diagram for Tspeed::Geo::Edge:</div>
  <div class="center">
   <img src="classTspeed_1_1Geo_1_1Edge.png" usemap="#Tspeed::Geo::Edge_map" alt=""/>
   <map id="Tspeed::Geo::Edge_map" name="Tspeed::Geo::Edge_map">
-<area href="classTspeed_1_1Entity.html" alt="Tspeed::Entity" shape="rect" coords="0,0,117,24"/>
+<area href="classTspeed_1_1Entity.html" title="Base class for geometrical entities." alt="Tspeed::Entity" shape="rect" coords="0,0,117,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa28485aab77e5643067380c86c35e6b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html#aa28485aab77e5643067380c86c35e6b5">Edge</a> ()</td></tr>
+<tr class="memdesc:aa28485aab77e5643067380c86c35e6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor: extremal points are initialized to 0.  <a href="#aa28485aab77e5643067380c86c35e6b5">More...</a><br/></td></tr>
 <tr class="separator:aa28485aab77e5643067380c86c35e6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c751bf90737874583ef5dbf901f669"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html#aa0c751bf90737874583ef5dbf901f669">Edge</a> (const <a class="el" href="classTspeed_1_1Geo_1_1Point.html">Point</a> &amp;<a class="el" href="load__and__plot__lamb_8m.html#aa875ab3a8009406dcace7fa71a0f490d">a</a>, const <a class="el" href="classTspeed_1_1Geo_1_1Point.html">Point</a> &amp;<a class="el" href="load__and__plot__lamb_8m.html#a21c7e548e910bb7ce7dcea81de72c8f7">b</a>)</td></tr>
+<tr class="memitem:aa0c751bf90737874583ef5dbf901f669"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html#aa0c751bf90737874583ef5dbf901f669">Edge</a> (const <a class="el" href="classTspeed_1_1Geo_1_1Point.html">Point</a> &amp;a, const <a class="el" href="classTspeed_1_1Geo_1_1Point.html">Point</a> &amp;b)</td></tr>
+<tr class="memdesc:aa0c751bf90737874583ef5dbf901f669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aa0c751bf90737874583ef5dbf901f669">More...</a><br/></td></tr>
 <tr class="separator:aa0c751bf90737874583ef5dbf901f669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48bde3f5e50244cacc38226156aa124c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html#a48bde3f5e50244cacc38226156aa124c">Edge</a> (const <a class="el" href="classTspeed_1_1Geo_1_1Edge.html">Edge</a> &amp;e)</td></tr>
+<tr class="memdesc:a48bde3f5e50244cacc38226156aa124c"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor  <a href="#a48bde3f5e50244cacc38226156aa124c">More...</a><br/></td></tr>
 <tr class="separator:a48bde3f5e50244cacc38226156aa124c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76fa8e882724d339873d8ce89b827e89"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html#a76fa8e882724d339873d8ce89b827e89">~Edge</a> ()</td></tr>
 <tr class="separator:a76fa8e882724d339873d8ce89b827e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58cbabc588765cb501470fd0281a12e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html#ac58cbabc588765cb501470fd0281a12e">length</a> () const </td></tr>
+<tr class="memdesc:ac58cbabc588765cb501470fd0281a12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the edge.  <a href="#ac58cbabc588765cb501470fd0281a12e">More...</a><br/></td></tr>
 <tr class="separator:ac58cbabc588765cb501470fd0281a12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c463f06cab88d0f4d15bb5adc3272c"><td class="memItemLeft" align="right" valign="top">Eigen::Vector2d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html#af7c463f06cab88d0f4d15bb5adc3272c">normal</a> () const </td></tr>
+<tr class="memdesc:af7c463f06cab88d0f4d15bb5adc3272c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal to the edge.  <a href="#af7c463f06cab88d0f4d15bb5adc3272c">More...</a><br/></td></tr>
 <tr class="separator:af7c463f06cab88d0f4d15bb5adc3272c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d71349f5890f4e8abc62b44142b75b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html">Edge</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Geo_1_1Edge.html#ad0d71349f5890f4e8abc62b44142b75b">operator=</a> (const <a class="el" href="classTspeed_1_1Geo_1_1Edge.html">Edge</a> &amp;)</td></tr>
+<tr class="memdesc:ad0d71349f5890f4e8abc62b44142b75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignement.  <a href="#ad0d71349f5890f4e8abc62b44142b75b">More...</a><br/></td></tr>
 <tr class="separator:ad0d71349f5890f4e8abc62b44142b75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classTspeed_1_1Entity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTspeed_1_1Entity')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classTspeed_1_1Entity.html">Tspeed::Entity</a></td></tr>
 <tr class="memitem:a2d38b43574ff32961cc54430d2641d9d inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a2d38b43574ff32961cc54430d2641d9d">Entity</a> ()</td></tr>
 <tr class="separator:a2d38b43574ff32961cc54430d2641d9d inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0254af0831b2f3d9d2e225e8720f85b9 inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a0254af0831b2f3d9d2e225e8720f85b9">unassignedId</a> () const </td></tr>
+<tr class="memdesc:a0254af0831b2f3d9d2e225e8720f85b9 inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if element has assigned Id.  <a href="#a0254af0831b2f3d9d2e225e8720f85b9">More...</a><br/></td></tr>
 <tr class="separator:a0254af0831b2f3d9d2e225e8720f85b9 inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea3dc95515ad3a025039de1963a33a06 inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#aea3dc95515ad3a025039de1963a33a06">unassignedBc</a> () const </td></tr>
+<tr class="memdesc:aea3dc95515ad3a025039de1963a33a06 inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if element has assigned boundary condition.  <a href="#aea3dc95515ad3a025039de1963a33a06">More...</a><br/></td></tr>
 <tr class="separator:aea3dc95515ad3a025039de1963a33a06 inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1505ecd50daa5fcefe3bc6366977fc4 inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#ac1505ecd50daa5fcefe3bc6366977fc4">unassignedReg</a> () const </td></tr>
+<tr class="memdesc:ac1505ecd50daa5fcefe3bc6366977fc4 inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if element has assigned region.  <a href="#ac1505ecd50daa5fcefe3bc6366977fc4">More...</a><br/></td></tr>
 <tr class="separator:ac1505ecd50daa5fcefe3bc6366977fc4 inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a783e9df1d967686bc39f26e43f7b6c3e inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Entity.html#a32da920d1e9397a793b67beadd70e8fe">Id</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a783e9df1d967686bc39f26e43f7b6c3e">reg</a> ()</td></tr>
+<tr class="memdesc:a783e9df1d967686bc39f26e43f7b6c3e inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get region id.  <a href="#a783e9df1d967686bc39f26e43f7b6c3e">More...</a><br/></td></tr>
 <tr class="separator:a783e9df1d967686bc39f26e43f7b6c3e inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69cb766f9523627435d0ff37e511253c inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Entity.html#a32da920d1e9397a793b67beadd70e8fe">Id</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a69cb766f9523627435d0ff37e511253c">reg</a> () const </td></tr>
+<tr class="memdesc:a69cb766f9523627435d0ff37e511253c inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get region id (const version)  <a href="#a69cb766f9523627435d0ff37e511253c">More...</a><br/></td></tr>
 <tr class="separator:a69cb766f9523627435d0ff37e511253c inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abefec95d2d2511aa8ccc508a4472a339 inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Entity.html#a32da920d1e9397a793b67beadd70e8fe">Id</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#abefec95d2d2511aa8ccc508a4472a339">id</a> ()</td></tr>
+<tr class="memdesc:abefec95d2d2511aa8ccc508a4472a339 inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get element id (const version)  <a href="#abefec95d2d2511aa8ccc508a4472a339">More...</a><br/></td></tr>
 <tr class="separator:abefec95d2d2511aa8ccc508a4472a339 inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38b1c806bcf12dfe99a66d343aff8004 inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Entity.html#a32da920d1e9397a793b67beadd70e8fe">Id</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a38b1c806bcf12dfe99a66d343aff8004">id</a> () const </td></tr>
+<tr class="memdesc:a38b1c806bcf12dfe99a66d343aff8004 inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get element id (const version)  <a href="#a38b1c806bcf12dfe99a66d343aff8004">More...</a><br/></td></tr>
 <tr class="separator:a38b1c806bcf12dfe99a66d343aff8004 inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a986365e93ee83bb0b4706260ee1c9892 inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceTspeed.html#a301e5218199485c06d62434c719ea5e0">Bc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a986365e93ee83bb0b4706260ee1c9892">bcId</a> ()</td></tr>
+<tr class="memdesc:a986365e93ee83bb0b4706260ee1c9892 inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get boundary id (const version)  <a href="#a986365e93ee83bb0b4706260ee1c9892">More...</a><br/></td></tr>
 <tr class="separator:a986365e93ee83bb0b4706260ee1c9892 inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab5641d64b52564729a9f55a24b9bb1b inherit pub_methods_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceTspeed.html#a301e5218199485c06d62434c719ea5e0">Bc</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#aab5641d64b52564729a9f55a24b9bb1b">bcId</a> () const </td></tr>
+<tr class="memdesc:aab5641d64b52564729a9f55a24b9bb1b inherit pub_methods_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get boundary id (const version)  <a href="#aab5641d64b52564729a9f55a24b9bb1b">More...</a><br/></td></tr>
 <tr class="separator:aab5641d64b52564729a9f55a24b9bb1b inherit pub_methods_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -150,13 +168,18 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a32da920d1e9397a793b67beadd70e8fe inherit pub_types_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classTspeed_1_1Entity"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classTspeed_1_1Entity')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classTspeed_1_1Entity.html">Tspeed::Entity</a></td></tr>
 <tr class="memitem:a4c553133417f2766bd5898d2fa558374 inherit pro_attribs_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Entity.html#a32da920d1e9397a793b67beadd70e8fe">Id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a4c553133417f2766bd5898d2fa558374">M_reg</a></td></tr>
+<tr class="memdesc:a4c553133417f2766bd5898d2fa558374 inherit pro_attribs_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Region number.  <a href="#a4c553133417f2766bd5898d2fa558374">More...</a><br/></td></tr>
 <tr class="separator:a4c553133417f2766bd5898d2fa558374 inherit pro_attribs_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78689c259080e251d0e4ae01db20a7ba inherit pro_attribs_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Entity.html#a32da920d1e9397a793b67beadd70e8fe">Id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a78689c259080e251d0e4ae01db20a7ba">M_id</a></td></tr>
+<tr class="memdesc:a78689c259080e251d0e4ae01db20a7ba inherit pro_attribs_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the element.  <a href="#a78689c259080e251d0e4ae01db20a7ba">More...</a><br/></td></tr>
 <tr class="separator:a78689c259080e251d0e4ae01db20a7ba inherit pro_attribs_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768810bb9f657134eac0ba66a8e0d77b inherit pro_attribs_classTspeed_1_1Entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceTspeed.html#a301e5218199485c06d62434c719ea5e0">Bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Entity.html#a768810bb9f657134eac0ba66a8e0d77b">M_bcId</a></td></tr>
+<tr class="memdesc:a768810bb9f657134eac0ba66a8e0d77b inherit pro_attribs_classTspeed_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boundary Id of the element.  <a href="#a768810bb9f657134eac0ba66a8e0d77b">More...</a><br/></td></tr>
 <tr class="separator:a768810bb9f657134eac0ba66a8e0d77b inherit pro_attribs_classTspeed_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class describing an edge. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa28485aab77e5643067380c86c35e6b5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +200,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default constructor: extremal points are initialized to 0. </p>
 
 </div>
 </div>
@@ -212,6 +237,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>One extreme </td></tr>
+    <tr><td class="paramname">b</td><td>The other extreme </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a48bde3f5e50244cacc38226156aa124c"></a>
@@ -235,6 +269,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>copy constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -283,6 +325,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Length of the edge. </p>
+
 </div>
 </div>
 <a class="anchor" id="af7c463f06cab88d0f4d15bb5adc3272c"></a>
@@ -297,6 +341,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Normal to the edge. </p>
+<dl class="section return"><dt>Returns</dt><dd>The normalized vector </dd></dl>
 
 </div>
 </div>
@@ -314,6 +361,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Assignement. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -323,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:04 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:59 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

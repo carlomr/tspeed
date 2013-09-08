@@ -3,6 +3,11 @@
 }
 
 
+A base class for pointwise entities, with the points and the basis function in that points.  
+
+
+
+
 {\ttfamily \#include $<$Receivers.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Point\-Wise\-Entity\-:\begin{figure}[H]
@@ -16,14 +21,14 @@ Inheritance diagram for Tspeed\-:\-:Point\-Wise\-Entity\-:\begin{figure}[H]
 \item 
 virtual \hyperlink{classTspeed_1_1PointWiseEntity_a602393b4fd96ffd3d40ea3ff30cdc366}{$\sim$\-Point\-Wise\-Entity} ()
 \item 
-Eigen\-::\-Array\-Xd const \& \hyperlink{classTspeed_1_1PointWiseEntity_a9369e650140e66a58e902ee752cf36ca}{shape} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Point}{Geo\-::\-Point} const \& \hyperlink{classTspeed_1_1PointWiseEntity_a4a71d4b7bfa160b2aaa6d3d2a4c35713}{point} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
-unsigned int const \& \hyperlink{classTspeed_1_1PointWiseEntity_ac1271c51d7dd8689a38a60ca858e160f}{elem} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}) const 
-\item 
+Eigen\-::\-Array\-Xd const \& \hyperlink{classTspeed_1_1PointWiseEntity_a9369e650140e66a58e902ee752cf36ca}{shape} (int i) const 
+\begin{DoxyCompactList}\small\item\em All shape functions at point i. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Point}{Geo\-::\-Point} const \& \hyperlink{classTspeed_1_1PointWiseEntity_a4a71d4b7bfa160b2aaa6d3d2a4c35713}{point} (int i) const 
+\begin{DoxyCompactList}\small\item\em Point i, with coordinates in the reference triangle. \end{DoxyCompactList}\item 
+unsigned int const \& \hyperlink{classTspeed_1_1PointWiseEntity_ac1271c51d7dd8689a38a60ca858e160f}{elem} (int i) const 
+\begin{DoxyCompactList}\small\item\em The index of the element where point i resides. \end{DoxyCompactList}\item 
 unsigned int \hyperlink{classTspeed_1_1PointWiseEntity_aea02312bcb1b3c20a465e2d696b65924}{size} () const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The number of points. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,6 +46,9 @@ std\-::vector$<$ Eigen\-::\-Array\-Xd $>$ \hyperlink{classTspeed_1_1PointWiseEnt
 unsigned int \hyperlink{classTspeed_1_1PointWiseEntity_a054e68f482b69877a7a4c4d2b03d6db3}{M\-\_\-nel}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A base class for pointwise entities, with the points and the basis function in that points. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classTspeed_1_1PointWiseEntity_a602393b4fd96ffd3d40ea3ff30cdc366}{\index{Tspeed\-::\-Point\-Wise\-Entity@{Tspeed\-::\-Point\-Wise\-Entity}!$\sim$\-Point\-Wise\-Entity@{$\sim$\-Point\-Wise\-Entity}}
@@ -60,6 +68,18 @@ unsigned int \hyperlink{classTspeed_1_1PointWiseEntity_a054e68f482b69877a7a4c4d2
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1PointWiseEntity_ac1271c51d7dd8689a38a60ca858e160f}
+
+
+The index of the element where point i resides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the triangle 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1PointWiseEntity_a8e8e5d0b5785b72de3b9f7ef1cbfcd81}{\index{Tspeed\-::\-Point\-Wise\-Entity@{Tspeed\-::\-Point\-Wise\-Entity}!M\-\_\-add@{M\-\_\-add}}
 \index{M\-\_\-add@{M\-\_\-add}!Tspeed::PointWiseEntity@{Tspeed\-::\-Point\-Wise\-Entity}}
 \subsubsection[{M\-\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ void Tspeed\-::\-Point\-Wise\-Entity\-::\-M\-\_\-add (
@@ -75,6 +95,18 @@ unsigned int \hyperlink{classTspeed_1_1PointWiseEntity_a054e68f482b69877a7a4c4d2
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1PointWiseEntity_a4a71d4b7bfa160b2aaa6d3d2a4c35713}
+
+
+Point i, with coordinates in the reference triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The point 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1PointWiseEntity_a9369e650140e66a58e902ee752cf36ca}{\index{Tspeed\-::\-Point\-Wise\-Entity@{Tspeed\-::\-Point\-Wise\-Entity}!shape@{shape}}
 \index{shape@{shape}!Tspeed::PointWiseEntity@{Tspeed\-::\-Point\-Wise\-Entity}}
 \subsubsection[{shape}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Array\-Xd const\& Tspeed\-::\-Point\-Wise\-Entity\-::shape (
@@ -82,6 +114,18 @@ unsigned int \hyperlink{classTspeed_1_1PointWiseEntity_a054e68f482b69877a7a4c4d2
 \item[{int}]{i}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1PointWiseEntity_a9369e650140e66a58e902ee752cf36ca}
+
+
+All shape functions at point i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array of all functions 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1PointWiseEntity_aea02312bcb1b3c20a465e2d696b65924}{\index{Tspeed\-::\-Point\-Wise\-Entity@{Tspeed\-::\-Point\-Wise\-Entity}!size@{size}}
 \index{size@{size}!Tspeed::PointWiseEntity@{Tspeed\-::\-Point\-Wise\-Entity}}
 \subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Tspeed\-::\-Point\-Wise\-Entity\-::size (
@@ -89,6 +133,10 @@ unsigned int \hyperlink{classTspeed_1_1PointWiseEntity_a054e68f482b69877a7a4c4d2
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1PointWiseEntity_aea02312bcb1b3c20a465e2d696b65924}
+
+
+The number of points. 
+
 
 
 \subsection{Member Data Documentation}

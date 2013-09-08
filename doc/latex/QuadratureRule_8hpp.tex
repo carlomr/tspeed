@@ -1,6 +1,11 @@
 \hypertarget{QuadratureRule_8hpp}{\section{lib/include/\-Quadrature\-Rule.hpp File Reference}
 \label{QuadratureRule_8hpp}\index{lib/include/\-Quadrature\-Rule.\-hpp@{lib/include/\-Quadrature\-Rule.\-hpp}}
 }
+
+
+Header file for the quadrature rules.  
+
+
 {\ttfamily \#include $<$Eigen/\-Dense$>$}\\*
 {\ttfamily \#include $<$limits$>$}\\*
 {\ttfamily \#include $<$iostream$>$}\\*
@@ -10,14 +15,27 @@
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class {\bfseries Tspeed\-::\-Quadrature\-Rule$<$ N $>$}
-\item 
+class \hyperlink{classTspeed_1_1QuadratureRule}{Tspeed\-::\-Quadrature\-Rule$<$ N $>$}
+\begin{DoxyCompactList}\small\item\em Base class for quadrature rules. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Gauss}{Tspeed\-::\-Gauss$<$ N $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTspeed_1_1Gauss}{Gauss} quadrature rule on the triangle. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1Dunavant}{Tspeed\-::\-Dunavant$<$ N $>$}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTspeed_1_1Dunavant}{Dunavant} \mbox{[}1\mbox{]} quadrature rule. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
 namespace \hyperlink{namespaceTspeed}{Tspeed}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for the quadrature rules. A base class is implemented, with derived classes which implement Gauss quadrature on the triangle and Dunavant quadrature
+
+Reference\-: \mbox{[}1\mbox{]} D. A. Dunavant, High degree efficient symmetrical Gaussian quadra-\/ ture rules for the triangle, Internat. J. Numer. Methods Engrg. 21 (1985), no. 6, 1129–1148.
+
+\begin{DoxyAuthor}{Author}
+Carlo Marcati 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2013-\/09-\/08 
+\end{DoxyDate}

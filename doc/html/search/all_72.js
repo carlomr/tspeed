@@ -2,7 +2,7 @@ var searchData=
 [
   ['r8_5fhuge',['r8_huge',['../Dunavant_8hpp.html#ae59e4d9f04c3be0347cc77d9f0a5b221',1,'r8_huge(void):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#ac1f9007627d97e62a4182c30105b9fa4',1,'r8_huge():&#160;Dunavant.cpp']]],
   ['r8_5fnint',['r8_nint',['../Dunavant_8hpp.html#a7e0d15a4d0accb8c91928f44aa302394',1,'r8_nint(double x):&#160;Dunavant.cpp'],['../Dunavant_8cpp.html#a7e0d15a4d0accb8c91928f44aa302394',1,'r8_nint(double x):&#160;Dunavant.cpp']]],
-  ['receivers',['Receivers',['../classTspeed_1_1Receivers.html#a54d8209b84f325fbf6470318cd961e76',1,'Tspeed::Receivers::Receivers(FESpace_ptr&lt; N, Q, S &gt;, std::string const &amp;)'],['../classTspeed_1_1Receivers.html#a70779bee95d94ef96f416deabc4f42c8',1,'Tspeed::Receivers::Receivers(FESpace_ptr&lt; N, Q, S &gt;, Geo::Point const &amp;)']]],
+  ['receivers',['Receivers',['../classTspeed_1_1Receivers.html#aa2d2be2926bc58e831056b45333e9ea5',1,'Tspeed::Receivers::Receivers(FESpace_ptr&lt; N, Q, S &gt; Xh, std::string const &amp;fname)'],['../classTspeed_1_1Receivers.html#acb78a593a31d22d41c7e7b4fcde3136b',1,'Tspeed::Receivers::Receivers(FESpace_ptr&lt; N, Q, S &gt; Xh, Geo::Point const &amp;p)']]],
   ['receivers',['Receivers',['../classTspeed_1_1Receivers.html',1,'Tspeed']]],
   ['receivers_2ecpp',['Receivers.cpp',['../Receivers_8cpp.html',1,'']]],
   ['receivers_2ehpp',['Receivers.hpp',['../Receivers_8hpp.html',1,'']]],

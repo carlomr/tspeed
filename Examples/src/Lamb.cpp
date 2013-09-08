@@ -10,14 +10,16 @@ int main()
     const double tmax = 1;
     double t=0;
     double error = 0;
-    const int N = 3;
+    const int N = 5;
 
     //Mesh Th(std::string("square_Nnull_4tria.msh"));
     //Mesh_ptr Th(new Mesh(std::string("./Meshes/Lamb_new_unstruct.msh")));
     Mesh_ptr Th(new Mesh(std::string("./Meshes/Lamb_fullyunstruct3.msh")));
     Th->stats();
 
-    FESpace_ptr<N, Dunavant<2*N>> Xh(new FESpace<N,Dunavant<2*N>>(Th));
+    //FESpace_ptr<N, Dunavant<2*N>> Xh(new FESpace<N,Dunavant<2*N>>(Th));
+    FESpace_ptr<N, Dunavant<2*N>, BoundaryAdapted<N>> Xh(new FESpace<N,Dunavant<2*N>,BoundaryAdapted<N>>(Th));
+    //
     //FESpace_ptr<N> Xh(new FESpace<N>(Th));
 
     Parameters p(Th);
@@ -29,7 +31,7 @@ int main()
     Receivers r2(Xh, std::string("Receivers/lamb.rcv"));
 
     
-    std::shared_ptr<Force> f( new PointWiseForce([](const double & t){return std::array<double,2>{{0,-(1-2*M_PI*M_PI*(100)*(t-0.1)*(t-0.1)) * exp(-M_PI*M_PI*(100)*(t-0.1)*(t-0.1))}};}, Geo::Point(1500,1950), Xh));
+    Force_ptr f( new PointWiseForce([](const double & t){return std::array<double,2>{{0,-(1-2*M_PI*M_PI*(100)*(t-0.1)*(t-0.1)) * exp(-M_PI*M_PI*(100)*(t-0.1)*(t-0.1))}};}, Geo::Point(1500,1950), Xh));
     
     LeapFrog TA(Xh, p, r2);
 

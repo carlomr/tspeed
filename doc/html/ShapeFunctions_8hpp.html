@@ -91,6 +91,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ShapeFunctions.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Header file for the definition of the shape functions.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;functional&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;Eigen/Dense&gt;</code><br/>
@@ -101,10 +104,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1ShapeFunction.html">Tspeed::ShapeFunction&lt; N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for the shared functions.  <a href="classTspeed_1_1ShapeFunction.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1Dubiner.html">Tspeed::Dubiner&lt; N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classTspeed_1_1Dubiner.html" title="Dubiner [1] basis.">Dubiner</a> [1] basis.  <a href="classTspeed_1_1Dubiner.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1BoundaryAdapted.html">Tspeed::BoundaryAdapted&lt; N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boundary adapted [2] basis.  <a href="classTspeed_1_1BoundaryAdapted.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -112,10 +118,17 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceTspeed"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceTspeed.html">Tspeed</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Header file for the definition of the shape functions. </p>
+<p>A base class is used, and the Dubiner and Boundary adapted derived classes are implemented. See</p>
+<p>[1] M. Dubiner, Spectral methods on triangles and other domains, Journal of Scientific Computing 6 (1991), no. 4, 345–390</p>
+<p>[2] G. E. Karniadakis and S. J. Sherwin, Spectral/hp element methods for computational fluid dynamics, second ed., Numerical Mathemat ics and Scientific Computation, Oxford University Press, New York.</p>
+<dl class="section author"><dt>Author</dt><dd>Carlo Marcati </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013-09-08 </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:57 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

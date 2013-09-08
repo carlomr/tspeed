@@ -3,6 +3,11 @@
 }
 
 
+Block diagonal monodimensional matrix (monodimensional block of mass and stress-\/strain matrices)  
+
+
+
+
 {\ttfamily \#include $<$My\-Mat.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:My\-Mat\-Block\-Diag\-:\begin{figure}[H]
@@ -16,8 +21,8 @@ Inheritance diagram for Tspeed\-:\-:My\-Mat\-Block\-Diag\-:\begin{figure}[H]
 \item 
 \hyperlink{classTspeed_1_1MyMatBlockDiag_a1edd89c439245f97a1cbfcf81b588211}{My\-Mat\-Block\-Diag} ()
 \item 
-\hyperlink{classTspeed_1_1MyMatBlockDiag_a2d740a6b014d37383f751b312ccdf66e}{My\-Mat\-Block\-Diag} (\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr}, unsigned int nln)
-\item 
+\hyperlink{classTspeed_1_1MyMatBlockDiag_a0b15666d61963e26ca59203c90ec0161}{My\-Mat\-Block\-Diag} (\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr} Th, unsigned int nln)
+\begin{DoxyCompactList}\small\item\em Contructor from the mesh. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1MyMatBlockDiag_ae115b76e406285af1c3d41682ecc359c}{My\-Mat\-Block\-Diag} (\hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} \&\&)=default
 \item 
 \hyperlink{classTspeed_1_1MyMatBlockDiag_af6f41226563ccd37cc0113a50af2e0e7}{My\-Mat\-Block\-Diag} (\hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} const \&)=default
@@ -31,6 +36,9 @@ virtual \hyperlink{classTspeed_1_1MyMatBlockDiag_a696ec354baf3873bf85a168a91e5af
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+Block diagonal monodimensional matrix (monodimensional block of mass and stress-\/strain matrices) 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classTspeed_1_1MyMatBlockDiag_a1edd89c439245f97a1cbfcf81b588211}{\index{Tspeed\-::\-My\-Mat\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Block\-Diag}!My\-Mat\-Block\-Diag@{My\-Mat\-Block\-Diag}}
 \index{My\-Mat\-Block\-Diag@{My\-Mat\-Block\-Diag}!Tspeed::MyMatBlockDiag@{Tspeed\-::\-My\-Mat\-Block\-Diag}}
@@ -39,14 +47,25 @@ virtual \hyperlink{classTspeed_1_1MyMatBlockDiag_a696ec354baf3873bf85a168a91e5af
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1MyMatBlockDiag_a1edd89c439245f97a1cbfcf81b588211}
-\hypertarget{classTspeed_1_1MyMatBlockDiag_a2d740a6b014d37383f751b312ccdf66e}{\index{Tspeed\-::\-My\-Mat\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Block\-Diag}!My\-Mat\-Block\-Diag@{My\-Mat\-Block\-Diag}}
+\hypertarget{classTspeed_1_1MyMatBlockDiag_a0b15666d61963e26ca59203c90ec0161}{\index{Tspeed\-::\-My\-Mat\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Block\-Diag}!My\-Mat\-Block\-Diag@{My\-Mat\-Block\-Diag}}
 \index{My\-Mat\-Block\-Diag@{My\-Mat\-Block\-Diag}!Tspeed::MyMatBlockDiag@{Tspeed\-::\-My\-Mat\-Block\-Diag}}
 \subsubsection[{My\-Mat\-Block\-Diag}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-My\-Mat\-Block\-Diag\-::\-My\-Mat\-Block\-Diag (
 \begin{DoxyParamCaption}
 \item[{{\bf Mesh\-\_\-ptr}}]{Th, }
 \item[{unsigned int}]{nln}
 \end{DoxyParamCaption}
-)}}\label{classTspeed_1_1MyMatBlockDiag_a2d740a6b014d37383f751b312ccdf66e}
+)}}\label{classTspeed_1_1MyMatBlockDiag_a0b15666d61963e26ca59203c90ec0161}
+
+
+Contructor from the mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Th} & pointer to the mesh \\
+\hline
+{\em nln} & number of degrees of freedom per element \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1MyMatBlockDiag_ae115b76e406285af1c3d41682ecc359c}{\index{Tspeed\-::\-My\-Mat\-Block\-Diag@{Tspeed\-::\-My\-Mat\-Block\-Diag}!My\-Mat\-Block\-Diag@{My\-Mat\-Block\-Diag}}
 \index{My\-Mat\-Block\-Diag@{My\-Mat\-Block\-Diag}!Tspeed::MyMatBlockDiag@{Tspeed\-::\-My\-Mat\-Block\-Diag}}
 \subsubsection[{My\-Mat\-Block\-Diag}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-My\-Mat\-Block\-Diag\-::\-My\-Mat\-Block\-Diag (

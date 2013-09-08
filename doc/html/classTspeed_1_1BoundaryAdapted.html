@@ -95,6 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Boundary adapted [2] basis.  
+ <a href="classTspeed_1_1BoundaryAdapted.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ShapeFunctions_8hpp_source.html">ShapeFunctions.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tspeed::BoundaryAdapted&lt; N &gt;:</div>
@@ -102,7 +105,7 @@ Inheritance diagram for Tspeed::BoundaryAdapted&lt; N &gt;:</div>
  <div class="center">
   <img src="classTspeed_1_1BoundaryAdapted.png" usemap="#Tspeed::BoundaryAdapted&lt; N &gt;_map" alt=""/>
   <map id="Tspeed::BoundaryAdapted&lt; N &gt;_map" name="Tspeed::BoundaryAdapted&lt; N &gt;_map">
-<area href="classTspeed_1_1ShapeFunction.html" alt="Tspeed::ShapeFunction&lt; N &gt;" shape="rect" coords="0,0,194,24"/>
+<area href="classTspeed_1_1ShapeFunction.html" title="Base class for the shared functions." alt="Tspeed::ShapeFunction&lt; N &gt;" shape="rect" coords="0,0,194,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -110,13 +113,16 @@ Inheritance diagram for Tspeed::BoundaryAdapted&lt; N &gt;:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a43bbb02cefcd3061b7b85ee061d0fe21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classTspeed_1_1BoundaryAdapted.html#a43bbb02cefcd3061b7b85ee061d0fe21a14fd943d0e78f08196b5f0f9e05232ce">is_orthonormal</a> = false
  }</td></tr>
+<tr class="memdesc:a43bbb02cefcd3061b7b85ee061d0fe21"><td class="mdescLeft">&#160;</td><td class="mdescRight">The basis is not orthonormal.  <a href="classTspeed_1_1BoundaryAdapted.html#a43bbb02cefcd3061b7b85ee061d0fe21">More...</a><br/></td></tr>
 <tr class="separator:a43bbb02cefcd3061b7b85ee061d0fe21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classTspeed_1_1ShapeFunction"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classTspeed_1_1ShapeFunction')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classTspeed_1_1ShapeFunction.html">Tspeed::ShapeFunction&lt; N &gt;</a></td></tr>
 <tr class="memitem:aae4b82bb304115736483f3549b135662 inherit pub_types_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classTspeed_1_1ShapeFunction.html#aae4b82bb304115736483f3549b135662a5000f7869288e4deef5af90732ca04fc">gdl</a> = (N+1)*(N+2)/2
  }</td></tr>
+<tr class="memdesc:aae4b82bb304115736483f3549b135662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of degrees of freedom.  <a href="classTspeed_1_1ShapeFunction.html#aae4b82bb304115736483f3549b135662">More...</a><br/></td></tr>
 <tr class="separator:aae4b82bb304115736483f3549b135662 inherit pub_types_classTspeed_1_1ShapeFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93d04cd0692e117dffed761620d57c1 inherit pub_types_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classTspeed_1_1ShapeFunction.html#ab93d04cd0692e117dffed761620d57c1a62f499700236320c9364d9c4bc9ab564">is_orthonormal</a> = false
  }</td></tr>
+<tr class="memdesc:ab93d04cd0692e117dffed761620d57c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orthonormality of the basis.  <a href="classTspeed_1_1ShapeFunction.html#ab93d04cd0692e117dffed761620d57c1">More...</a><br/></td></tr>
 <tr class="separator:ab93d04cd0692e117dffed761620d57c1 inherit pub_types_classTspeed_1_1ShapeFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -131,23 +137,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad445923bd9ccbd1c50580f43a6342f5c inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1ShapeFunction.html#ad445923bd9ccbd1c50580f43a6342f5c">ShapeFunction</a> ()</td></tr>
 <tr class="separator:ad445923bd9ccbd1c50580f43a6342f5c inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30886f42b86096f6ea4b621cd4255dd1 inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">Eigen::ArrayXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1ShapeFunction.html#a30886f42b86096f6ea4b621cd4255dd1">phi</a> (unsigned int s, Arr const &amp;v, Arr const &amp;w) const </td></tr>
+<tr class="memdesc:a30886f42b86096f6ea4b621cd4255dd1 inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value of base function with index s, on points (v,w)  <a href="#a30886f42b86096f6ea4b621cd4255dd1">More...</a><br/></td></tr>
 <tr class="separator:a30886f42b86096f6ea4b621cd4255dd1 inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45ca655484d81ea09b474ae628d79ecf inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1ShapeFunction.html#a45ca655484d81ea09b474ae628d79ecf">phi</a> (unsigned int s, double <a class="el" href="vtk__mesh__out_8m.html#ace4b66138f2e64832c951b1ba9ce24cc">x</a>, double <a class="el" href="vtk__mesh__out_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) const </td></tr>
+<tr class="memitem:a45ca655484d81ea09b474ae628d79ecf inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1ShapeFunction.html#a45ca655484d81ea09b474ae628d79ecf">phi</a> (unsigned int s, double x, double y) const </td></tr>
+<tr class="memdesc:a45ca655484d81ea09b474ae628d79ecf inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value of base function with index s, on point (x,y)  <a href="#a45ca655484d81ea09b474ae628d79ecf">More...</a><br/></td></tr>
 <tr class="separator:a45ca655484d81ea09b474ae628d79ecf inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac13d9c4a86f3a2f9b188a199676c2da inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">ArrG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1ShapeFunction.html#aac13d9c4a86f3a2f9b188a199676c2da">grad</a> (unsigned int s, Arr const &amp;v, Arr const &amp;w)</td></tr>
+<tr class="memdesc:aac13d9c4a86f3a2f9b188a199676c2da inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get values of gradient of basis function s, on points (v,w)  <a href="#aac13d9c4a86f3a2f9b188a199676c2da">More...</a><br/></td></tr>
 <tr class="separator:aac13d9c4a86f3a2f9b188a199676c2da inherit pub_methods_classTspeed_1_1ShapeFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classTspeed_1_1ShapeFunction"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classTspeed_1_1ShapeFunction')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classTspeed_1_1ShapeFunction.html">Tspeed::ShapeFunction&lt; N &gt;</a></td></tr>
-<tr class="memitem:a6d8010d0c9d5e40f21f57c8201149ad5 inherit pro_attribs_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a><br class="typebreak"/>
+<tr class="memitem:a6d8010d0c9d5e40f21f57c8201149ad5 inherit pro_attribs_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function<br class="typebreak"/>
 &lt; Arr(Arr const &amp;, Arr const &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1ShapeFunction.html#a6d8010d0c9d5e40f21f57c8201149ad5">M_phi</a></td></tr>
 <tr class="separator:a6d8010d0c9d5e40f21f57c8201149ad5 inherit pro_attribs_classTspeed_1_1ShapeFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a282cf4ac589829f07a6c24e443d7bd05 inherit pro_attribs_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="vtk__vector__out_8m.html#a6235d6cebbf2f77ca6dbae2811d86530">std::function</a><br class="typebreak"/>
+<tr class="memitem:a282cf4ac589829f07a6c24e443d7bd05 inherit pro_attribs_classTspeed_1_1ShapeFunction"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function<br class="typebreak"/>
 &lt; ArrG(Arr const &amp;, Arr const &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1ShapeFunction.html#a282cf4ac589829f07a6c24e443d7bd05">M_grad</a></td></tr>
 <tr class="separator:a282cf4ac589829f07a6c24e443d7bd05 inherit pro_attribs_classTspeed_1_1ShapeFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;int N&gt;<br/>
+class Tspeed::BoundaryAdapted&lt; N &gt;</h3>
+
+<p>Boundary adapted [2] basis. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>degree of the space <img class="formulaInl" alt="$\mathbb{N}$" src="form_3.png"/> </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a43bbb02cefcd3061b7b85ee061d0fe21"></a>
 <div class="memitem">
 <div class="memproto">
@@ -159,6 +179,8 @@ template&lt;int N&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The basis is not orthonormal. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a43bbb02cefcd3061b7b85ee061d0fe21a14fd943d0e78f08196b5f0f9e05232ce"></a>is_orthonormal</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
@@ -216,7 +238,7 @@ template&lt;int N&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:04 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:59 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -3,6 +3,11 @@
 }
 
 
+Base class for time stepping methods.  
+
+
+
+
 {\ttfamily \#include $<$Time\-Advance.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Time\-Advance\-:\begin{figure}[H]
@@ -14,40 +19,40 @@ Inheritance diagram for Tspeed\-:\-:Time\-Advance\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+{\footnotesize template$<$int N, typename Q , typename S $>$ }\\\hyperlink{classTspeed_1_1TimeAdvance_ab7fb5289ea62abe7da6c4423bf19f667}{Time\-Advance} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$ Xh, \hyperlink{classTspeed_1_1Parameters}{Parameters} const \&p, \hyperlink{classTspeed_1_1Receivers}{Receivers} const \&r)
+\begin{DoxyCompactList}\small\item\em constructor from the space, parameters and receivers \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1TimeAdvance_ae9d353495c283af5a29740a70424f11d}{first\-\_\-step} ()
-\item 
-void \hyperlink{classTspeed_1_1TimeAdvance_a68853509e7ceecbe34d79518530eee7b}{step} (double)
-\item 
+\begin{DoxyCompactList}\small\item\em The first step of the method (which is different for 2nd order methods) \end{DoxyCompactList}\item 
+void \hyperlink{classTspeed_1_1TimeAdvance_a3328d4d45d9261de6bfdd8e447f88d63}{step} (double t)
+\begin{DoxyCompactList}\small\item\em step at time t \end{DoxyCompactList}\item 
 virtual \hyperlink{classTspeed_1_1TimeAdvance_a73dfdea3bdb8e9f33e7223399ac9f14c}{$\sim$\-Time\-Advance} ()
 \item 
-{\footnotesize template$<$int N, typename Q , typename S $>$ }\\\hyperlink{classTspeed_1_1TimeAdvance_a0ab9c0637d3de35291c4f845dba713fe}{Time\-Advance} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$, \hyperlink{classTspeed_1_1Parameters}{Parameters} const \&, \hyperlink{classTspeed_1_1Receivers}{Receivers} const \&)
-\item 
 void \hyperlink{classTspeed_1_1TimeAdvance_a2538fb7b6ee62103de78f42158bf38e6}{set\-\_\-dt} (double dt)
-\item 
+\begin{DoxyCompactList}\small\item\em Set time step $\delta t $. \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1TimeAdvance_ac0d8cd9b2b704e7cd4a2dd0793ce085d}{set\-\_\-tmax} (double tmax)
-\item 
+\begin{DoxyCompactList}\small\item\em Set end time of the simulation. \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1TimeAdvance_af635a6b3e94ff39467817c4b3890feb4}{set\-\_\-penalty} (double p)
-\item 
+\begin{DoxyCompactList}\small\item\em set penalty for the stability matrix \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1TimeAdvance_a248fe5d89a8bff234c84bac80ed31adf}{add\-\_\-force} (std\-::shared\-\_\-ptr$<$ \hyperlink{classTspeed_1_1Force}{Force} $>$ \hyperlink{classTspeed_1_1TimeAdvance_a36dea2ae6ba03546806bbacb83697c01}{f})
-\item 
-{\footnotesize template$<$int N, typename Q , typename S $>$ }\\void \hyperlink{classTspeed_1_1TimeAdvance_a5565d8938d39054dbceae8b5fb26f6bc}{set\-\_\-initial\-\_\-v} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$ Xh, \hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ fun)
-\item 
-{\footnotesize template$<$int N, typename Q , typename S $>$ }\\void \hyperlink{classTspeed_1_1TimeAdvance_a458fb8edb53992055aceb6fee44f506a}{set\-\_\-initial\-\_\-u} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$ Xh, \hyperlink{vtk__vector__out_8m_a6235d6cebbf2f77ca6dbae2811d86530}{std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ fun)
-\item 
+\begin{DoxyCompactList}\small\item\em Add the force. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int N, typename Q , typename S $>$ }\\void \hyperlink{classTspeed_1_1TimeAdvance_a5565d8938d39054dbceae8b5fb26f6bc}{set\-\_\-initial\-\_\-v} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$ Xh, std\-::function$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ fun)
+\begin{DoxyCompactList}\small\item\em Set initial speed $ \dot{u} $. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int N, typename Q , typename S $>$ }\\void \hyperlink{classTspeed_1_1TimeAdvance_a458fb8edb53992055aceb6fee44f506a}{set\-\_\-initial\-\_\-u} (\hyperlink{namespaceTspeed_a05fcb57094666c8f5ab1e90d1a6fecf8}{F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$ Xh, std\-::function$<$ std\-::array$<$ double, 2 $>$(double, double)$>$ fun)
+\begin{DoxyCompactList}\small\item\em Set initial displacement $ {u} $. \end{DoxyCompactList}\item 
 bool \hyperlink{classTspeed_1_1TimeAdvance_a31398b7880b86622ba3c1378e2ac91d1}{is\-\_\-running} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Check if the method has arrived at the final time. \end{DoxyCompactList}\item 
 Vec const \& \hyperlink{classTspeed_1_1TimeAdvance_a3b4a0ed12f2fea72ce004dcdf467f10a}{get\-\_\-uh} () const 
+\begin{DoxyCompactList}\small\item\em Get the coefficients of the numerical solution $u_h$. \end{DoxyCompactList}\item 
+Vec const \& \hyperlink{classTspeed_1_1TimeAdvance_a3c27a46c3be458c4c6b9b7802c58a30b}{u} () const 
 \item 
 void \hyperlink{classTspeed_1_1TimeAdvance_aa4b4c155a949f5629e49da06a13e2672}{eval\-\_\-receivers} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Compute and store the value of the displacement at the receivers. \end{DoxyCompactList}\item 
 void \hyperlink{classTspeed_1_1TimeAdvance_a4030ab6e3606e5b762d236a4bc65fe68}{write\-\_\-receivers} (std\-::string const \&fn) const 
-\item 
-Vec const \& \hyperlink{classTspeed_1_1TimeAdvance_a3c27a46c3be458c4c6b9b7802c58a30b}{u} () const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Write the time series of the displacement at the receivers. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classTspeed_1_1TimeAdvance_ac083260ffe62e2a3eff1c1ab6068a1ad}{update\-\_\-variables} (double \hyperlink{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}{t})
+void \hyperlink{classTspeed_1_1TimeAdvance_ac083260ffe62e2a3eff1c1ab6068a1ad}{update\-\_\-variables} (double t)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -92,15 +97,11 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+Base class for time stepping methods. 
+
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classTspeed_1_1TimeAdvance_a73dfdea3bdb8e9f33e7223399ac9f14c}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!$\sim$\-Time\-Advance@{$\sim$\-Time\-Advance}}
-\index{$\sim$\-Time\-Advance@{$\sim$\-Time\-Advance}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
-\subsubsection[{$\sim$\-Time\-Advance}]{\setlength{\rightskip}{0pt plus 5cm}virtual Tspeed\-::\-Time\-Advance\-::$\sim$\-Time\-Advance (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classTspeed_1_1TimeAdvance_a73dfdea3bdb8e9f33e7223399ac9f14c}
-\hypertarget{classTspeed_1_1TimeAdvance_a0ab9c0637d3de35291c4f845dba713fe}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!Time\-Advance@{Time\-Advance}}
+\hypertarget{classTspeed_1_1TimeAdvance_ab7fb5289ea62abe7da6c4423bf19f667}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!Time\-Advance@{Time\-Advance}}
 \index{Time\-Advance@{Time\-Advance}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{Time\-Advance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ Tspeed\-::\-Time\-Advance\-::\-Time\-Advance (
 \begin{DoxyParamCaption}
@@ -108,7 +109,32 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 \item[{{\bf Parameters} const \&}]{p, }
 \item[{{\bf Receivers} const \&}]{r}
 \end{DoxyParamCaption}
-)}}\label{classTspeed_1_1TimeAdvance_a0ab9c0637d3de35291c4f845dba713fe}
+)}}\label{classTspeed_1_1TimeAdvance_ab7fb5289ea62abe7da6c4423bf19f667}
+
+
+constructor from the space, parameters and receivers 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N,Q,S} & template parameters of the space \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Xh} & the function space \\
+\hline
+{\em p} & the parameters of the materials \\
+\hline
+{\em r} & the receivers \\
+\hline
+\end{DoxyParams}
+\hypertarget{classTspeed_1_1TimeAdvance_a73dfdea3bdb8e9f33e7223399ac9f14c}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!$\sim$\-Time\-Advance@{$\sim$\-Time\-Advance}}
+\index{$\sim$\-Time\-Advance@{$\sim$\-Time\-Advance}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
+\subsubsection[{$\sim$\-Time\-Advance}]{\setlength{\rightskip}{0pt plus 5cm}virtual Tspeed\-::\-Time\-Advance\-::$\sim$\-Time\-Advance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classTspeed_1_1TimeAdvance_a73dfdea3bdb8e9f33e7223399ac9f14c}
 
 
 \subsection{Member Function Documentation}
@@ -119,6 +145,15 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 \item[{std\-::shared\-\_\-ptr$<$ {\bf Force} $>$}]{f}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1TimeAdvance_a248fe5d89a8bff234c84bac80ed31adf}
+
+
+Add the force. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & force \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1TimeAdvance_aa4b4c155a949f5629e49da06a13e2672}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!eval\-\_\-receivers@{eval\-\_\-receivers}}
 \index{eval\-\_\-receivers@{eval\-\_\-receivers}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{eval\-\_\-receivers}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Time\-Advance\-::eval\-\_\-receivers (
@@ -126,6 +161,10 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 {}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1TimeAdvance_aa4b4c155a949f5629e49da06a13e2672}
+
+
+Compute and store the value of the displacement at the receivers. 
+
 \hypertarget{classTspeed_1_1TimeAdvance_ae9d353495c283af5a29740a70424f11d}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!first\-\_\-step@{first\-\_\-step}}
 \index{first\-\_\-step@{first\-\_\-step}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{first\-\_\-step}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Time\-Advance\-::first\-\_\-step (
@@ -133,6 +172,10 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 {}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1TimeAdvance_ae9d353495c283af5a29740a70424f11d}
+
+
+The first step of the method (which is different for 2nd order methods) 
+
 \hypertarget{classTspeed_1_1TimeAdvance_a3b4a0ed12f2fea72ce004dcdf467f10a}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!get\-\_\-uh@{get\-\_\-uh}}
 \index{get\-\_\-uh@{get\-\_\-uh}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{get\-\_\-uh}]{\setlength{\rightskip}{0pt plus 5cm}Vec const\& Tspeed\-::\-Time\-Advance\-::get\-\_\-uh (
@@ -140,6 +183,13 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1TimeAdvance_a3b4a0ed12f2fea72ce004dcdf467f10a}
+
+
+Get the coefficients of the numerical solution $u_h$. 
+
+\begin{DoxyReturn}{Returns}
+$ u_h $ 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1TimeAdvance_a31398b7880b86622ba3c1378e2ac91d1}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!is\-\_\-running@{is\-\_\-running}}
 \index{is\-\_\-running@{is\-\_\-running}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{is\-\_\-running}]{\setlength{\rightskip}{0pt plus 5cm}bool Tspeed\-::\-Time\-Advance\-::is\-\_\-running (
@@ -147,6 +197,13 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1TimeAdvance_a31398b7880b86622ba3c1378e2ac91d1}
+
+
+Check if the method has arrived at the final time. 
+
+\begin{DoxyReturn}{Returns}
+T\-R\-U\-E if it is still running 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1TimeAdvance_a2538fb7b6ee62103de78f42158bf38e6}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!set\-\_\-dt@{set\-\_\-dt}}
 \index{set\-\_\-dt@{set\-\_\-dt}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{set\-\_\-dt}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Time\-Advance\-::set\-\_\-dt (
@@ -154,22 +211,53 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 \item[{double}]{dt}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1TimeAdvance_a2538fb7b6ee62103de78f42158bf38e6}
+
+
+Set time step $\delta t $. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the time step \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1TimeAdvance_a458fb8edb53992055aceb6fee44f506a}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!set\-\_\-initial\-\_\-u@{set\-\_\-initial\-\_\-u}}
 \index{set\-\_\-initial\-\_\-u@{set\-\_\-initial\-\_\-u}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{set\-\_\-initial\-\_\-u}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ void Tspeed\-::\-Time\-Advance\-::set\-\_\-initial\-\_\-u (
 \begin{DoxyParamCaption}
 \item[{{\bf F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$}]{Xh, }
-\item[{{\bf std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$}]{fun}
+\item[{std\-::function$<$ std\-::array$<$ double, 2 $>$(double, double)$>$}]{fun}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1TimeAdvance_a458fb8edb53992055aceb6fee44f506a}
+
+
+Set initial displacement $ {u} $. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Xh} & the function space \\
+\hline
+{\em fun} & $ {u}(x,y)$ \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1TimeAdvance_a5565d8938d39054dbceae8b5fb26f6bc}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!set\-\_\-initial\-\_\-v@{set\-\_\-initial\-\_\-v}}
 \index{set\-\_\-initial\-\_\-v@{set\-\_\-initial\-\_\-v}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{set\-\_\-initial\-\_\-v}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, typename Q , typename S $>$ void Tspeed\-::\-Time\-Advance\-::set\-\_\-initial\-\_\-v (
 \begin{DoxyParamCaption}
 \item[{{\bf F\-E\-Space\-\_\-ptr}$<$ N, Q, S $>$}]{Xh, }
-\item[{{\bf std\-::function}$<$ std\-::array$<$ double, 2 $>$(double, double)$>$}]{fun}
+\item[{std\-::function$<$ std\-::array$<$ double, 2 $>$(double, double)$>$}]{fun}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1TimeAdvance_a5565d8938d39054dbceae8b5fb26f6bc}
+
+
+Set initial speed $ \dot{u} $. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Xh} & the function space \\
+\hline
+{\em fun} & $ \dot{u}(x,y)$ \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1TimeAdvance_af635a6b3e94ff39467817c4b3890feb4}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!set\-\_\-penalty@{set\-\_\-penalty}}
 \index{set\-\_\-penalty@{set\-\_\-penalty}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{set\-\_\-penalty}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Time\-Advance\-::set\-\_\-penalty (
@@ -177,6 +265,15 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 \item[{double}]{p}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1TimeAdvance_af635a6b3e94ff39467817c4b3890feb4}
+
+
+set penalty for the stability matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the penalty value \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1TimeAdvance_ac0d8cd9b2b704e7cd4a2dd0793ce085d}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!set\-\_\-tmax@{set\-\_\-tmax}}
 \index{set\-\_\-tmax@{set\-\_\-tmax}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{set\-\_\-tmax}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Time\-Advance\-::set\-\_\-tmax (
@@ -184,13 +281,31 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 \item[{double}]{tmax}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1TimeAdvance_ac0d8cd9b2b704e7cd4a2dd0793ce085d}
-\hypertarget{classTspeed_1_1TimeAdvance_a68853509e7ceecbe34d79518530eee7b}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!step@{step}}
+
+
+Set end time of the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tmax} & the end time \\
+\hline
+\end{DoxyParams}
+\hypertarget{classTspeed_1_1TimeAdvance_a3328d4d45d9261de6bfdd8e447f88d63}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!step@{step}}
 \index{step@{step}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-Time\-Advance\-::step (
 \begin{DoxyParamCaption}
-\item[{double}]{}
+\item[{double}]{t}
 \end{DoxyParamCaption}
-)}}\label{classTspeed_1_1TimeAdvance_a68853509e7ceecbe34d79518530eee7b}
+)}}\label{classTspeed_1_1TimeAdvance_a3328d4d45d9261de6bfdd8e447f88d63}
+
+
+step at time t 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & the time \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1TimeAdvance_a3c27a46c3be458c4c6b9b7802c58a30b}{\index{Tspeed\-::\-Time\-Advance@{Tspeed\-::\-Time\-Advance}!u@{u}}
 \index{u@{u}!Tspeed::TimeAdvance@{Tspeed\-::\-Time\-Advance}}
 \subsubsection[{u}]{\setlength{\rightskip}{0pt plus 5cm}Vec const\& Tspeed\-::\-Time\-Advance\-::u (
@@ -212,6 +327,15 @@ unsigned int \hyperlink{classTspeed_1_1TimeAdvance_aa03110e12846960054b42b4cf0d0
 \item[{std\-::string const \&}]{fn}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1TimeAdvance_a4030ab6e3606e5b762d236a4bc65fe68}
+
+
+Write the time series of the displacement at the receivers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & Base output file name \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}

@@ -1,6 +1,11 @@
 \hypertarget{Dunavant_8hpp}{\section{lib/include/\-Dunavant.hpp File Reference}
 \label{Dunavant_8hpp}\index{lib/include/\-Dunavant.\-hpp@{lib/include/\-Dunavant.\-hpp}}
 }
+
+
+Header files for the implementation of the Dunavant rules.  
+
+
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -64,15 +69,15 @@ int \hyperlink{Dunavant_8hpp_a36f800e4593bdd258feaeb43cf42adf7}{i4\-\_\-max} (in
 \item 
 int \hyperlink{Dunavant_8hpp_ae73c30e1658d722ce9ff2e671db331ca}{i4\-\_\-min} (int i1, int i2)
 \item 
-int \hyperlink{Dunavant_8hpp_a0977ecce2ec88e382435b4bbc08bbdf7}{i4\-\_\-modp} (int \hyperlink{vtk__vector__out_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}, int \hyperlink{vtk__mesh__out_8m_af1af736f0a1475ea44566768103395cb}{j})
+int \hyperlink{Dunavant_8hpp_a0977ecce2ec88e382435b4bbc08bbdf7}{i4\-\_\-modp} (int i, int j)
 \item 
 int \hyperlink{Dunavant_8hpp_adf604b639ecc974176142f7265829259}{i4\-\_\-wrap} (int ival, int ilo, int ihi)
 \item 
 double \hyperlink{Dunavant_8hpp_ae59e4d9f04c3be0347cc77d9f0a5b221}{r8\-\_\-huge} (void)
 \item 
-int \hyperlink{Dunavant_8hpp_a7e0d15a4d0accb8c91928f44aa302394}{r8\-\_\-nint} (double \hyperlink{vtk__mesh__out_8m_ace4b66138f2e64832c951b1ba9ce24cc}{x})
+int \hyperlink{Dunavant_8hpp_a7e0d15a4d0accb8c91928f44aa302394}{r8\-\_\-nint} (double x)
 \item 
-void \hyperlink{Dunavant_8hpp_a25a044f86e2618a1db0da8a925f2572d}{reference\-\_\-to\-\_\-physical\-\_\-t3} (double \hyperlink{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}{t}\mbox{[}$\,$\mbox{]}, int n, double ref\mbox{[}$\,$\mbox{]}, double phy\mbox{[}$\,$\mbox{]})
+void \hyperlink{Dunavant_8hpp_a25a044f86e2618a1db0da8a925f2572d}{reference\-\_\-to\-\_\-physical\-\_\-t3} (double t\mbox{[}$\,$\mbox{]}, int n, double ref\mbox{[}$\,$\mbox{]}, double phy\mbox{[}$\,$\mbox{]})
 \item 
 int \hyperlink{Dunavant_8hpp_aaaab7eaef7b83f16504a609979ac5c7e}{s\-\_\-len\-\_\-trim} (char $\ast$s)
 \item 
@@ -80,10 +85,16 @@ void \hyperlink{Dunavant_8hpp_a02d8f81e512334c1e2e5be025c41afa8}{timestamp} (voi
 \item 
 char $\ast$ \hyperlink{Dunavant_8hpp_a887a2ef0f2104b41fc76c017d6b6bf78}{timestring} (void)
 \item 
-double \hyperlink{Dunavant_8hpp_a08a0e9db99fb867596e84d1871713606}{triangle\-\_\-area} (double \hyperlink{plot__seismogram_8m_aaccc9105df5383111407fd5b41255e23}{t}\mbox{[}2 $\ast$3\mbox{]})
+double \hyperlink{Dunavant_8hpp_a08a0e9db99fb867596e84d1871713606}{triangle\-\_\-area} (double t\mbox{[}2 $\ast$3\mbox{]})
 \item 
 void \hyperlink{Dunavant_8hpp_af9c39491facec8d0f07a1a458c4323e8}{triangle\-\_\-points\-\_\-plot} (char $\ast$file\-\_\-name, double node\-\_\-xy\mbox{[}$\,$\mbox{]}, int node\-\_\-show, int point\-\_\-num, double point\-\_\-xy\mbox{[}$\,$\mbox{]}, int point\-\_\-show)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header files for the implementation of the Dunavant rules. \begin{DoxyAuthor}{Author}
+John Burkardt 
+\end{DoxyAuthor}
 
 
 \subsection{Function Documentation}

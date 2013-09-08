@@ -88,61 +88,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Force.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Force_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __FORCE_HPP__</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __FORCE_HPP__ 1</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include&lt;functional&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;Eigen/SparseCore&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="Receivers_8hpp.html">Receivers.hpp</a>&quot;</span> <span class="comment">//TODO: move pointwiseentity somewhere else, and include it here and in receivers.hpp</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="FESpace_8hpp.html">FESpace.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;array&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Tspeed{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">//template &lt;typename T&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classTspeed_1_1Force.html">Force</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#a5f4cd0ccfce951a7edded01c87ba6fb6">   14</a></span>&#160;        <span class="keyword">typedef</span> Eigen::SparseVector&lt;double&gt; <a class="code" href="classTspeed_1_1Force.html#a5f4cd0ccfce951a7edded01c87ba6fb6">SPVec</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">   15</a></span>&#160;        <span class="keyword">typedef</span> Eigen::VectorXd <a class="code" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">Vec</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d">   16</a></span>&#160;        <a class="code" href="classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d">Force</a>(){};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d">Force</a>(<a class="code" href="load__and__plot__lamb_8m.html#a7b5e596df91eadea6c537c0825e894a7">std::function</a>&lt;std::array&lt;double,2&gt;(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)&gt; <span class="keyword">const</span> &amp;);</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#aa4789eaa544d8b37d25873a6c8aede55">   18</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classTspeed_1_1Force.html#aa4789eaa544d8b37d25873a6c8aede55">~Force</a>(){};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">Vec</a> <a class="code" href="classTspeed_1_1Force.html#ac174525b11c7c6a490411d00330a3564">eval</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)<span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#a71c3dbf2cbca2fe0c4db4db1673794e6">   21</a></span>&#160;        std::function&lt;std::array&lt;double,2&gt;(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)&gt; <a class="code" href="classTspeed_1_1Force.html#a71c3dbf2cbca2fe0c4db4db1673794e6">M_f</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">//T M_f;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//template &lt;typename T&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="classTspeed_1_1PointWiseForce.html">   25</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classTspeed_1_1PointWiseForce.html">PointWiseForce</a> : <span class="keyword">public</span> <a class="code" href="classTspeed_1_1Force.html">Force</a>, <span class="keyword">public</span> <a class="code" href="classTspeed_1_1PointWiseEntity.html">PointWiseEntity</a></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N,<span class="keyword">typename</span> Q,<span class="keyword">typename</span> S&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classTspeed_1_1PointWiseForce.html#ad30aab53a735b22fac2b5cfeaa4d0c28">PointWiseForce</a>(<a class="code" href="load__and__plot__lamb_8m.html#a7b5e596df91eadea6c537c0825e894a7">std::function</a>&lt;std::array&lt;double,2&gt;(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)&gt; <span class="keyword">const</span>&amp; , <a class="code" href="classTspeed_1_1Geo_1_1Point.html">Geo::Point</a> , <a class="code" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8">FESpace_ptr&lt;N,Q,S&gt;</a>  );</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">//PointWiseForce(T const&amp; , Geo::Point , FESpace&lt;N,Q,S&gt; const &amp; );</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="classTspeed_1_1PointWiseForce.html#a34ad80033ed1e9d5ba31feffae4ab7c9">   31</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classTspeed_1_1PointWiseForce.html#a34ad80033ed1e9d5ba31feffae4ab7c9">~PointWiseForce</a>(){};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">Vec</a> <a class="code" href="classTspeed_1_1PointWiseForce.html#ae52b1302d87e4535620e205fe030d542">eval</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M_startIndex1;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M_startIndex2;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M_size;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M_totSize;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//template&lt;typename T&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/*    class DiffuseForce : public Force{*/</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//public: </span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">//template&lt;int N,typename Q,typename S&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span>        <span class="comment">//DiffuseForce(std::function&lt;std::array&lt;double,2&gt;(const double &amp;)&gt; const&amp; , FESpace&lt;N,Q,S&gt; const &amp; );</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//virtual ~PointWiseForce(){};</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//Vec eval(const double &amp;)const;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">/*};*/</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="Force__imp_8hpp.html">Force_imp.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="Force_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/* This program is free software: you can redistribute it and/or modify </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *  it under the terms of the GNU General Public License as published by </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *  the Free Software Foundation, either version 3 of the License, or </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *  (at your option) any later version. </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful, </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *  GNU General Public License for more details. </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef __FORCE_HPP__</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __FORCE_HPP__ 1</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include&lt;functional&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include&lt;Eigen/SparseCore&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="Receivers_8hpp.html" title="Header file containg the class for receivers and a base class for pointwise entities.">Receivers.hpp</a>&quot;</span> <span class="comment">//TODO: move pointwiseentity somewhere else, and include it here and in receivers.hpp</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="FESpace_8hpp.html" title="Header file for the Galerkin space and for the parameters of the elastodynamics equation.">FESpace.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include&lt;array&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>Tspeed{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//template &lt;typename T&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html">   33</a></span>&#160;<span class="comment"></span>    <span class="keyword">class </span><a class="code" href="classTspeed_1_1Force.html" title="virtual base class for forces">Force</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#a5f4cd0ccfce951a7edded01c87ba6fb6">   36</a></span>&#160;        <span class="keyword">typedef</span> Eigen::SparseVector&lt;double&gt; <a class="code" href="classTspeed_1_1Force.html#a5f4cd0ccfce951a7edded01c87ba6fb6">SPVec</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">   37</a></span>&#160;        <span class="keyword">typedef</span> Eigen::VectorXd <a class="code" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">Vec</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d">   38</a></span>&#160;        <a class="code" href="classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d">Force</a>(){};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classTspeed_1_1Force.html#a1763e5fb61e4ef56be851800d854c96d">Force</a>(std::function&lt;std::array&lt;double,2&gt;(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)&gt; <span class="keyword">const</span> &amp; fun);</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#aa4789eaa544d8b37d25873a6c8aede55">   45</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classTspeed_1_1Force.html#aa4789eaa544d8b37d25873a6c8aede55">~Force</a>(){};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">Vec</a> <a class="code" href="classTspeed_1_1Force.html#ac174525b11c7c6a490411d00330a3564">eval</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)<span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="classTspeed_1_1Force.html#a71c3dbf2cbca2fe0c4db4db1673794e6">   48</a></span>&#160;        std::function&lt;std::array&lt;double,2&gt;(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)&gt; <a class="code" href="classTspeed_1_1Force.html#a71c3dbf2cbca2fe0c4db4db1673794e6">M_f</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">//T M_f;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="namespaceTspeed.html#a3795c740b127fc84de9d80cc919dd4d1">   51</a></span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;Force&gt; <a class="code" href="namespaceTspeed.html#a3795c740b127fc84de9d80cc919dd4d1">Force_ptr</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//template &lt;typename T&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classTspeed_1_1PointWiseForce.html">   56</a></span>&#160;<span class="comment"></span>    <span class="keyword">class </span><a class="code" href="classTspeed_1_1PointWiseForce.html" title="Time dependent force acting on a point.">PointWiseForce</a> : <span class="keyword">public</span> <a class="code" href="classTspeed_1_1Force.html" title="virtual base class for forces">Force</a>, <span class="keyword">public</span> <a class="code" href="classTspeed_1_1PointWiseEntity.html" title="A base class for pointwise entities, with the points and the basis function in that points...">PointWiseEntity</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">template</span>&lt;<span class="keywordtype">int</span> N,<span class="keyword">typename</span> Q,<span class="keyword">typename</span> S&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classTspeed_1_1PointWiseForce.html#afbc52ae18411c6a212ed68812fd0fd36" title="Costructor taking the function, the point where the force is applied and the function space...">PointWiseForce</a>(std::function&lt;std::array&lt;double,2&gt;(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;)&gt; <span class="keyword">const</span>&amp; f, <a class="code" href="classTspeed_1_1Geo_1_1Point.html" title="Class describing points.">Geo::Point</a> p, <a class="code" href="namespaceTspeed.html#a05fcb57094666c8f5ab1e90d1a6fecf8" title="template pointer to FESpace">FESpace_ptr&lt;N,Q,S&gt;</a> Xh );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">//PointWiseForce(T const&amp; , Geo::Point , FESpace&lt;N,Q,S&gt; const &amp; );</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="classTspeed_1_1PointWiseForce.html#a34ad80033ed1e9d5ba31feffae4ab7c9">   70</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classTspeed_1_1PointWiseForce.html#a34ad80033ed1e9d5ba31feffae4ab7c9">~PointWiseForce</a>(){};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classTspeed_1_1Force.html#ab33d4f6bed9bf9a136afd1ac5a918c93">Vec</a> <a class="code" href="classTspeed_1_1PointWiseForce.html#a6689b6fa7289a81fc4feed63dafab143" title="Get value of force vector, i.e.  at time t, where  is non null in .">eval</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp; t)<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M_startIndex1;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M_startIndex2;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M_size;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M_totSize;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//template&lt;typename T&gt;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/*    class DiffuseForce : public Force{*/</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//public: </span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">//template&lt;int N,typename Q,typename S&gt;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span>        <span class="comment">//DiffuseForce(std::function&lt;std::array&lt;double,2&gt;(const double &amp;)&gt; const&amp; , FESpace&lt;N,Q,S&gt; const &amp; );</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">//virtual ~PointWiseForce(){};</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">//Vec eval(const double &amp;)const;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">/*};*/</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="Force__imp_8hpp.html" title="Implementation of the Pointwise force template methods.">Force_imp.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:57 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

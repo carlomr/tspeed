@@ -1,3 +1,23 @@
+/**
+ * @file ShapeFunctions_imp.hpp
+ * @brief Implementation of the shape functions
+ *
+ * @author Carlo Marcati
+ * @date 2013-09-08
+ */
+/* This program is free software: you can redistribute it and/or modify 
+ *  it under the terms of the GNU General Public License as published by 
+ *  the Free Software Foundation, either version 3 of the License, or 
+ *  (at your option) any later version. 
+ *  
+ *  This program is distributed in the hope that it will be useful, 
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of 
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+ *  GNU General Public License for more details. 
+ *  
+ *  You should have received a copy of the GNU General Public License 
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 namespace Tspeed
 {
     Eigen::ArrayXd jacobi_polynomial(int N, int alpha, int beta, Eigen::ArrayXd const & z);
@@ -56,15 +76,15 @@ namespace Tspeed
 
 
 
-	   for(int i=1; i<N-1;++i)
+	   for(int i=1; i<N;++i)
 	   {
-	       this->M_phi.push_back([=](Arr const & csi, Arr const & eta)->Arr{return (1-csi-eta)*csi*pow((1-eta),(i-1)) * jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1);});
+	       this->M_phi.push_back([=](Arr const & csi, Arr const & eta)->Arr{return (1-csi-eta)*csi*(1-eta).pow(i-1) * jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1);});
 	       this->M_grad.push_back([=](Arr const & csi, Arr const & eta)->ArrG{ArrG grad(csi.size(), 2);
-	       grad.col(0)  = (1-2*csi-eta)*pow((1-eta),(i-1))*jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1) + (1-csi-eta)*csi*pow((1-eta),(i-2))*jacobi_polynomial(i-2,2,2,2*csi/(1-eta)-1)*(i+2);
-	       grad.col(1)  = -pow((1-eta),(i-2))*csi*(i+csi-i*csi-i*eta)*jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1) + csi*csi*(1-csi-eta)*pow((1-eta),(i-3))*(i+2)*jacobi_polynomial(i-2,2,2,2*csi/(1-eta)-1);
+	       grad.col(0)  = (1-2*csi-eta)*(1-eta).pow(i-1)*jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1) + (1-csi-eta)*csi*(1-eta).pow(i-2)*jacobi_polynomial(i-2,2,2,2*csi/(1-eta)-1)*(i+2);
+	       grad.col(1)  = -(1-eta).pow(i-2)*csi*(i+csi-i*csi-i*eta)*jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1) + csi*csi*(1-csi-eta)*(1-eta).pow(i-3)*(i+2)*jacobi_polynomial(i-2,2,2,2*csi/(1-eta)-1);
 	       return grad;});
 	   }
-	   for(int j=1; j<N-1; ++j)
+	   for(int j=1; j<N; ++j)
 	   {
 	       this->M_phi.push_back([=](Arr const & csi, Arr const & eta)->Arr{return  (1-csi-eta)*eta*jacobi_polynomial(j-1,1,1,2*eta-1);});
 	       this->M_grad.push_back([=](Arr const & csi, Arr const & eta)->ArrG{ ArrG grad(csi.size(),2);
@@ -72,7 +92,7 @@ namespace Tspeed
 		       grad.col(1)=(1-csi-2*eta)*jacobi_polynomial(j-1,1,1,2*eta-1) + (1-csi-eta)*eta*jacobi_polynomial(j-2,2,2,2*eta-1)*(j+2);;
 		       return grad;});
 	   }
-	   for(int j=1; j<N-1; ++j)
+	   for(int j=1; j<N; ++j)
 	   {
 	       this->M_phi.push_back([=](Arr const & csi, Arr const & eta)->Arr{return  csi*eta*jacobi_polynomial(j-1,1,1,2*eta-1);});
 	       this->M_grad.push_back([=](Arr const & csi, Arr const & eta)->ArrG{ ArrG grad(csi.size(),2);
@@ -80,16 +100,16 @@ namespace Tspeed
 		       grad.col(1)=csi*jacobi_polynomial(j-1,1,1,2*eta-1) + eta* csi*(j+2)*jacobi_polynomial(j-2,2,2,2*eta-1);
 		       return grad;});
 	   }
-	   for(int j=1; j<N-1; ++j)
+	   for(int j=1; j<N; ++j)
 	   {
-	       for(int i=1; i<N-1; ++i)
+	       for(int i=1; i<N; ++i)
 	       {
 		   if(i+j < N)
 		   {
-		       this->M_phi.push_back([=](Arr const & csi, Arr const & eta)->Arr{return  (1-csi-eta)*csi*eta*pow((1-eta),(i-1)) * jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1) * jacobi_polynomial(j-1,2*i+1,1,2*eta-1);});
+		       this->M_phi.push_back([=](Arr const & csi, Arr const & eta)->Arr{return  (1-csi-eta)*csi*eta*(1-eta).pow(i-1) * jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1) * jacobi_polynomial(j-1,2*i+1,1,2*eta-1);});
 		       this->M_grad.push_back([=](Arr const & csi, Arr const & eta)->ArrG{ ArrG grad(csi.size(),2);
-			       grad.col(0)=eta*pow((1-eta),(i-2))*jacobi_polynomial(j-1,2*i+1,1,2*eta-1)*( (1-2*csi-eta)*(1-eta)*jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1)+ (1-csi-eta)*csi*(i+2)*jacobi_polynomial(i-2,2,2,2*csi/(1-eta)-1));
-			       grad.col(1)=csi*pow((1-eta),(i-3))* ( ( pow((1-eta),2)*(1-csi-2*eta)-(1-eta)*eta*(1-csi-eta)*(i-1) ) *jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1)*jacobi_polynomial(j-1,2*i+1,1,2*eta-1) + csi*(1-csi-eta)*eta*(i+2)*jacobi_polynomial(i-2,2,2,2*csi/(1-eta)-1)*jacobi_polynomial(j-1,2*i+1,1,2*eta-1) + (1-csi-eta)*eta*pow((1-eta),2)*(j+2*i+2)*jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1)*jacobi_polynomial(j-2,2*i+2,2,2*eta-1) );
+			       grad.col(0)=eta*(1-eta).pow(i-2)*jacobi_polynomial(j-1,2*i+1,1,2*eta-1)*( (1-2*csi-eta)*(1-eta)*jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1)+ (1-csi-eta)*csi*(i+2)*jacobi_polynomial(i-2,2,2,2*csi/(1-eta)-1));
+			       grad.col(1)=csi*(1-eta).pow(i-3)* ( ( (1-eta).pow(2)*(1-csi-2*eta)-(1-eta)*eta*(1-csi-eta)*(i-1) ) *jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1)*jacobi_polynomial(j-1,2*i+1,1,2*eta-1) + csi*(1-csi-eta)*eta*(i+2)*jacobi_polynomial(i-2,2,2,2*csi/(1-eta)-1)*jacobi_polynomial(j-1,2*i+1,1,2*eta-1) + (1-csi-eta)*eta*(1-eta).pow(2)*(j+2*i+2)*jacobi_polynomial(i-1,1,1,2*csi/(1-eta)-1)*jacobi_polynomial(j-2,2*i+2,2,2*eta-1) );
 			       return grad;});
 
 		   }

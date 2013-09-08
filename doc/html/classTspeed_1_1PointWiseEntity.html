@@ -96,6 +96,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>A base class for pointwise entities, with the points and the basis function in that points.  
+ <a href="classTspeed_1_1PointWiseEntity.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Receivers_8hpp_source.html">Receivers.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tspeed::PointWiseEntity:</div>
@@ -103,8 +106,8 @@ Inheritance diagram for Tspeed::PointWiseEntity:</div>
  <div class="center">
   <img src="classTspeed_1_1PointWiseEntity.png" usemap="#Tspeed::PointWiseEntity_map" alt=""/>
   <map id="Tspeed::PointWiseEntity_map" name="Tspeed::PointWiseEntity_map">
-<area href="classTspeed_1_1PointWiseForce.html" alt="Tspeed::PointWiseForce" shape="rect" coords="0,56,148,80"/>
-<area href="classTspeed_1_1Receivers.html" alt="Tspeed::Receivers" shape="rect" coords="158,56,306,80"/>
+<area href="classTspeed_1_1PointWiseForce.html" title="Time dependent force acting on a point." alt="Tspeed::PointWiseForce" shape="rect" coords="0,56,148,80"/>
+<area href="classTspeed_1_1Receivers.html" title="A class for seismic receivers, i.e., receivers recording the movement at a point." alt="Tspeed::Receivers" shape="rect" coords="158,56,306,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -112,13 +115,17 @@ Inheritance diagram for Tspeed::PointWiseEntity:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a602393b4fd96ffd3d40ea3ff30cdc366"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#a602393b4fd96ffd3d40ea3ff30cdc366">~PointWiseEntity</a> ()</td></tr>
 <tr class="separator:a602393b4fd96ffd3d40ea3ff30cdc366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9369e650140e66a58e902ee752cf36ca"><td class="memItemLeft" align="right" valign="top">Eigen::ArrayXd const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#a9369e650140e66a58e902ee752cf36ca">shape</a> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:a9369e650140e66a58e902ee752cf36ca"><td class="memItemLeft" align="right" valign="top">Eigen::ArrayXd const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#a9369e650140e66a58e902ee752cf36ca">shape</a> (int i) const </td></tr>
+<tr class="memdesc:a9369e650140e66a58e902ee752cf36ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">All shape functions at point i.  <a href="#a9369e650140e66a58e902ee752cf36ca">More...</a><br/></td></tr>
 <tr class="separator:a9369e650140e66a58e902ee752cf36ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a71d4b7bfa160b2aaa6d3d2a4c35713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Geo_1_1Point.html">Geo::Point</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#a4a71d4b7bfa160b2aaa6d3d2a4c35713">point</a> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:a4a71d4b7bfa160b2aaa6d3d2a4c35713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTspeed_1_1Geo_1_1Point.html">Geo::Point</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#a4a71d4b7bfa160b2aaa6d3d2a4c35713">point</a> (int i) const </td></tr>
+<tr class="memdesc:a4a71d4b7bfa160b2aaa6d3d2a4c35713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point i, with coordinates in the reference triangle.  <a href="#a4a71d4b7bfa160b2aaa6d3d2a4c35713">More...</a><br/></td></tr>
 <tr class="separator:a4a71d4b7bfa160b2aaa6d3d2a4c35713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1271c51d7dd8689a38a60ca858e160f"><td class="memItemLeft" align="right" valign="top">unsigned int const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#ac1271c51d7dd8689a38a60ca858e160f">elem</a> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) const </td></tr>
+<tr class="memitem:ac1271c51d7dd8689a38a60ca858e160f"><td class="memItemLeft" align="right" valign="top">unsigned int const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#ac1271c51d7dd8689a38a60ca858e160f">elem</a> (int i) const </td></tr>
+<tr class="memdesc:ac1271c51d7dd8689a38a60ca858e160f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of the element where point i resides.  <a href="#ac1271c51d7dd8689a38a60ca858e160f">More...</a><br/></td></tr>
 <tr class="separator:ac1271c51d7dd8689a38a60ca858e160f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea02312bcb1b3c20a465e2d696b65924"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#aea02312bcb1b3c20a465e2d696b65924">size</a> () const </td></tr>
+<tr class="memdesc:aea02312bcb1b3c20a465e2d696b65924"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of points.  <a href="#aea02312bcb1b3c20a465e2d696b65924">More...</a><br/></td></tr>
 <tr class="separator:aea02312bcb1b3c20a465e2d696b65924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -138,7 +145,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a054e68f482b69877a7a4c4d2b03d6db3"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTspeed_1_1PointWiseEntity.html#a054e68f482b69877a7a4c4d2b03d6db3">M_nel</a></td></tr>
 <tr class="separator:a054e68f482b69877a7a4c4d2b03d6db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A base class for pointwise entities, with the points and the basis function in that points. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a602393b4fd96ffd3d40ea3ff30cdc366"></a>
 <div class="memitem">
 <div class="memproto">
@@ -184,6 +193,15 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The index of the element where point i resides. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the triangle </dd></dl>
 
 </div>
 </div>
@@ -245,6 +263,15 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Point i, with coordinates in the reference triangle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The point </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a9369e650140e66a58e902ee752cf36ca"></a>
@@ -269,6 +296,15 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>All shape functions at point i. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array of all functions </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aea02312bcb1b3c20a465e2d696b65924"></a>
@@ -291,6 +327,8 @@ template&lt;int N, typename Q , typename S &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The number of points. </p>
 
 </div>
 </div>
@@ -382,7 +420,7 @@ template&lt;int N, typename Q , typename S &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:03 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:59 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

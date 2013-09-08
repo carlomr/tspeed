@@ -1,6 +1,11 @@
 \hypertarget{MyMat_8hpp}{\section{lib/include/\-My\-Mat.hpp File Reference}
 \label{MyMat_8hpp}\index{lib/include/\-My\-Mat.\-hpp@{lib/include/\-My\-Mat.\-hpp}}
 }
+
+
+Header file for the matrices specialized for the Discontinuous Galerkin method.  
+
+
 {\ttfamily \#include $<$Eigen/\-Dense$>$}\\*
 {\ttfamily \#include $<$vector$>$}\\*
 {\ttfamily \#include \char`\"{}Mesh.\-hpp\char`\"{}}\\*
@@ -9,15 +14,15 @@
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classTspeed_1_1BaseMat}{Tspeed\-::\-Base\-Mat}
-\item 
+\begin{DoxyCompactList}\small\item\em Base monodimensional matrix class. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1MyMatBlockDiag}{Tspeed\-::\-My\-Mat\-Block\-Diag}
-\item 
+\begin{DoxyCompactList}\small\item\em Block diagonal monodimensional matrix (monodimensional block of mass and stress-\/strain matrices) \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1MyMat}{Tspeed\-::\-My\-Mat}
-\item 
+\begin{DoxyCompactList}\small\item\em Block Matrix (monodimensial blocks of stability and interelement matrices) \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1MyMatMultiDim}{Tspeed\-::\-My\-Mat\-Multi\-Dim$<$ T $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Multidimensional matrix. \end{DoxyCompactList}\item 
 class \hyperlink{classTspeed_1_1MyMatMultiDimBlockDiag}{Tspeed\-::\-My\-Mat\-Multi\-Dim\-Block\-Diag$<$ T $>$}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Matrix class for matrices where only the diagonal monodimensional matrices are non zero (i.\-e. the mass matrix) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +37,16 @@ Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_a47058bd8c3ef387978ab2b5c810386
 \item 
 Eigen\-::\-Vector\-Xd \hyperlink{namespaceTspeed_a709169815b0e02183d3c4d5b581e735f}{Tspeed\-::operator$\ast$} (My\-Mat\-Block\-Diag const \&, Eigen\-::\-Vector\-Xd const \&)
 \item 
-My\-Mat \hyperlink{namespaceTspeed_ab8df12f3c804c527b4d9006350d50c62}{Tspeed\-::operator+} (My\-Mat \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, My\-Mat const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+My\-Mat \hyperlink{namespaceTspeed_ab8df12f3c804c527b4d9006350d50c62}{Tspeed\-::operator+} (My\-Mat a, My\-Mat const \&b)
 \item 
-My\-Mat \hyperlink{namespaceTspeed_a1f4d38ebd3223a0e5ea8cfad29fcc10c}{Tspeed\-::operator+} (My\-Mat \hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, My\-Mat\-Block\-Diag const \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
+My\-Mat \hyperlink{namespaceTspeed_a1f4d38ebd3223a0e5ea8cfad29fcc10c}{Tspeed\-::operator+} (My\-Mat a, My\-Mat\-Block\-Diag const \&b)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for the matrices specialized for the Discontinuous Galerkin method. \begin{DoxyAuthor}{Author}
+Carlo Marcati 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2013-\/09-\/08 
+\end{DoxyDate}

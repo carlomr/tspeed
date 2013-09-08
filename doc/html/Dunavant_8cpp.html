@@ -91,6 +91,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Dunavant.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Functions for Dunavant quadrature (nodes and weights, tabulated)  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cstdlib&gt;</code><br/>
 <code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;fstream&gt;</code><br/>
@@ -169,15 +172,15 @@ Functions</h2></td></tr>
 <tr class="separator:a36f800e4593bdd258feaeb43cf42adf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae73c30e1658d722ce9ff2e671db331ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#ae73c30e1658d722ce9ff2e671db331ca">i4_min</a> (int i1, int i2)</td></tr>
 <tr class="separator:ae73c30e1658d722ce9ff2e671db331ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0977ecce2ec88e382435b4bbc08bbdf7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#a0977ecce2ec88e382435b4bbc08bbdf7">i4_modp</a> (int <a class="el" href="vtk__vector__out_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, int <a class="el" href="vtk__mesh__out_8m.html#af1af736f0a1475ea44566768103395cb">j</a>)</td></tr>
+<tr class="memitem:a0977ecce2ec88e382435b4bbc08bbdf7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#a0977ecce2ec88e382435b4bbc08bbdf7">i4_modp</a> (int i, int j)</td></tr>
 <tr class="separator:a0977ecce2ec88e382435b4bbc08bbdf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf604b639ecc974176142f7265829259"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#adf604b639ecc974176142f7265829259">i4_wrap</a> (int ival, int ilo, int ihi)</td></tr>
 <tr class="separator:adf604b639ecc974176142f7265829259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1f9007627d97e62a4182c30105b9fa4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#ac1f9007627d97e62a4182c30105b9fa4">r8_huge</a> ()</td></tr>
 <tr class="separator:ac1f9007627d97e62a4182c30105b9fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e0d15a4d0accb8c91928f44aa302394"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#a7e0d15a4d0accb8c91928f44aa302394">r8_nint</a> (double <a class="el" href="vtk__mesh__out_8m.html#ace4b66138f2e64832c951b1ba9ce24cc">x</a>)</td></tr>
+<tr class="memitem:a7e0d15a4d0accb8c91928f44aa302394"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#a7e0d15a4d0accb8c91928f44aa302394">r8_nint</a> (double x)</td></tr>
 <tr class="separator:a7e0d15a4d0accb8c91928f44aa302394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a044f86e2618a1db0da8a925f2572d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#a25a044f86e2618a1db0da8a925f2572d">reference_to_physical_t3</a> (double <a class="el" href="plot__seismogram_8m.html#aaccc9105df5383111407fd5b41255e23">t</a>[], int n, double ref[], double phy[])</td></tr>
+<tr class="memitem:a25a044f86e2618a1db0da8a925f2572d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#a25a044f86e2618a1db0da8a925f2572d">reference_to_physical_t3</a> (double t[], int n, double ref[], double phy[])</td></tr>
 <tr class="separator:a25a044f86e2618a1db0da8a925f2572d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaab7eaef7b83f16504a609979ac5c7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#aaaab7eaef7b83f16504a609979ac5c7e">s_len_trim</a> (char *s)</td></tr>
 <tr class="separator:aaaab7eaef7b83f16504a609979ac5c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,12 +188,15 @@ Functions</h2></td></tr>
 <tr class="separator:a2219d86aef2195ff323e8349d92abe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed39b9263496de5339e7a0ca2f993693"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#aed39b9263496de5339e7a0ca2f993693">timestring</a> ()</td></tr>
 <tr class="separator:aed39b9263496de5339e7a0ca2f993693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08a0e9db99fb867596e84d1871713606"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#a08a0e9db99fb867596e84d1871713606">triangle_area</a> (double <a class="el" href="plot__seismogram_8m.html#aaccc9105df5383111407fd5b41255e23">t</a>[2 *3])</td></tr>
+<tr class="memitem:a08a0e9db99fb867596e84d1871713606"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#a08a0e9db99fb867596e84d1871713606">triangle_area</a> (double t[2 *3])</td></tr>
 <tr class="separator:a08a0e9db99fb867596e84d1871713606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9c39491facec8d0f07a1a458c4323e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Dunavant_8cpp.html#af9c39491facec8d0f07a1a458c4323e8">triangle_points_plot</a> (char *file_name, double node_xy[], int node_show, int point_num, double point_xy[], int point_show)</td></tr>
 <tr class="separator:af9c39491facec8d0f07a1a458c4323e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Functions for Dunavant quadrature (nodes and weights, tabulated) </p>
+<dl class="section author"><dt>Author</dt><dd>John Burkardt </dd></dl>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ac1c7bc76dbfd8378fc96541a6243afd1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1335,7 +1341,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2013 15:39:02 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 8 2013 22:30:57 for Tspeed by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

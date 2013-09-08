@@ -3,6 +3,11 @@
 }
 
 
+Block Matrix (monodimensial blocks of stability and interelement matrices)  
+
+
+
+
 {\ttfamily \#include $<$My\-Mat.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:My\-Mat\-:\begin{figure}[H]
@@ -17,7 +22,7 @@ Inheritance diagram for Tspeed\-:\-:My\-Mat\-:\begin{figure}[H]
 \hyperlink{classTspeed_1_1MyMat_a8fbd3586cb4653ea3cdb2b9d42428e85}{My\-Mat} ()
 \item 
 \hyperlink{classTspeed_1_1MyMat_a4f07d60d8010d796e27fb90c367b1c8a}{My\-Mat} (\hyperlink{namespaceTspeed_a7367a01365c4cc2c1a09305b3effc4e8}{Mesh\-\_\-ptr}, unsigned int nln)
-\item 
+\begin{DoxyCompactList}\small\item\em Contructor from the mesh. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1MyMat_adc35adc0df81f0be813200c96c294bdc}{My\-Mat} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} \&\&)=default
 \item 
 \hyperlink{classTspeed_1_1MyMat_af0996d6425e454b7afb2e5f27c6b77be}{My\-Mat} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} const \&)
@@ -29,9 +34,9 @@ Inheritance diagram for Tspeed\-:\-:My\-Mat\-:\begin{figure}[H]
 virtual \hyperlink{classTspeed_1_1MyMat_a3b10142286aebdd62af6c38eef9790e5}{$\sim$\-My\-Mat} () noexcept(true)=default
 \item 
 void \hyperlink{classTspeed_1_1MyMat_a32eb1340d490fc050d6c6f22a0c84a29}{symmetrize} ()
-\item 
-void \hyperlink{classTspeed_1_1MyMat_a565da9a269ad2afc5fcd1f358550f732}{sumtranspose} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} const \&)
-\item 
+\begin{DoxyCompactList}\small\item\em sum with self transposed \end{DoxyCompactList}\item 
+void \hyperlink{classTspeed_1_1MyMat_a89db701286ebcd96e6ae545fa719c6e9}{sumtranspose} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} const \&ot)
+\begin{DoxyCompactList}\small\item\em Sum with ot transposed. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{classTspeed_1_1MyMat_aa9b048f523b8f2887ce3a2d578cab6b3}{operator+=} (\hyperlink{classTspeed_1_1MyMat}{My\-Mat} const \&)
 \item 
 \hyperlink{classTspeed_1_1MyMat}{My\-Mat} \hyperlink{classTspeed_1_1MyMat_a523a402aa8afdb2b270413b8796b0b5f}{operator+=} (\hyperlink{classTspeed_1_1MyMatBlockDiag}{My\-Mat\-Block\-Diag} const \&)
@@ -40,6 +45,9 @@ void \hyperlink{classTspeed_1_1MyMat_a565da9a269ad2afc5fcd1f358550f732}{sumtrans
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Block Matrix (monodimensial blocks of stability and interelement matrices) 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classTspeed_1_1MyMat_a8fbd3586cb4653ea3cdb2b9d42428e85}{\index{Tspeed\-::\-My\-Mat@{Tspeed\-::\-My\-Mat}!My\-Mat@{My\-Mat}}
@@ -57,6 +65,17 @@ void \hyperlink{classTspeed_1_1MyMat_a565da9a269ad2afc5fcd1f358550f732}{sumtrans
 \item[{unsigned int}]{nln}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1MyMat_a4f07d60d8010d796e27fb90c367b1c8a}
+
+
+Contructor from the mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Th} & pointer to the mesh \\
+\hline
+{\em nln} & number of degrees of freedom per element \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1MyMat_adc35adc0df81f0be813200c96c294bdc}{\index{Tspeed\-::\-My\-Mat@{Tspeed\-::\-My\-Mat}!My\-Mat@{My\-Mat}}
 \index{My\-Mat@{My\-Mat}!Tspeed::MyMat@{Tspeed\-::\-My\-Mat}}
 \subsubsection[{My\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-My\-Mat\-::\-My\-Mat (
@@ -116,13 +135,22 @@ void \hyperlink{classTspeed_1_1MyMat_a565da9a269ad2afc5fcd1f358550f732}{sumtrans
 \item[{{\bf My\-Mat} const \&}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [default]}}}\label{classTspeed_1_1MyMat_ad9a206ca7e833b341c58424e3096641c}
-\hypertarget{classTspeed_1_1MyMat_a565da9a269ad2afc5fcd1f358550f732}{\index{Tspeed\-::\-My\-Mat@{Tspeed\-::\-My\-Mat}!sumtranspose@{sumtranspose}}
+\hypertarget{classTspeed_1_1MyMat_a89db701286ebcd96e6ae545fa719c6e9}{\index{Tspeed\-::\-My\-Mat@{Tspeed\-::\-My\-Mat}!sumtranspose@{sumtranspose}}
 \index{sumtranspose@{sumtranspose}!Tspeed::MyMat@{Tspeed\-::\-My\-Mat}}
 \subsubsection[{sumtranspose}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-My\-Mat\-::sumtranspose (
 \begin{DoxyParamCaption}
 \item[{{\bf My\-Mat} const \&}]{ot}
 \end{DoxyParamCaption}
-)}}\label{classTspeed_1_1MyMat_a565da9a269ad2afc5fcd1f358550f732}
+)}}\label{classTspeed_1_1MyMat_a89db701286ebcd96e6ae545fa719c6e9}
+
+
+Sum with ot transposed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ot} & The const matrix to be transposed and summed to current \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1MyMat_a32eb1340d490fc050d6c6f22a0c84a29}{\index{Tspeed\-::\-My\-Mat@{Tspeed\-::\-My\-Mat}!symmetrize@{symmetrize}}
 \index{symmetrize@{symmetrize}!Tspeed::MyMat@{Tspeed\-::\-My\-Mat}}
 \subsubsection[{symmetrize}]{\setlength{\rightskip}{0pt plus 5cm}void Tspeed\-::\-My\-Mat\-::symmetrize (
@@ -130,6 +158,10 @@ void \hyperlink{classTspeed_1_1MyMat_a565da9a269ad2afc5fcd1f358550f732}{sumtrans
 {}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1MyMat_a32eb1340d490fc050d6c6f22a0c84a29}
+
+
+sum with self transposed 
+
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

@@ -3,6 +3,11 @@
 }
 
 
+Class describing an edge.  
+
+
+
+
 {\ttfamily \#include $<$Geometry.\-hpp$>$}
 
 Inheritance diagram for Tspeed\-:\-:Geo\-:\-:Edge\-:\begin{figure}[H]
@@ -15,21 +20,24 @@ Inheritance diagram for Tspeed\-:\-:Geo\-:\-:Edge\-:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classTspeed_1_1Geo_1_1Edge_aa28485aab77e5643067380c86c35e6b5}{Edge} ()
-\item 
-\hyperlink{classTspeed_1_1Geo_1_1Edge_aa0c751bf90737874583ef5dbf901f669}{Edge} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&\hyperlink{load__and__plot__lamb_8m_aa875ab3a8009406dcace7fa71a0f490d}{a}, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&\hyperlink{load__and__plot__lamb_8m_a21c7e548e910bb7ce7dcea81de72c8f7}{b})
-\item 
+\begin{DoxyCompactList}\small\item\em Default constructor\-: extremal points are initialized to 0. \end{DoxyCompactList}\item 
+\hyperlink{classTspeed_1_1Geo_1_1Edge_aa0c751bf90737874583ef5dbf901f669}{Edge} (const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&a, const \hyperlink{classTspeed_1_1Geo_1_1Point}{Point} \&b)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Edge_a48bde3f5e50244cacc38226156aa124c}{Edge} (const \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} \&e)
-\item 
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
 virtual \hyperlink{classTspeed_1_1Geo_1_1Edge_a76fa8e882724d339873d8ce89b827e89}{$\sim$\-Edge} ()
 \item 
 double \hyperlink{classTspeed_1_1Geo_1_1Edge_ac58cbabc588765cb501470fd0281a12e}{length} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Length of the edge. \end{DoxyCompactList}\item 
 Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15bb5adc3272c}{normal} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Normal to the edge. \end{DoxyCompactList}\item 
 \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} \& \hyperlink{classTspeed_1_1Geo_1_1Edge_ad0d71349f5890f4e8abc62b44142b75b}{operator=} (const \hyperlink{classTspeed_1_1Geo_1_1Edge}{Edge} \&)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Assignement. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Class describing an edge. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classTspeed_1_1Geo_1_1Edge_aa28485aab77e5643067380c86c35e6b5}{\index{Tspeed\-::\-Geo\-::\-Edge@{Tspeed\-::\-Geo\-::\-Edge}!Edge@{Edge}}
@@ -39,6 +47,10 @@ Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Edge_aa28485aab77e5643067380c86c35e6b5}
+
+
+Default constructor\-: extremal points are initialized to 0. 
+
 \hypertarget{classTspeed_1_1Geo_1_1Edge_aa0c751bf90737874583ef5dbf901f669}{\index{Tspeed\-::\-Geo\-::\-Edge@{Tspeed\-::\-Geo\-::\-Edge}!Edge@{Edge}}
 \index{Edge@{Edge}!Tspeed::Geo::Edge@{Tspeed\-::\-Geo\-::\-Edge}}
 \subsubsection[{Edge}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Geo\-::\-Edge\-::\-Edge (
@@ -47,6 +59,17 @@ Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15
 \item[{const {\bf Point} \&}]{b}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Edge_aa0c751bf90737874583ef5dbf901f669}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & One extreme \\
+\hline
+{\em b} & The other extreme \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Geo_1_1Edge_a48bde3f5e50244cacc38226156aa124c}{\index{Tspeed\-::\-Geo\-::\-Edge@{Tspeed\-::\-Geo\-::\-Edge}!Edge@{Edge}}
 \index{Edge@{Edge}!Tspeed::Geo::Edge@{Tspeed\-::\-Geo\-::\-Edge}}
 \subsubsection[{Edge}]{\setlength{\rightskip}{0pt plus 5cm}Tspeed\-::\-Geo\-::\-Edge\-::\-Edge (
@@ -54,6 +77,15 @@ Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15
 \item[{const {\bf Edge} \&}]{e}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Edge_a48bde3f5e50244cacc38226156aa124c}
+
+
+copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
 \hypertarget{classTspeed_1_1Geo_1_1Edge_a76fa8e882724d339873d8ce89b827e89}{\index{Tspeed\-::\-Geo\-::\-Edge@{Tspeed\-::\-Geo\-::\-Edge}!$\sim$\-Edge@{$\sim$\-Edge}}
 \index{$\sim$\-Edge@{$\sim$\-Edge}!Tspeed::Geo::Edge@{Tspeed\-::\-Geo\-::\-Edge}}
 \subsubsection[{$\sim$\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}virtual Tspeed\-::\-Geo\-::\-Edge\-::$\sim$\-Edge (
@@ -71,6 +103,10 @@ Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTspeed_1_1Geo_1_1Edge_ac58cbabc588765cb501470fd0281a12e}
+
+
+Length of the edge. 
+
 \hypertarget{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15bb5adc3272c}{\index{Tspeed\-::\-Geo\-::\-Edge@{Tspeed\-::\-Geo\-::\-Edge}!normal@{normal}}
 \index{normal@{normal}!Tspeed::Geo::Edge@{Tspeed\-::\-Geo\-::\-Edge}}
 \subsubsection[{normal}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Vector2d Tspeed\-::\-Geo\-::\-Edge\-::normal (
@@ -78,6 +114,13 @@ Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15bb5adc3272c}
+
+
+Normal to the edge. 
+
+\begin{DoxyReturn}{Returns}
+The normalized vector 
+\end{DoxyReturn}
 \hypertarget{classTspeed_1_1Geo_1_1Edge_ad0d71349f5890f4e8abc62b44142b75b}{\index{Tspeed\-::\-Geo\-::\-Edge@{Tspeed\-::\-Geo\-::\-Edge}!operator=@{operator=}}
 \index{operator=@{operator=}!Tspeed::Geo::Edge@{Tspeed\-::\-Geo\-::\-Edge}}
 \subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Edge} \& Tspeed\-::\-Geo\-::\-Edge\-::operator= (
@@ -85,6 +128,10 @@ Eigen\-::\-Vector2d \hyperlink{classTspeed_1_1Geo_1_1Edge_af7c463f06cab88d0f4d15
 \item[{const {\bf Edge} \&}]{e}
 \end{DoxyParamCaption}
 )}}\label{classTspeed_1_1Geo_1_1Edge_ad0d71349f5890f4e8abc62b44142b75b}
+
+
+Assignement. 
+
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
