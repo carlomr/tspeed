@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['operator_2a',['operator*',['../classTspeed_1_1Geo_1_1Point.html#a4796c5e216ac1d96d9b87714d1f9563c',1,'Tspeed::Geo::Point::operator*()'],['../classTspeed_1_1MyMatMultiDim.html#a10bafacdfbbd9746fab2e746196f4229',1,'Tspeed::MyMatMultiDim::operator*()'],['../classTspeed_1_1MyMatMultiDimBlockDiag.html#a2be04a4f228649a2efc0af5ac011852e',1,'Tspeed::MyMatMultiDimBlockDiag::operator*()']]],
-  ['operator_2b',['operator+',['../classTspeed_1_1Geo_1_1Point.html#a96f6a3fd676e84673695954a9c38f9fc',1,'Tspeed::Geo::Point::operator+()'],['../classTspeed_1_1Geo_1_1Point.html#af8a6ecf275f1df192e8f85a1ec6ea578',1,'Tspeed::Geo::Point::operator+()'],['../classTspeed_1_1Geo_1_1Point.html#a055f4bc786ea18b7409273eb968ef615',1,'Tspeed::Geo::Point::operator+()'],['../classTspeed_1_1MyMatMultiDim.html#a0f13d96f443b5d3fe2e0ce2f128f5c28',1,'Tspeed::MyMatMultiDim::operator+()'],['../classTspeed_1_1MyMatMultiDim.html#afe46b501e059ef54cd6701bfae967263',1,'Tspeed::MyMatMultiDim::operator+()']]],
-  ['operator_2d',['operator-',['../classTspeed_1_1Geo_1_1Point.html#a7cdfe306ee6075d5444000f6a4e85301',1,'Tspeed::Geo::Point::operator-()'],['../classTspeed_1_1Geo_1_1Point.html#a1612c0e7347b698b81dd09392719afef',1,'Tspeed::Geo::Point::operator-()'],['../classTspeed_1_1Geo_1_1Point.html#ae88f602384d3cd03fade37ea2d7616bb',1,'Tspeed::Geo::Point::operator-()']]]
-];

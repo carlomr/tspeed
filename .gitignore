@@ -5,4 +5,6 @@
 .ycm*
 build/
 *.out
+doc/latex
+doc/html
 
