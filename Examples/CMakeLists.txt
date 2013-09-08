@@ -2,7 +2,7 @@
 #project (TSPEED)
 
 link_directories(${CMAKE_INSTALL_PREFIX}/lib)
-add_executable(Wedge src/wedge.cpp)
+add_executable(Wedge src/Wedge.cpp)
 add_executable(Lamb src/Lamb.cpp)
 
 install(TARGETS Wedge Lamb DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}  )

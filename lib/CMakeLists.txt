@@ -5,8 +5,14 @@ FILE(GLOB components "src/*.cpp")
 
 add_library(tspeed ${components})
 
+IF(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+    SET(CMAKE_INSTALL_PREFIX
+	"/usr/local/" CACHE PATH "/usr/local install prefix" FORCE
+	)
+ENDIF(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 install(TARGETS tspeed DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
-install(FILES include/TSPEED.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
+FILE(GLOB headers "include/*.hpp")
+install(FILES ${headers} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/tspeed/)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 find_package(Eigen3 REQUIRED)
