@@ -93,6 +93,7 @@ namespace Tspeed
 		this->M_node_2D(i*N+j, 1) = (1-x(i))*(1+x(j))/4.;
 	    }
 	}
+	std::cout << "Quadrature :: using Gauss rule, with " << nqn2d << " internal nodes." << std::endl;
 	//std::cout << this->M_node_2D << std::endl;
 	//
     };
@@ -104,6 +105,10 @@ namespace Tspeed
 
 	double *xytab = new double[2*order_num];
 	double *wtab = new double[order_num];
+
+	gauleg<N>(this->M_w_1D, this->M_node_1D, 0, 1);
+	this->M_nqn_1D = this->M_w_1D.size();
+
 	this->M_node_2D.resize(order_num,2);
 	this->M_w_2D.resize(order_num);
 
@@ -111,9 +116,17 @@ namespace Tspeed
 	for(int i=0; i<order_num; ++i)
 	{
 	    this->M_w_2D[i] = .5*wtab[i];
-	    this->M_node_2D(i,0) = xytab[i];
-	    this->M_node_2D(i,1) = xytab[i+order_num];
+	    this->M_node_2D(i,0) = xytab[0+2*i];
+	    this->M_node_2D(i,1) = xytab[1+2*i];
 	}
+	delete[] xytab;
+	delete[] wtab;
+	std::cout << "Quadrature :: using Dunavant rule, with " << nqn2d << " internal nodes." << std::endl;
+	//std::cout << "++++++++++++++++++++++++++++" << std::endl;
+	//std::cout << this->M_node_2D << std::endl;
+	//std::cout << "++++++++++++++++++++++++++++" << std::endl;
+	//std::cout << this->M_w_2D << std::endl;
+
     };
     template<int N>
 	constexpr int  dunavant_num_points()

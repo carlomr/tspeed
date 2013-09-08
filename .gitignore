@@ -1,5 +1,8 @@
 *.so
 *.a
+*.out
 *.swp
-*.py
+.ycm*
 build/
+*.out
+

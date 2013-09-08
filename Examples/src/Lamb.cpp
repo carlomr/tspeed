@@ -6,16 +6,19 @@ using namespace Tspeed;
 
 int main()
 {
-    const double dt = 2.5e-4;
+    const double dt = 5e-4;
     const double tmax = 1;
     double t=0;
     double error = 0;
+    const int N = 3;
 
     //Mesh Th(std::string("square_Nnull_4tria.msh"));
-    Mesh_ptr Th(new Mesh(std::string("./Meshes/Lamb_new_unstruct.msh")));
+    //Mesh_ptr Th(new Mesh(std::string("./Meshes/Lamb_new_unstruct.msh")));
+    Mesh_ptr Th(new Mesh(std::string("./Meshes/Lamb_fullyunstruct3.msh")));
     Th->stats();
 
-    FESpace_ptr<5> Xh(new FESpace<5>(Th));
+    FESpace_ptr<N, Dunavant<2*N>> Xh(new FESpace<N,Dunavant<2*N>>(Th));
+    //FESpace_ptr<N> Xh(new FESpace<N>(Th));
 
     Parameters p(Th);
 
@@ -38,17 +41,17 @@ int main()
     TA.set_initial_v(Xh,[](double x, double y){return std::array<double,2>{{0,0}};});
 
     TA.first_step();
-    //TA.eval_receivers();
+    TA.eval_receivers();
 
     int step = 0;
     while(TA.is_running())
     {
 	t+=dt;
 	TA.step(t);
-	//if(++step%2 == 0)
-	    //TA.eval_receivers();
+	if(++step%2 == 0)
+	    TA.eval_receivers();
     }
-    //TA.write_receivers("lamb_f50_N8_newF_oldP");
+    TA.write_receivers("lamb");
 
 }
 

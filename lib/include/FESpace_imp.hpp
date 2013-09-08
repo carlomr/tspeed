@@ -22,6 +22,7 @@ namespace Tspeed{
 		M_Gedge[i*3+iedg].row(1) = M_sh.grad(i, M_quad.edge_nodes(iedg).col(0), M_quad.edge_nodes(iedg).col(1)).col(1);
 	    }
 	}
+	std::cout << "FESpace :: " << (N+1)*(N+2)/2*M_mesh->ne() << " dof per component." << std::endl;
 
     };
 

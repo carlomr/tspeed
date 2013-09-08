@@ -7,8 +7,8 @@ void wedge_init_param(double l, double m, double rho, double cf, double csurf , 
 
 int main()
 {
-    const double dt = 2.5e-4;
-    const double tmax = 1.5;
+    const double dt = 5e-4;
+    const double tmax = 1.0;
     double t=0;
     double error = 0;
     double k,q,s,beta;
@@ -19,7 +19,7 @@ int main()
     Th->stats();
 
     //FESpace_ptr<5> Xh(new FESpace<5>(Th));
-    FESpace_ptr<5,Dunavant<10>> Xh(new FESpace<5,Dunavant<10>>(Th));
+    FESpace_ptr<3,Dunavant<6>> Xh(new FESpace<3,Dunavant<6>>(Th));
 
     Parameters p(Th);
 
@@ -63,12 +63,12 @@ int main()
 	++step;
 	t+=dt;
 	TA.step(t);
-	//if(step%2 == 0)
-	    //TA.eval_receivers();
+	if(step%2 == 0)
+	    TA.eval_receivers();
 	//if(step%20==0)
 	    //Xh->field_out("wedge_field", TA.u(), step);
     }
-    //TA.write_receivers("wedge_f10_back");
+    TA.write_receivers("wedge_f10_back");
 
 }
 
