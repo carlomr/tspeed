@@ -1,6 +1,15 @@
+/**
+ * @example Lamb.cpp An example implementing the Lamb problem, with the BoundaryAdapted basis and Dunavant quadrature.
+ *
+ * Reference:
+ * H. Lamb, On the propagation of tremors over the surface of an elastic
+ * solid, Philosophical Transactions of the Royal Society of London.
+ * Series A, Containing Papers of a Mathematical or Physical Character
+ * 203 (1904), pp. 1–42 
+ * 
+***/
 #include"TSPEED.hpp"
 #include<iostream>
-//#include<memory>
 
 using namespace Tspeed;
 
@@ -9,18 +18,12 @@ int main()
     const double dt = 5e-4;
     const double tmax = 1;
     double t=0;
-    double error = 0;
     const int N = 5;
 
-    //Mesh Th(std::string("square_Nnull_4tria.msh"));
-    //Mesh_ptr Th(new Mesh(std::string("./Meshes/Lamb_new_unstruct.msh")));
     Mesh_ptr Th(new Mesh(std::string("./Meshes/Lamb_fullyunstruct3.msh")));
     Th->stats();
 
-    //FESpace_ptr<N, Dunavant<2*N>> Xh(new FESpace<N,Dunavant<2*N>>(Th));
     FESpace_ptr<N, Dunavant<2*N>, BoundaryAdapted<N>> Xh(new FESpace<N,Dunavant<2*N>,BoundaryAdapted<N>>(Th));
-    //
-    //FESpace_ptr<N> Xh(new FESpace<N>(Th));
 
     Parameters p(Th);
 
@@ -53,7 +56,7 @@ int main()
 	if(++step%2 == 0)
 	    TA.eval_receivers();
     }
-    TA.write_receivers("lamb");
-
+    TA.write_receivers("Recievers_output/lamb");
 }
+
 
