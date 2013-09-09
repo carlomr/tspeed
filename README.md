@@ -21,7 +21,7 @@ This will by default install the library in `/usr/local/lib` and the header file
 
 Two test are generated as `Examples/Lamb` and `Examples/Wedge`. For the source generating them, see `Examples/src/Wedge.cpp` and `Examples/src/Lamb.cpp`.
 
-Tspeed and the spectral element method on triangular elemnts for elastodynamics
+Tspeed and the spectral element method on triangular elements for elastodynamics
 -------------------------------------------------------------------------
 The analysis of elastic and acoustic wave propagation phenomena has been
 widely studied by mathematicians and scientists since the XIX century.
