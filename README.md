@@ -21,8 +21,8 @@ This will by default install the library in `/usr/local/lib` and the header file
 
 Two test are generated as `Examples/Lamb` and `Examples/Wedge`. For the source generating them, see `Examples/src/Wedge.cpp` and `Examples/src/Lamb.cpp`.
 
-Problem description
--------------------
+Tspeed and the spectral element method on triangular elemnts for elastodynamics
+-------------------------------------------------------------------------
 The analysis of elastic and acoustic wave propagation phenomena has been
 widely studied by mathematicians and scientists since the XIX century.
 Elastic waves in solids have also been historically studied, though
@@ -38,11 +38,18 @@ flexible numerical methods. Those, indeed, permit the comparison between
 the empirical observations and accurate numerical wave fields in complex
 domains.
 
-TSPEED is a C++ library for the
+In this work we consider the development of a C++ library for the
 application of the discontinuous spectral element method on meshes made
 of simplicial elements to the approximation of the elastodynamic
-equation. Spectral element methods were introduced in the computational
-fluid dynamics field (A. T. Patera 1984; Maday and Patera 1989) and they
+equation. The library was designed with extensibility and ease of use as
+primary goals. It is made of three layers: the geometrical layer, whose
+purposes are common to any finite or spectral element code; a functional
+space layer, where the specific setting of discontinuous methods on
+triangular elements are implemented and a
+layer which deals with the approximation of the elastodynamics equation.
+
+Spectral element methods were introduced in the computational fluid
+dynamics field (A. T. Patera 1984; Maday and Patera 1989) and they
 combine the high order accuracy of spectral methods with the flexibility
 and computational feasibility of finite elements methods. They are
 strictly related with the h-p version of the finite element method and
@@ -51,7 +58,7 @@ last two decades (Komatitsch and Vilotte 1998; Komatitsch and Tromp
 2002). Spectral element methods have been introduced and are currently
 built on mashes made of tensor product elements (i.e. deformed squares
 and cubes), since this is the context in which the extension from one
-spatial dimension to d dimensions, d=2,3, is more straightforward.
+spatial dimension to $d$ dimensions, $d=2,3$, is more straightforward.
 Spectral elements on triangles and tetrahedra have been historically
 less widely studied, though different formulations (modal with different
 bases (Karniadakis and Sherwin 2005), nodal with different interpolation
@@ -71,22 +78,8 @@ in the solution, that they can be used to develop h-p adaptive strategy
 and that the computational cost can be distributed without much
 overhead.
 
-Of the spectral bases on triangular elements implemented, one (the
-Legendre-Dubiner basis (Dubiner 1991; Koornwinder 1975)) can be used
-only in the framework of a fully discontinuous approximation, since
-there is no way to enforce the continuity of the space between
-neighboring elements. The boundary adapted basis functions (Karniadakis
-and Sherwin 2005; Dubiner 1991), on the other hand, are modified in
-order to be used in a continuous scheme. 
-
 References
 ----------
-Antonietti, Paola F., Ilario Mazzieri, Alfio Quarteroni, and Francesca
-Rapetti. 2012. “Non-conforming high order approximations of the
-elastodynamics equation.” *Comput. Methods Appl. Mech. Engrg.* 209/212:
-212–238. doi:10.1016/j.cma.2011.11.004.
-<http://dx.doi.org/10.1016/j.cma.2011.11.004>.
-
 Dubiner, Moshe. 1991. “Spectral methods on triangles and other domains.”
 *Journal of Scientific Computing* 6 (4): 345–390.
 
@@ -140,6 +133,3 @@ simulation with a high-order discontinuous Galerkin method on
 unstructured tetrahedral meshes.” *Journal of Geophysical Research:
 Solid Earth* 117 (B2). doi:10.1029/2011JB008857.
 <http://dx.doi.org/10.1029/2011JB008857>.
-
-
-

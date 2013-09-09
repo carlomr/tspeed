@@ -134,7 +134,7 @@ namespace Tspeed{
 
 	};
     template<int N, typename Q, typename S>
-	Eigen::VectorXd FESpace<N,Q,S>::inverse_transform(std::function<std::array<double,2>(double,double)> const & fun)const
+	Eigen::VectorXd FESpace<N,Q,S>::transform(std::function<std::array<double,2>(double,double)> const & fun)const
 	{
 	    Eigen::VectorXd uh(2*M_ne*M_nln);
 	    unsigned int startIndex;

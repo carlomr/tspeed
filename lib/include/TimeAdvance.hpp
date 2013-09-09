@@ -140,11 +140,10 @@ namespace Tspeed
 	 */
 	    void first_step();
 	    /**
-	     * @brief step at time t
+	     * @brief Time advancing step 
 	     *
-	     * @param t the time 
 	     */
-	    void step(double t);
+	    void step();
 	    virtual ~TimeAdvance(){};
 	    /**
 	     * @brief Set time step \f$\delta t \f$
@@ -228,9 +227,10 @@ namespace Tspeed
 	    Matrices M_mat;
 	    MyMatMultiDim<MyMat> B;
 	    std::shared_ptr<Force> M_f;
-	    void update_variables(double t){M_last_step = t;uholdold = uhold; uhold = uh; foldold=fold; fold=f;};
+	    void update_variables(double t){M_last_time = t;M_last_step++;uholdold = uhold; uhold = uh; foldold=fold; fold=f;};
 	    bool M_completed;
-	    double M_last_step;
+	    double M_last_time;
+	    unsigned int M_last_step;
 	    unsigned int M_recv_written;
 	    unsigned int M_nln;
 	    unsigned int M_ne;
@@ -249,11 +249,10 @@ namespace Tspeed
 	 */
 	void first_step();
 	/**
-	 * @brief Step at time t for the Leap-Frog method
+	 * @brief Step for the Leap-Frog method
 	 *
-	 * @param t time
 	 */
-	void step(double);
+	void step();
     };
 
 

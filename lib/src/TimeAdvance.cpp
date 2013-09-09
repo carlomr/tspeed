@@ -29,6 +29,8 @@ namespace Tspeed
 	//std::cout << M_dt*M_dt/2 *(B*uholdold - f) << std::endl;
 	uhold  = uholdold + M_dt*initial_v - M_mat.getinvM()*(M_dt*M_dt/2 *(B*uholdold - fold));
 	uh = uhold;
+	M_last_step++;
+	M_last_time = M_dt;
 	//std::cout << "+++++++++++++++++++"<<std::endl;
 	////std::cout << uholdold << std::endl;
 	//std::cout << (B*uholdold ) << std::endl;
@@ -36,13 +38,14 @@ namespace Tspeed
 	//std::cout << uhold<< std::endl;
     }
 
-    void LeapFrog::step(double t)
+    void LeapFrog::step()
     {
-	if(t != M_last_step + M_dt)
-	{
-	    std::cerr << "Warning: provided time is not sequential to last one. Resetting t = " << M_last_step + M_dt << std::endl;
-	    t = M_last_step + M_dt;
-	}
+	//if(t != M_last_step + M_dt)
+	//{
+	    //std::cerr << "Warning: provided time is not sequential to last one. Resetting t = " << M_last_step + M_dt << std::endl;
+	    //t = M_last_step + M_dt;
+	//}
+	double t = M_last_time+M_dt;
 	std::cout << "Solving timestep at t = " << t << std::endl;
 
 	f = this->M_f->eval(t);;

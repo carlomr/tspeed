@@ -63,6 +63,10 @@ namespace Tspeed{
     {
 	std::ifstream f;
 	f.open(fname.c_str());
+	if(!f.is_open())
+	{
+	    std::cerr << "Unable to open file " << fname << ". No receivers added." << std::endl;
+	}
 	double x,y;
 	unsigned int count=0;
 	//Eigen::ArrayXd temp_shape(Xh->nln());

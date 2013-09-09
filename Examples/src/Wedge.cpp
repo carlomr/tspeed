@@ -19,18 +19,19 @@ void wedge_init_param(double l, double m, double rho, double cf, double csurf , 
 
 int main()
 {
-    const double dt = 5e-4;
+    const double dt = 5e-5;
     const double tmax = 1.0;
     double t=0;
     double error = 0;
     double k,q,s,beta;
     const double x0 = 1000;
     const double ymax = 2000;
+    const int N = 5;
 
     Mesh_ptr Th(new Mesh(std::string("./Meshes/wedge.msh")));
     Th->stats();
 
-    FESpace_ptr<3> Xh(new FESpace<3>(Th));
+    FESpace_ptr<N> Xh(new FESpace<N>(Th));
 
     Parameters p(Th);
 
@@ -65,20 +66,20 @@ int main()
 
     int step = 0;
     TA.first_step();
-    Xh->field_out("Fields_out/wedge_field", TA.u(), step);
+    //Xh->field_out("Fields_out/wedge_field", TA.u(), step);
     TA.eval_receivers();
 
     while(TA.is_running())
     {
 	++step;
 	t+=dt;
-	TA.step(t);
+	TA.step();
 	if(step%2 == 0)
 	    TA.eval_receivers();
-	if(step%20==0)
-	    Xh->field_out("Fields_out/wedge_field", TA.u(), step);
+	//if(step%20==0)
+	    //Xh->field_out("Fields_out/wedge_field", TA.u(), step);
     }
-    TA.write_receivers("Receivers_out/wedge_f10_back");
+    TA.write_receivers("Receivers_out/wedge");
 
 }
 

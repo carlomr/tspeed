@@ -114,7 +114,7 @@ namespace Tspeed
 		 *
 		 * @return the vector of \f$\hat{u}_i\f$
 		 */
-		Eigen::VectorXd inverse_transform(std::function<std::array<double,2>(double,double)> const & fun)const;
+		Eigen::VectorXd transform(std::function<std::array<double,2>(double,double)> const & fun)const;
 		/**
 		 * @brief L2 norm of the difference uex-uh
 		 *

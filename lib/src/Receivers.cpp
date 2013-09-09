@@ -35,6 +35,8 @@ namespace Tspeed{
 	for(unsigned int i = 0; i<M_nel; ++i )
 	{
 	    outf.open(fn+"_rcv_"+std::to_string(i)+".out");
+	    if(!outf.is_open())
+		std::cerr << "File " << fn+"_rcv_"+std::to_string(i)+".out" << " may not be opened. The receiver was not witten." << std::endl;
 	    for(unsigned int j = 0; j<M_val.cols(); ++j )
 	    {
 		outf << M_val(i,j)[0] << " " << M_val(i,j)[1] << std::endl;

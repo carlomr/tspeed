@@ -15,7 +15,7 @@ using namespace Tspeed;
 
 int main()
 {
-    const double dt = 5e-4;
+    const double dt = 5e-5;
     const double tmax = 1;
     double t=0;
     const int N = 5;
@@ -52,11 +52,11 @@ int main()
     while(TA.is_running())
     {
 	t+=dt;
-	TA.step(t);
+	TA.step();
 	if(++step%2 == 0)
 	    TA.eval_receivers();
     }
-    TA.write_receivers("Recievers_output/lamb");
+    TA.write_receivers("Receivers_out/lamb");
 }
 
 
