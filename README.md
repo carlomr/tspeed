@@ -38,26 +38,26 @@ flexible numerical methods. Those, indeed, permit the comparison between
 the empirical observations and accurate numerical wave fields in complex
 domains.
 
-In this work we consider the development of a C++ library for the
+TSPEED is a C++ library for the
 application of the discontinuous spectral element method on meshes made
 of simplicial elements to the approximation of the elastodynamic
 equation. Spectral element methods were introduced in the computational
-fluid dynamics field A. T. Patera (1984; Maday and Patera 1989) and they
+fluid dynamics field (A. T. Patera 1984; Maday and Patera 1989) and they
 combine the high order accuracy of spectral methods with the flexibility
 and computational feasibility of finite elements methods. They are
 strictly related with the h-p version of the finite element method and
 they have been extensively used for computational geodynamics in the
-last two decades Komatitsch and Vilotte (1998; Komatitsch and Tromp
+last two decades (Komatitsch and Vilotte 1998; Komatitsch and Tromp
 2002). Spectral element methods have been introduced and are currently
 built on mashes made of tensor product elements (i.e. deformed squares
 and cubes), since this is the context in which the extension from one
-spatial dimension to $d$ dimensions, $d=2,3$, is more straightforward.
+spatial dimension to d dimensions, d=2,3, is more straightforward.
 Spectral elements on triangles and tetrahedra have been historically
 less widely studied, though different formulations (modal with different
-bases Karniadakis and Sherwin (2005), nodal with different interpolation
-nodes Hesthaven and Warburton (2008)) have been proposed and analyzed in
+bases (Karniadakis and Sherwin 2005), nodal with different interpolation
+nodes (Hesthaven and Warburton 2008)) have been proposed and analyzed in
 the last years. Several of these formulations have been employed in
-geodynamical applications Mercerat, Vilotte, and Sánchez-Sesma (2006;
+geodynamical applications (Mercerat, Vilotte, and Sánchez-Sesma 2006;
 Pelties et al. 2012), but a thorough analysis has not been carried out
 for the coupling of modal bases and discontinuous methods. In general,
 they provide the flexibility and geometrical adaptability of simplicial
@@ -72,15 +72,17 @@ and that the computational cost can be distributed without much
 overhead.
 
 Of the spectral bases on triangular elements presented, one (the
-Legendre-Dubiner basis Dubiner (1991; Koornwinder 1975)) can be used
+Legendre-Dubiner basis (Dubiner 1991; Koornwinder 1975)) can be used
 only in the framework of a fully discontinuous approximation, since
 there is no way to enforce the continuity of the space between
-neighboring elements. The boundary adapted basis functions Karniadakis
-and Sherwin (2005; Dubiner 1991), on the other hand, are modified in
+neighboring elements. The boundary adapted basis functions (Karniadakis
+and Sherwin 2005; Dubiner 1991), on the other hand, are modified in
 order to be used in a continuous scheme. Therefore, a non-conforming
-scheme as in Antonietti et al. (2012) is possible, and the following
+scheme as in (Antonietti et al. 2012) is possible, and the following
 analysis helps to understand the properties of such a scheme.
 
+References
+----------
 Antonietti, Paola F., Ilario Mazzieri, Alfio Quarteroni, and Francesca
 Rapetti. 2012. “Non-conforming high order approximations of the
 elastodynamics equation.” *Comput. Methods Appl. Mech. Engrg.* 209/212:
