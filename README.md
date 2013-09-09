@@ -1,7 +1,7 @@
 A library for the approximation of the elastodynamics equation 
 ==============================================================
 
-TSPEED is a library for the high order approximation of the elastodyanmics equation on triangular unstructured meshes.
+TSPEED is a library for the high order approximation of the elastodynamics equation on triangular unstructured meshes.
 
 Installation on Linux
 ---------------------
