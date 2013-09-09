@@ -71,15 +71,13 @@ in the solution, that they can be used to develop h-p adaptive strategy
 and that the computational cost can be distributed without much
 overhead.
 
-Of the spectral bases on triangular elements presented, one (the
+Of the spectral bases on triangular elements implemented, one (the
 Legendre-Dubiner basis (Dubiner 1991; Koornwinder 1975)) can be used
 only in the framework of a fully discontinuous approximation, since
 there is no way to enforce the continuity of the space between
 neighboring elements. The boundary adapted basis functions (Karniadakis
 and Sherwin 2005; Dubiner 1991), on the other hand, are modified in
-order to be used in a continuous scheme. Therefore, a non-conforming
-scheme as in (Antonietti et al. 2012) is possible, and the following
-analysis helps to understand the properties of such a scheme.
+order to be used in a continuous scheme. 
 
 References
 ----------
